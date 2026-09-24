@@ -5,7 +5,7 @@
 - plantvillage_lab: accuracy 0.9871 · macro-F1 0.9837 · images 1471
 - plantdoc_field_web: accuracy 0.7098 · macro-F1 0.6894 · images 224
 - at threshold 0.6: answers 96% of supported-class photos, accuracy when answering 0.9862
-- unseen crops rejected: 0.765 ({'plantvillage_lab': {'images': 301, 'rejection_rate': 0.8771}, 'plantdoc_field_web': {'images': 299, 'rejection_rate': 0.6522}})
+- unseen crops rejected: 0.765 ({'plantdoc_field_web': {'images': 299, 'rejection_rate': 0.6522}, 'plantvillage_lab': {'images': 301, 'rejection_rate': 0.8771}})
 - quality gates passed: True · weak classes: none
 
 | class | precision | recall | F1 | support |

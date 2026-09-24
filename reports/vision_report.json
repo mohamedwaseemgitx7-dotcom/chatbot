@@ -188,13 +188,13 @@
     "images": 600,
     "rejection_rate": 0.765,
     "by_source": {
-      "plantvillage_lab": {
-        "images": 301,
-        "rejection_rate": 0.8771
-      },
       "plantdoc_field_web": {
         "images": 299,
         "rejection_rate": 0.6522
+      },
+      "plantvillage_lab": {
+        "images": 301,
+        "rejection_rate": 0.8771
       }
     }
   },

@@ -12,6 +12,7 @@ import io
 import json
 import wave
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 
@@ -45,7 +46,7 @@ def add_noise(mp3: bytes, snr_db: float) -> bytes:
     """Decodes with PyAV, mixes in white noise at the given SNR, returns 16 kHz mono WAV."""
     import av
 
-    container = av.open(io.BytesIO(mp3))
+    container = av.open(io.BytesIO(mp3), mode="r")
     resampler = av.AudioResampler(format="s16", layout="mono", rate=16000)
     samples = np.concatenate([f.to_ndarray().flatten() for frame in container.decode(audio=0) for f in resampler.resample(frame)])
     signal = samples.astype(np.float32)
@@ -60,7 +61,7 @@ def add_noise(mp3: bytes, snr_db: float) -> bytes:
 
 async def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    manifest = []
+    manifest: list[dict[str, Any]] = []
     for name, voice, text in CLIPS:
         data = await synthesize(voice, text)
         (OUT / f"{name}.mp3").write_bytes(data)

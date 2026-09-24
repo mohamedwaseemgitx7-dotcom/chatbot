@@ -76,6 +76,8 @@ def transcribe(data: bytes, mime: str) -> Transcript:
             audio = decode_audio(path)  # 16 kHz mono float32 (PyAV); raises on corrupt/unsupported audio
         except Exception as error:
             raise AudioRejected("This recording could not be read.") from error
+        if isinstance(audio, tuple):  # only returned with split_stereo=True, which is never used here
+            raise AudioRejected("This recording could not be read.")
         duration = len(audio) / 16000
         if duration > settings.MAX_AUDIO_SECONDS + 1:
             raise AudioRejected(f"Recordings can be at most {settings.MAX_AUDIO_SECONDS} seconds.")

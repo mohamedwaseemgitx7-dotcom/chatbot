@@ -12,6 +12,7 @@ ONNX output equals PyTorch output, then copies to backend/models/vision/:
 """
 import json
 import shutil
+import io
 import sys
 
 import numpy as np
@@ -23,7 +24,8 @@ OUT = ROOT / "backend" / "models" / "vision"
 
 
 def main():
-    sys.stdout.reconfigure(encoding="utf-8")
+    if isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout.reconfigure(encoding="utf-8")
     force = "--force" in sys.argv
     evaluation = json.loads((STAGING / "evaluation.json").read_text(encoding="utf-8"))
     if not evaluation["quality_gates"]["passed"] and not force:
@@ -38,7 +40,7 @@ def main():
 
     OUT.mkdir(parents=True, exist_ok=True)
     dummy = torch.randn(1, 3, config["image_size"], config["image_size"])
-    torch.onnx.export(model, dummy, OUT / "crop_disease.onnx", input_names=["image"], output_names=["logits"],
+    torch.onnx.export(model, (dummy,), OUT / "crop_disease.onnx", input_names=["image"], output_names=["logits"],
                       dynamic_axes={"image": {0: "batch"}, "logits": {0: "batch"}}, opset_version=17, dynamo=False)
     import onnxruntime as ort
 

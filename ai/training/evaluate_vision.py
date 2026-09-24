@@ -12,9 +12,11 @@ Writes ai/models/vision/staging/evaluation.json, confusion_matrix.csv and report
 """
 import csv
 import json
+import io
 import sys
 from collections import defaultdict
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import torch
@@ -44,7 +46,8 @@ def probabilities(model, items, device):
 
 
 def main():
-    sys.stdout.reconfigure(encoding="utf-8")
+    if isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout.reconfigure(encoding="utf-8")
     device = "cuda" if torch.cuda.is_available() else "cpu"
     classes = json.loads((STAGING / "classes.json").read_text(encoding="utf-8"))
     labels = [c["name"] for c in classes]
@@ -63,7 +66,7 @@ def main():
     pred = probs.argmax(1)
     conf = probs.max(1)
 
-    report = {"test": compute_metrics(gold, pred, labels), "by_source": {}}
+    report: dict[str, Any] = {"test": compute_metrics(gold, pred, labels), "by_source": {}}
     groups = defaultdict(list)
     for i, r in enumerate(test):
         groups[STYLE_GROUP.get(r["image_style"], r["image_style"])].append(i)
@@ -89,19 +92,20 @@ def main():
     ood_probs = probabilities(model, [(ROOT / r["file_path"], 0) for r in ood], device)
     rejected = (ood_probs.argmax(1) == unsupported) | (ood_probs.max(1) < threshold) if len(ood) else np.array([])
     report["unseen_crops"] = {"images": len(ood), "rejection_rate": round(float(rejected.mean()), 4) if len(ood) else None, "by_source": {}}
-    for style in {r["image_style"] for r in ood}:
+    for style in sorted({r["image_style"] for r in ood}):
         idx = [i for i, r in enumerate(ood) if r["image_style"] == style]
         report["unseen_crops"]["by_source"][STYLE_GROUP.get(style, style)] = {"images": len(idx), "rejection_rate": round(float(rejected[idx].mean()), 4)}
 
     gates = CONFIG["evaluation"]["quality_gates"]
     weak = {k: v["f1"] for k, v in report["test"]["per_class"].items() if v["f1"] < gates["min_class_f1"]}
-    report["quality_gates"] = {
+    quality_gates: dict[str, Any] = {
         "min_test_macro_f1": {"required": gates["min_test_macro_f1"], "actual": report["test"]["macro_f1"],
                               "pass": report["test"]["macro_f1"] >= gates["min_test_macro_f1"]},
         "min_unseen_crop_rejection": {"required": gates["min_unseen_crop_rejection"], "actual": report["unseen_crops"]["rejection_rate"],
                                       "pass": (report["unseen_crops"]["rejection_rate"] or 0) >= gates["min_unseen_crop_rejection"]},
         "weak_classes_below_min_f1": weak,
     }
+    report["quality_gates"] = quality_gates
     report["quality_gates"]["passed"] = all(g["pass"] for g in report["quality_gates"].values() if isinstance(g, dict) and "pass" in g)
     report["top_confusions"] = top_confusions(gold, pred, labels)
 

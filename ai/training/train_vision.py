@@ -11,6 +11,7 @@ Next  : evaluate_vision.py (metrics + quality gates) → export_model.py (ONNX, 
 import csv
 import json
 import random
+import io
 import sys
 import time
 from collections import Counter
@@ -76,8 +77,8 @@ class Images(Dataset):
     def __len__(self):
         return len(self.items)
 
-    def __getitem__(self, i):
-        path, label = self.items[i]
+    def __getitem__(self, index):
+        path, label = self.items[index]
         with Image.open(path) as img:
             return self.transform(img.convert("RGB")), label
 
@@ -126,7 +127,8 @@ def run_phase(model, loaders, device, params, epochs, lr, tag, best, history):
 
 
 def main():
-    sys.stdout.reconfigure(encoding="utf-8")
+    if isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout.reconfigure(encoding="utf-8")
     cfg = CONFIG["training"]
     random.seed(cfg["seed"]); np.random.seed(cfg["seed"]); torch.manual_seed(cfg["seed"])
     device = "cuda" if torch.cuda.is_available() else "cpu"

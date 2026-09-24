@@ -8,6 +8,7 @@ Prints accuracy, macro-F1, per-language accuracy, out-of-domain recall and the w
 """
 import csv
 import json
+import io
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -19,7 +20,8 @@ from app.nlp.tanglish import to_english  # noqa: E402
 
 
 def main():
-    sys.stdout.reconfigure(encoding="utf-8")
+    if isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout.reconfigure(encoding="utf-8")
     from sklearn.metrics import f1_score
 
     with open(ROOT / "datasets" / "nlp" / "farmer_queries.csv", encoding="utf-8-sig") as f:

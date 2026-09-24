@@ -16,6 +16,7 @@ pytestmark = pytest.mark.skipif(
 @pytest.fixture
 def temp_user():
     client = get_supabase_client()
+    assert client is not None
     user = client.auth.admin.create_user({"email": f"pytest-{uuid.uuid4().hex[:8]}@example.test", "password": uuid.uuid4().hex, "email_confirm": True}).user
     yield client, user.id
     client.auth.admin.delete_user(user.id)
@@ -35,6 +36,7 @@ def test_repositories_round_trip(temp_user):
     assert conversation_belongs_to(conversation, user_id)
     assert not conversation_belongs_to(conversation, str(uuid.uuid4()))
     message = save_message(conversation, "user", "நெல் இலை மஞ்சளாகுது", language="tamil", message_type="image")
+    assert message
     assert save_image_prediction(message, f"{user_id}/{conversation}/x.png", crop="paddy", prediction="brown spot", confidence=0.8)
     with pytest.raises(ValueError):
         save_message(conversation, "bot", "x")

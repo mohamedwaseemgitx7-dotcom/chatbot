@@ -56,11 +56,14 @@ def _load():
 def classify(tensor: np.ndarray, top: int = 3) -> List[Tuple[dict, float]]:
     """[(class_info, probability)] best first. class_info: {name, crop, condition, healthy}."""
     _load()
-    logits = _session.run(None, {_session.get_inputs()[0].name: tensor})[0][0]
+    session, card = _session, _card
+    if session is None or card is None:
+        raise VisionModelUnavailable("vision model could not be loaded")
+    logits = session.run(None, {session.get_inputs()[0].name: tensor})[0][0]
     exp = np.exp(logits - logits.max())
     probabilities = exp / exp.sum()
     order = np.argsort(probabilities)[::-1][:top]
-    classes = _card["classes"]
+    classes = card["classes"]
     return [(classes[i], float(probabilities[i])) for i in order]
 
 

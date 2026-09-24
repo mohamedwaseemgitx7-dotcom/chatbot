@@ -1,5 +1,8 @@
 # Pyrefly type-checker config: use the backend venv and resolve `app.*` imports from backend/
 project-includes = ["backend/app", "backend/run.py", "tests", "ai"]
-project-excludes = ["**/.venv/**", "**/node_modules/**", "_archive/**"]
-search-path = ["backend"]
+project-excludes = ["**/.venv/**", "**/.venv-train/**", "**/node_modules/**", "_archive/**"]
+# ai/ scripts import each other (run from their own folder); tests import conftest helpers
+search-path = ["backend", "ai/training", "ai/evaluation", "tests"]
 python-interpreter-path = "backend/.venv/Scripts/python.exe"
+# Installed only in the GPU training venv (ai/.venv-train), not the backend venv the checker uses
+ignore-missing-imports = ["torchvision", "torchvision.*", "edge_tts", "edge_tts.*"]

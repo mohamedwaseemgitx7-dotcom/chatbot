@@ -8,6 +8,7 @@ is visible), then reports hit@1 / hit@3 for answerable questions and the best sc
 no answer, and suggests the threshold that best separates them. Output: reports/retrieval_report.json.
 """
 import json
+import io
 import sys
 from pathlib import Path
 
@@ -37,7 +38,8 @@ def matches(record, item):
 
 
 def main():
-    sys.stdout.reconfigure(encoding="utf-8")
+    if isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout.reconfigure(encoding="utf-8")
     rows, pos_scores, neg_scores = [], [], []
     for item in QUERIES["positive"]:
         hits = run(item)

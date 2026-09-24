@@ -68,6 +68,7 @@ def test_real_model_predicts_held_out_images(client):
     for r in rows:
         by_label.setdefault(r["label"], r)
     card = classifier.model_card()
+    assert card is not None
     names = {c["name"]: c for c in card["classes"]}
     correct = 0
     for label, row in by_label.items():
@@ -97,7 +98,9 @@ def test_attached_knowledge_is_about_the_predicted_condition(client):
         body = analyze(client, held_out_photo(row), "photo.jpg", "image/jpeg").json()
         if body["status"] != "ok":
             continue
-        keywords = CONDITION_TITLE_KEYWORDS.get(next(c["name"] for c in classifier.model_card()["classes"]
+        card = classifier.model_card()
+        assert card is not None
+        keywords = CONDITION_TITLE_KEYWORDS.get(next(c["name"] for c in card["classes"]
                                                     if c["crop"] == body["crop"] and c["condition"] == body["prediction"]), [])
         for source in body.get("sources", []):
             assert any(k in source["title"].lower() for k in keywords), (body["prediction"], source["title"])

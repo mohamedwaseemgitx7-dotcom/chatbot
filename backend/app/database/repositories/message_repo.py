@@ -3,7 +3,7 @@ Message repository — persists assistant/user messages from the server side.
 """
 from typing import Any, Dict, Optional
 
-from app.database.supabase import get_supabase_client
+from app.database.supabase import first_value, get_supabase_client
 
 SENDERS = {"user", "assistant", "system"}
 MESSAGE_TYPES = {"text", "image", "voice", "system"}
@@ -39,4 +39,4 @@ def save_message(
         "message_type": message_type,
         "metadata": metadata or {},
     }
-    return client.table("messages").insert(row).execute().data[0]["id"]
+    return first_value(client.table("messages").insert(row).execute().data, "id")

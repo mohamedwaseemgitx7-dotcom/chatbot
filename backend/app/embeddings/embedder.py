@@ -57,15 +57,18 @@ def _load():
 def embed(texts: List[str]) -> np.ndarray:
     """L2-normalised float32 embeddings, shape (len(texts), 384)."""
     _load()
+    tokenizer, session = _tokenizer, _session
+    if tokenizer is None or session is None:
+        raise EmbeddingUnavailable(_unavailable or "embedding model unavailable")
     if not texts:
         return np.zeros((0, DIMENSIONS), dtype=np.float32)
-    encodings = _tokenizer.encode_batch(texts)
+    encodings = tokenizer.encode_batch(texts)
     ids = np.array([e.ids for e in encodings], dtype=np.int64)
     mask = np.array([e.attention_mask for e in encodings], dtype=np.int64)
     feeds = {"input_ids": ids, "attention_mask": mask}
-    if "token_type_ids" in {i.name for i in _session.get_inputs()}:
+    if "token_type_ids" in {i.name for i in session.get_inputs()}:
         feeds["token_type_ids"] = np.zeros_like(ids)
-    token_vectors = _session.run(None, feeds)[0]  # (batch, tokens, 384)
+    token_vectors = session.run(None, feeds)[0]  # (batch, tokens, 384)
     weights = mask[..., None].astype(np.float32)
     pooled = (token_vectors * weights).sum(axis=1) / np.clip(weights.sum(axis=1), 1e-9, None)
     return (pooled / np.clip(np.linalg.norm(pooled, axis=1, keepdims=True), 1e-9, None)).astype(np.float32)

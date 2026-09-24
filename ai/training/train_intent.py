@@ -15,6 +15,7 @@ Output: backend/models/intent/intent_model.joblib and reports/intent_report.json
 import csv
 import hashlib
 import json
+import io
 import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
@@ -136,7 +137,8 @@ def evaluate(model, feats, rows):
 
 
 def main():
-    sys.stdout.reconfigure(encoding="utf-8")
+    if isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout.reconfigure(encoding="utf-8")
     rows, extra = load()
     extra, leaked = drop_leaks(extra, rows["validation"] + rows["test"])
     train = dedupe(rows["train"] + extra)
@@ -154,6 +156,7 @@ def main():
         print(f"  C={C:<5} validation acc {acc:.3f} macro-F1 {f1:.3f}")
         if best is None or f1 > best[0]:
             best = (f1, C, model)
+    assert best is not None  # the C grid above is never empty
     _, C, model = best
 
     pred, gold, acc, f1 = evaluate(model, feats, rows["test"])

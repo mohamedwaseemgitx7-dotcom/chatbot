@@ -6,7 +6,7 @@ conversation id that came from a request.
 """
 from typing import Optional
 
-from app.database.supabase import get_supabase_client
+from app.database.supabase import first_value, get_supabase_client
 
 
 def conversation_belongs_to(conversation_id: str, user_id: str) -> bool:
@@ -29,5 +29,4 @@ def get_conversation_owner(conversation_id: str) -> Optional[str]:
     client = get_supabase_client()
     if client is None:
         return None
-    rows = client.table("conversations").select("user_id").eq("id", conversation_id).limit(1).execute().data
-    return rows[0]["user_id"] if rows else None
+    return first_value(client.table("conversations").select("user_id").eq("id", conversation_id).limit(1).execute().data, "user_id")

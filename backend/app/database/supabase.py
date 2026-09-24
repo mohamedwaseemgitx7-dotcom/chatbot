@@ -6,8 +6,9 @@ work (persisting AI results, knowledge ingestion, rate-limit logs), always check
 (see repositories/conversation_repo.py), and never return this key to the browser.
 """
 import logging
-from typing import Literal, Optional
+from typing import Any, Literal, Optional
 
+from postgrest.types import CountMethod
 from supabase import Client, create_client
 
 from app.config.settings import get_settings
@@ -39,8 +40,16 @@ def check_database() -> DatabaseStatus:
     if client is None:
         return "not_configured"
     try:
-        client.table("knowledge").select("id", count="exact", head=True).execute()
+        client.table("knowledge").select("id", count=CountMethod.exact, head=True).execute()
         return "connected"
     except Exception:  # network, auth or schema problem — details go to the log, not the response
         logger.exception("Supabase connectivity check failed")
         return "unavailable"
+
+
+def first_value(data: Any, key: str) -> Optional[str]:
+    """`key` of the first row of a PostgREST result (`.execute().data`) as a string, or None if there is no row."""
+    if isinstance(data, list) and data and isinstance(data[0], dict):
+        value = data[0].get(key)
+        return None if value is None else str(value)
+    return None

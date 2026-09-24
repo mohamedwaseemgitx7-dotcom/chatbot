@@ -46,6 +46,7 @@ def test_real_transcription_feeds_chat(client, monkeypatch):
     from pathlib import Path
 
     monkeypatch.setattr(get_settings(), "VOICE_ENABLED", True)
+    assert VOICE_SAMPLES
     clip = next(Path(VOICE_SAMPLES).glob("english_*"))
     body = upload(client, clip.read_bytes(), clip.name, "audio/mpeg").json()
     assert body["text"] and body["detected_language"] == "english"

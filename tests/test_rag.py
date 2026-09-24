@@ -16,6 +16,7 @@ def search(text, crop, intent):
 
 @needs_index
 def test_every_served_record_has_an_official_source():
+    assert store is not None
     for record in store.records:
         assert record["source_url"].startswith("https://agritech.tnau.ac.in/")
         assert record["retrieved_at"]

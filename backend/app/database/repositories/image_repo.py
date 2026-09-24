@@ -3,7 +3,7 @@ Image predictions repository — stores AI output for a photo (a preliminary pre
 """
 from typing import Optional
 
-from app.database.supabase import get_supabase_client
+from app.database.supabase import first_value, get_supabase_client
 
 STATUSES = {"processing", "completed", "failed"}
 
@@ -32,4 +32,4 @@ def save_image_prediction(
         "confidence": None if confidence is None else min(1.0, max(0.0, float(confidence))),
         "status": status,
     }
-    return client.table("image_predictions").insert(row).execute().data[0]["id"]
+    return first_value(client.table("image_predictions").insert(row).execute().data, "id")

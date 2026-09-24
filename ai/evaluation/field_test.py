@@ -7,6 +7,7 @@ Put photos in datasets/vision/field_test/<label>/*.jpg (label = a class name fro
 "unsupported" for other plants). This is the most honest accuracy check — do it with real photos from
 Tamil Nadu fields before trusting the model. Output: per-class correct / wrong / uncertain counts.
 """
+import io
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -19,7 +20,8 @@ from app.vision.preprocess import decode, to_tensor  # noqa: E402
 
 
 def main():
-    sys.stdout.reconfigure(encoding="utf-8")
+    if isinstance(sys.stdout, io.TextIOWrapper):
+        sys.stdout.reconfigure(encoding="utf-8")
     folder = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "datasets" / "vision" / "field_test"
     photos = [p for p in folder.glob("*/*") if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")]
     if not photos:
