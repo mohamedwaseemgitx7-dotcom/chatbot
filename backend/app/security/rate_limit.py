@@ -8,7 +8,6 @@ when there is no proxy in front.
 from fastapi import Request
 from fastapi.responses import JSONResponse
 from slowapi import Limiter
-from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 
 from app.config.settings import get_settings
@@ -25,7 +24,8 @@ def client_ip(request: Request) -> str:
 limiter = Limiter(key_func=client_ip, default_limits=["60/minute"], headers_enabled=True)
 
 
-def rate_limit_exceeded_handler(request: Request, exc: RateLimitExceeded) -> JSONResponse:
+def rate_limit_exceeded_handler(request: Request, exc: Exception) -> JSONResponse:
+    """Registered for RateLimitExceeded only; typed as Exception to match Starlette's handler signature."""
     response = JSONResponse(
         status_code=429,
         content={"detail": "Too many requests. Please wait a moment and try again."},
