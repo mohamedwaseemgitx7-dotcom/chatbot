@@ -360,7 +360,7 @@ The suite covers:
 Full step-by-step guide: **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)**. Short version:
 
 1. **Supabase:**
-   - In the SQL Editor, run the files in `supabase/migrations/` in name order. `…000000_initial_schema.sql` is for a **new, empty project only**; on an existing project it fails with `relation "users" already exists`, so skip it. The later files are safe to re-run.
+   - In the SQL Editor, run every file in `supabase/migrations/` in name order. All of them are idempotent: safe on a new project and safe to re-run on an existing one.
    - Enable anonymous sign-ins.
    - Run `scripts/import_supabase.py`.
 2. **Render:**

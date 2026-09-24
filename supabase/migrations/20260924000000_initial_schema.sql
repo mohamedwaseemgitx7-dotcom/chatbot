@@ -1,8 +1,8 @@
 -- =====================================================================
 -- FarmerAssist — initial Supabase schema
 --   Tables, foreign keys, indexes, Row Level Security, Storage buckets + policies.
---   Run ONCE, on an empty project (Supabase SQL Editor or `supabase db push`).
---   Already applied? Don't re-run it (error 42P07 "relation already exists") — run only the later migrations.
+--   Idempotent: safe to run on an empty project AND to re-run on an existing one
+--   (tables/indexes: IF NOT EXISTS; triggers/policies: dropped and recreated; functions: CREATE OR REPLACE).
 --
 -- Identity: every browser gets a Supabase Auth user (anonymous sign-in today,
 -- email/phone login later). public.users is that user's profile row.
@@ -27,7 +27,7 @@ $$;
 -- ---------------------------------------------------------------------
 -- users: one profile per auth user (created automatically on sign-up)
 -- ---------------------------------------------------------------------
-create table public.users (
+create table if not exists public.users (
   id          uuid primary key references auth.users (id) on delete cascade,
   email       text,
   name        text check (char_length(name) <= 120),
@@ -36,6 +36,7 @@ create table public.users (
   updated_at  timestamptz not null default now()
 );
 
+drop trigger if exists users_set_updated_at on public.users;
 create trigger users_set_updated_at
   before update on public.users
   for each row execute function public.set_updated_at();
@@ -53,6 +54,7 @@ begin
 end;
 $$;
 
+drop trigger if exists on_auth_user_created on auth.users;
 create trigger on_auth_user_created
   after insert on auth.users
   for each row execute function public.handle_new_auth_user();
@@ -65,7 +67,7 @@ on conflict (id) do nothing;
 -- ---------------------------------------------------------------------
 -- conversations
 -- ---------------------------------------------------------------------
-create table public.conversations (
+create table if not exists public.conversations (
   id          uuid primary key default gen_random_uuid(),
   user_id     uuid not null default auth.uid() references public.users (id) on delete cascade,
   title       text not null default 'New conversation' check (char_length(title) between 1 and 200),
@@ -75,8 +77,9 @@ create table public.conversations (
 );
 
 -- Sidebar query: "my conversations, most recent first".
-create index conversations_user_updated_idx on public.conversations (user_id, updated_at desc);
+create index if not exists conversations_user_updated_idx on public.conversations (user_id, updated_at desc);
 
+drop trigger if exists conversations_set_updated_at on public.conversations;
 create trigger conversations_set_updated_at
   before update on public.conversations
   for each row execute function public.set_updated_at();
@@ -84,7 +87,7 @@ create trigger conversations_set_updated_at
 -- ---------------------------------------------------------------------
 -- messages (immutable once written)
 -- ---------------------------------------------------------------------
-create table public.messages (
+create table if not exists public.messages (
   id               uuid primary key default gen_random_uuid(),
   conversation_id  uuid not null references public.conversations (id) on delete cascade,
   sender           text not null check (sender in ('user', 'assistant', 'system')),
@@ -99,7 +102,7 @@ create table public.messages (
 );
 
 -- Loading one conversation in order (also serves the FK / cascade lookup).
-create index messages_conversation_created_idx on public.messages (conversation_id, created_at);
+create index if not exists messages_conversation_created_idx on public.messages (conversation_id, created_at);
 -- messages.language / messages.intent: no query filters on them yet — add indexes with the analytics that need them.
 
 -- A new message moves its conversation to the top of the list.
@@ -115,6 +118,7 @@ begin
 end;
 $$;
 
+drop trigger if exists messages_touch_conversation on public.messages;
 create trigger messages_touch_conversation
   after insert on public.messages
   for each row execute function public.touch_conversation();
@@ -123,7 +127,7 @@ create trigger messages_touch_conversation
 -- knowledge: agricultural reference content for RAG (public, read-only)
 -- Schema only — populate from verified sources through the backend.
 -- ---------------------------------------------------------------------
-create table public.knowledge (
+create table if not exists public.knowledge (
   id                     uuid primary key default gen_random_uuid(),
   crop                   text not null,
   topic                  text not null,
@@ -138,9 +142,10 @@ create table public.knowledge (
   updated_at             timestamptz not null default now()
 );
 
-create index knowledge_crop_topic_idx on public.knowledge (crop, topic);
-create index knowledge_language_idx on public.knowledge (language);
+create index if not exists knowledge_crop_topic_idx on public.knowledge (crop, topic);
+create index if not exists knowledge_language_idx on public.knowledge (language);
 
+drop trigger if exists knowledge_set_updated_at on public.knowledge;
 create trigger knowledge_set_updated_at
   before update on public.knowledge
   for each row execute function public.set_updated_at();
@@ -148,7 +153,7 @@ create trigger knowledge_set_updated_at
 -- ---------------------------------------------------------------------
 -- image_predictions: AI output for a user's photo message (a preliminary prediction, not a diagnosis)
 -- ---------------------------------------------------------------------
-create table public.image_predictions (
+create table if not exists public.image_predictions (
   id          uuid primary key default gen_random_uuid(),
   message_id  uuid not null references public.messages (id) on delete cascade,
   image_url   text not null,          -- Storage object path in farmer-images, not a public URL
@@ -159,12 +164,12 @@ create table public.image_predictions (
   created_at  timestamptz not null default now()
 );
 
-create index image_predictions_message_idx on public.image_predictions (message_id);
+create index if not exists image_predictions_message_idx on public.image_predictions (message_id);
 
 -- ---------------------------------------------------------------------
 -- voice_transcriptions
 -- ---------------------------------------------------------------------
-create table public.voice_transcriptions (
+create table if not exists public.voice_transcriptions (
   id          uuid primary key default gen_random_uuid(),
   message_id  uuid not null references public.messages (id) on delete cascade,
   audio_url   text,                   -- Storage object path in farmer-audio
@@ -175,12 +180,12 @@ create table public.voice_transcriptions (
   created_at  timestamptz not null default now()
 );
 
-create index voice_transcriptions_message_idx on public.voice_transcriptions (message_id);
+create index if not exists voice_transcriptions_message_idx on public.voice_transcriptions (message_id);
 
 -- ---------------------------------------------------------------------
 -- feedback: one rating per user per message
 -- ---------------------------------------------------------------------
-create table public.feedback (
+create table if not exists public.feedback (
   id             uuid primary key default gen_random_uuid(),
   message_id     uuid not null references public.messages (id) on delete cascade,
   user_id        uuid not null default auth.uid() references public.users (id) on delete cascade,
@@ -190,13 +195,13 @@ create table public.feedback (
   unique (message_id, user_id)
 );
 
-create index feedback_message_idx on public.feedback (message_id);
-create index feedback_user_idx on public.feedback (user_id);
+create index if not exists feedback_message_idx on public.feedback (message_id);
+create index if not exists feedback_user_idx on public.feedback (user_id);
 
 -- ---------------------------------------------------------------------
 -- rate_limit_logs: backend-only. Stores a salted hash of the IP, never the raw address.
 -- ---------------------------------------------------------------------
-create table public.rate_limit_logs (
+create table if not exists public.rate_limit_logs (
   id             uuid primary key default gen_random_uuid(),
   user_id        uuid references public.users (id) on delete set null,
   ip_hash        text check (char_length(ip_hash) <= 128),
@@ -206,8 +211,8 @@ create table public.rate_limit_logs (
   created_at     timestamptz not null default now()
 );
 
-create index rate_limit_logs_lookup_idx on public.rate_limit_logs (endpoint, ip_hash, window_start desc);
-create index rate_limit_logs_user_idx on public.rate_limit_logs (user_id);
+create index if not exists rate_limit_logs_lookup_idx on public.rate_limit_logs (endpoint, ip_hash, window_start desc);
+create index if not exists rate_limit_logs_user_idx on public.rate_limit_logs (user_id);
 
 -- =====================================================================
 -- Row Level Security
@@ -253,47 +258,63 @@ as $$
 $$;
 
 -- users: read and edit your own profile (rows are created by the auth trigger)
+drop policy if exists "users: read own profile" on public.users;
 create policy "users: read own profile" on public.users
   for select to authenticated using (id = (select auth.uid()));
+drop policy if exists "users: update own profile" on public.users;
 create policy "users: update own profile" on public.users
   for update to authenticated using (id = (select auth.uid())) with check (id = (select auth.uid()));
 
 -- conversations: full control over your own
+drop policy if exists "conversations: read own" on public.conversations;
 create policy "conversations: read own" on public.conversations
   for select to authenticated using (user_id = (select auth.uid()));
+drop policy if exists "conversations: create own" on public.conversations;
 create policy "conversations: create own" on public.conversations
   for insert to authenticated with check (user_id = (select auth.uid()));
+drop policy if exists "conversations: update own" on public.conversations;
 create policy "conversations: update own" on public.conversations
   for update to authenticated using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
+drop policy if exists "conversations: delete own" on public.conversations;
 create policy "conversations: delete own" on public.conversations
   for delete to authenticated using (user_id = (select auth.uid()));
 
 -- messages: read/add in your own conversations; no edits (deleted with the conversation)
+drop policy if exists "messages: read in own conversations" on public.messages;
 create policy "messages: read in own conversations" on public.messages
   for select to authenticated using (public.owns_conversation(conversation_id));
+drop policy if exists "messages: add to own conversations" on public.messages;
 create policy "messages: add to own conversations" on public.messages
   for insert to authenticated with check (public.owns_conversation(conversation_id));
 
 -- image_predictions / voice_transcriptions: through message ownership
+drop policy if exists "image_predictions: read own" on public.image_predictions;
 create policy "image_predictions: read own" on public.image_predictions
   for select to authenticated using (public.owns_message(message_id));
+drop policy if exists "image_predictions: add own" on public.image_predictions;
 create policy "image_predictions: add own" on public.image_predictions
   for insert to authenticated with check (public.owns_message(message_id));
 
+drop policy if exists "voice_transcriptions: read own" on public.voice_transcriptions;
 create policy "voice_transcriptions: read own" on public.voice_transcriptions
   for select to authenticated using (public.owns_message(message_id));
+drop policy if exists "voice_transcriptions: add own" on public.voice_transcriptions;
 create policy "voice_transcriptions: add own" on public.voice_transcriptions
   for insert to authenticated with check (public.owns_message(message_id));
 
 -- feedback: yours, on messages you own
+drop policy if exists "feedback: read own" on public.feedback;
 create policy "feedback: read own" on public.feedback
   for select to authenticated using (user_id = (select auth.uid()));
+drop policy if exists "feedback: add own" on public.feedback;
 create policy "feedback: add own" on public.feedback
   for insert to authenticated with check (user_id = (select auth.uid()) and public.owns_message(message_id));
+drop policy if exists "feedback: update own" on public.feedback;
 create policy "feedback: update own" on public.feedback
   for update to authenticated using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
 
 -- knowledge: public reference data — anyone may read; only the backend (service role) writes
+drop policy if exists "knowledge: public read" on public.knowledge;
 create policy "knowledge: public read" on public.knowledge
   for select to anon, authenticated using (true);
 
@@ -319,6 +340,7 @@ on conflict (id) do update set
   file_size_limit = excluded.file_size_limit,
   allowed_mime_types = excluded.allowed_mime_types;
 
+drop policy if exists "farmer files: upload to own conversation folder" on storage.objects;
 create policy "farmer files: upload to own conversation folder" on storage.objects
   for insert to authenticated with check (
     bucket_id in ('farmer-images', 'farmer-audio')
@@ -330,12 +352,14 @@ create policy "farmer files: upload to own conversation folder" on storage.objec
     )
   );
 
+drop policy if exists "farmer files: read own" on storage.objects;
 create policy "farmer files: read own" on storage.objects
   for select to authenticated using (
     bucket_id in ('farmer-images', 'farmer-audio')
     and (storage.foldername(name))[1] = (select auth.uid())::text
   );
 
+drop policy if exists "farmer files: delete own" on storage.objects;
 create policy "farmer files: delete own" on storage.objects
   for delete to authenticated using (
     bucket_id in ('farmer-images', 'farmer-audio')
