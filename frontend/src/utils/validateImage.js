@@ -6,6 +6,10 @@ export const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
 export function validateImage(file) {
   if (!file) return "No photo was selected.";
   if (!ACCEPTED_IMAGE_TYPES.includes(file.type)) {
+    if (/hei[cf]/i.test(file.type) || /\.hei[cf]$/i.test(file.name || "")) {
+      // Some Android phones save HEIC; browsers there can't convert it (iPhones convert to JPG automatically).
+      return "This photo is in HEIC format. Please take the photo again with the camera set to JPG, or choose a JPG photo.";
+    }
     return "Please choose a JPG, PNG or WEBP photo.";
   }
   if (file.size > MAX_IMAGE_BYTES) {

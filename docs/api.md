@@ -27,7 +27,7 @@ Exceeding a limit returns **429** `{"detail":"Too many requests. Please wait a m
 ## POST /api/chat
 
 ```json
-{ "message": "nel la poochi iruku enna panrathu", "conversation_id": "7c1e…uuid (optional)", "language": "tanglish (optional hint)" }
+{ "message": "paddy la brown spot vandhuruchu enna pannanum", "conversation_id": "7c1e…uuid (optional)", "language": "tanglish (optional hint)" }
 ```
 `message`: 1–1000 characters (whitespace-only rejected). `conversation_id`: UUID. Invalid input → **422**
 `{"detail":"Invalid request.","errors":[{"field":"message","reason":"…"}]}` (submitted values are not echoed).
@@ -35,8 +35,8 @@ Exceeding a limit returns **429** `{"detail":"Too many requests. Please wait a m
 ```json
 {
   "language": "tanglish",
-  "intent": "pest_attack",
-  "confidence": 0.889,
+  "intent": "leaf_spot",
+  "confidence": 0.985,
   "status": "answered",
   "crop": "paddy",
   "response": "…verbatim excerpt of the official record…",

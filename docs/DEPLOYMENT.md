@@ -52,6 +52,20 @@ Voice stays off on the free plan (Whisper needs ~1 GB); the API answers `/api/vo
 "Voice input isn't available on this server yet". Upgrade to a 2 GB instance and set `VOICE_ENABLED=true` (and add
 `faster-whisper` to requirements.txt) to enable it.
 
+## 3b. Railway (alternative to Render)
+
+New Project → Deploy from GitHub repo → select this repo, then in the service **Settings**:
+
+| Setting | Value |
+|---|---|
+| Root Directory | `backend` |
+| Config file (Config-as-code) | `/backend/railway.json` (build: `pip install -r requirements.txt`, start: `python run.py`, health check `/api/health`) |
+| Networking | Generate Domain (Railway sets `PORT`; `run.py` binds `0.0.0.0:$PORT`) |
+
+Variables: the same as the Render table above, plus `ENVIRONMENT=production`, `TRUST_PROXY_HEADERS=true`,
+`VOICE_ENABLED=false`. Python 3.13 comes from `backend/.python-version`. Use the Railway domain wherever this guide
+says `<service>.onrender.com`.
+
 ## 4. Test the Render API
 
 ```bash

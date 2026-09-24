@@ -9,6 +9,7 @@ Every stage degrades gracefully: if a model is missing the farmer gets a control
 or an invented answer. CPU-bound; call it from a threadpool.
 """
 import logging
+import re
 import time
 from dataclasses import dataclass, field
 from typing import List, Optional
@@ -22,6 +23,8 @@ from app.nlp.language_detector import detect_language, response_language
 from app.nlp.tanglish import to_english
 from app.rag.response_engine import SCHEME_INTENTS, compose_answer, sources_of, template
 from app.rag.retriever import retrieve, specific_terms, topics_for_intent
+
+TAMIL_SCRIPT = re.compile(r"[஀-௿]")
 
 logger = logging.getLogger(__name__)
 
@@ -73,10 +76,14 @@ def answer(message: str) -> ChatResult:
     if intent in ("market_price", "weather", "image_upload_help"):
         return result(template(intent, language), "guidance")
 
-    terms = specific_terms(text, english)
+    # Naming terms are matched against record titles in the SAME script: English titles ← words of the English
+    # normalisation; Tamil titles ← Tamil-script words the farmer typed. (Mixing them made raw Tanglish filler
+    # like "enna"/"pannanum" count as disease names, so nothing matched.)
+    terms = specific_terms(english)
+    tamil_terms = {t for t in specific_terms(text) if TAMIL_SCRIPT.search(t)}
     # Tamil questions: prefer the official Tamil pages; otherwise fall back to English records.
     if language == "tamil":
-        tamil_hits = retrieve(vector, crop=crop, intent=intent, language="tamil", terms=terms)
+        tamil_hits = retrieve(vector, crop=crop, intent=intent, language="tamil", terms=tamil_terms)
         if tamil_hits:
             records = [h.record for h in tamil_hits]
             return result(compose_answer(records, language), "answered", sources_of(records))

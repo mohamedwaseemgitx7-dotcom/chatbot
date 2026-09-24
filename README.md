@@ -367,6 +367,8 @@ Full step-by-step guide: **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)**. Short ver
    - Create it via New → Blueprint → this repo, which uses `render.yaml`.
    - Enter `CORS_ORIGINS`, the Supabase keys, `DEMO_USERNAME`, `DEMO_PASSWORD_HASH` and `SESSION_SECRET`.
    - Check: `https://<service>.onrender.com/api/health/ready`.
+   - **Or Railway** instead of Render: Root Directory `backend`, config `/backend/railway.json`, same variables
+     (see docs/DEPLOYMENT.md §3b). Both hosts start the API with `python run.py`.
 3. **Vercel:**
    - Import the repo with Root Directory `frontend`.
    - Set `VITE_API_BASE_URL` (the Render URL), `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`.

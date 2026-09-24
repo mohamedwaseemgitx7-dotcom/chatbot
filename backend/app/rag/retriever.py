@@ -55,6 +55,7 @@ _GENERIC = {
     "problem", "spray", "remedy", "solution", "tell", "please", "about", "coming", "turning", "infestation",
     "have", "has", "had", "get", "getting", "show", "showing", "can", "should", "this", "that", "very", "lot",
     "there is", "affected", "affecting", "found", "seen", "appear", "appearing", "need", "apply", "use",
+    "come", "came", "comes", "appeared", "happened", "happening", "occurred", "started",  # Tanglish "vandhuruchu" etc.
     "paddy", "rice", "tomato", "chilli", "banana", "coconut", "sugarcane", "groundnut", "cotton", "maize", "brinjal",
     "onion", "drumstick", "turmeric", "blackgram", "greengram", "gram", "நோய்", "பூச்சி", "கட்டுப்பாடு", "அறிகுறிகள்",
 }

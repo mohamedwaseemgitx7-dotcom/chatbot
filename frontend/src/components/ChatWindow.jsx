@@ -4,6 +4,7 @@ import DemoNotice from "./DemoNotice";
 import { CloseIcon, UploadIcon, WifiOffIcon } from "./Icons";
 import MessageList from "./MessageList";
 import { validateImage, validateImageContent } from "../utils/validateImage";
+import { prepareImage } from "../utils/prepareImage";
 import "./Chat.css";
 
 const hasFiles = (event) => [...(event.dataTransfer?.types || [])].includes("Files");
@@ -28,7 +29,8 @@ export default function ChatWindow({ conversation, pending, assistant, connectio
   // Messages about the previous conversation don't belong in the next one.
   useEffect(() => { setFeedback(null); }, [conversation?.id]);
 
-  const attach = useCallback(async (file) => {
+  const attach = useCallback(async (picked) => {
+    const file = await prepareImage(picked); // big camera photos → ≤1600 px JPEG
     const error = validateImage(file) || (await validateImageContent(file));
     if (error) {
       setFeedback({ type: "error", text: error });
