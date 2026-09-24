@@ -3,6 +3,7 @@ import { analyzeCropImage, sendChatMessage } from "../services/botService";
 import { toFriendlyError } from "../services/errors";
 import { detectLanguage } from "../services/languageDetector";
 import { TokenBucket } from "../services/rateLimiter";
+import { useCooldown } from "./useCooldown";
 import { newId } from "./useConversations";
 
 /** Sending, image analysis and retry, on top of the conversation store. `sync` saves results to Supabase. */
@@ -14,6 +15,8 @@ export function useAssistant({ state, dispatch }, sync) {
   const files = useRef(new Map());
   // Messages just added (the store may not have re-rendered yet when a fast reply arrives).
   const userSnapshot = useRef(new Map());
+  // Server rate limits (HTTP 429): per-feature countdowns shown in the composer.
+  const cooldown = useCooldown();
 
   const findConversation = (id) => stateRef.current.conversations.find((c) => c.id === id);
 
@@ -26,7 +29,11 @@ export function useAssistant({ state, dispatch }, sync) {
     return id;
   }, [dispatch]);
 
-  const gate = useCallback((conversationId) => {
+  const gate = useCallback((conversationId, kind = "chat") => {
+    const wait = cooldown.remaining(kind);
+    if (wait > 0) {
+      return { ok: false, error: `Rate limit reached. Try again in ${wait} seconds.` };
+    }
     if (conversationId && stateRef.current.pending[conversationId]) {
       return { ok: false, error: "Please wait for the current reply to finish." };
     }
@@ -35,7 +42,7 @@ export function useAssistant({ state, dispatch }, sync) {
       return { ok: false, error: `You're sending messages too quickly. Please wait ${retryInSeconds} s and try again.` };
     }
     return { ok: true };
-  }, []);
+  }, [cooldown]);
 
   /** Runs one request for a user message and records the outcome. */
   const run = useCallback(
@@ -60,12 +67,13 @@ export function useAssistant({ state, dispatch }, sync) {
         userSnapshot.current.delete(messageId);
         if (context === "image") files.current.delete(messageId);
       } catch (error) {
+        if (error?.status === 429) cooldown.start(context === "image" ? "image" : "chat", error.retryAfter);
         dispatch({ type: "updateMessage", conversationId, messageId, patch: { status: "failed", error: toFriendlyError(error, context) } });
       } finally {
         setPending(null);
       }
     },
-    [dispatch, sync],
+    [dispatch, sync, cooldown],
   );
 
   const requestChat = (text) => async (serverId) => {
@@ -119,7 +127,7 @@ export function useAssistant({ state, dispatch }, sync) {
   /** @returns {{ ok: boolean, error?: string }} */
   const sendImage = useCallback(
     (file) => {
-      const check = gate(stateRef.current.activeId);
+      const check = gate(stateRef.current.activeId, "image");
       if (!check.ok) return check;
 
       const conversationId = ensureConversation();
@@ -145,6 +153,7 @@ export function useAssistant({ state, dispatch }, sync) {
       if (stateRef.current.pending[conversationId]) return;
       const message = findConversation(conversationId)?.messages.find((m) => m.id === messageId);
       if (!message || message.status !== "failed") return;
+      if (cooldown.remaining(message.kind === "image" ? "image" : "chat") > 0) return;
 
       if (message.kind === "text") {
         run(conversationId, messageId, "chat", requestChat(message.text));
@@ -153,10 +162,10 @@ export function useAssistant({ state, dispatch }, sync) {
         if (file) run(conversationId, messageId, "image", requestImage(file));
       }
     },
-    [run],
+    [run, cooldown],
   );
 
   const canRetry = useCallback((message) => message.kind === "text" || files.current.has(message.id), []);
 
-  return { sendText, sendImage, retry, canRetry };
+  return { sendText, sendImage, retry, canRetry, cooldown };
 }

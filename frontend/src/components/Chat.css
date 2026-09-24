@@ -241,3 +241,29 @@
 .sources li + li { margin-top: 2px; }
 .sources a { overflow-wrap: anywhere; }
 .sources__note { margin-top: var(--space-1); font-style: italic; }
+
+/* ---------- WhatsApp demo notice (informational, dismissible) ---------- */
+.demo-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-2) var(--space-2) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  background: var(--info-bg);
+  color: var(--info);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+.demo-notice > svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; }
+.demo-notice p { flex: 1; }
+.demo-notice__close {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+  color: inherit;
+}
+.demo-notice__close:hover { background: rgba(0, 0, 0, 0.06); }
+.demo-notice__close svg { width: 16px; height: 16px; }

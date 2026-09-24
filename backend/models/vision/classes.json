@@ -1,0 +1,110 @@
+[
+  {
+    "name": "rice_healthy",
+    "crop": "paddy",
+    "condition": "Healthy",
+    "healthy": true
+  },
+  {
+    "name": "rice_brown_spot",
+    "crop": "paddy",
+    "condition": "Brown spot",
+    "healthy": false
+  },
+  {
+    "name": "rice_bacterial_leaf_blight",
+    "crop": "paddy",
+    "condition": "Bacterial leaf blight",
+    "healthy": false
+  },
+  {
+    "name": "rice_leaf_blast",
+    "crop": "paddy",
+    "condition": "Leaf blast",
+    "healthy": false
+  },
+  {
+    "name": "tomato_healthy",
+    "crop": "tomato",
+    "condition": "Healthy",
+    "healthy": true
+  },
+  {
+    "name": "tomato_early_blight",
+    "crop": "tomato",
+    "condition": "Early blight",
+    "healthy": false
+  },
+  {
+    "name": "tomato_late_blight",
+    "crop": "tomato",
+    "condition": "Late blight",
+    "healthy": false
+  },
+  {
+    "name": "tomato_leaf_mold",
+    "crop": "tomato",
+    "condition": "Leaf mold",
+    "healthy": false
+  },
+  {
+    "name": "tomato_septoria_leaf_spot",
+    "crop": "tomato",
+    "condition": "Septoria leaf spot",
+    "healthy": false
+  },
+  {
+    "name": "chilli_healthy",
+    "crop": "chilli",
+    "condition": "Healthy",
+    "healthy": true
+  },
+  {
+    "name": "chilli_leaf_curl",
+    "crop": "chilli",
+    "condition": "Leaf curl",
+    "healthy": false
+  },
+  {
+    "name": "banana_healthy",
+    "crop": "banana",
+    "condition": "Healthy",
+    "healthy": true
+  },
+  {
+    "name": "banana_leaf_disease",
+    "crop": "banana",
+    "condition": "Sigatoka leaf spot",
+    "healthy": false
+  },
+  {
+    "name": "maize_healthy",
+    "crop": "maize",
+    "condition": "Healthy",
+    "healthy": true
+  },
+  {
+    "name": "maize_common_rust",
+    "crop": "maize",
+    "condition": "Common rust",
+    "healthy": false
+  },
+  {
+    "name": "maize_northern_leaf_blight",
+    "crop": "maize",
+    "condition": "Northern leaf blight",
+    "healthy": false
+  },
+  {
+    "name": "maize_gray_leaf_spot",
+    "crop": "maize",
+    "condition": "Gray leaf spot",
+    "healthy": false
+  },
+  {
+    "name": "unsupported",
+    "crop": null,
+    "condition": "Unsupported",
+    "healthy": false
+  }
+]

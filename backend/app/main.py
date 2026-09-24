@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from slowapi.errors import RateLimitExceeded
 
-from app.api.routes import chat, health, image, voice
+from app.api.routes import auth, chat, health, image, voice
 from app.config.settings import get_settings
 from app.security.rate_limit import limiter, rate_limit_exceeded_handler
 
@@ -39,6 +39,7 @@ app.add_middleware(
     allow_credentials=False,  # the API uses no cookies
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "Authorization"],
+    expose_headers=["Retry-After", "X-Request-ID"],  # the UI shows a countdown after HTTP 429
     max_age=600,
 )
 
@@ -54,6 +55,15 @@ async def request_log(request: Request, call_next):
         response = await call_next(request)
         status = response.status_code
         response.headers["X-Request-ID"] = request_id
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["X-Frame-Options"] = "DENY"
+        response.headers["Referrer-Policy"] = "no-referrer"
+        if not request.url.path.startswith(("/docs", "/openapi.json", "/redoc")):
+            response.headers["Content-Security-Policy"] = "default-src 'none'; frame-ancestors 'none'"
+        if request.url.path.startswith("/api/auth"):
+            response.headers["Cache-Control"] = "no-store"
+        if settings.is_production:
+            response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
         return response
     finally:
         entry = {
@@ -87,6 +97,7 @@ async def unexpected_error(request: Request, exc: Exception):
 
 
 app.include_router(health.router, prefix="/api", tags=["Health"])
+app.include_router(auth.router, prefix="/api", tags=["Auth"])
 app.include_router(chat.router, prefix="/api", tags=["Chat"])
 app.include_router(image.router, prefix="/api", tags=["Image Analysis"])
 app.include_router(voice.router, prefix="/api", tags=["Voice Transcription"])

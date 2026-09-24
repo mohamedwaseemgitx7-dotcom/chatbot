@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Composer from "./Composer";
+import DemoNotice from "./DemoNotice";
 import { CloseIcon, UploadIcon, WifiOffIcon } from "./Icons";
 import MessageList from "./MessageList";
 import { validateImage, validateImageContent } from "../utils/validateImage";
@@ -79,6 +80,8 @@ export default function ChatWindow({ conversation, pending, assistant, connectio
         </div>
       )}
 
+      <DemoNotice />
+
       {syncNotice && connection !== "offline" && (
         <div className="chat__banner chat__banner--sync" role="status">
           <span>{syncNotice}</span>
@@ -95,6 +98,7 @@ export default function ChatWindow({ conversation, pending, assistant, connectio
         onRetry={assistant.retry}
         canRetry={assistant.canRetry}
         onExample={sendExample}
+        retryBlocked={assistant.cooldown.remaining("chat") > 0 || assistant.cooldown.remaining("image") > 0}
       />
 
       <Composer
@@ -106,6 +110,7 @@ export default function ChatWindow({ conversation, pending, assistant, connectio
         onSendText={assistant.sendText}
         feedback={feedback}
         onFeedback={setFeedback}
+        cooldown={assistant.cooldown}
       />
 
       {dragging && (

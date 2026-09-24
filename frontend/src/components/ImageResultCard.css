@@ -71,3 +71,4 @@
 }
 .result-card__note svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 1px; }
 .result-card__none { font-size: var(--text-sm); color: var(--text-secondary); }
+.result-card__model { font-size: var(--text-xs); color: var(--text-muted); margin: 0; }

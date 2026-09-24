@@ -13,6 +13,7 @@ export default function ImageResultCard({ result }) {
   const causes = Array.isArray(result?.causes) ? result.causes : [];
   const nextSteps = Array.isArray(result?.nextSteps) ? result.nextSteps : [];
   const sources = Array.isArray(result?.sources) ? result.sources : [];
+  const modelVersion = result?.model?.version;
 
   return (
     <article className="result-card" aria-label="Crop photo analysis">
@@ -67,6 +68,11 @@ export default function ImageResultCard({ result }) {
             "This is an AI-assisted preliminary assessment. Confirm with your local agriculture officer before using any pesticide or chemical."}
         </span>
       </p>
+      {modelVersion && (
+        <p className="result-card__model">
+          Model {modelVersion}{result.model.datasetVersion ? ` · dataset ${result.model.datasetVersion}` : ""}
+        </p>
+      )}
     </article>
   );
 }

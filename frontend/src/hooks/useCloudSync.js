@@ -7,6 +7,9 @@ import { CloudError, getSession, toCloudError } from "../services/supabaseServic
 
 const SAVE_FAILED = "Couldn't save this conversation to the server. It's kept on this device for now.";
 
+/** Messages that belong on the server: answers, and questions that got an answer. */
+const isSaveable = (m) => m.role === "assistant" || m.status === "sent";
+
 /**
  * Keeps the conversation store in step with Supabase.
  * status: "local" (not configured) | "connecting" | "ready" | "error"
@@ -40,17 +43,23 @@ export function useCloudSync({ state, dispatch }) {
     dispatch({ type: "markSynced", conversationId });
   }, [dispatch]);
 
+  /** Saves one message and marks it confirmed, so a reload never drops it before the server has it. */
+  const saveConfirmed = useCallback(async (conversationId, message) => {
+    await saveMessage(conversationId, message);
+    dispatch({ type: "updateMessage", conversationId, messageId: message.id, patch: { cloud: true } });
+  }, [dispatch]);
+
   /** Uploads conversations that were created while the server was unreachable. */
   const uploadLocalOnly = useCallback((conversations) => {
     for (const c of conversations) {
-      const saved = c.messages.filter((m) => m.role === "assistant" || m.status === "sent");
+      const saved = c.messages.filter(isSaveable);
       if (saved.length === 0) continue;
       enqueue(c.id, async () => {
         await ensureConversation(c.id, saved.find((m) => m.language)?.language);
-        for (const m of saved) await saveMessage(c.id, m);
+        for (const m of saved) await saveConfirmed(c.id, m);
       }).catch((error) => setNotice(toCloudError(error, "upload local conversation").message));
     }
-  }, [enqueue, ensureConversation]);
+  }, [enqueue, ensureConversation, saveConfirmed]);
 
   // ---------- Connect, then load the conversation list ----------
   const connect = useCallback(async () => {
@@ -86,10 +95,20 @@ export function useCloudSync({ state, dispatch }) {
     let cancelled = false;
     const since = Date.now();
     getMessages(needsMessages)
-      .then((messages) => { if (!cancelled) dispatch({ type: "setMessages", conversationId: needsMessages, messages, since }); })
+      .then((messages) => {
+        if (cancelled) return;
+        // Messages answered here whose upload was cut off (tab closed / reloaded mid-save): send them again.
+        const onServer = new Set(messages.map((m) => m.id));
+        const unsaved = (find(needsMessages)?.messages || []).filter((m) => isSaveable(m) && !m.cloud && !onServer.has(m.id));
+        dispatch({ type: "setMessages", conversationId: needsMessages, messages, since });
+        if (unsaved.length) {
+          enqueue(needsMessages, async () => { for (const m of unsaved) await saveConfirmed(needsMessages, m); })
+            .catch((error) => setNotice(toCloudError(error, "save messages").message));
+        }
+      })
       .catch((error) => { if (!cancelled) setNotice(toCloudError(error, "load messages").message); });
     return () => { cancelled = true; };
-  }, [needsMessages, dispatch]);
+  }, [needsMessages, dispatch, enqueue, saveConfirmed]);
 
   // ---------- Save a finished question/answer pair ----------
   const saveExchange = useCallback((conversationId, { user, assistant, file }) => {
@@ -105,12 +124,12 @@ export function useCloudSync({ state, dispatch }) {
         dispatch({ type: "updateMessage", conversationId, messageId: user.id, patch: { image: userMessage.image } });
       }
       try {
-        await saveMessage(conversationId, userMessage);
+        await saveConfirmed(conversationId, userMessage);
       } catch (error) {
         if (path) await deleteImage(path).catch(() => {}); // don't leave an orphaned photo behind
         throw error;
       }
-      await saveMessage(conversationId, assistant);
+      await saveConfirmed(conversationId, assistant);
       if (assistant.kind === "image-result" && path) {
         await saveImagePrediction({ messageId: user.id, path, result: assistant.result });
       }
@@ -118,7 +137,7 @@ export function useCloudSync({ state, dispatch }) {
       toCloudError(error, "save exchange");
       setNotice(SAVE_FAILED);
     });
-  }, [dispatch, enqueue, ensureConversation]);
+  }, [dispatch, enqueue, ensureConversation, saveConfirmed]);
 
   /** Deletes on the server first, so a chat never disappears locally only to come back on reload. */
   const deleteRemote = useCallback(async (conversation) => {

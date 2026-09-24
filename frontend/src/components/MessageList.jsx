@@ -8,7 +8,7 @@ import { formatDayLabel, sameDay } from "../utils/format";
 const NEAR_BOTTOM_PX = 96;
 const prefersReducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-export default function MessageList({ conversation, pending, onRetry, canRetry, onExample }) {
+export default function MessageList({ conversation, pending, onRetry, canRetry, onExample, retryBlocked = false }) {
   const scrollRef = useRef(null);
   const innerRef = useRef(null);
   const atBottomRef = useRef(true);
@@ -84,7 +84,7 @@ export default function MessageList({ conversation, pending, onRetry, canRetry, 
                       message={m}
                       animate={!baseline.current.ids.has(m.id)}
                       canRetry={m.status === "failed" && canRetry(m)}
-                      retryDisabled={!!pending}
+                      retryDisabled={!!pending || retryBlocked}
                       onRetry={retryOne}
                     />
                   </Fragment>

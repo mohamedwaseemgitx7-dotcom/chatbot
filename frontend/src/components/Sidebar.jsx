@@ -11,7 +11,7 @@ function matches(conversation, query) {
 /**
  * Conversation history. A fixed column on wide screens; a modal drawer on small ones (`drawer`).
  */
-export default function Sidebar({ id, conversations, activeId, onSelect, onNewChat, onDelete, drawer, open, onClose }) {
+export default function Sidebar({ id, conversations, activeId, onSelect, onNewChat, onDelete, drawer, open, onClose, user, onLogout, onAbout }) {
   const [query, setQuery] = useState("");
   const panelRef = useRef(null);
   const closeRef = useRef(null);
@@ -84,7 +84,17 @@ export default function Sidebar({ id, conversations, activeId, onSelect, onNewCh
         )}
       </nav>
 
-      <p className="sidebar__footer">AI answers can be wrong. Check important decisions with your local agriculture officer.</p>
+      <div className="sidebar__footer">
+        <p>AI answers can be wrong. Check important decisions with your local agriculture officer.</p>
+        <div className="sidebar__account">
+          <button type="button" className="btn btn--ghost btn--sm" onClick={onAbout}>About FarmerAssist</button>
+          {onLogout && (
+            <button type="button" className="btn btn--ghost btn--sm" onClick={onLogout} title={user ? `Signed in as ${user}` : undefined}>
+              Log out{user ? ` (${user})` : ""}
+            </button>
+          )}
+        </div>
+      </div>
     </aside>
   );
 }

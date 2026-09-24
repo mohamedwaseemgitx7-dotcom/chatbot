@@ -73,3 +73,16 @@ def test_env_files_are_git_ignored():
         ignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
         for pattern in (".env", ".env.*", "*.pem", "*.key"):
             assert pattern in ignore.splitlines()
+
+
+def test_security_headers_on_api_responses(client):
+    response = client.get("/api/health")
+    assert response.headers["X-Content-Type-Options"] == "nosniff"
+    assert response.headers["X-Frame-Options"] == "DENY"
+    assert response.headers["Referrer-Policy"] == "no-referrer"
+    assert "default-src 'none'" in response.headers["Content-Security-Policy"]
+
+
+def test_login_responses_are_not_cached(anonymous_client):
+    response = anonymous_client.post("/api/auth/login", json={"username": "x", "password": "y"})
+    assert response.headers.get("Cache-Control") == "no-store"

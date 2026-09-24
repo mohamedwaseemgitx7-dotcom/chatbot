@@ -17,6 +17,7 @@ git push -u origin main
 1. SQL Editor → run, in order:
    - `supabase/migrations/20260924000000_initial_schema.sql` (already applied)
    - `supabase/migrations/20260924010000_knowledge_sources.sql` (knowledge provenance columns)
+   - `supabase/migrations/20260924020000_prediction_versioning.sql` (model_name / model_version / dataset_version on image_predictions)
 2. Authentication → Sign In / Providers → **Allow anonymous sign-ins** (already on).
 3. Import the verified knowledge: `backend/.venv/Scripts/python scripts/import_supabase.py`
 4. Recommended before public launch: Authentication → Attack Protection → CAPTCHA for sign-ins.
@@ -40,6 +41,9 @@ New → **Blueprint** → select the GitHub repo (uses `render.yaml`). Fill the 
 | `SUPABASE_URL` | `https://<ref>.supabase.co` |
 | `SUPABASE_ANON_KEY` | publishable key `sb_publishable_…` |
 | `SUPABASE_SERVICE_ROLE_KEY` | secret key `sb_secret_…` (Render only — never in the frontend) |
+| `DEMO_USERNAME` | the login name |
+| `DEMO_PASSWORD_HASH` | output of `backend/.venv/Scripts/python scripts/hash_password.py` (the hash, never the password) |
+| `SESSION_SECRET` | the random value printed by the same script (use a different one than local) |
 
 Already set by the Blueprint: `ENVIRONMENT=production`, `TRUST_PROXY_HEADERS=true`, `VOICE_ENABLED=false`, `PYTHON_VERSION=3.13.1`.
 
@@ -53,7 +57,9 @@ Voice stays off on the free plan (Whisper needs ~1 GB); the API answers `/api/vo
 ```bash
 curl https://<service>.onrender.com/api/health
 curl https://<service>.onrender.com/api/health/ready
-curl -X POST https://<service>.onrender.com/api/chat -H "Content-Type: application/json" -d "{\"message\":\"How can I control stem borer in paddy?\"}"
+# log in (prints a token), then call chat with it
+curl -X POST https://<service>.onrender.com/api/auth/login -H "Content-Type: application/json" -d "{\"username\":\"<user>\",\"password\":\"<password>\"}"
+curl -X POST https://<service>.onrender.com/api/chat -H "Authorization: Bearer <token>" -H "Content-Type: application/json" -d "{\"message\":\"How can I control stem borer in paddy?\"}"
 ```
 
 ## 5. Frontend locally against Render
@@ -79,5 +85,5 @@ Then put the final Vercel URL into Render's `CORS_ORIGINS` and redeploy the back
 
 ## 7. End-to-end check (production)
 
-Open the Vercel URL: ask in English, Tamil and Tanglish; send a leaf photo; reload (history comes back from Supabase);
+Open the Vercel URL → you land on `/login` → log in → ask in English, Tamil and Tanglish; send a leaf photo; reload (history comes back from Supabase);
 confirm Supabase → Table Editor → `messages` has the rows. Voice shows the "not available on this server" message on the free plan.

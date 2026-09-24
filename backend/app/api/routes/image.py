@@ -8,6 +8,7 @@ from starlette.concurrency import run_in_threadpool
 
 from app.config.settings import get_settings
 from app.schemas.image import ImageAnalysisResponse
+from app.security.auth import CurrentUser
 from app.security.rate_limit import limiter
 from app.services.image_service import UnsupportedImage, analyze
 
@@ -29,6 +30,7 @@ async def analyze_image_endpoint(
     response: Response,  # SlowAPI adds X-RateLimit-* headers to it
     file: UploadFile = File(...),
     conversation_id: Optional[str] = Form(None),
+    user: dict = CurrentUser,
 ):
     """
     Preliminary crop-leaf analysis. The photo itself is stored by the client in the user's private

@@ -110,7 +110,7 @@ def audit_misc():
         "out_of_domain_rows": len(ood),
         "out_of_domain_categories": dict(Counter(r["category"] for r in ood).most_common(12)),
         "tanglish_terms": tanglish.get("entry_count"),
-        "image_manifest_rows": len(read_csv(DATASETS / "vision" / "image_dataset_manifest.csv")),
+        "image_manifest_rows": len(read_csv(DATASETS / "vision" / "metadata" / "manifest.csv")),
         "voice_metadata_rows_(no_audio)": len(read_csv(DATASETS / "voice" / "voice_queries.csv")),
     }
 

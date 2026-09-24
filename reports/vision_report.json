@@ -1,91 +1,267 @@
 {
-  "version": "mnv3s-20260924",
-  "test_accuracy": 0.9722,
-  "validation_accuracy": 0.9731,
-  "per_class_test_accuracy": {
-    "rice_healthy": 0.946,
-    "rice_brown_spot": 0.962,
-    "rice_leaf_blight": 0.906,
-    "tomato_healthy": 1.0,
-    "tomato_leaf_spot": 0.994,
-    "tomato_early_blight": 0.993,
-    "chilli_healthy": 1.0,
-    "chilli_leaf_curl": 0.972,
-    "banana_healthy": 1.0,
-    "banana_leaf_disease": 0.958,
-    "unsupported": 0.904
+  "model_version": "mnv3s-20260924-1120",
+  "dataset_version": "vision-2026.09.2",
+  "test": {
+    "accuracy": 0.9614,
+    "macro_precision": 0.9481,
+    "macro_recall": 0.9607,
+    "macro_f1": 0.9535,
+    "images": 2852,
+    "per_class": {
+      "rice_healthy": {
+        "precision": 0.974,
+        "recall": 1.0,
+        "f1": 0.987,
+        "support": 37
+      },
+      "rice_brown_spot": {
+        "precision": 1.0,
+        "recall": 0.981,
+        "f1": 0.99,
+        "support": 207
+      },
+      "rice_bacterial_leaf_blight": {
+        "precision": 0.969,
+        "recall": 0.996,
+        "f1": 0.982,
+        "support": 223
+      },
+      "rice_leaf_blast": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 136
+      },
+      "tomato_healthy": {
+        "precision": 0.983,
+        "recall": 0.978,
+        "f1": 0.98,
+        "support": 230
+      },
+      "tomato_early_blight": {
+        "precision": 0.931,
+        "recall": 0.919,
+        "f1": 0.925,
+        "support": 161
+      },
+      "tomato_late_blight": {
+        "precision": 0.979,
+        "recall": 0.979,
+        "f1": 0.979,
+        "support": 233
+      },
+      "tomato_leaf_mold": {
+        "precision": 0.966,
+        "recall": 0.947,
+        "f1": 0.957,
+        "support": 152
+      },
+      "tomato_septoria_leaf_spot": {
+        "precision": 0.949,
+        "recall": 0.961,
+        "f1": 0.955,
+        "support": 232
+      },
+      "chilli_healthy": {
+        "precision": 0.984,
+        "recall": 0.992,
+        "f1": 0.988,
+        "support": 128
+      },
+      "chilli_leaf_curl": {
+        "precision": 0.993,
+        "recall": 0.987,
+        "f1": 0.99,
+        "support": 153
+      },
+      "banana_healthy": {
+        "precision": 0.733,
+        "recall": 0.957,
+        "f1": 0.83,
+        "support": 23
+      },
+      "banana_leaf_disease": {
+        "precision": 0.935,
+        "recall": 0.915,
+        "f1": 0.925,
+        "support": 47
+      },
+      "maize_healthy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 170
+      },
+      "maize_common_rust": {
+        "precision": 0.98,
+        "recall": 0.949,
+        "f1": 0.965,
+        "support": 158
+      },
+      "maize_northern_leaf_blight": {
+        "precision": 0.938,
+        "recall": 0.927,
+        "f1": 0.932,
+        "support": 178
+      },
+      "maize_gray_leaf_spot": {
+        "precision": 0.821,
+        "recall": 0.897,
+        "f1": 0.857,
+        "support": 87
+      },
+      "unsupported": {
+        "precision": 0.931,
+        "recall": 0.909,
+        "f1": 0.92,
+        "support": 297
+      }
+    }
   },
-  "unseen_crop_rejection_rate": 0.8029,
-  "datasets": [
-    [
-      "Banana Leaf Disease Images (Mendeley Data rjykr62kdh v1)",
-      "CC BY 4.0"
+  "by_source": {
+    "field_datasets": {
+      "accuracy": 0.9775,
+      "macro_precision": 0.9543,
+      "macro_recall": 0.9736,
+      "macro_f1": 0.9623,
+      "images": 1157
+    },
+    "plantvillage_lab": {
+      "accuracy": 0.9871,
+      "macro_precision": 0.9842,
+      "macro_recall": 0.9833,
+      "macro_f1": 0.9837,
+      "images": 1471
+    },
+    "plantdoc_field_web": {
+      "accuracy": 0.7098,
+      "macro_precision": 0.7008,
+      "macro_recall": 0.6854,
+      "macro_f1": 0.6894,
+      "images": 224
+    }
+  },
+  "confidence_distribution": {
+    "bins": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
     ],
-    [
-      "Chilli Leaf Disease Image Dataset (Mendeley Data tm3v4zmh7c v1)",
-      "CC BY 4.0"
+    "correct": [
+      0,
+      2,
+      4,
+      9,
+      19,
+      34,
+      59,
+      81,
+      273,
+      2261
     ],
-    [
-      "PlantVillage via Mendeley Data tywbtsjrjv v1",
-      "CC0 1.0"
-    ],
-    [
-      "RiceLeafBD (Mendeley Data kx9rx8p2mz v1)",
-      "CC BY 4.0"
+    "wrong": [
+      0,
+      0,
+      8,
+      13,
+      19,
+      11,
+      17,
+      14,
+      14,
+      14
     ]
-  ],
-  "limitations": [
-    "Tomato images are PlantVillage lab photos (plain background); field photos may be recognised less reliably.",
-    "Each crop comes from a different dataset, so crop identification partly relies on photo style.",
-    "Banana has only ~470 photos; its accuracy estimate is less certain.",
-    "Only these 10 classes are supported; anything else must be reported as uncertain, never forced.",
-    "Rejection of unsupported plants is learned from other PlantVillage crops and two uncovered diseases; field photos of other crops may still be misread \u2014 see unseen_crop_rejection_rate."
-  ],
-  "unseen_crop_test_images": 350,
-  "best_epoch": "fine7",
-  "test_images": 1261,
-  "most_common_confusions": [
+  },
+  "at_threshold": {
+    "threshold": 0.6,
+    "coverage_known_classes": 0.9632,
+    "accuracy_when_answered": 0.9862
+  },
+  "unseen_crops": {
+    "images": 600,
+    "rejection_rate": 0.765,
+    "by_source": {
+      "plantvillage_lab": {
+        "images": 301,
+        "rejection_rate": 0.8771
+      },
+      "plantdoc_field_web": {
+        "images": 299,
+        "rejection_rate": 0.6522
+      }
+    }
+  },
+  "quality_gates": {
+    "min_test_macro_f1": {
+      "required": 0.85,
+      "actual": 0.9535,
+      "pass": true
+    },
+    "min_unseen_crop_rejection": {
+      "required": 0.7,
+      "actual": 0.765,
+      "pass": true
+    },
+    "weak_classes_below_min_f1": {},
+    "passed": true
+  },
+  "top_confusions": [
     {
-      "true": "unsupported",
-      "predicted": "banana_healthy",
-      "count": 8
+      "true": "maize_northern_leaf_blight",
+      "predicted": "maize_gray_leaf_spot",
+      "count": 12
     },
     {
-      "true": "unsupported",
-      "predicted": "banana_leaf_disease",
+      "true": "maize_gray_leaf_spot",
+      "predicted": "maize_northern_leaf_blight",
+      "count": 7
+    },
+    {
+      "true": "tomato_early_blight",
+      "predicted": "tomato_septoria_leaf_spot",
       "count": 6
     },
     {
-      "true": "rice_leaf_blight",
-      "predicted": "rice_brown_spot",
+      "true": "unsupported",
+      "predicted": "banana_healthy",
+      "count": 6
+    },
+    {
+      "true": "tomato_leaf_mold",
+      "predicted": "unsupported",
       "count": 5
     },
     {
-      "true": "chilli_leaf_curl",
-      "predicted": "chilli_healthy",
+      "true": "tomato_septoria_leaf_spot",
+      "predicted": "unsupported",
       "count": 5
     },
     {
-      "true": "rice_healthy",
-      "predicted": "rice_leaf_blight",
-      "count": 2
-    },
-    {
-      "true": "rice_brown_spot",
-      "predicted": "rice_leaf_blight",
-      "count": 2
+      "true": "maize_common_rust",
+      "predicted": "maize_gray_leaf_spot",
+      "count": 5
     },
     {
       "true": "unsupported",
-      "predicted": "tomato_healthy",
-      "count": 1
+      "predicted": "tomato_septoria_leaf_spot",
+      "count": 5
     },
     {
       "true": "unsupported",
-      "predicted": "rice_brown_spot",
-      "count": 1
+      "predicted": "rice_bacterial_leaf_blight",
+      "count": 5
+    },
+    {
+      "true": "tomato_early_blight",
+      "predicted": "tomato_late_blight",
+      "count": 4
     }
-  ],
-  "onnx_max_abs_diff": 4.202127456665039e-06,
-  "device": "cuda"
+  ]
 }

@@ -7,9 +7,20 @@ Base URL: `http://127.0.0.1:8000` locally, `https://<service>.onrender.com` in p
 |---|---|---|---|
 | GET | `/api/health` | — | Liveness: `{"status":"ok","service":"farmerassist-api"}` |
 | GET | `/api/health/ready` | — | Components: database, intent/embedding models, knowledge record count, vision model, voice |
+| POST | `/api/auth/login` | 5/min | `{"username","password"}` → `{"token","expires_at","username"}`; wrong → **401**; not configured → **503** |
+| GET | `/api/auth/me` | — | Current user (Bearer token) |
+| POST | `/api/auth/logout` | — | Revokes the token |
 | POST | `/api/chat` | 20/min | Agriculture Q&A in English / Tamil / Tanglish |
 | POST | `/api/image/analyze` | 5/min | Preliminary crop-leaf analysis |
 | POST | `/api/voice/transcribe` | 5/min | Speech → text (503 when voice is disabled on the server) |
+
+`/api/chat`, `/api/image/analyze` and `/api/voice/transcribe` require `Authorization: Bearer <token>` from
+`/api/auth/login`; missing/expired/revoked token → **401** `{"detail":"Please log in again."}`. Tokens are
+HMAC-SHA256 signed with `SESSION_SECRET`, expire after `SESSION_TTL_HOURS` (12), and revocation is in-memory
+(a server restart forgets logouts, but tokens still expire). One account only (`DEMO_USERNAME` / `DEMO_PASSWORD_HASH`).
+
+Image responses also carry `model_name`, `model_version` and `dataset_version`, so every stored prediction can be
+traced to the exact model build.
 
 Exceeding a limit returns **429** `{"detail":"Too many requests. Please wait a moment and try again."}` with `Retry-After`.
 

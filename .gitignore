@@ -30,6 +30,7 @@ data/vision/images/
 # Training checkpoints (the exported runtime models in backend/models/ ARE committed)
 *.pt
 *.pth
+!backend/models/vision/model.pt
 ai/models/intent/*
 !ai/models/intent/.gitkeep
 ai/models/vision/*
@@ -50,3 +51,11 @@ npm-debug.log*
 htmlcov/
 tmp/
 data/voice_test/
+datasets/vision/raw/
+datasets/vision/processed/
+datasets/vision/train/
+datasets/vision/validation/
+datasets/vision/test/
+datasets/vision/metadata/candidates.csv
+datasets/vision/metadata/duplicates.csv
+datasets/vision/field_test/

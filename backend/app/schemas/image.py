@@ -27,4 +27,6 @@ class ImageAnalysisResponse(BaseModel):
     recommended_next_steps: List[str] = []
     sources: List[Source] = []
     disclaimer: str
+    model_name: Optional[str] = None
     model_version: Optional[str] = None
+    dataset_version: Optional[str] = None

@@ -11,7 +11,7 @@ import "./Composer.css";
 const MAX_LENGTH = 1000; // matches the backend ChatRequest limit
 const MAX_HEIGHT = 168;
 
-export default function Composer({ busy, attachment, onAttach, onRemoveAttachment, onAnalyze, onSendText, feedback, onFeedback }) {
+export default function Composer({ busy, attachment, onAttach, onRemoveAttachment, onAnalyze, onSendText, feedback, onFeedback, cooldown }) {
   const [text, setText] = useState("");
   const [transcribing, setTranscribing] = useState(null); // { audioUrl } while speech is being converted
   const textareaRef = useRef(null);
@@ -40,6 +40,7 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
           }
         }
       } catch (error) {
+        if (error?.status === 429) cooldown?.start("voice", error.retryAfter);
         if (error?.kind !== "aborted") onFeedback({ type: "error", text: toFriendlyError(error, "voice").message });
       } finally {
         URL.revokeObjectURL(audioUrl);
@@ -51,7 +52,10 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
 
   const voiceActive = recorder.status !== "idle" || transcribing !== null;
   const hasText = text.trim().length > 0;
-  const canSend = hasText && !busy && !voiceActive;
+  const chatWait = cooldown?.remaining("chat") || 0;
+  const imageWait = cooldown?.remaining("image") || 0;
+  const voiceWait = cooldown?.remaining("voice") || 0;
+  const canSend = hasText && !busy && !voiceActive && chatWait === 0;
 
   // Grow with the content up to MAX_HEIGHT, then scroll inside the field.
   useLayoutEffect(() => {
@@ -117,8 +121,14 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
           </div>
         )}
 
+        {chatWait > 0 && (
+          <div className="composer__cooldown" role="status" aria-live="polite">
+            <strong>Rate limit reached.</strong> Try again in {chatWait} seconds. Your message is kept.
+          </div>
+        )}
+
         {attachment && (
-          <AttachmentPreview attachment={attachment} busy={busy} onRemove={onRemoveAttachment} onAnalyze={onAnalyze} />
+          <AttachmentPreview attachment={attachment} busy={busy} waitSeconds={imageWait} onRemove={onRemoveAttachment} onAnalyze={onAnalyze} />
         )}
 
         {voiceActive ? (
@@ -164,9 +174,9 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
               type="button"
               className="icon-btn composer__tool"
               onClick={startVoice}
-              disabled={!recorder.supported}
-              aria-label={recorder.supported ? "Ask by voice" : "Voice input isn't supported in this browser"}
-              title={recorder.supported ? "Ask by voice" : "Voice input isn't supported in this browser"}
+              disabled={!recorder.supported || voiceWait > 0}
+              aria-label={!recorder.supported ? "Voice input isn't supported in this browser" : voiceWait > 0 ? `Voice available again in ${voiceWait} seconds` : "Ask by voice"}
+              title={!recorder.supported ? "Voice input isn't supported in this browser" : voiceWait > 0 ? `Voice available again in ${voiceWait} s` : "Ask by voice"}
             >
               <MicIcon />
             </button>
@@ -175,8 +185,8 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
               type="submit"
               className="composer__send"
               disabled={!canSend}
-              aria-label={busy ? "Waiting for the reply" : "Send message"}
-              title={busy ? "Waiting for the reply" : "Send message"}
+              aria-label={chatWait > 0 ? `Rate limit reached, try again in ${chatWait} seconds` : busy ? "Waiting for the reply" : "Send message"}
+              title={chatWait > 0 ? `Try again in ${chatWait} s` : busy ? "Waiting for the reply" : "Send message"}
             >
               {busy ? <span className="spinner" aria-hidden="true" /> : <SendIcon />}
             </button>

@@ -173,3 +173,12 @@
   .attachment__actions { width: 100%; }
   .attachment__actions .btn { flex: 1; }
 }
+
+/* ---------- Server rate limit (HTTP 429) countdown ---------- */
+.composer__cooldown {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--warning-bg);
+  color: var(--warning);
+  font-size: var(--text-sm);
+}

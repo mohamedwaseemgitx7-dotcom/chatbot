@@ -1,0 +1,12 @@
+# Offline training environment (GPU). Create with:
+#   python -m venv ai/.venv-train
+#   ai/.venv-train/Scripts/pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+#   ai/.venv-train/Scripts/pip install -r ai/requirements-train.txt
+# (CPU-only works too: drop the --index-url; training is then much slower.)
+onnx==1.23.0
+onnxruntime==1.30.0
+numpy==2.5.2
+pillow==12.3.0
+scikit-learn==1.9.1
+PyYAML==6.0.3
+opencv-python-headless==5.0.0.93

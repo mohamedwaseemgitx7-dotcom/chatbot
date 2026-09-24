@@ -51,15 +51,25 @@ export async function removeConversationFiles(conversationId) {
 export async function saveImagePrediction({ messageId, path, result, status = "completed" }) {
   const { supabase } = await getSession();
   const confidence = typeof result?.confidence === "number" ? Math.min(1, Math.max(0, result.confidence)) : null;
-  unwrap(
-    await supabase.from("image_predictions").insert({
-      message_id: messageId,
-      image_url: path,
-      crop: result?.crop || null,
-      prediction: result?.condition || null,
-      confidence,
-      status,
-    }),
-    "save image prediction",
-  );
+  const row = {
+    message_id: messageId,
+    image_url: path,
+    crop: result?.crop || null,
+    prediction: result?.condition || null,
+    confidence,
+    status,
+  };
+  // Which model produced it (migration 20260924020000_prediction_versioning.sql adds these columns).
+  const versioned = {
+    ...row,
+    model_name: result?.model?.name || null,
+    model_version: result?.model?.version || null,
+    dataset_version: result?.model?.datasetVersion || null,
+  };
+  let response = await supabase.from("image_predictions").insert(versioned);
+  if (response.error?.code === "PGRST204") {
+    // Database not migrated yet: keep the prediction, without version columns.
+    response = await supabase.from("image_predictions").insert(row);
+  }
+  unwrap(response, "save image prediction");
 }

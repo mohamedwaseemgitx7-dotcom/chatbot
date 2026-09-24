@@ -44,13 +44,15 @@ class UnsupportedImage(ValueError):
 
 # A knowledge record is only attached to a photo result if its title names the predicted condition —
 # never "the nearest record for this crop" (that once attached caterpillar advice to early blight).
+# Model class → words that must appear in the official knowledge record's title. Only classes with a matching
+# TNAU record are listed; the others (e.g. tomato diseases, maize gray leaf spot) get no advice rather than wrong advice.
 CONDITION_TITLE_KEYWORDS = {
     "rice_brown_spot": ["brown spot"],
-    "rice_leaf_blight": ["bacterial leaf blight"],
-    "tomato_leaf_spot": ["septoria"],
-    "tomato_early_blight": ["early blight"],
-    "chilli_leaf_curl": ["leaf curl"],
+    "rice_bacterial_leaf_blight": ["bacterial leaf blight"],
+    "rice_leaf_blast": ["blast"],
     "banana_leaf_disease": ["sigatoka"],
+    "maize_common_rust": ["common rust"],
+    "maize_northern_leaf_blight": ["leaf blight"],
 }
 
 
@@ -78,8 +80,9 @@ def analyze(data: bytes) -> Dict[str, Any]:
     except InvalidImage as error:
         raise UnsupportedImage(str(error)) from error
 
-    card = model_card()
-    base = {"disclaimer": DISCLAIMER, "model_version": (card or {}).get("version")}
+    card = model_card() or {}
+    base = {"disclaimer": DISCLAIMER, "model_name": card.get("model_name"), "model_version": card.get("version"),
+            "dataset_version": card.get("dataset_version")}
 
     problem = quality_problem(rgb)
     if problem:

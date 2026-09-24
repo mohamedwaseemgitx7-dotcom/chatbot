@@ -6,7 +6,12 @@ import pytest
 from app.vision import classifier
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "datasets" / "vision" / "image_dataset_manifest.csv"
+MANIFEST = ROOT / "datasets" / "vision" / "metadata" / "manifest.csv"
+TEST_DIR = ROOT / "datasets" / "vision" / "test"
+
+
+def held_out_photo(row):
+    return (TEST_DIR / row["label"] / f"{row['image_id']}.jpg").read_bytes()
 
 
 def analyze(client, data, name="leaf.png", mime="image/png"):
@@ -53,7 +58,8 @@ def test_model_missing_is_reported_honestly(client, make_png, monkeypatch):
     assert "prediction" not in body and "confidence" not in body
 
 
-@pytest.mark.skipif(not classifier.is_available() or not MANIFEST.exists(), reason="vision model not trained")
+@pytest.mark.skipif(not classifier.is_available() or not MANIFEST.exists() or not TEST_DIR.exists(),
+                    reason="vision model or local test images missing (build with scripts/vision/build_dataset.py)")
 def test_real_model_predicts_held_out_images(client):
     """Held-out test-split photos (never seen in training) are analysed by the actual ONNX model."""
     with open(MANIFEST, encoding="utf-8") as f:
@@ -65,15 +71,18 @@ def test_real_model_predicts_held_out_images(client):
     names = {c["name"]: c for c in card["classes"]}
     correct = 0
     for label, row in by_label.items():
-        body = analyze(client, (ROOT / row["image_path"]).read_bytes(), "photo.jpg", "image/jpeg").json()
+        if label == "unsupported":
+            continue
+        body = analyze(client, held_out_photo(row), "photo.jpg", "image/jpeg").json()
         assert body["status"] in {"ok", "uncertain"}
         if body["status"] == "ok":
             assert 0 <= body["confidence"] <= 1
             correct += body["crop"] == names[label]["crop"] and body["prediction"] == names[label]["condition"]
-    assert correct >= len(by_label) * 0.7
+    assert correct >= (len(by_label) - 1) * 0.7
 
 
-@pytest.mark.skipif(not classifier.is_available() or not MANIFEST.exists(), reason="vision model not trained")
+@pytest.mark.skipif(not classifier.is_available() or not MANIFEST.exists() or not TEST_DIR.exists(),
+                    reason="vision model or local test images missing (build with scripts/vision/build_dataset.py)")
 def test_attached_knowledge_is_about_the_predicted_condition(client):
     """Regression: an early-blight photo once came back with caterpillar advice (nearest record, wrong topic)."""
     from app.services.image_service import CONDITION_TITLE_KEYWORDS
@@ -85,7 +94,7 @@ def test_attached_knowledge_is_about_the_predicted_condition(client):
         if row["label"] in seen:
             continue
         seen.add(row["label"])
-        body = analyze(client, (ROOT / row["image_path"]).read_bytes(), "photo.jpg", "image/jpeg").json()
+        body = analyze(client, held_out_photo(row), "photo.jpg", "image/jpeg").json()
         if body["status"] != "ok":
             continue
         keywords = CONDITION_TITLE_KEYWORDS.get(next(c["name"] for c in classifier.model_card()["classes"]

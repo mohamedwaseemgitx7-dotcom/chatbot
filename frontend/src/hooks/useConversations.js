@@ -124,8 +124,9 @@ function reducer(state, action) {
     case "setMessages":
       return updateConversation(state, action.conversationId, (c) => {
         const fromServer = new Set(action.messages.map((m) => m.id));
-        // Keep what the server doesn't have yet: unsent/failed messages and anything added while loading.
-        const localExtra = c.messages.filter((m) => !fromServer.has(m.id) && (m.status !== "sent" || m.createdAt >= action.since));
+        // Keep what the server doesn't have yet: unsent/failed messages, anything added while loading, and
+        // messages whose upload never completed (not marked `cloud`) — those are re-sent by useCloudSync.
+        const localExtra = c.messages.filter((m) => !fromServer.has(m.id) && (!m.cloud || m.status !== "sent" || m.createdAt >= action.since));
         const messages = [...action.messages, ...localExtra].sort((a, b) => a.createdAt - b.createdAt);
         return { ...c, messages, loaded: true };
       });

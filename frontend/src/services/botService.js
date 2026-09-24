@@ -9,7 +9,7 @@
 import { ApiError, requestJson, uploadForm } from "./http";
 import { detectLanguage } from "./languageDetector";
 
-const USE_BACKEND = import.meta.env.VITE_USE_BACKEND !== "false";
+export const USE_BACKEND = import.meta.env.VITE_USE_BACKEND !== "false";
 
 const LANGUAGES = new Set(["english", "tamil", "tanglish"]);
 
@@ -78,6 +78,7 @@ function normalizeImage(data) {
       nextSteps: strList(body?.recommended_next_steps),
       disclaimer: str(body?.disclaimer),
       sources: normalizeSources(body?.sources),
+      model: { name: str(body?.model_name), version: str(body?.model_version), datasetVersion: str(body?.dataset_version) },
     },
   };
 }

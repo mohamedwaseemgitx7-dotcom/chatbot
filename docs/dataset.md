@@ -8,7 +8,7 @@ Full column descriptions: [datasets/README.md](../datasets/README.md). Latest au
 | `datasets/tanglish/tanglish_dictionary.json`, `datasets/nlp/tamil_normalization.json` | Tamil/Tanglish → English normalisation | Copied to `backend/models/lexicon/` at runtime |
 | `datasets/knowledge/*` | **Not served.** Generated text with no source URLs | Kept only as a list of candidate topics |
 | `data/verified/knowledge.jsonl` | The chatbot's knowledge (RAG) | Verbatim excerpts of TNAU Agritech pages, each with `source_url`, `retrieved_at`, `verification_status` |
-| `datasets/vision/image_dataset_manifest.csv` | Training/evaluating the image model | Licensed images (CC BY 4.0 / CC0); per-image source & licence; `ood_test` split = unseen crops |
+| `datasets/vision/metadata/manifest.csv` | Training/evaluating the image model | Licensed images (CC BY 4.0 / CC0); per-image source & licence; `ood_test` split = unseen crops |
 | `datasets/voice/voice_queries.csv` | Prompts to record for ASR evaluation | Metadata only — no real recordings yet |
 
 ## Knowledge pipeline

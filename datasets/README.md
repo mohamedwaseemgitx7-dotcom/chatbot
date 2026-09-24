@@ -21,12 +21,11 @@ retrieval with NumPy cosine similarity, MobileNetV3-Small and Whisper on an 8 GB
 | `tanglish/tanglish_dictionary.json` | 505 terms with Tamil, spelling variants, English, category, plus a flat lookup |
 | `knowledge/agricultural_knowledge.csv` / `.json` | RAG knowledge base (419 records) |
 | `knowledge/crops, diseases, pests, fertilizers, pesticides, irrigation, soil, schemes .csv` | Structured tables |
-| `vision/image_classes.csv` | 10 starter image classes (4 crops) |
-| `vision/image_dataset_manifest.csv` | **Empty by design** — fill with `tools/build_manifest.py` from real images |
+| `vision/` | Licensed crop-leaf image dataset: metadata (manifest, classes, sources, licences, report) — see `vision/README.md` and `vision/SOURCES.md` |
 | `voice/voice_queries.csv` | 360 recording prompts / references for Whisper evaluation (no audio yet) |
 | `responses/response_templates.json` | 129 templates (type × EN/TA/Tanglish) |
 | `reports/` | validation report, leakage log, baseline model results |
-| `tools/` | manifest builder + the generator source used to create this package |
+| `tools/` | the generator source used to create this package |
 
 ## farmer_queries.csv columns
 
@@ -129,12 +128,8 @@ budget reports on the build date; all other scheme rows say "not re-verified in 
 
 ## Images
 
-Do not use generated images. Collect real, licensed photos (for example PlantVillage for tomato, public rice-leaf
-and banana/chilli leaf-disease datasets on Kaggle / Mendeley / UCI — check each licence), place them in
-`images/<class_name>/`, add `images/SOURCES.csv`, then run
-`python tools/build_manifest.py images vision/image_dataset_manifest.csv`. It removes exact duplicate images and keeps
-burst shots of the same leaf (same filename prefix) in one split. Lab-style images (plain background) generalise
-poorly to field photos — add your own field photos to the test split.
+Built by `scripts/vision/build_dataset.py` from licensed sources only (CC0 1.0 / CC BY 4.0) — see
+[vision/README.md](vision/README.md). Never add generated images or photos from search engines / social media.
 
 ## Voice
 

@@ -1,6 +1,6 @@
 """
 Crop-leaf condition classifier: MobileNetV3-Small fine-tuned on licensed agricultural datasets
-(ai/vision/train_vision.py), exported to ONNX and run with onnxruntime (no PyTorch at runtime).
+(ai/training/train_vision.py), exported to ONNX and run with onnxruntime (no PyTorch at runtime).
 
 models/vision/crop_disease.onnx   the network
 models/vision/labels.json         class list + model card (datasets, licences, accuracy)

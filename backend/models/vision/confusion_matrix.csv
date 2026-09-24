@@ -1,0 +1,19 @@
+true \ predicted,rice_healthy,rice_brown_spot,rice_bacterial_leaf_blight,rice_leaf_blast,tomato_healthy,tomato_early_blight,tomato_late_blight,tomato_leaf_mold,tomato_septoria_leaf_spot,chilli_healthy,chilli_leaf_curl,banana_healthy,banana_leaf_disease,maize_healthy,maize_common_rust,maize_northern_leaf_blight,maize_gray_leaf_spot,unsupported
+rice_healthy,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+rice_brown_spot,0,203,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3
+rice_bacterial_leaf_blight,0,0,222,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+rice_leaf_blast,0,0,0,136,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tomato_healthy,0,0,0,0,225,1,0,2,0,0,0,0,0,0,0,0,0,2
+tomato_early_blight,0,0,0,0,0,148,4,1,6,0,0,0,0,0,0,0,0,2
+tomato_late_blight,0,0,0,0,1,3,228,0,1,0,0,0,0,0,0,0,0,0
+tomato_leaf_mold,0,0,0,0,1,1,1,144,0,0,0,0,0,0,0,0,0,5
+tomato_septoria_leaf_spot,0,0,0,0,0,4,0,0,223,0,0,0,0,0,0,0,0,5
+chilli_healthy,0,0,0,0,0,0,0,0,0,127,1,0,0,0,0,0,0,0
+chilli_leaf_curl,0,0,0,0,0,0,0,0,0,2,151,0,0,0,0,0,0,0
+banana_healthy,0,0,0,0,0,0,0,0,0,0,0,22,1,0,0,0,0,0
+banana_leaf_disease,0,0,0,0,0,0,0,0,0,0,0,2,43,0,0,0,0,2
+maize_healthy,0,0,0,0,0,0,0,0,0,0,0,0,0,170,0,0,0,0
+maize_common_rust,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,3,5,0
+maize_northern_leaf_blight,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,165,12,0
+maize_gray_leaf_spot,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,7,78,0
+unsupported,1,0,5,0,2,2,0,2,5,0,0,6,2,0,1,1,0,270

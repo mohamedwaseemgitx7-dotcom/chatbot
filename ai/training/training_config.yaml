@@ -1,0 +1,41 @@
+# FarmerAssist vision model — training configuration (read by train_vision.py / evaluate_vision.py / export_model.py)
+
+model:
+  name: farmerassist-vision-mnv3s
+  architecture: mobilenet_v3_small        # torchvision, ImageNet-1k pretrained (same weights timm ships)
+  image_size: 224
+  resize: 256                             # evaluation: resize shorter side → centre crop image_size
+
+data:
+  splits_dir: datasets/vision             # train/ validation/ test/ folders built by scripts/vision/create_splits.py
+  manifest: datasets/vision/metadata/manifest.csv
+  classes: datasets/vision/metadata/classes.csv
+  num_workers: 2                          # Windows DataLoader workers share memory via the page file; keep low
+
+training:
+  seed: 42
+  batch_size: 48
+  head_epochs: 4                          # phase 1: only the new classifier head
+  head_lr: 0.002
+  finetune_epochs: 14                     # phase 2: whole network
+  finetune_lr: 0.0004
+  weight_decay: 0.0001
+  label_smoothing: 0.05
+  balanced_sampling: true                 # small classes (banana) are sampled more often
+
+augmentation:                             # realistic field variation only — nothing that makes leaves unrecognisable
+  random_resized_crop_scale: [0.6, 1.0]
+  horizontal_flip: true
+  vertical_flip: true
+  rotation_degrees: 20
+  color_jitter: [0.3, 0.3, 0.3, 0.03]    # brightness, contrast, saturation, hue
+  blur_probability: 0.15
+  noise_probability: 0.15
+  noise_std: 0.03
+
+evaluation:
+  confidence_threshold: 0.60              # served predictions below this become "uncertain"
+  quality_gates:                          # export_model.py refuses to ship a model that fails these
+    min_test_macro_f1: 0.85
+    min_class_f1: 0.60                    # classes below are listed as weak in the model card
+    min_unseen_crop_rejection: 0.70

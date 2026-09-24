@@ -34,6 +34,13 @@ class Settings(BaseSettings):
     RATE_LIMIT_CHAT: str = "20/minute"
     RATE_LIMIT_IMAGE: str = "5/minute"
     RATE_LIMIT_VOICE: str = "5/minute"
+    RATE_LIMIT_LOGIN: str = "5/minute"
+
+    # Demo login (single account). Hash with scripts/hash_password.py — never store the plain password.
+    DEMO_USERNAME: str = ""
+    DEMO_PASSWORD_HASH: str = ""
+    SESSION_SECRET: str = ""
+    SESSION_TTL_HOURS: int = 12
 
     # Retrieval: minimum (cosine + crop/topic adjustments) score for a knowledge record to be used.
     RETRIEVAL_SIMILARITY_THRESHOLD: float = 0.61  # calibrated: ai/evaluation/evaluate_retrieval.py

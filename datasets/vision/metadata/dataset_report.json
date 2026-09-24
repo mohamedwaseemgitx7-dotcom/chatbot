@@ -1,0 +1,150 @@
+{
+  "dataset_version": "vision-2026.09.2",
+  "images": 19372,
+  "classes": 18,
+  "split_counts": {
+    "train": 13111,
+    "validation": 2809,
+    "test": 2852,
+    "ood_test": 600
+  },
+  "per_class": {
+    "banana_healthy": {
+      "train": 108,
+      "test": 23,
+      "validation": 23
+    },
+    "banana_leaf_disease": {
+      "train": 223,
+      "validation": 48,
+      "test": 47
+    },
+    "chilli_healthy": {
+      "train": 601,
+      "test": 128,
+      "validation": 129
+    },
+    "chilli_leaf_curl": {
+      "train": 724,
+      "validation": 156,
+      "test": 153
+    },
+    "maize_common_rust": {
+      "train": 698,
+      "test": 158,
+      "validation": 150
+    },
+    "maize_gray_leaf_spot": {
+      "train": 397,
+      "test": 87,
+      "validation": 85
+    },
+    "maize_healthy": {
+      "train": 796,
+      "validation": 170,
+      "test": 170
+    },
+    "maize_northern_leaf_blight": {
+      "train": 792,
+      "test": 178,
+      "validation": 170
+    },
+    "ood_test": {
+      "ood_test": 600
+    },
+    "rice_bacterial_leaf_blight": {
+      "train": 1052,
+      "validation": 225,
+      "test": 223
+    },
+    "rice_brown_spot": {
+      "train": 969,
+      "test": 207,
+      "validation": 207
+    },
+    "rice_healthy": {
+      "train": 176,
+      "validation": 38,
+      "test": 37
+    },
+    "rice_leaf_blast": {
+      "validation": 136,
+      "train": 636,
+      "test": 136
+    },
+    "tomato_early_blight": {
+      "validation": 153,
+      "train": 715,
+      "test": 161
+    },
+    "tomato_healthy": {
+      "train": 1046,
+      "validation": 224,
+      "test": 230
+    },
+    "tomato_late_blight": {
+      "test": 233,
+      "train": 1044,
+      "validation": 223
+    },
+    "tomato_leaf_mold": {
+      "train": 687,
+      "test": 152,
+      "validation": 148
+    },
+    "tomato_septoria_leaf_spot": {
+      "train": 1044,
+      "validation": 224,
+      "test": 232
+    },
+    "unsupported": {
+      "train": 1403,
+      "test": 297,
+      "validation": 300
+    }
+  },
+  "per_source": {
+    "banana_mendeley": {
+      "train": 551,
+      "test": 116,
+      "validation": 118
+    },
+    "chilli_mendeley": {
+      "train": 1325,
+      "test": 281,
+      "validation": 285
+    },
+    "plantdoc": {
+      "validation": 163,
+      "train": 765,
+      "test": 224,
+      "ood_test": 299
+    },
+    "plantvillage": {
+      "train": 6896,
+      "validation": 1478,
+      "test": 1471,
+      "ood_test": 301
+    },
+    "rice_samples": {
+      "train": 2703,
+      "test": 575,
+      "validation": 579
+    },
+    "riceleafbd": {
+      "train": 871,
+      "validation": 186,
+      "test": 185
+    }
+  },
+  "licenses": {
+    "CC BY 4.0": 9226,
+    "CC0 1.0": 10146
+  },
+  "duplicate_count": 1452,
+  "near_duplicate_count": 16936,
+  "label_conflict_groups": 360,
+  "train_test_leakage_count": 0,
+  "train_validation_leakage_count": 0,
+  "leak_examples": []
+}

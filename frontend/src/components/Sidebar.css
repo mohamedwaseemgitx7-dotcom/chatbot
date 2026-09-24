@@ -133,6 +133,8 @@
 /* Touch screens have no hover: keep delete visible */
 @media (hover: none) { .conversation__delete { opacity: 1; } }
 
+.sidebar__account { display: flex; flex-wrap: wrap; gap: var(--space-1); margin: var(--space-2) 0 0 calc(-1 * var(--space-3)); }
+.sidebar__account .btn { min-height: 36px; }
 .sidebar__footer {
   padding: var(--space-3) var(--space-4);
   border-top: 1px solid var(--border);

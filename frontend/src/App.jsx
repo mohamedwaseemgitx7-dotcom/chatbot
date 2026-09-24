@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import AppHeader from "./components/AppHeader";
 import ChatWindow from "./components/ChatWindow";
+import AboutDialog from "./components/AboutDialog";
 import ConfirmDialog from "./components/ConfirmDialog";
 import Sidebar from "./components/Sidebar";
 import { useAssistant } from "./hooks/useAssistant";
@@ -13,7 +14,7 @@ import "./App.css";
 const SIDEBAR_ID = "conversation-sidebar";
 const focusComposer = () => document.getElementById("message-input")?.focus();
 
-export default function App() {
+export default function App({ user = null, onLogout = null }) {
   const store = useConversations();
   const { dispatch, conversations, active, pending } = store;
   const sync = useCloudSync(store);
@@ -24,6 +25,7 @@ export default function App() {
   const drawer = useMediaQuery("(max-width: 899px)");
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [toDelete, setToDelete] = useState(null);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const [deleteState, setDeleteState] = useState({ busy: false, error: null });
   const menuRef = useRef(null);
   const returnFocus = useRef(null); // "menu" | "composer" | null — where focus goes after the drawer closes
@@ -101,6 +103,9 @@ export default function App() {
           drawer={drawer}
           open={drawerOpen}
           onClose={closeDrawerToMenu}
+          user={user}
+          onLogout={onLogout}
+          onAbout={() => { if (drawer) setDrawerOpen(false); setAboutOpen(true); }}
         />
         {drawer && <div className={`scrim${drawerOpen ? " scrim--visible" : ""}`} onClick={closeDrawerToMenu} aria-hidden="true" />}
 
@@ -116,6 +121,8 @@ export default function App() {
           />
         </main>
       </div>
+
+      <AboutDialog open={aboutOpen} onClose={() => setAboutOpen(false)} />
 
       <ConfirmDialog
         open={toDelete !== null}

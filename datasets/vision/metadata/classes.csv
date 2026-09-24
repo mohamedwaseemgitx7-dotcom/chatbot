@@ -1,0 +1,19 @@
+class_id,label,crop,condition,sources
+0,rice_healthy,paddy,Healthy,riceleafbd
+1,rice_brown_spot,paddy,Brown spot,rice_samples;riceleafbd
+2,rice_bacterial_leaf_blight,paddy,Bacterial leaf blight,rice_samples;riceleafbd
+3,rice_leaf_blast,paddy,Leaf blast,rice_samples
+4,tomato_healthy,tomato,Healthy,plantdoc;plantvillage
+5,tomato_early_blight,tomato,Early blight,plantdoc;plantvillage
+6,tomato_late_blight,tomato,Late blight,plantdoc;plantvillage
+7,tomato_leaf_mold,tomato,Leaf mold,plantdoc;plantvillage
+8,tomato_septoria_leaf_spot,tomato,Septoria leaf spot,plantdoc;plantvillage
+9,chilli_healthy,chilli,Healthy,chilli_mendeley
+10,chilli_leaf_curl,chilli,Leaf curl,chilli_mendeley
+11,banana_healthy,banana,Healthy,banana_mendeley
+12,banana_leaf_disease,banana,Sigatoka leaf spot,banana_mendeley
+13,maize_healthy,maize,Healthy,plantvillage
+14,maize_common_rust,maize,Common rust,plantdoc;plantvillage
+15,maize_northern_leaf_blight,maize,Northern leaf blight,plantdoc;plantvillage
+16,maize_gray_leaf_spot,maize,Gray leaf spot,plantdoc;plantvillage
+17,unsupported,none,Unsupported,banana_mendeley;plantdoc;plantvillage;rice_samples;riceleafbd

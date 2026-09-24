@@ -31,3 +31,9 @@ services:
         sync: false
       - key: SUPABASE_SERVICE_ROLE_KEY # secret key — backend only
         sync: false
+      - key: DEMO_USERNAME             # login username
+        sync: false
+      - key: DEMO_PASSWORD_HASH        # from scripts/hash_password.py — never the plain password
+        sync: false
+      - key: SESSION_SECRET            # random string from scripts/hash_password.py
+        sync: false

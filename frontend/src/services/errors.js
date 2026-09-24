@@ -50,8 +50,10 @@ export function toFriendlyError(error, context = "chat") {
       return { message: "This service isn't available right now. Please try again later.", retryable: true };
     case 413:
       return { message: "This file is too large. Please choose a photo under 5 MB.", retryable: false };
-    case 429:
-      return { message: "You have sent too many requests. Please wait a moment and try again.", retryable: true };
+    case 429: {
+      const wait = error instanceof ApiError && error.retryAfter ? ` Try again in ${error.retryAfter} seconds.` : " Please wait a moment and try again.";
+      return { message: `You've reached the request limit.${wait}`, retryable: true };
+    }
     case 503:
       if (context === "voice") {
         return { message: "Voice input isn't available on this server yet. Please type your question instead.", retryable: false };

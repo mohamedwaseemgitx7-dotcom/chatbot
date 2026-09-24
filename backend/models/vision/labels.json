@@ -1,125 +1,170 @@
 {
-  "version": "mnv3s-20260924",
+  "model_name": "farmerassist-vision-mnv3s",
+  "version": "mnv3s-20260924-1120",
+  "dataset_version": "vision-2026.09.2",
   "architecture": "MobileNetV3-Small (ImageNet-pretrained, fine-tuned)",
   "input": "RGB 224x224, resize 256 + centre crop, ImageNet mean/std",
+  "confidence_threshold": 0.6,
   "classes": [
     {
       "name": "rice_healthy",
       "crop": "paddy",
-      "condition": "healthy",
+      "condition": "Healthy",
       "healthy": true,
-      "cause": "Healthy paddy leaf"
+      "cause": null
     },
     {
       "name": "rice_brown_spot",
       "crop": "paddy",
       "condition": "Brown spot",
       "healthy": false,
-      "cause": "Fungal leaf spot (Bipolaris oryzae)"
+      "cause": null
     },
     {
-      "name": "rice_leaf_blight",
+      "name": "rice_bacterial_leaf_blight",
       "crop": "paddy",
       "condition": "Bacterial leaf blight",
       "healthy": false,
-      "cause": "Bacterial blight (Xanthomonas oryzae pv. oryzae)"
+      "cause": null
+    },
+    {
+      "name": "rice_leaf_blast",
+      "crop": "paddy",
+      "condition": "Leaf blast",
+      "healthy": false,
+      "cause": null
     },
     {
       "name": "tomato_healthy",
       "crop": "tomato",
-      "condition": "healthy",
+      "condition": "Healthy",
       "healthy": true,
-      "cause": "Healthy tomato leaf"
-    },
-    {
-      "name": "tomato_leaf_spot",
-      "crop": "tomato",
-      "condition": "Septoria leaf spot",
-      "healthy": false,
-      "cause": "Fungal leaf spot (Septoria lycopersici)"
+      "cause": null
     },
     {
       "name": "tomato_early_blight",
       "crop": "tomato",
       "condition": "Early blight",
       "healthy": false,
-      "cause": "Fungal blight (Alternaria solani)"
+      "cause": null
+    },
+    {
+      "name": "tomato_late_blight",
+      "crop": "tomato",
+      "condition": "Late blight",
+      "healthy": false,
+      "cause": null
+    },
+    {
+      "name": "tomato_leaf_mold",
+      "crop": "tomato",
+      "condition": "Leaf mold",
+      "healthy": false,
+      "cause": null
+    },
+    {
+      "name": "tomato_septoria_leaf_spot",
+      "crop": "tomato",
+      "condition": "Septoria leaf spot",
+      "healthy": false,
+      "cause": null
     },
     {
       "name": "chilli_healthy",
       "crop": "chilli",
-      "condition": "healthy",
+      "condition": "Healthy",
       "healthy": true,
-      "cause": "Healthy chilli leaf"
+      "cause": null
     },
     {
       "name": "chilli_leaf_curl",
       "crop": "chilli",
-      "condition": "Leaf curl complex",
+      "condition": "Leaf curl",
       "healthy": false,
-      "cause": "Virus and thrips/mite damage"
+      "cause": null
     },
     {
       "name": "banana_healthy",
       "crop": "banana",
-      "condition": "healthy",
+      "condition": "Healthy",
       "healthy": true,
-      "cause": "Healthy banana leaf"
+      "cause": null
     },
     {
       "name": "banana_leaf_disease",
       "crop": "banana",
       "condition": "Sigatoka leaf spot",
       "healthy": false,
-      "cause": "Fungal leaf spot (Pseudocercospora spp.)"
+      "cause": null
+    },
+    {
+      "name": "maize_healthy",
+      "crop": "maize",
+      "condition": "Healthy",
+      "healthy": true,
+      "cause": null
+    },
+    {
+      "name": "maize_common_rust",
+      "crop": "maize",
+      "condition": "Common rust",
+      "healthy": false,
+      "cause": null
+    },
+    {
+      "name": "maize_northern_leaf_blight",
+      "crop": "maize",
+      "condition": "Northern leaf blight",
+      "healthy": false,
+      "cause": null
+    },
+    {
+      "name": "maize_gray_leaf_spot",
+      "crop": "maize",
+      "condition": "Gray leaf spot",
+      "healthy": false,
+      "cause": null
     },
     {
       "name": "unsupported",
       "crop": null,
-      "condition": "unsupported",
+      "condition": "Unsupported",
       "healthy": false,
       "cause": null
     }
   ],
-  "unseen_crop_rejection_rate": 0.8029,
-  "datasets": [
-    [
-      "Banana Leaf Disease Images (Mendeley Data rjykr62kdh v1)",
-      "CC BY 4.0"
-    ],
-    [
-      "Chilli Leaf Disease Image Dataset (Mendeley Data tm3v4zmh7c v1)",
-      "CC BY 4.0"
-    ],
-    [
-      "PlantVillage via Mendeley Data tywbtsjrjv v1",
-      "CC0 1.0"
-    ],
-    [
-      "RiceLeafBD (Mendeley Data kx9rx8p2mz v1)",
-      "CC BY 4.0"
-    ]
-  ],
-  "test_accuracy": 0.9722,
-  "validation_accuracy": 0.9731,
-  "per_class_test_accuracy": {
-    "rice_healthy": 0.946,
-    "rice_brown_spot": 0.962,
-    "rice_leaf_blight": 0.906,
-    "tomato_healthy": 1.0,
-    "tomato_leaf_spot": 0.994,
-    "tomato_early_blight": 0.993,
-    "chilli_healthy": 1.0,
-    "chilli_leaf_curl": 0.972,
-    "banana_healthy": 1.0,
-    "banana_leaf_disease": 0.958,
-    "unsupported": 0.904
+  "test_accuracy": 0.9614,
+  "test_macro_f1": 0.9535,
+  "by_source": {
+    "field_datasets": {
+      "accuracy": 0.9775,
+      "macro_precision": 0.9543,
+      "macro_recall": 0.9736,
+      "macro_f1": 0.9623,
+      "images": 1157
+    },
+    "plantvillage_lab": {
+      "accuracy": 0.9871,
+      "macro_precision": 0.9842,
+      "macro_recall": 0.9833,
+      "macro_f1": 0.9837,
+      "images": 1471
+    },
+    "plantdoc_field_web": {
+      "accuracy": 0.7098,
+      "macro_precision": 0.7008,
+      "macro_recall": 0.6854,
+      "macro_f1": 0.6894,
+      "images": 224
+    }
   },
+  "unseen_crop_rejection_rate": 0.765,
+  "quality_gates_passed": true,
+  "exported_with_force": false,
+  "onnx_max_abs_diff": 2.7418136596679688e-06,
   "limitations": [
-    "Tomato images are PlantVillage lab photos (plain background); field photos may be recognised less reliably.",
-    "Each crop comes from a different dataset, so crop identification partly relies on photo style.",
-    "Banana has only ~470 photos; its accuracy estimate is less certain.",
-    "Only these 10 classes are supported; anything else must be reported as uncertain, never forced.",
-    "Rejection of unsupported plants is learned from other PlantVillage crops and two uncovered diseases; field photos of other crops may still be misread — see unseen_crop_rejection_rate."
+    "PlantVillage images are lab photos; field accuracy is reported separately (by_source) and is lower.",
+    "Only the listed classes are supported; other crops/diseases should come back as 'unsupported' or low confidence, but some unseen plants are still misread (see unseen_crop_rejection_rate).",
+    "Predictions are preliminary and must be confirmed by an agricultural expert."
   ]
 }

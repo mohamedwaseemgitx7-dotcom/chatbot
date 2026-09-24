@@ -9,16 +9,38 @@ import os
 os.environ.setdefault("RATE_LIMIT_CHAT", "1000/minute")
 os.environ.setdefault("RATE_LIMIT_IMAGE", "1000/minute")
 os.environ.setdefault("RATE_LIMIT_VOICE", "1000/minute")
+os.environ.setdefault("RATE_LIMIT_LOGIN", "1000/minute")
+# A test-only demo account (independent of backend/.env).
+TEST_USER, TEST_PASSWORD = "pytest-user", "pytest-password"
+os.environ["DEMO_USERNAME"] = TEST_USER
+os.environ["SESSION_SECRET"] = "t" * 48
 
 import numpy as np  # noqa: E402
 import pytest  # noqa: E402
 from fastapi.testclient import TestClient  # noqa: E402
 
+from app.security.auth import hash_password  # noqa: E402
+
+os.environ["DEMO_PASSWORD_HASH"] = hash_password(TEST_PASSWORD, iterations=1000)  # fast hash for tests only
+
 from app.main import app  # noqa: E402
 
 
+@pytest.fixture(scope="session")
+def auth_token():
+    response = TestClient(app).post("/api/auth/login", json={"username": TEST_USER, "password": TEST_PASSWORD})
+    assert response.status_code == 200, response.text
+    return response.json()["token"]
+
+
 @pytest.fixture
-def client():
+def client(auth_token):
+    """A logged-in client (protected endpoints need the bearer token)."""
+    return TestClient(app, headers={"Authorization": f"Bearer {auth_token}"})
+
+
+@pytest.fixture
+def anonymous_client():
     return TestClient(app)
 
 
