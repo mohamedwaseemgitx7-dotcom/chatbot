@@ -1,0 +1,33 @@
+# Render Blueprint — FarmerAssist API (FastAPI). New → Blueprint → select this repository.
+# Secrets are NOT stored here: Render asks for every `sync: false` value when the Blueprint is created.
+services:
+  - type: web
+    name: farmerassist-api
+    runtime: python
+    plan: free                      # 512 MB RAM: chat/RAG + image analysis; voice is disabled
+    region: singapore               # closest Render region to Tamil Nadu
+    rootDir: backend
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    # One worker keeps memory under 512 MB; models load lazily on first use.
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 1 --proxy-headers --forwarded-allow-ips "*"
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.1"
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: TRUST_PROXY_HEADERS       # Render's proxy sets X-Forwarded-For (needed for per-client rate limits)
+        value: "true"
+      - key: VOICE_ENABLED             # Whisper needs ~1 GB RAM — more than the free instance has
+        value: "false"
+      - key: CORS_ORIGINS              # e.g. https://farmerassist.vercel.app (no trailing slash, never "*")
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY # secret key — backend only
+        sync: false

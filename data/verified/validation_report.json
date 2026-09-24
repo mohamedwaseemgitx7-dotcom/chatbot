@@ -1,0 +1,34 @@
+{
+  "input": 386,
+  "accepted": 386,
+  "rejected": 0,
+  "rejection_reasons": {},
+  "accepted_by_crop": {
+    "banana": 25,
+    "blackgram": 25,
+    "brinjal": 15,
+    "chilli": 22,
+    "coconut": 20,
+    "cotton": 52,
+    "drumstick": 5,
+    "greengram": 8,
+    "groundnut": 23,
+    "maize": 30,
+    "onion": 20,
+    "paddy": 69,
+    "sugarcane": 40,
+    "tomato": 25,
+    "turmeric": 7
+  },
+  "accepted_by_topic": {
+    "disease": 157,
+    "protection": 176,
+    "pest": 53
+  },
+  "accepted_by_language": {
+    "english": 175,
+    "tamil": 211
+  },
+  "tamil_with_english_pair": 8,
+  "rejected_records": []
+}

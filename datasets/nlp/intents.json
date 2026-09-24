@@ -1,0 +1,2059 @@
+[
+  {
+    "intent_name": "crop_disease",
+    "description": "General crop disease query without a specific symptom",
+    "response_type": "crop_disease",
+    "examples": {
+      "english": [
+        "my paddy plants look sick what disease is this",
+        "paddy crop got some disease how to cure",
+        "disease spreading fast in my rice field"
+      ],
+      "tamil": [
+        "நெல் பயிருக்கு ஏதோ நோய் வந்துருக்கு",
+        "நெல் செடியில என்ன நோய்னு தெரியல",
+        "வயல்ல நோய் வேகமா பரவுது என்ன பண்றது"
+      ],
+      "tanglish": [
+        "paddy ku edho noi vandhuruku",
+        "paddy sedi la enna noi nu theriyala",
+        "vayal la noi vegama paravudhu"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "disease",
+      "noi",
+      "நோய்",
+      "sick"
+    ],
+    "negative_examples": [
+      {
+        "text": "worms inside my paddy fruits",
+        "true_intent": "fruit_borer"
+      },
+      {
+        "text": "rice leaves yellow",
+        "true_intent": "yellow_leaf"
+      }
+    ]
+  },
+  {
+    "intent_name": "yellow_leaf",
+    "description": "Leaves turning yellow (cause unknown)",
+    "response_type": "crop_disease",
+    "examples": {
+      "english": [
+        "my rice leaves are turning yellow",
+        "lower leaves of rice becoming yellow",
+        "why is my paddy leaf turning yellow"
+      ],
+      "tamil": [
+        "நெல் இலை மஞ்சளாகுது ஏன்?",
+        "நெல் கீழ் இலைகள் மஞ்சளா இருக்கு",
+        "மழைக்கு அப்புறம் வயலே மஞ்சளா தெரியுது"
+      ],
+      "tanglish": [
+        "nel ilai manjala aguthu enna reason",
+        "paddy keezh ilai ellam manjal",
+        "mazhai ku apram vayal fulla manjala theriyudhu"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "yellow",
+      "manjal",
+      "மஞ்சள்",
+      "yellowing"
+    ],
+    "negative_examples": [
+      {
+        "text": "brown spots with rings on rice leaves",
+        "true_intent": "leaf_spot"
+      },
+      {
+        "text": "what fertilizer for paddy",
+        "true_intent": "fertilizer"
+      },
+      {
+        "text": "turmeric harvest time",
+        "true_intent": "harvesting"
+      }
+    ]
+  },
+  {
+    "intent_name": "leaf_spot",
+    "description": "Spots on leaves",
+    "response_type": "crop_disease",
+    "examples": {
+      "english": [
+        "brown spots on paddy leaves",
+        "black spots coming on rice leaf",
+        "small round spots on paddy leaves what to do"
+      ],
+      "tamil": [
+        "நெல் இலையில பழுப்பு புள்ளி வருது",
+        "இலையில கருப்பு புள்ளிகள் இருக்கு",
+        "நெல் இலைப்புள்ளி நோய்க்கு என்ன செய்யலாம்"
+      ],
+      "tanglish": [
+        "ilai la karuppu pulli varuthu",
+        "nel ilai la brown pulli iruku",
+        "paddy ilai pulli noi ku enna pannanum"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "spot",
+      "pulli",
+      "புள்ளி"
+    ],
+    "negative_examples": [
+      {
+        "text": "rice leaves curling upward",
+        "true_intent": "leaf_curl"
+      },
+      {
+        "text": "rusty spots on paddy after transplanting",
+        "true_intent": "micronutrient_deficiency"
+      }
+    ]
+  },
+  {
+    "intent_name": "leaf_curl",
+    "description": "Leaves curling / crinkling",
+    "response_type": "crop_disease",
+    "examples": {
+      "english": [
+        "tomato leaves curling upwards",
+        "leaf curl problem in tomato",
+        "tomato leaves are crinkled and small"
+      ],
+      "tamil": [
+        "தக்காளி இலை சுருண்டு போகுது",
+        "தக்காளி இலைச்சுருள் நோய்க்கு மருந்து என்ன",
+        "இலை எல்லாம் சுருங்கி சின்னதா ஆகுது"
+      ],
+      "tanglish": [
+        "takkali ilai surundu pogudhu",
+        "takkali ilai surul noi",
+        "ilai ellam surungi chinnadha aagudhu"
+      ]
+    },
+    "related_crops": [
+      "tomato",
+      "chilli",
+      "cotton",
+      "blackgram",
+      "greengram",
+      "brinjal"
+    ],
+    "keywords": [
+      "curl",
+      "surul",
+      "சுருள்",
+      "crinkle"
+    ],
+    "negative_examples": [
+      {
+        "text": "paddy leaves folded with white streaks",
+        "true_intent": "leaf_folder"
+      }
+    ]
+  },
+  {
+    "intent_name": "leaf_blight",
+    "description": "Leaves drying/burning from tips or margins",
+    "response_type": "crop_disease",
+    "examples": {
+      "english": [
+        "rice leaves drying from the tip",
+        "blight in paddy field",
+        "paddy leaves have burnt looking patches"
+      ],
+      "tamil": [
+        "நெல் இலை நுனியில இருந்து காயுது",
+        "நெல் இலைக்கருகல் நோய்",
+        "இலை எரிஞ்ச மாதிரி இருக்கு"
+      ],
+      "tanglish": [
+        "nellu ilai nuni la irundhu kaayudhu",
+        "nelu ilai karugal noi",
+        "ilai erinja maadhiri iruku"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "maize",
+      "onion",
+      "cotton"
+    ],
+    "keywords": [
+      "blight",
+      "karugal",
+      "கருகல்",
+      "burnt"
+    ],
+    "negative_examples": [
+      {
+        "text": "my whole paddy field dried because no water",
+        "true_intent": "water_shortage"
+      },
+      {
+        "text": "old paddy leaf edges brown, stems weak",
+        "true_intent": "potassium_deficiency"
+      }
+    ]
+  },
+  {
+    "intent_name": "root_rot",
+    "description": "Root or stem-base rot",
+    "response_type": "crop_disease",
+    "examples": {
+      "english": [
+        "groundnut roots are rotting",
+        "plants dying and roots black in groundnut",
+        "root rot in groundnut how to control"
+      ],
+      "tamil": [
+        "நிலக்கடலை வேர் அழுகுது",
+        "நிலக்கடலை செடி வேர் கருப்பா இருக்கு",
+        "வேர் அழுகல் நோய்க்கு என்ன செய்யணும்"
+      ],
+      "tanglish": [
+        "nilakadalai ver azhugudhu",
+        "verkadalai sedi ver karuppa iruku",
+        "ver azhugal noi ku enna pannanum"
+      ]
+    },
+    "related_crops": [
+      "groundnut",
+      "chilli",
+      "tomato",
+      "banana",
+      "turmeric",
+      "blackgram",
+      "cotton"
+    ],
+    "keywords": [
+      "root rot",
+      "ver azhugal",
+      "வேர் அழுகல்"
+    ],
+    "negative_examples": [
+      {
+        "text": "groundnut fruits rotting on plant",
+        "true_intent": "fruit_rot"
+      }
+    ]
+  },
+  {
+    "intent_name": "fruit_rot",
+    "description": "Fruit rotting on the plant",
+    "response_type": "crop_disease",
+    "examples": {
+      "english": [
+        "tomato fruits rotting on the plant",
+        "black sunken patches on tomato fruits",
+        "tomato rotting before harvest"
+      ],
+      "tamil": [
+        "தக்காளி காய் செடியிலேயே அழுகுது",
+        "தக்காளி பழத்தில கருப்பு குழி மாதிரி இருக்கு",
+        "அறுவடைக்கு முன்னாடியே காய் அழுகுது"
+      ],
+      "tanglish": [
+        "takkali kaai sedi layae azhugudhu",
+        "thakkali pazhathula karuppu kuzhi",
+        "aruvadai ku munnadiye kaai azhugudhu"
+      ]
+    },
+    "related_crops": [
+      "tomato",
+      "chilli",
+      "brinjal",
+      "banana",
+      "coconut"
+    ],
+    "keywords": [
+      "fruit rot",
+      "azhugal",
+      "அழுகல்"
+    ],
+    "negative_examples": [
+      {
+        "text": "tomato fruits have holes and worms inside",
+        "true_intent": "fruit_borer"
+      }
+    ]
+  },
+  {
+    "intent_name": "wilting",
+    "description": "Plants wilting / drooping",
+    "response_type": "crop_disease",
+    "examples": {
+      "english": [
+        "my rice plants are wilting suddenly",
+        "paddy drooping even after watering",
+        "whole rice plant dried and died"
+      ],
+      "tamil": [
+        "நெல் செடி திடீர்னு வாடுது",
+        "தண்ணி விட்டும் நெல் வாடுது",
+        "நெல் செடி முழுசா காய்ஞ்சு செத்துப் போச்சு"
+      ],
+      "tanglish": [
+        "paddy sedi thideernu vaadudhu",
+        "thanni vittum nellu vaadudhu",
+        "nellu sedi fulla kaanju sethu pochu"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "wilt",
+      "vaadal",
+      "வாடல்",
+      "droop"
+    ],
+    "negative_examples": [
+      {
+        "text": "paddy wilting because no rain for weeks",
+        "true_intent": "drought"
+      }
+    ]
+  },
+  {
+    "intent_name": "pest_attack",
+    "description": "General pest/insect attack",
+    "response_type": "pest",
+    "examples": {
+      "english": [
+        "pest attack in my rice",
+        "insects eating my rice crop",
+        "how to control pests in paddy"
+      ],
+      "tamil": [
+        "நெல் பயிரில பூச்சி தாக்குதல் இருக்கு",
+        "நெல் வயல்ல பூச்சி அதிகமா இருக்கு",
+        "பூச்சிய எப்படி கட்டுப்படுத்துறது"
+      ],
+      "tanglish": [
+        "nellu la poochi romba iruku enna panrathu",
+        "nelu ku poochi attack",
+        "poochi control epdi"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "pest",
+      "insect",
+      "poochi",
+      "பூச்சி"
+    ],
+    "negative_examples": [
+      {
+        "text": "tiny white flies under paddy leaves",
+        "true_intent": "whitefly"
+      }
+    ]
+  },
+  {
+    "intent_name": "aphids",
+    "description": "Aphid infestation",
+    "response_type": "pest",
+    "examples": {
+      "english": [
+        "small green insects on tender shoots of chilli",
+        "aphids on chilli",
+        "sticky leaves and ants on chilli"
+      ],
+      "tamil": [
+        "மிளகாய் குருத்துல சின்ன பச்சை பூச்சி",
+        "மிளகாய் அசுவினி தாக்குதல்",
+        "இலை ஒட்டிக்கிட்டு எறும்பு வருது"
+      ],
+      "tanglish": [
+        "chilli kuruthu la chinna pachai poochi",
+        "milagai la asuvini",
+        "ilai ottudhu erumbu varudhu"
+      ]
+    },
+    "related_crops": [
+      "chilli",
+      "cotton",
+      "blackgram",
+      "greengram",
+      "banana",
+      "brinjal"
+    ],
+    "keywords": [
+      "aphid",
+      "asuvini",
+      "அசுவினி"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "whitefly",
+    "description": "Whitefly infestation",
+    "response_type": "pest",
+    "examples": {
+      "english": [
+        "white flies under tomato leaves",
+        "whitefly problem in tomato",
+        "tiny white insects fly when I shake tomato plant"
+      ],
+      "tamil": [
+        "தக்காளி இலைக்கு அடியில வெள்ளை ஈ",
+        "தக்காளி வெள்ளை ஈ தொல்லை",
+        "செடிய ஆட்டுனா வெள்ளை பூச்சி பறக்குது"
+      ],
+      "tanglish": [
+        "tomato ilai adila vellai ee",
+        "thakkali vellai ee thollai",
+        "sedi aatuna vellai poochi parakudhu"
+      ]
+    },
+    "related_crops": [
+      "tomato",
+      "cotton",
+      "chilli",
+      "brinjal",
+      "blackgram",
+      "greengram",
+      "coconut"
+    ],
+    "keywords": [
+      "whitefly",
+      "vellai ee",
+      "வெள்ளை ஈ"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "stem_borer",
+    "description": "Stem borer / dead heart",
+    "response_type": "pest",
+    "examples": {
+      "english": [
+        "central shoot drying in rice",
+        "dead heart in rice",
+        "white empty ear heads in paddy"
+      ],
+      "tamil": [
+        "நெல் நடு குருத்து காயுது",
+        "நெல் தண்டு துளைப்பான் தாக்குதல்",
+        "நெல் கதிர் வெள்ளையா காலியா இருக்கு"
+      ],
+      "tanglish": [
+        "paddy nadu kuruthu kaayudhu",
+        "paddy thandu thulaippan",
+        "nel kathir vellaiya kaaliya iruku"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "sugarcane",
+      "maize",
+      "turmeric"
+    ],
+    "keywords": [
+      "borer",
+      "dead heart",
+      "thulaippan",
+      "துளைப்பான்"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "leaf_folder",
+    "description": "Paddy leaf folder",
+    "response_type": "pest",
+    "examples": {
+      "english": [
+        "paddy leaves folded with white streaks",
+        "leaf folder in rice",
+        "rice leaves rolled and scraped"
+      ],
+      "tamil": [
+        "நெல் இலை மடிஞ்சு வெள்ளை கோடு இருக்கு",
+        "நெல் இலைச்சுருட்டுப் புழு",
+        "இலை சுருட்டி உள்ள புழு இருக்கு"
+      ],
+      "tanglish": [
+        "nel ilai madinju vellai kodu",
+        "nel ilai surutu puzhu",
+        "ilai surutti ulla puzhu iruku"
+      ]
+    },
+    "related_crops": [
+      "paddy"
+    ],
+    "keywords": [
+      "leaf folder",
+      "surutu puzhu",
+      "இலைச்சுருட்டுப் புழு"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "bollworm",
+    "description": "Cotton bollworms",
+    "response_type": "pest",
+    "examples": {
+      "english": [
+        "worms inside cotton bolls",
+        "pink bollworm in cotton",
+        "cotton flowers not opening like rosette"
+      ],
+      "tamil": [
+        "பருத்தி காய்க்குள்ள புழு",
+        "பருத்தி இளஞ்சிவப்பு காய்ப்புழு",
+        "பருத்தி பூ விரியாம இருக்கு"
+      ],
+      "tanglish": [
+        "paruthi kaai kulla puzhu",
+        "paruthi pink puzhu",
+        "paruthi poo viriyala"
+      ]
+    },
+    "related_crops": [
+      "cotton"
+    ],
+    "keywords": [
+      "bollworm",
+      "kaai puzhu",
+      "காய்ப்புழு"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "fruit_borer",
+    "description": "Fruit/pod borer",
+    "response_type": "pest",
+    "examples": {
+      "english": [
+        "holes in tomato fruits with worms",
+        "fruit borer in tomato",
+        "tomato shoots wilting and fruits bored"
+      ],
+      "tamil": [
+        "தக்காளி காயில ஓட்டை புழு இருக்கு",
+        "தக்காளி காய்ப்புழு தாக்குதல்",
+        "தக்காளி காய் துளைச்சு இருக்கு"
+      ],
+      "tanglish": [
+        "thakkali kaai la ottai puzhu iruku",
+        "tomato kaai puzhu",
+        "takkali kaai thulachirukku"
+      ]
+    },
+    "related_crops": [
+      "tomato",
+      "brinjal",
+      "chilli",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "fruit borer",
+      "kaai puzhu",
+      "காய்ப்புழு",
+      "holes in fruit"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "thrips_mites",
+    "description": "Thrips or mites",
+    "response_type": "pest",
+    "examples": {
+      "english": [
+        "chilli leaves curling with silvery patches",
+        "thrips in chilli",
+        "mites on chilli leaves"
+      ],
+      "tamil": [
+        "மிளகாய் இலைப்பேன் தாக்குதல்",
+        "மிளகாய் இலையில வெள்ளி நிற கோடு",
+        "மிளகாய் இலையில சிலந்திப்பூச்சி"
+      ],
+      "tanglish": [
+        "chilli la ilai pen",
+        "milaga thrips problem",
+        "chilli ilai la silver kodu"
+      ]
+    },
+    "related_crops": [
+      "chilli",
+      "onion",
+      "groundnut",
+      "cotton"
+    ],
+    "keywords": [
+      "thrips",
+      "mite",
+      "ilai pen",
+      "இலைப்பேன்",
+      "silandhi"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "fertilizer",
+    "description": "Crop-specific fertilizer recommendation",
+    "response_type": "fertilizer",
+    "examples": {
+      "english": [
+        "what fertilizer should I use for rice",
+        "how much fertilizer for paddy per acre",
+        "best fertilizer for rice"
+      ],
+      "tamil": [
+        "நெல் பயிருக்கு எந்த உரம் போடலாம்?",
+        "ஏக்கருக்கு எவ்வளவு உரம் போடணும்",
+        "நெல் நல்ல விளைச்சலுக்கு என்ன உரம்"
+      ],
+      "tanglish": [
+        "nel ku entha uram podanum",
+        "acre ku evlo uram",
+        "nel ku best uram"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "fertilizer",
+      "uram",
+      "உரம்",
+      "urea",
+      "dap"
+    ],
+    "negative_examples": [
+      {
+        "text": "what is fertilizer",
+        "true_intent": "agri_general_info"
+      },
+      {
+        "text": "older rice leaves pale yellow",
+        "true_intent": "nitrogen_deficiency"
+      },
+      {
+        "text": "how to test soil nutrients",
+        "true_intent": "soil_testing"
+      }
+    ]
+  },
+  {
+    "intent_name": "nitrogen_deficiency",
+    "description": "Nitrogen deficiency symptoms",
+    "response_type": "fertilizer",
+    "examples": {
+      "english": [
+        "rice older leaves pale yellow and plant weak",
+        "nitrogen deficiency in rice",
+        "rice growth slow and light green colour"
+      ],
+      "tamil": [
+        "நெல் பழைய இலை வெளிர் மஞ்சள், வளர்ச்சி இல்ல",
+        "தழைச்சத்து குறைபாடு அறிகுறி",
+        "நெல் பயிர் வெளிர் பச்சையா இருக்கு"
+      ],
+      "tanglish": [
+        "nellu pazhaya ilai velir manjal",
+        "thazhai sathu kuraivu",
+        "paddy light green ah iruku valarchi illa"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "nitrogen",
+      "thazhai sathu",
+      "தழைச்சத்து",
+      "pale"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "phosphorus_deficiency",
+    "description": "Phosphorus deficiency symptoms",
+    "response_type": "fertilizer",
+    "examples": {
+      "english": [
+        "rice leaves purple and plant stunted",
+        "phosphorus deficiency in paddy",
+        "poor root growth in rice"
+      ],
+      "tamil": [
+        "நெல் இலை ஊதா நிறமா இருக்கு",
+        "மணிச்சத்து குறைபாடு",
+        "நெல் வேர் வளர்ச்சி இல்ல"
+      ],
+      "tanglish": [
+        "paddy ilai oodha colour",
+        "mani sathu kuraivu",
+        "nellu ver valarchi illa"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "phosphorus",
+      "mani sathu",
+      "மணிச்சத்து",
+      "purple"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "potassium_deficiency",
+    "description": "Potassium deficiency symptoms",
+    "response_type": "fertilizer",
+    "examples": {
+      "english": [
+        "rice leaf edges burning brown",
+        "potassium deficiency in paddy",
+        "older leaves scorched at margins in paddy"
+      ],
+      "tamil": [
+        "நெல் இலை ஓரம் பழுப்பா கருகுது",
+        "சாம்பல் சத்து குறைபாடு",
+        "நெல் தண்டு பலவீனமா சாயுது"
+      ],
+      "tanglish": [
+        "nellu pazhaya ilai oram brown",
+        "saambal sathu kuraivu",
+        "nel thandu weak ah saayudhu"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "potassium",
+      "potash",
+      "saambal sathu",
+      "சாம்பல் சத்து"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "micronutrient_deficiency",
+    "description": "Zinc/iron/other micronutrient deficiency",
+    "response_type": "fertilizer",
+    "examples": {
+      "english": [
+        "young paddy leaves yellow with green veins",
+        "zinc deficiency in rice",
+        "rusty brown spots on paddy leaves after transplanting"
+      ],
+      "tamil": [
+        "நெல் புது இலை மஞ்சள், நரம்பு பச்சை",
+        "துத்தநாகக் குறைபாடு",
+        "நெல் இரும்புச்சத்து குறைபாடு"
+      ],
+      "tanglish": [
+        "paddy pudhu ilai manjal narambu pachai",
+        "zinc kuraivu",
+        "irumbu sathu kuraivu nel"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "zinc",
+      "iron",
+      "micronutrient",
+      "துத்தநாகம்"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "organic_fertilizer",
+    "description": "Organic manures and bio-inputs",
+    "response_type": "fertilizer",
+    "examples": {
+      "english": [
+        "how to use cow dung manure for paddy",
+        "is vermicompost good for rice",
+        "neem cake for rice"
+      ],
+      "tamil": [
+        "நெல் பயிருக்கு தொழுவுரம் எப்படி போடணும்",
+        "மண்புழு உரம் நல்லதா",
+        "வேப்பம் புண்ணாக்கு எப்போ போடணும்"
+      ],
+      "tanglish": [
+        "nellu ku thozhu uram epdi podanum",
+        "manpuzhu uram nalladha",
+        "vepam punnaakku eppo podanum"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "manure",
+      "compost",
+      "eru",
+      "தொழுவுரம்",
+      "vermicompost"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "fertilizer_timing",
+    "description": "When/how to split fertilizer",
+    "response_type": "fertilizer",
+    "examples": {
+      "english": [
+        "when to apply urea for rice",
+        "best time for top dressing in paddy",
+        "can I apply fertilizer before rain"
+      ],
+      "tamil": [
+        "நெல் பயிருக்கு யூரியா எப்போ போடணும்",
+        "மேலுரம் எப்போ இடணும்",
+        "மழைக்கு முன்னாடி உரம் போடலாமா"
+      ],
+      "tanglish": [
+        "nel ku urea eppo podanum",
+        "mel uram eppo",
+        "mazhai ku munnadi uram podalaama"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "top dressing",
+      "mel uram",
+      "மேலுரம்",
+      "when urea"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "soil_testing",
+    "description": "Soil testing and Soil Health Card",
+    "response_type": "soil",
+    "examples": {
+      "english": [
+        "how to test my soil",
+        "where can I get soil tested",
+        "how to take a soil sample"
+      ],
+      "tamil": [
+        "மண் பரிசோதனை எப்படி செய்றது",
+        "மண் மாதிரி எப்படி எடுக்கணும்",
+        "மண் வள அட்டை எங்க வாங்கலாம்"
+      ],
+      "tanglish": [
+        "mann parisodhanai epdi",
+        "soil test enga pannalaam",
+        "mann sample epdi edukanum"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "soil test",
+      "mann parisodhanai",
+      "மண் பரிசோதனை"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "soil_ph",
+    "description": "Saline/sodic/acidic soil and pH",
+    "response_type": "soil",
+    "examples": {
+      "english": [
+        "my soil is salty what to do",
+        "soil pH is high how to reduce",
+        "how to correct acidic soil"
+      ],
+      "tamil": [
+        "என் நிலம் உவர் மண்",
+        "மண் கார அமில நிலை அதிகம்",
+        "மண் மேல வெள்ளை படிவு இருக்கு"
+      ],
+      "tanglish": [
+        "en nilam uvar mannu",
+        "soil ph adhigam",
+        "mann mela vellai padivu"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "ph",
+      "saline",
+      "uvar",
+      "உவர்",
+      "களர்"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "soil_health",
+    "description": "Improving soil fertility and organic matter",
+    "response_type": "soil",
+    "examples": {
+      "english": [
+        "how to improve soil fertility",
+        "my soil is hard and does not hold water",
+        "how to increase organic matter in soil"
+      ],
+      "tamil": [
+        "மண் வளத்தை எப்படி அதிகரிக்கிறது",
+        "மண் இறுகி தண்ணி நிக்கல",
+        "மண்ணுல கரிமச்சத்து எப்படி கூட்டுறது"
+      ],
+      "tanglish": [
+        "mann valam epdi adhigarikiradhu",
+        "mannu irugi thanni nikkala",
+        "mannula organic matter epdi koottradhu"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "soil fertility",
+      "mann valam",
+      "மண் வளம்"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "irrigation",
+    "description": "Irrigation frequency and water need",
+    "response_type": "irrigation",
+    "examples": {
+      "english": [
+        "how often should I water rice",
+        "when to irrigate my rice field",
+        "how much water does paddy need"
+      ],
+      "tamil": [
+        "நெல் பயிருக்கு எத்தனை நாளுக்கு ஒரு தடவை தண்ணி பாய்ச்சணும்",
+        "நெல் வயலுக்கு எப்போ தண்ணி விடணும்",
+        "நெல் பயிருக்கு எவ்வளவு தண்ணீர் தேவை"
+      ],
+      "tanglish": [
+        "nellu ku evlo naal ku oru thadava thanni",
+        "thanni evlo vidanum",
+        "nelu vayal ku eppo thanni vidanum"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "irrigation",
+      "water",
+      "thanni",
+      "தண்ணீர்",
+      "paasanam"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "drip_irrigation",
+    "description": "Drip and sprinkler systems",
+    "response_type": "irrigation",
+    "examples": {
+      "english": [
+        "is drip irrigation good for rice",
+        "drip system cost for 1 acre",
+        "sprinkler or drip for paddy"
+      ],
+      "tamil": [
+        "நெல் பயிருக்கு சொட்டு நீர் பாசனம் நல்லதா",
+        "ஒரு ஏக்கருக்கு சொட்டு நீர் அமைக்க செலவு",
+        "தெளிப்பு நீர் பாசனமா சொட்டு நீரா"
+      ],
+      "tanglish": [
+        "paddy ku drip nalladha",
+        "drip poda evlo selavu",
+        "sprinkler ah drip ah"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "drip",
+      "sprinkler",
+      "sottu neer",
+      "சொட்டு நீர்"
+    ],
+    "negative_examples": [
+      {
+        "text": "subsidy for drip irrigation",
+        "true_intent": "subsidy"
+      }
+    ]
+  },
+  {
+    "intent_name": "water_shortage",
+    "description": "Low water availability",
+    "response_type": "irrigation",
+    "examples": {
+      "english": [
+        "not enough water in my well for paddy",
+        "borewell water reduced which crop to grow",
+        "canal water not coming"
+      ],
+      "tamil": [
+        "கிணத்துல தண்ணி பத்தல",
+        "ஆழ்துளைக் கிணறுல தண்ணி குறைஞ்சு போச்சு",
+        "வாய்க்கால் தண்ணி வரல"
+      ],
+      "tanglish": [
+        "kinathula thanni pathala",
+        "borewell la thanni korainju pochu",
+        "vaaikkaal thanni varala"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "water shortage",
+      "thanni pathala",
+      "தண்ணி பத்தல",
+      "borewell"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "seed_selection",
+    "description": "Variety and seed source",
+    "response_type": "seed",
+    "examples": {
+      "english": [
+        "which rice variety is best",
+        "good hybrid rice seeds",
+        "where to buy quality paddy seeds"
+      ],
+      "tamil": [
+        "எந்த நெல் ரகம் நல்லது",
+        "நல்ல நெல் விதை எங்க கிடைக்கும்",
+        "குறுகிய கால நெல் ரகம்"
+      ],
+      "tanglish": [
+        "entha paddy ragam best",
+        "nalla nel vidhai enga kidaikum",
+        "short duration nelu ragam"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "variety",
+      "seed",
+      "ragam",
+      "ரகம்",
+      "vidhai"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "seed_treatment",
+    "description": "Seed treatment before sowing",
+    "response_type": "seed",
+    "examples": {
+      "english": [
+        "how to treat paddy seeds before sowing",
+        "seed treatment with trichoderma",
+        "why is seed treatment needed"
+      ],
+      "tamil": [
+        "நெல் விதை நேர்த்தி எப்படி செய்றது",
+        "டிரைக்கோடெர்மா விதை நேர்த்தி",
+        "விதை நேர்த்தி ஏன் பண்ணணும்"
+      ],
+      "tanglish": [
+        "paddy vidhai nerthi epdi",
+        "trichoderma vachu vidhai nerthi",
+        "vidhai nerthi yen pannanum"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "seed treatment",
+      "vidhai nerthi",
+      "விதை நேர்த்தி"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "sowing_time",
+    "description": "Sowing/planting season",
+    "response_type": "crop_info",
+    "examples": {
+      "english": [
+        "when should I sow rice",
+        "best season for paddy in tamil nadu",
+        "which month to plant rice"
+      ],
+      "tamil": [
+        "நெல் எப்போ விதைக்கணும்",
+        "நெல் நடவுக்கு ஏத்த பருவம்",
+        "எந்த மாசத்துல நெல் போடலாம்"
+      ],
+      "tanglish": [
+        "nellu eppo vidhaikanum",
+        "paddy poda best season",
+        "entha maasam nel podalaam"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "season",
+      "sowing",
+      "pattam",
+      "பருவம்",
+      "when to plant"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "weather",
+    "description": "Weather forecast / spray timing",
+    "response_type": "weather",
+    "examples": {
+      "english": [
+        "will it rain this week",
+        "rain forecast for my village",
+        "is it safe to spray today"
+      ],
+      "tamil": [
+        "இந்த வாரம் மழை வருமா",
+        "நாளைக்கு மழை இருக்குமா",
+        "இன்னைக்கு மருந்து தெளிக்கலாமா மழை வருமா"
+      ],
+      "tanglish": [
+        "indha vaaram mazhai varuma",
+        "naalaiku mazha iruka",
+        "innaiku marundhu adikalaama mazhai varuma"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "weather",
+      "rain",
+      "mazhai",
+      "மழை",
+      "forecast"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "rain_damage",
+    "description": "Crop damage from heavy rain/flood",
+    "response_type": "weather",
+    "examples": {
+      "english": [
+        "heavy rain flooded my rice field",
+        "paddy crop fell down after rain",
+        "water stagnating in paddy field after rain"
+      ],
+      "tamil": [
+        "பெருமழையில நெல் வயல் மூழ்கிடுச்சு",
+        "மழைக்கு அப்புறம் நெல் சாஞ்சிடுச்சு",
+        "வயல்ல மழைத்தண்ணி தேங்கி நிக்குது"
+      ],
+      "tanglish": [
+        "periya mazhai la nellu vayal moozhgiruchu",
+        "mazhai ku apram nellu saanjiruchu",
+        "vayal la mazhai thanni thengi nikkudhu"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "flood",
+      "heavy rain",
+      "vellam",
+      "வெள்ளம்",
+      "lodging"
+    ],
+    "negative_examples": [
+      {
+        "text": "will it rain tomorrow",
+        "true_intent": "weather"
+      },
+      {
+        "text": "insurance claim for flood damage",
+        "true_intent": "crop_insurance"
+      }
+    ]
+  },
+  {
+    "intent_name": "drought",
+    "description": "Dry spell / drought",
+    "response_type": "weather",
+    "examples": {
+      "english": [
+        "no rain for weeks my rice is drying",
+        "drought affecting paddy",
+        "how to protect paddy in a dry spell"
+      ],
+      "tamil": [
+        "மழை இல்லாம நெல் காயுது",
+        "வறட்சியில நெல் எப்படி காப்பாத்துறது",
+        "வறட்சியை தாங்குற பயிர் எது"
+      ],
+      "tanglish": [
+        "mazhai illama nelu kaayudhu",
+        "varatchi la nellu epdi kaapathuradhu",
+        "varatchi thaangura payir edhu"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "drought",
+      "varatchi",
+      "வறட்சி",
+      "dry spell"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "heat_stress",
+    "description": "High temperature stress",
+    "response_type": "weather",
+    "examples": {
+      "english": [
+        "too much heat paddy flowers dropping",
+        "high temperature affecting rice",
+        "rice leaves scorching in summer"
+      ],
+      "tamil": [
+        "அதிக வெயில்ல நெல் பூ உதிருது",
+        "வெப்பத்தால நெல் பாதிப்பு",
+        "கோடையில நெல் இலை கருகுது"
+      ],
+      "tanglish": [
+        "romba veyil paddy poo udhirudhu",
+        "heat naala paddy affect",
+        "summer la nellu ilai karugudhu"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "heat",
+      "veyil",
+      "வெயில்",
+      "temperature"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "harvesting",
+    "description": "Harvest timing and maturity signs",
+    "response_type": "crop_info",
+    "examples": {
+      "english": [
+        "when to harvest paddy",
+        "how to know rice is ready for harvest",
+        "how many days for paddy harvest"
+      ],
+      "tamil": [
+        "நெல் எப்போ அறுவடை பண்ணலாம்",
+        "நெல் அறுவடைக்கு தயாரானத எப்படி தெரியும்",
+        "நெல் எத்தனை நாள்ல அறுவடை"
+      ],
+      "tanglish": [
+        "nellu eppo aruvadai",
+        "paddy ready ah nu epdi therinjukradhu",
+        "paddy ethana naal la aruvadai"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "harvest",
+      "aruvadai",
+      "அறுவடை"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "post_harvest_storage",
+    "description": "Drying and storage",
+    "response_type": "crop_info",
+    "examples": {
+      "english": [
+        "how to store paddy without damage",
+        "how to dry paddy before storage",
+        "insects in stored paddy"
+      ],
+      "tamil": [
+        "நெல் சேமிச்சு வைக்கிறது எப்படி",
+        "சேமிப்புக்கு முன்னாடி நெல் எப்படி காய வைக்கணும்",
+        "சேமிச்ச நெல் ல பூச்சி"
+      ],
+      "tanglish": [
+        "paddy store panradhu epdi",
+        "nelu kaaya vaikanum epdi",
+        "store panna nellu la poochi"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "storage",
+      "semippu",
+      "சேமிப்பு",
+      "drying"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "organic_farming",
+    "description": "Organic / natural farming practices",
+    "response_type": "crop_info",
+    "examples": {
+      "english": [
+        "how to start organic farming",
+        "organic pest control for paddy",
+        "natural farming methods"
+      ],
+      "tamil": [
+        "இயற்கை விவசாயம் எப்படி ஆரம்பிக்கிறது",
+        "நெல் பயிருக்கு இயற்கை பூச்சி விரட்டி",
+        "இயற்கை விவசாய சான்றிதழ் எப்படி வாங்குறது"
+      ],
+      "tanglish": [
+        "iyarkai vivasayam epdi start panradhu",
+        "nel ku organic poochi viratti",
+        "organic certificate epdi vaangradhu"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "organic",
+      "iyarkai",
+      "இயற்கை",
+      "natural farming"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "market_price",
+    "description": "Market price and where to sell",
+    "response_type": "market",
+    "examples": {
+      "english": [
+        "today rice price",
+        "paddy rate in market",
+        "where to sell paddy for a good price"
+      ],
+      "tamil": [
+        "இன்னைக்கு நெல் விலை என்ன",
+        "சந்தையில நெல் ரேட் எவ்வளவு",
+        "நெல் நல்ல விலைக்கு எங்க விக்கலாம்"
+      ],
+      "tanglish": [
+        "inniku nel rate enna",
+        "market la nelu vilai evlo",
+        "nelu nalla vilai ku enga vikkalaam"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "coconut",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "drumstick",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "price",
+      "rate",
+      "vilai",
+      "விலை",
+      "market"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "government_scheme",
+    "description": "General government scheme discovery",
+    "response_type": "scheme",
+    "examples": {
+      "english": [
+        "what schemes are there for farmers",
+        "government help for small farmers",
+        "tamil nadu agriculture schemes"
+      ],
+      "tamil": [
+        "விவசாயிகளுக்கு என்ன திட்டங்கள் இருக்கு",
+        "சிறு விவசாயிகளுக்கு அரசு உதவி",
+        "தமிழ்நாடு வேளாண் திட்டங்கள்"
+      ],
+      "tanglish": [
+        "farmers ku enna scheme iruku",
+        "chinna vivasayi ku govt help",
+        "tamil nadu vivasaya thittam"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "scheme",
+      "thittam",
+      "திட்டம்",
+      "government"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "pm_kisan",
+    "description": "PM-KISAN queries",
+    "response_type": "scheme",
+    "examples": {
+      "english": [
+        "pm kisan money not received",
+        "how to apply for pm kisan",
+        "pm kisan ekyc"
+      ],
+      "tamil": [
+        "பிஎம் கிசான் பணம் வரல",
+        "பிஎம் கிசான் எப்படி விண்ணப்பிக்கிறது",
+        "பிஎம் கிசான் e-KYC"
+      ],
+      "tanglish": [
+        "pm kisan panam varala",
+        "pm kisan apply epdi",
+        "pm kisan ekyc panradhu epdi"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "pm kisan",
+      "kisan",
+      "2000",
+      "கிசான்"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "crop_insurance",
+    "description": "Crop insurance (PMFBY)",
+    "response_type": "scheme",
+    "examples": {
+      "english": [
+        "how to insure my paddy crop",
+        "crop insurance claim after flood",
+        "pmfby premium for rice"
+      ],
+      "tamil": [
+        "நெல் பயிர் காப்பீடு எப்படி பண்றது",
+        "வெள்ளத்துக்கு காப்பீடு இழப்பீடு",
+        "பயிர் காப்பீடு கடைசி தேதி"
+      ],
+      "tanglish": [
+        "paddy payir insurance epdi",
+        "vellam ku insurance claim",
+        "payir kaappeedu last date"
+      ]
+    },
+    "related_crops": [
+      "paddy",
+      "tomato",
+      "chilli",
+      "banana",
+      "sugarcane",
+      "groundnut",
+      "cotton",
+      "maize",
+      "brinjal",
+      "onion",
+      "turmeric",
+      "blackgram",
+      "greengram"
+    ],
+    "keywords": [
+      "insurance",
+      "kaappeedu",
+      "காப்பீடு",
+      "pmfby"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "subsidy",
+    "description": "Subsidies (irrigation, machinery, seeds, solar)",
+    "response_type": "scheme",
+    "examples": {
+      "english": [
+        "subsidy for drip irrigation",
+        "tractor subsidy in tamil nadu",
+        "subsidy for solar pump"
+      ],
+      "tamil": [
+        "சொட்டு நீர் பாசனத்துக்கு மானியம்",
+        "டிராக்டர் வாங்க மானியம்",
+        "சோலார் பம்ப் மானியம்"
+      ],
+      "tanglish": [
+        "drip ku maaniyam",
+        "tractor subsidy",
+        "solar pump subsidy"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "subsidy",
+      "maaniyam",
+      "மானியம்"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "farm_machinery",
+    "description": "Farm machinery selection and hiring",
+    "response_type": "machinery",
+    "examples": {
+      "english": [
+        "which power tiller is good for a small farm",
+        "rent a tractor near me",
+        "paddy transplanter machine"
+      ],
+      "tamil": [
+        "சின்ன நிலத்துக்கு எந்த பவர் டில்லர் நல்லது",
+        "டிராக்டர் வாடகைக்கு எங்க கிடைக்கும்",
+        "நெல் நடவு இயந்திரம்"
+      ],
+      "tanglish": [
+        "chinna nilathuku entha power tiller",
+        "tractor vaadagai ku enga",
+        "nel nadavu machine"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "tractor",
+      "machine",
+      "iyandhiram",
+      "இயந்திரம்",
+      "harvester"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "image_upload_help",
+    "description": "How to send a crop photo for diagnosis",
+    "response_type": "image_request",
+    "examples": {
+      "english": [
+        "can I send a photo of my crop",
+        "how to upload a leaf picture",
+        "please check this photo"
+      ],
+      "tamil": [
+        "என் பயிர் போட்டோ அனுப்பலாமா",
+        "இலை படம் எப்படி அனுப்புறது",
+        "இந்த போட்டோவ பாருங்க"
+      ],
+      "tanglish": [
+        "en payir photo anupalaama",
+        "ilai photo epdi anupradhu",
+        "indha photo paarunga"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "photo",
+      "image",
+      "picture",
+      "படம்"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "greeting",
+    "description": "Greeting",
+    "response_type": "greeting",
+    "examples": {
+      "english": [
+        "hi",
+        "hello",
+        "good morning"
+      ],
+      "tamil": [
+        "வணக்கம்",
+        "காலை வணக்கம்",
+        "ஹலோ"
+      ],
+      "tanglish": [
+        "vanakkam",
+        "hi anna",
+        "hello sir"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "hi",
+      "hello",
+      "vanakkam",
+      "வணக்கம்"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "thanks",
+    "description": "Thanks / closing",
+    "response_type": "thanks",
+    "examples": {
+      "english": [
+        "thank you",
+        "thanks very helpful",
+        "ok thanks"
+      ],
+      "tamil": [
+        "நன்றி",
+        "ரொம்ப நன்றி",
+        "மிக்க நன்றி"
+      ],
+      "tanglish": [
+        "nandri",
+        "romba nandri",
+        "thanks anna"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "thanks",
+      "nandri",
+      "நன்றி"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "agri_general_info",
+    "description": "Definitions / general agriculture concepts",
+    "response_type": "agriculture_question",
+    "examples": {
+      "english": [
+        "what is fertilizer",
+        "what does organic farming mean",
+        "what is kharif season"
+      ],
+      "tamil": [
+        "உரம் என்றால் என்ன",
+        "விவசாயம் என்றால் என்ன",
+        "குறுவை பருவம் என்றால் என்ன"
+      ],
+      "tanglish": [
+        "uram na enna",
+        "kuruvai season na enna",
+        "bio fertilizer na enna"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [
+      "what is",
+      "na enna",
+      "என்றால் என்ன"
+    ],
+    "negative_examples": []
+  },
+  {
+    "intent_name": "out_of_domain",
+    "description": "Anything not about agriculture/farming",
+    "response_type": "out_of_domain",
+    "examples": {
+      "english": [
+        "what is today's cricket score"
+      ],
+      "tamil": [
+        "இந்தியாவின் பிரதமர் யார்"
+      ],
+      "tanglish": [
+        "oru joke sollu"
+      ]
+    },
+    "related_crops": [],
+    "keywords": [],
+    "negative_examples": [
+      {
+        "text": "today paddy price",
+        "true_intent": "market_price"
+      }
+    ]
+  }
+]

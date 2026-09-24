@@ -1,0 +1,37 @@
+{
+ "validation": {
+  "accuracy": 0.643,
+  "macro_f1": 0.637
+ },
+ "test": {
+  "accuracy": 0.602,
+  "macro_f1": 0.566
+ },
+ "test_by_language": {
+  "english": 0.592,
+  "mixed": 0.714,
+  "tamil": 0.564,
+  "tanglish": 0.628
+ },
+ "test_by_noise": {
+  "farmer_slang": 0.544,
+  "missing_words": 0.618,
+  "mixed_language": 0.714,
+  "none": 0.639,
+  "phonetic": 0.571,
+  "short_query": 0.556,
+  "spelling_error": 0.5,
+  "voice_transcription_error": 0.583
+ },
+ "ood_recall_test": 0.766,
+ "worst_intents_test": {
+  "drought": 0.0,
+  "greeting": 0.0,
+  "fruit_rot": 0.0,
+  "fertilizer_timing": 0.0,
+  "post_harvest_storage": 0.0,
+  "potassium_deficiency": 0.0,
+  "weather": 0.0,
+  "seed_selection": 0.11
+ }
+}

@@ -1,0 +1,91 @@
+{
+  "version": "mnv3s-20260924",
+  "test_accuracy": 0.9722,
+  "validation_accuracy": 0.9731,
+  "per_class_test_accuracy": {
+    "rice_healthy": 0.946,
+    "rice_brown_spot": 0.962,
+    "rice_leaf_blight": 0.906,
+    "tomato_healthy": 1.0,
+    "tomato_leaf_spot": 0.994,
+    "tomato_early_blight": 0.993,
+    "chilli_healthy": 1.0,
+    "chilli_leaf_curl": 0.972,
+    "banana_healthy": 1.0,
+    "banana_leaf_disease": 0.958,
+    "unsupported": 0.904
+  },
+  "unseen_crop_rejection_rate": 0.8029,
+  "datasets": [
+    [
+      "Banana Leaf Disease Images (Mendeley Data rjykr62kdh v1)",
+      "CC BY 4.0"
+    ],
+    [
+      "Chilli Leaf Disease Image Dataset (Mendeley Data tm3v4zmh7c v1)",
+      "CC BY 4.0"
+    ],
+    [
+      "PlantVillage via Mendeley Data tywbtsjrjv v1",
+      "CC0 1.0"
+    ],
+    [
+      "RiceLeafBD (Mendeley Data kx9rx8p2mz v1)",
+      "CC BY 4.0"
+    ]
+  ],
+  "limitations": [
+    "Tomato images are PlantVillage lab photos (plain background); field photos may be recognised less reliably.",
+    "Each crop comes from a different dataset, so crop identification partly relies on photo style.",
+    "Banana has only ~470 photos; its accuracy estimate is less certain.",
+    "Only these 10 classes are supported; anything else must be reported as uncertain, never forced.",
+    "Rejection of unsupported plants is learned from other PlantVillage crops and two uncovered diseases; field photos of other crops may still be misread \u2014 see unseen_crop_rejection_rate."
+  ],
+  "unseen_crop_test_images": 350,
+  "best_epoch": "fine7",
+  "test_images": 1261,
+  "most_common_confusions": [
+    {
+      "true": "unsupported",
+      "predicted": "banana_healthy",
+      "count": 8
+    },
+    {
+      "true": "unsupported",
+      "predicted": "banana_leaf_disease",
+      "count": 6
+    },
+    {
+      "true": "rice_leaf_blight",
+      "predicted": "rice_brown_spot",
+      "count": 5
+    },
+    {
+      "true": "chilli_leaf_curl",
+      "predicted": "chilli_healthy",
+      "count": 5
+    },
+    {
+      "true": "rice_healthy",
+      "predicted": "rice_leaf_blight",
+      "count": 2
+    },
+    {
+      "true": "rice_brown_spot",
+      "predicted": "rice_leaf_blight",
+      "count": 2
+    },
+    {
+      "true": "unsupported",
+      "predicted": "tomato_healthy",
+      "count": 1
+    },
+    {
+      "true": "unsupported",
+      "predicted": "rice_brown_spot",
+      "count": 1
+    }
+  ],
+  "onnx_max_abs_diff": 4.202127456665039e-06,
+  "device": "cuda"
+}

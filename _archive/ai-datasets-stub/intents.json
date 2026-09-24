@@ -1,0 +1,10 @@
+{
+  "yellow_leaf": {
+    "description": "Farmer queries about crop leaves turning yellow due to nitrogen deficiency or disease",
+    "examples": {
+      "english": ["Why are my rice leaves turning yellow?", "Paddy leaves yellowing"],
+      "tamil": ["நெல் இலை மஞ்சளாகிறது என்ன செய்யலாம்?", "இலை மஞ்சள் நிறமாக உள்ளது"],
+      "tanglish": ["nel ilai yellow ah iruku", "nel chedi manjal aguthu"]
+    }
+  }
+}

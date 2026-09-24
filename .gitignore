@@ -1,0 +1,52 @@
+# ---------- Secrets (never commit) ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+service-account.json
+secrets/
+
+# ---------- Dependencies & environments ----------
+node_modules/
+.venv/
+venv/
+ai/.venv-train/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ---------- Build output ----------
+frontend/dist/
+/build/
+
+# ---------- Large / re-downloadable data ----------
+# Raw pages and image archives are fetched by the pipeline scripts; only processed/verified data is kept.
+data/raw/
+data/vision_raw/
+data/vision/images/
+# Training checkpoints (the exported runtime models in backend/models/ ARE committed)
+*.pt
+*.pth
+ai/models/intent/*
+!ai/models/intent/.gitkeep
+ai/models/vision/*
+!ai/models/vision/.gitkeep
+
+# ---------- IDE & OS ----------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---------- Logs & temp ----------
+*.log
+npm-debug.log*
+.pytest_cache/
+.coverage
+htmlcov/
+tmp/
+data/voice_test/

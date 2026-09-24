@@ -1,0 +1,5 @@
+# Pyrefly type-checker config: use the backend venv and resolve `app.*` imports from backend/
+project-includes = ["backend/app", "backend/run.py", "tests", "ai"]
+project-excludes = ["**/.venv/**", "**/node_modules/**", "_archive/**"]
+search-path = ["backend"]
+python-interpreter-path = "backend/.venv/Scripts/python.exe"

@@ -1,0 +1,23 @@
+﻿fertilizer_id,name_en,name_ta,type,nutrient_content,use,dose_guidance,verification_required
+urea,Urea,யூரியா,straight nitrogen,46% N,Main nitrogen source; apply in splits to reduce losses.,Not provided — use soil test and agriculture office recommendation,true
+dap,DAP (Diammonium phosphate),டிஏபி,complex,"18% N, 46% P2O5",Basal source of phosphorus and some nitrogen.,Not provided — use soil test and agriculture office recommendation,true
+mop,Muriate of potash (MOP),பொட்டாஷ்,straight potassium,60% K2O,Main potassium source.,Not provided — use soil test and agriculture office recommendation,true
+ssp,Single super phosphate (SSP),சூப்பர் பாஸ்பேட்,straight phosphorus,16% P2O5 plus sulphur and calcium,Phosphorus source that also supplies sulphur and calcium.,Not provided — use soil test and agriculture office recommendation,true
+ammonium_sulphate,Ammonium sulphate,அம்மோனியம் சல்பேட்,straight nitrogen,"20.6% N, about 24% S",Nitrogen plus sulphur.,Not provided — use soil test and agriculture office recommendation,true
+npk_171717,NPK complex 17:17:17,காம்ப்ளக்ஸ் உரம் 17:17:17,complex,"17% N, 17% P2O5, 17% K2O",Balanced complex fertilizer.,Not provided — use soil test and agriculture office recommendation,true
+zinc_sulphate,Zinc sulphate (heptahydrate),துத்தநாக சல்பேட்,micronutrient,about 21% Zn,"Corrects zinc deficiency, common in paddy soils.",Not provided — use soil test and agriculture office recommendation,true
+gypsum,Gypsum,ஜிப்சம்,amendment / secondary nutrient,calcium and sulphur (content varies by grade),Used for groundnut pod filling and for reclaiming sodic soils.,Not provided — use soil test and agriculture office recommendation,true
+lime,Agricultural lime,சுண்ணாம்பு,amendment,calcium carbonate,Raises pH of acidic soils.,Not provided — use soil test and agriculture office recommendation,true
+micronutrient_mix,Crop-specific micronutrient mixture,நுண்ணூட்டக் கலவை,micronutrient,varies by crop mixture,TNAU and the agriculture department supply crop-specific mixtures.,Not provided — use soil test and agriculture office recommendation,true
+fym,Farmyard manure,தொழுவுரம்,organic manure,low and variable NPK,"Improves soil structure, water holding and microbial life.",Not provided — use soil test and agriculture office recommendation,true
+compost,Compost,மட்கு உரம்,organic manure,low and variable NPK,Made from decomposed farm residues.,Not provided — use soil test and agriculture office recommendation,true
+vermicompost,Vermicompost,மண்புழு உரம்,organic manure,"higher nutrient content than ordinary compost, variable",Good for nurseries and vegetables.,Not provided — use soil test and agriculture office recommendation,true
+neem_cake,Neem cake,வேப்பம் புண்ணாக்கு,organic manure,NPK plus natural pest-suppressing compounds,Also reduces some soil pests and nematodes.,Not provided — use soil test and agriculture office recommendation,true
+daincha,Daincha (green manure),தக்கைப்பூண்டு,green manure,adds nitrogen and organic matter,Grown and ploughed in before paddy.,Not provided — use soil test and agriculture office recommendation,true
+sunnhemp,Sunn hemp (green manure),சணப்பு,green manure,adds nitrogen and organic matter,Fast-growing green manure crop.,Not provided — use soil test and agriculture office recommendation,true
+azospirillum,Azospirillum,அசோஸ்பைரில்லம்,biofertilizer,nitrogen-fixing bacteria,"For non-legume crops like paddy, maize and vegetables.",Not provided — use soil test and agriculture office recommendation,true
+rhizobium,Rhizobium,ரைசோபியம்,biofertilizer,nitrogen-fixing bacteria,Seed inoculant for pulses and groundnut.,Not provided — use soil test and agriculture office recommendation,true
+phosphobacteria,Phosphobacteria,பாஸ்போபாக்டீரியா,biofertilizer,phosphate-solubilising bacteria,Makes soil phosphorus more available.,Not provided — use soil test and agriculture office recommendation,true
+vam,Mycorrhiza (VAM),வேர் உட்பூசணம்,biofertilizer,root-associated fungi,Improves phosphorus and water uptake.,Not provided — use soil test and agriculture office recommendation,true
+panchagavya,Panchagavya,பஞ்சகவ்யா,organic growth promoter,traditional cow-product preparation,Traditional growth promoter used in organic farming; scientific evidence varies.,Not provided — use soil test and agriculture office recommendation,true
+jeevamirtham,Jeevamirtham,ஜீவாமிர்தம்,natural farming input,fermented microbial preparation,Used in natural farming to boost soil microbes; evidence varies.,Not provided — use soil test and agriculture office recommendation,true

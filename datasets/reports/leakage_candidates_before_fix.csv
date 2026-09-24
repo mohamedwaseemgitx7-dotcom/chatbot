@@ -1,0 +1,39 @@
+﻿eval_text,train_text,similarity,action
+banana disease,வாழை அழுகல் நோய்,0.905,eval group moved to train
+தென்னை இலை மஞ்சளாகுது ஏன்?,why is my coconut leaf turning yellow,0.967,eval group moved to train
+தென்னை இலை மஞ்சளாகுது,is my coconut leaf turning yellow,0.963,eval group moved to train
+ilai manjal,இலை மஞ்சள்,1.0,eval group moved to train
+kathiri kaai sedi azhugudhu,கத்தரி காய் அழுகுது,0.931,eval group moved to train
+kathiri pazham azhugal,fruit rot in brinjal,0.974,eval group moved to train
+thanni chinna vengayam,chinna vengayam thanni,1.0,eval group moved to train
+karumbu stem borer attack,கரும்பு தண்டு துளைப்பான் தாக்குதல்,1.0,eval group moved to train
+karumbu borer attack,கரும்பு தண்டு துளைப்பான் தாக்குதல்,0.903,eval group moved to train
+nel stem borer attack,நெல் தண்டு துளைப்பான் தாக்குதல்,1.0,eval group moved to train
+nel stem borer atack,நெல் தண்டு துளைப்பான் தாக்குதல்,1.0,eval group moved to train
+பருத்தி காய்ப்புழு,paruthi kaai puzhu,1.0,eval group moved to train
+pachai payaru kaai puzhu,fruit borer in green gram,0.98,eval group moved to train
+good hybrid chilli seeds,hybrid milaga vidhai,0.915,eval group moved to train
+good hybrid chilli vidhai,hybrid milaga vidhai,0.915,eval group moved to train
+entha paruththi ragam best,which cotton variety is best,0.988,eval group moved to train
+enta paruththi ragam best,which cotton variety is best,0.988,eval group moved to train
+short duration thakkali ragam,short duration tomato variety,1.0,eval group moved to train
+short duration thakkali variety,short duration tomato variety,1.0,eval group moved to train
+seed treatment with trichoderma,trichoderma vidhai nerthi,0.941,eval group moved to train
+seed treatment wih trichoderma,trichoderma vidhai nerthi,0.926,eval group moved to train
+bro seed treatment with trichoderma,trichoderma vidhai nerthi,0.915,eval group moved to train
+paasi payaru,green gram,1.0,eval group moved to train
+iyarkai vivasayam epdi start,how to start organic farming,0.991,eval group moved to train
+how to apply for pm kisan,pm kisan apply epdi,0.929,eval group moved to train
+where to seed subsidy,vidhai maaniyam enga,0.983,eval group moved to train
+tractor vaadagai,டிராக்டர் வாடகைக்கு,1.0,eval group moved to train
+tractor vaadagai enga,டிராக்டர் வாடகைக்கு,0.911,eval group moved to train
+nel nadavu machine,நெல் நடவு இயந்திரம்,1.0,eval group moved to train
+nel nadav machine,நெல் நடவு இயந்திரம்,1.0,eval group moved to train
+வணக்கம்,hello,1.0,eval group moved to train
+வணக்கம் ஐயா,hello sir,1.0,eval group moved to train
+ஐயா வணக்கம் ஐயா,hello sir,0.947,eval group moved to train
+நன்றி,thanks sir,0.906,eval group moved to train
+சார் நன்றி,thanks sir,1.0,eval group moved to train
+nandri,thanks sir,0.906,eval group moved to train
+144 square root enna,what is the square root of 144,0.922,eval group moved to train
+how to reset my phone,phone reset epdi,0.965,eval group moved to train

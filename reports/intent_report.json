@@ -1,0 +1,32 @@
+{
+  "trained_at": "2026-09-24T07:24:11+00:00",
+  "C": 10.0,
+  "train_rows": 5259,
+  "augmentation_leaks_dropped": 176,
+  "test_rows": 528,
+  "test_accuracy": 0.801,
+  "test_macro_f1": 0.766,
+  "test_accuracy_by_language": {
+    "english": 0.835,
+    "mixed": 0.833,
+    "tamil": 0.702,
+    "tanglish": 0.893
+  },
+  "out_of_domain_recall": 0.962,
+  "out_of_domain_false_alarm_rate": 0.027,
+  "weakest_intents": {
+    "drought": 0.0,
+    "potassium_deficiency": 0.1,
+    "fertilizer": 0.23,
+    "soil_ph": 0.29,
+    "bollworm": 0.33,
+    "organic_fertilizer": 0.33,
+    "organic_farming": 0.4,
+    "harvesting": 0.5
+  },
+  "baseline_before_this_work": {
+    "test_accuracy": 0.602,
+    "test_macro_f1": 0.566,
+    "note": "dataset baseline, TF-IDF only"
+  }
+}

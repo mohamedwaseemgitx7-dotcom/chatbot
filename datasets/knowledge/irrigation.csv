@@ -1,0 +1,24 @@
+﻿record_id,crop,topic,name,description,notes,verification_required
+IRR_flood_basin,all,method,Flood / basin irrigation,Water flows over the field or into basins around plants.,Simple but uses the most water; level fields well.,true
+IRR_furrow,all,method,Furrow irrigation,Water flows in furrows between ridges.,"Suits row crops like cotton, maize, sugarcane; skip-furrow saves water.",true
+IRR_drip,all,method,Drip irrigation,Water is delivered near roots through emitters.,"Saves water, allows fertigation; clean filters and flush laterals regularly.",true
+IRR_sprinkler,all,method,Sprinkler irrigation,Water is sprayed like rain.,"Suits pulses, groundnut and uneven land; avoid in high wind.",true
+IRR_rain_gun,all,method,Rain gun,Large sprinkler covering a wide radius.,Suits sugarcane and fodder; needs good pressure.,true
+IRR_awd,all,method,Alternate wetting and drying (paddy),Field is re-flooded only after standing water disappears to a set level.,Saves water in paddy without yield loss when managed well; keep water at flowering.,true
+IRR_mulching,all,method,Mulching,Covering soil with crop residue or plastic film.,Reduces evaporation and weeds.,true
+IRR_farm_pond,all,method,Farm pond,Pond to harvest runoff rainwater.,Provides life-saving irrigation in dry spells.,true
+IRR_paddy,paddy,crop_water_need,Paddy,Critical stages are tillering to panicle initiation and flowering. Alternate wetting and drying after establishment saves water; avoid stress at flowering and drain the field about 10–15 days before harvest.,,true
+IRR_tomato,tomato,crop_water_need,Tomato,Critical stages are flowering and fruit development. Irregular watering causes fruit cracking and blossom-end rot; drip with mulch works well.,,true
+IRR_chilli,chilli,crop_water_need,Chilli,"Critical stages are flowering and fruit set. Chilli suffers from both water stress and waterlogging, so ensure good drainage.",,true
+IRR_banana,banana,crop_water_need,Banana,"Banana needs water throughout growth, most critically at flowering and bunch development. Drip irrigation is widely used; avoid prolonged waterlogging.",,true
+IRR_coconut,coconut,crop_water_need,Coconut,Coconut needs regular irrigation in summer; water stress reduces nut set in later harvests. Basin or drip irrigation with husk or frond mulch conserves moisture.,,true
+IRR_sugarcane,sugarcane,crop_water_need,Sugarcane,The formative (tillering) phase and grand growth phase are critical. Irrigation is usually reduced near harvest; confirm timing locally.,,true
+IRR_groundnut,groundnut,crop_water_need,Groundnut,"Critical stages are flowering, pegging and pod development; avoid excess water at pod maturity.",,true
+IRR_cotton,cotton,crop_water_need,Cotton,Critical stages are flowering and boll formation; avoid waterlogging.,,true
+IRR_maize,maize,crop_water_need,Maize,Tasselling and silking are the most critical stages; stress then sharply reduces grain set. Maize is sensitive to waterlogging.,,true
+IRR_brinjal,brinjal,crop_water_need,Brinjal,Flowering and fruiting are critical; give regular light irrigation.,,true
+IRR_onion,onion,crop_water_need,Onion (small onion),Shallow roots need frequent light irrigation; stopping irrigation about 10 days before harvest improves storage life.,,true
+IRR_drumstick,drumstick,crop_water_need,Drumstick (moringa),Drumstick is drought tolerant; irrigate at flowering and pod set and avoid waterlogging.,,true
+IRR_turmeric,turmeric,crop_water_need,Turmeric,"Needs frequent irrigation in early growth; avoid waterlogging, which favours rhizome rot.",,true
+IRR_blackgram,blackgram,crop_water_need,Black gram,Critical stages are flowering and pod filling; rice-fallow crops grow on residual moisture.,,true
+IRR_greengram,greengram,crop_water_need,Green gram,Critical stages are flowering and pod filling; rice-fallow crops grow on residual moisture.,,true

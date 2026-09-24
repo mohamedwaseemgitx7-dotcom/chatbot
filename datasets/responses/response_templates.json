@@ -1,0 +1,314 @@
+{
+  "_note": "Placeholders like {crop} are filled from the knowledge base. Never generate free text for doses.",
+  "template_count": 129,
+  "templates": {
+    "greeting": [
+      {
+        "id": "TPL_greeting",
+        "english": "Hello! I'm FarmerAssist 🌾. Ask me about crops, pests, fertilizers, irrigation or government schemes. You can type, speak or send a crop photo.",
+        "tamil": "வணக்கம்! நான் FarmerAssist 🌾. பயிர், பூச்சி, உரம், பாசனம், அரசுத் திட்டங்கள் பற்றி கேளுங்கள். தட்டச்சு செய்யலாம், பேசலாம் அல்லது பயிர் புகைப்படம் அனுப்பலாம்.",
+        "tanglish": "Vanakkam! Naan FarmerAssist 🌾. Payir, poochi, uram, thanni, govt scheme pathi kelunga. Type pannalaam, pesalaam, illa payir photo anupalaam."
+      },
+      {
+        "id": "TPL_greeting_1",
+        "english": "Hi! How can I help with your farm today?",
+        "tamil": "வணக்கம்! இன்று உங்கள் விவசாயத்தில் எப்படி உதவலாம்?",
+        "tanglish": "Hi! Inniku unga vivasayathula enna help venum?"
+      }
+    ],
+    "thanks": [
+      {
+        "id": "TPL_thanks",
+        "english": "You're welcome! Wishing you a good harvest.",
+        "tamil": "மகிழ்ச்சி! நல்ல விளைச்சல் கிடைக்க வாழ்த்துகள்.",
+        "tanglish": "Santhosham! Nalla vilaichal kidaikka vaazhthukkal."
+      },
+      {
+        "id": "TPL_thanks_1",
+        "english": "Happy to help. Ask anytime.",
+        "tamil": "உதவியதில் மகிழ்ச்சி. எப்போது வேண்டுமானாலும் கேளுங்கள்.",
+        "tanglish": "Help pannadhula santhosham. Eppo venumnaalum kelunga."
+      }
+    ],
+    "agriculture_question": [
+      {
+        "id": "TPL_agriculture_question",
+        "english": "{content}",
+        "tamil": "{content}",
+        "tanglish": "{content}"
+      },
+      {
+        "id": "TPL_agriculture_question_1",
+        "english": "Here is what I found about {topic}: {content}",
+        "tamil": "{topic} பற்றி: {content}",
+        "tanglish": "{topic} pathi: {content}"
+      }
+    ],
+    "crop_disease": [
+      {
+        "id": "TPL_crop_disease",
+        "english": "This looks like {disease} in {crop}. Symptoms: {symptoms}. Prevention: {prevention} Management: {management}",
+        "tamil": "இது {crop} பயிரில் {disease} போல் தெரிகிறது. அறிகுறிகள்: {symptoms}. தடுப்பு: {prevention} மேலாண்மை: {management}",
+        "tanglish": "Idhu {crop} la {disease} maadhiri theriyudhu. Symptoms: {symptoms}. Thaduppu: {prevention} Management: {management}"
+      },
+      {
+        "id": "TPL_crop_disease_1",
+        "english": "Several problems can cause this in {crop}. Please send a clear photo of the affected leaf so I can check.",
+        "tamil": "{crop} பயிரில் இதற்கு பல காரணங்கள் இருக்கலாம். பாதிக்கப்பட்ட இலையின் தெளிவான புகைப்படம் அனுப்புங்கள்.",
+        "tanglish": "{crop} la idhuku pala reason irukalaam. Affected ilai oda clear photo anupunga."
+      },
+      {
+        "id": "TPL_crop_disease_2",
+        "english": "For chemical control of {disease}, please get the approved product and dose from your agriculture officer or KVK.",
+        "tamil": "{disease} ரசாயனக் கட்டுப்பாட்டிற்கு அனுமதிக்கப்பட்ட மருந்து, அளவை வேளாண் அலுவலர் அல்லது KVK-இடம் கேளுங்கள்.",
+        "tanglish": "{disease} ku chemical marundhu, alavu agri officer illa KVK kitta kelunga."
+      }
+    ],
+    "pest": [
+      {
+        "id": "TPL_pest",
+        "english": "This looks like {pest} in {crop}. Damage: {damage}. What to do: {ipm}",
+        "tamil": "இது {crop} பயிரில் {pest} தாக்குதல் போல் தெரிகிறது. சேதம்: {damage}. செய்ய வேண்டியது: {ipm}",
+        "tanglish": "Idhu {crop} la {pest} attack maadhiri theriyudhu. Damage: {damage}. Enna pannanum: {ipm}"
+      },
+      {
+        "id": "TPL_pest_1",
+        "english": "Start with integrated pest management: weekly field checks, traps and neem-based sprays. For chemicals, ask your agriculture officer.",
+        "tamil": "ஒருங்கிணைந்த பூச்சி மேலாண்மையுடன் தொடங்குங்கள்: வாராந்திர வயல் ஆய்வு, பொறிகள், வேப்பம் சார்ந்த தெளிப்பு. ரசாயன மருந்துக்கு வேளாண் அலுவலரை அணுகுங்கள்.",
+        "tanglish": "IPM la start pannunga: vaaram oru thadava vayal check, trap, neem spray. Chemical marundhuku agri officer kitta kelunga."
+      }
+    ],
+    "fertilizer": [
+      {
+        "id": "TPL_fertilizer",
+        "english": "For {crop}, base fertilizer on a soil test. {content} Get exact quantities from your agriculture office.",
+        "tamil": "{crop} பயிருக்கு உரத்தை மண் பரிசோதனை அடிப்படையில் இடுங்கள். {content} சரியான அளவை வேளாண் அலுவலகத்தில் கேளுங்கள்.",
+        "tanglish": "{crop} ku uram soil test adippadaila podunga. {content} Correct alavu agri office la kelunga."
+      },
+      {
+        "id": "TPL_fertilizer_1",
+        "english": "These symptoms match {deficiency}: {symptoms}. Confirm with a soil or leaf test before correcting.",
+        "tamil": "இந்த அறிகுறிகள் {deficiency} போல் உள்ளன: {symptoms}. சரிசெய்யும் முன் மண் அல்லது இலை பரிசோதனை மூலம் உறுதி செய்யுங்கள்.",
+        "tanglish": "Indha symptoms {deficiency} maadhiri iruku: {symptoms}. Sari panna munnadi soil illa ilai test la confirm pannunga."
+      }
+    ],
+    "irrigation": [
+      {
+        "id": "TPL_irrigation",
+        "english": "{crop} irrigation: {content}",
+        "tamil": "{crop} பாசனம்: {content}",
+        "tanglish": "{crop} thanni paaichal: {content}"
+      },
+      {
+        "id": "TPL_irrigation_1",
+        "english": "Drip or sprinkler irrigation can save water, and Tamil Nadu offers micro-irrigation subsidy. Ask me about the scheme.",
+        "tamil": "சொட்டு நீர் அல்லது தெளிப்பு நீர் பாசனம் நீரைச் சேமிக்கும்; தமிழ்நாட்டில் நுண்ணீர் பாசன மானியம் உண்டு. திட்டம் பற்றி என்னிடம் கேளுங்கள்.",
+        "tanglish": "Drip illa sprinkler thanni save pannum; Tamil Nadu la micro irrigation subsidy iruku. Scheme pathi ennai kelunga."
+      }
+    ],
+    "soil": [
+      {
+        "id": "TPL_soil",
+        "english": "{content}",
+        "tamil": "{content}",
+        "tanglish": "{content}"
+      },
+      {
+        "id": "TPL_soil_1",
+        "english": "Take soil from 8–10 spots about 15 cm deep, mix, and send half a kilo to a soil testing lab through your agriculture office.",
+        "tamil": "வயலின் 8–10 இடங்களில் சுமார் 15 செ.மீ ஆழத்தில் மண் எடுத்து கலந்து, அரை கிலோவை வேளாண் அலுவலகம் மூலம் மண் பரிசோதனை நிலையத்திற்கு அனுப்புங்கள்.",
+        "tanglish": "Vayal la 8–10 idathula 15 cm aazhathula mann eduthu kalandhu, arai kilo-va agri office moolama soil lab ku anupunga."
+      }
+    ],
+    "seed": [
+      {
+        "id": "TPL_seed",
+        "english": "Choose a TNAU-recommended {crop} variety for your district and season, and buy certified seed from the Agriculture Extension Centre.",
+        "tamil": "உங்கள் மாவட்டம், பருவத்திற்கு ஏற்ற TNAU பரிந்துரை {crop} ரகத்தைத் தேர்ந்து, வேளாண் விரிவாக்க மையத்தில் சான்று விதை வாங்குங்கள்.",
+        "tanglish": "Unga district, season ku yetha TNAU recommend panna {crop} ragam select panni, Agriculture Extension Centre la certified vidhai vaangunga."
+      },
+      {
+        "id": "TPL_seed_1",
+        "english": "Treat seeds with bio-agents like Trichoderma or Pseudomonas and biofertilizers before sowing; ask the agriculture office for the method.",
+        "tamil": "விதைப்பதற்கு முன் டிரைக்கோடெர்மா, சூடோமோனாஸ் போன்ற உயிர்க் காரணிகள் மற்றும் உயிர் உரங்களால் விதை நேர்த்தி செய்யுங்கள்; முறையை வேளாண் அலுவலகத்தில் கேளுங்கள்.",
+        "tanglish": "Vidhaikka munnadi Trichoderma, Pseudomonas, bio-fertilizer vachu vidhai nerthi pannunga; method agri office la kelunga."
+      }
+    ],
+    "crop_info": [
+      {
+        "id": "TPL_crop_info",
+        "english": "{content}",
+        "tamil": "{content}",
+        "tanglish": "{content}"
+      },
+      {
+        "id": "TPL_crop_info_1",
+        "english": "{crop}: {content} This varies with variety and district.",
+        "tamil": "{crop}: {content} ரகம், மாவட்டத்தைப் பொறுத்து மாறும்.",
+        "tanglish": "{crop}: {content} Ragam, district poruthu maarum."
+      }
+    ],
+    "scheme": [
+      {
+        "id": "TPL_scheme",
+        "english": "{scheme}: {benefits} Eligibility: {eligibility} How to apply: {application}. Verify details at {source}.",
+        "tamil": "{scheme}: {benefits} தகுதி: {eligibility} விண்ணப்பம்: {application}. விவரங்களை {source} இல் சரிபார்க்கவும்.",
+        "tanglish": "{scheme}: {benefits} Eligibility: {eligibility} Apply: {application}. Details {source} la check pannunga."
+      },
+      {
+        "id": "TPL_scheme_1",
+        "english": "Scheme rules and amounts change. Please confirm with your block agriculture office or the official website.",
+        "tamil": "திட்ட விதிகளும் தொகையும் மாறலாம். வட்டார வேளாண் அலுவலகம் அல்லது அதிகாரப்பூர்வ இணையதளத்தில் உறுதி செய்யுங்கள்.",
+        "tanglish": "Scheme rules, amount maaralaam. Block agri office illa official website la confirm pannunga."
+      }
+    ],
+    "weather": [
+      {
+        "id": "TPL_weather",
+        "english": "I can't fetch live weather yet. Check the IMD forecast or the Uzhavan app. Avoid spraying or fertilizing if rain is expected within 24 hours.",
+        "tamil": "நேரடி வானிலையை இப்போது பெற முடியாது. IMD முன்னறிவிப்பு அல்லது உழவன் செயலியைப் பாருங்கள். 24 மணி நேரத்தில் மழை எதிர்பார்க்கப்பட்டால் மருந்து தெளிப்பையும் உரமிடுதலையும் தவிர்க்கவும்.",
+        "tanglish": "Live weather ippo edukka mudiyaadhu. IMD forecast illa Uzhavan app paarunga. 24 mani nerathula mazhai varum-na spray, uram rendum thalli podunga."
+      },
+      {
+        "id": "TPL_weather_1",
+        "english": "After flooding, drain excess water quickly, remove fallen or rotten plants, and report crop loss for insurance within 72 hours.",
+        "tamil": "வெள்ளத்திற்குப் பிறகு தேங்கிய நீரை விரைவாக வடியுங்கள், விழுந்த/அழுகிய செடிகளை அகற்றுங்கள், காப்பீட்டிற்கு 72 மணி நேரத்திற்குள் இழப்பைத் தெரிவியுங்கள்.",
+        "tanglish": "Vellam ku apram thengina thanni-ya seekiram vadinga, vizhundha/azhugina sedi-ya remove pannunga, insurance ku 72 mani nerathula loss report pannunga."
+      }
+    ],
+    "market": [
+      {
+        "id": "TPL_market",
+        "english": "Prices change daily. Check e-NAM or the Uzhavan app, or visit your nearest regulated market or Uzhavar Sandhai.",
+        "tamil": "விலை தினமும் மாறும். e-NAM அல்லது உழவன் செயலியைப் பாருங்கள், அல்லது அருகிலுள்ள ஒழுங்குமுறை விற்பனைக் கூடம் / உழவர் சந்தைக்குச் செல்லுங்கள்.",
+        "tanglish": "Vilai dhinamum maarum. e-NAM illa Uzhavan app paarunga, illa pakkathu regulated market / Uzhavar Sandhai ku ponga."
+      }
+    ],
+    "machinery": [
+      {
+        "id": "TPL_machinery",
+        "english": "You can rent machinery through the Agricultural Engineering Department's hiring services or local custom hiring centres; subsidies are available under SMAM.",
+        "tamil": "வேளாண் பொறியியல் துறையின் வாடகை சேவை அல்லது உள்ளூர் வாடகை மையங்கள் மூலம் இயந்திரங்களை வாடகைக்கு எடுக்கலாம்; SMAM திட்டத்தில் மானியம் உண்டு.",
+        "tanglish": "Agricultural Engineering Department vaadagai service illa local custom hiring centre la machine vaadagai ku edukalaam; SMAM la subsidy iruku."
+      }
+    ],
+    "image_request": [
+      {
+        "id": "TPL_image_request",
+        "english": "Tap the camera/attach button and send a clear, close-up daylight photo of one affected leaf.",
+        "tamil": "கேமரா/இணைப்பு பொத்தானை அழுத்தி, பகல் வெளிச்சத்தில் பாதிக்கப்பட்ட ஒரு இலையின் தெளிவான அருகாமைப் புகைப்படத்தை அனுப்புங்கள்.",
+        "tanglish": "Camera/attach button press panni, pagal velichathula affected oru ilai-oda clear close-up photo anupunga."
+      }
+    ],
+    "image_prediction": [
+      {
+        "id": "TPL_image_prediction",
+        "english": "Photo analysis: {label} ({confidence}% confidence). {advice}",
+        "tamil": "புகைப்பட ஆய்வு: {label} ({confidence}% நம்பிக்கை). {advice}",
+        "tanglish": "Photo analysis: {label} ({confidence}% confidence). {advice}"
+      },
+      {
+        "id": "TPL_image_prediction_1",
+        "english": "Your {crop} leaf looks healthy. Keep monitoring weekly.",
+        "tamil": "உங்கள் {crop} இலை ஆரோக்கியமாகத் தெரிகிறது. வாரந்தோறும் கண்காணியுங்கள்.",
+        "tanglish": "Unga {crop} ilai healthy-a theriyudhu. Vaaram oru thadava check pannunga."
+      },
+      {
+        "id": "TPL_image_prediction_2",
+        "english": "I can only identify {supported} from photos right now. Please describe the problem in words.",
+        "tamil": "இப்போது புகைப்படத்தில் {supported} மட்டுமே கண்டறிய முடியும். பிரச்சனையை வார்த்தைகளில் விவரிக்கவும்.",
+        "tanglish": "Ippo photo la {supported} mattum dhaan kandupudika mudiyum. Problem-a words la sollunga."
+      }
+    ],
+    "low_confidence": [
+      {
+        "id": "TPL_low_confidence",
+        "english": "I am not confident about this. Please tell me the crop name and describe the problem.",
+        "tamil": "இதைப் பற்றி எனக்கு போதுமான நம்பிக்கை இல்லை. பயிரின் பெயரையும் பிரச்சனையையும் குறிப்பிடவும்.",
+        "tanglish": "Idha pathi enakku confidence pathala. Crop name, problem-a konjam detail-a sollunga."
+      },
+      {
+        "id": "TPL_low_confidence_1",
+        "english": "The photo is not clear enough. Please retake it in daylight, close to one affected leaf.",
+        "tamil": "புகைப்படம் போதுமான அளவு தெளிவாக இல்லை. பகல் வெளிச்சத்தில் பாதிக்கப்பட்ட இலைக்கு அருகில் மீண்டும் எடுக்கவும்.",
+        "tanglish": "Photo clear-a illa. Pagal velichathula affected ilai pakkathula thirumba edunga."
+      }
+    ],
+    "out_of_domain": [
+      {
+        "id": "TPL_out_of_domain",
+        "english": "Sorry, I can help only with agriculture and farming-related questions.",
+        "tamil": "மன்னிக்கவும், விவசாயம் தொடர்பான கேள்விகளுக்கு மட்டுமே என்னால் உதவ முடியும்.",
+        "tanglish": "Sorry, naan vivasayam sambandhamana kelvigalukku mattum dhaan help panna mudiyum."
+      }
+    ],
+    "unknown_question": [
+      {
+        "id": "TPL_unknown_question",
+        "english": "I don't have information on that yet. Please contact your block agriculture office or Kisan Call Centre 1800-180-1551.",
+        "tamil": "அதைப் பற்றிய தகவல் இன்னும் என்னிடம் இல்லை. வட்டார வேளாண் அலுவலகம் அல்லது கிசான் அழைப்பு மையம் 1800-180-1551-ஐ தொடர்பு கொள்ளுங்கள்.",
+        "tanglish": "Adha pathi info ennidam innum illa. Block agri office illa Kisan Call Centre 1800-180-1551 ku call pannunga."
+      }
+    ],
+    "missing_information": [
+      {
+        "id": "TPL_missing_information",
+        "english": "Which crop is this about?",
+        "tamil": "இது எந்தப் பயிர் பற்றியது?",
+        "tanglish": "Idhu endha payir pathi?"
+      },
+      {
+        "id": "TPL_missing_information_1",
+        "english": "Which district are you in?",
+        "tamil": "நீங்கள் எந்த மாவட்டத்தில் இருக்கிறீர்கள்?",
+        "tanglish": "Neenga endha district la irukeenga?"
+      },
+      {
+        "id": "TPL_missing_information_2",
+        "english": "How old is the crop (days after sowing/transplanting)?",
+        "tamil": "பயிருக்கு எத்தனை நாள் ஆகிறது (விதைத்த/நட்ட பின்)?",
+        "tanglish": "Payiruku evlo naal aachu (vidhaicha/nattadhu la irundhu)?"
+      }
+    ],
+    "system_error": [
+      {
+        "id": "TPL_system_error",
+        "english": "Something went wrong on my side. Please try again in a moment.",
+        "tamil": "என் பக்கத்தில் ஏதோ பிழை ஏற்பட்டது. சிறிது நேரத்தில் மீண்டும் முயற்சிக்கவும்.",
+        "tanglish": "En side la edho error. Konja neram kazhichu thirumba try pannunga."
+      }
+    ],
+    "rate_limited": [
+      {
+        "id": "TPL_rate_limited",
+        "english": "You're sending messages too fast. Please wait {seconds} seconds.",
+        "tamil": "நீங்கள் மிக வேகமாக செய்திகள் அனுப்புகிறீர்கள். {seconds} வினாடிகள் காத்திருக்கவும்.",
+        "tanglish": "Romba fast-a message anupureenga. {seconds} second wait pannunga."
+      }
+    ],
+    "voice_unclear": [
+      {
+        "id": "TPL_voice_unclear",
+        "english": "I couldn't hear that clearly. Please speak again closer to the phone or type your question.",
+        "tamil": "தெளிவாகக் கேட்கவில்லை. மொபைலுக்கு அருகில் மீண்டும் பேசுங்கள் அல்லது தட்டச்சு செய்யுங்கள்.",
+        "tanglish": "Clear-a kekkala. Phone pakkathula thirumba pesunga illa type pannunga."
+      }
+    ],
+    "pesticide_safety": [
+      {
+        "id": "TPL_pesticide_safety",
+        "english": "Always wear gloves and a mask while spraying, follow the label dose, and respect the waiting period before harvest.",
+        "tamil": "மருந்து தெளிக்கும்போது கையுறை, முகக்கவசம் அணியுங்கள்; லேபிளில் உள்ள அளவைப் பின்பற்றுங்கள்; அறுவடைக்கு முன் காத்திருப்பு காலத்தைக் கடைப்பிடியுங்கள்.",
+        "tanglish": "Spray pannum bodhu glove, mask podunga; label la iruka alavu follow pannunga; aruvadai ku munnadi waiting period maintain pannunga."
+      }
+    ],
+    "verification_notice": [
+      {
+        "id": "TPL_verification_notice",
+        "english": "Note: this is general guidance. Please confirm with your local agriculture officer.",
+        "tamil": "குறிப்பு: இது பொதுவான வழிகாட்டல். உள்ளூர் வேளாண் அலுவலரிடம் உறுதி செய்யுங்கள்.",
+        "tanglish": "Note: idhu general guidance. Local agri officer kitta confirm pannunga."
+      }
+    ]
+  }
+}

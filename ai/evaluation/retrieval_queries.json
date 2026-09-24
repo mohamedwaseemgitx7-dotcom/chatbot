@@ -1,0 +1,41 @@
+{
+  "_note": "Retrieval evaluation. 'expect' = crop + a word that must appear in the retrieved record's title (lower-case, any language). 'none' = nothing should be retrieved (unsupported crop / off-topic).",
+  "positive": [
+    {"q": "rice blast disease symptoms", "crop": "paddy", "expect": ["blast", "குலை"]},
+    {"q": "how to control sheath blight in paddy", "crop": "paddy", "expect": ["sheath blight", "இலையுறை கருகல்"]},
+    {"q": "paddy leaves have brown spots", "crop": "paddy", "expect": ["brown spot", "செம்புள்ளி"]},
+    {"q": "yellow stem borer in rice how to control", "crop": "paddy", "expect": ["stem borer", "stemborer", "தண்டு துளைப்பான்", "குருத்துப்பூச்சி"]},
+    {"q": "brown plant hopper attack in paddy", "crop": "paddy", "expect": ["plant hopper", "planthopper", "புகையான்", "தத்துப்பூச்சி"]},
+    {"q": "leaf folder damage in rice", "crop": "paddy", "expect": ["leaf folder", "இலைச்சுருட்டு", "இலை சுருட்டு"]},
+    {"q": "banana panama wilt", "crop": "banana", "expect": ["panama", "பனாமா"]},
+    {"q": "banana bunchy top virus", "crop": "banana", "expect": ["bunchy", "முடிக்கொத்து"]},
+    {"q": "coconut bud rot treatment", "crop": "coconut", "expect": ["bud rot", "குருத்தழுகல்"]},
+    {"q": "rhinoceros beetle in coconut", "crop": "coconut", "expect": ["rhinoceros", "காண்டாமிருக"]},
+    {"q": "chilli thrips control", "crop": "chilli", "expect": ["thrips", "பேன்"]},
+    {"q": "chilli fruit rot anthracnose", "crop": "chilli", "expect": ["anthracnose", "fruit rot", "பழ அழுகல்"]},
+    {"q": "tomato whitefly", "crop": "tomato", "expect": ["whitefly", "வெள்ளை ஈ"]},
+    {"q": "tomato fruit borer worms inside fruit", "crop": "tomato", "expect": ["fruit borer", "காய்ப்புழு"]},
+    {"q": "cotton pink bollworm", "crop": "cotton", "expect": ["bollworm", "காய்ப்புழு"]},
+    {"q": "sugarcane early shoot borer", "crop": "sugarcane", "expect": ["shoot borer", "குருத்துப்புழு", "இளம் குருத்து"]},
+    {"q": "sugarcane red rot disease", "crop": "sugarcane", "expect": ["red rot", "செவ்வழுகல்"]},
+    {"q": "groundnut leaf spot tikka", "crop": "groundnut", "expect": ["leaf spot", "tikka", "இலைப்புள்ளி"]},
+    {"q": "maize fall armyworm", "crop": "maize", "expect": ["armyworm", "படைப்புழு"]},
+    {"q": "onion thrips", "crop": "onion", "expect": ["thrips", "பேன்"]},
+    {"q": "நெல் குலை நோய் அறிகுறிகள்", "crop": "paddy", "language": "tamil", "expect": ["blast", "குலை"]},
+    {"q": "வாழை பனாமா வாடல் நோய்", "crop": "banana", "language": "tamil", "expect": ["panama", "பனாமா"]},
+    {"q": "தென்னை காண்டாமிருக வண்டு கட்டுப்பாடு", "crop": "coconut", "language": "tamil", "expect": ["rhinoceros", "காண்டாமிருக"]},
+    {"q": "தக்காளி வெள்ளை ஈ", "crop": "tomato", "language": "tamil", "expect": ["whitefly", "வெள்ளை ஈ"]},
+    {"q": "nel la kulai noi", "crop": "paddy", "expect": ["blast", "குலை"]},
+    {"q": "thennai la kandamiruga vandu", "crop": "coconut", "expect": ["rhinoceros", "காண்டாமிருக"]}
+  ],
+  "none": [
+    {"q": "how do I repair a car engine", "crop": null},
+    {"q": "best cricket bat to buy", "crop": null},
+    {"q": "write python code for sorting", "crop": null},
+    {"q": "wheat rust in punjab", "crop": null},
+    {"q": "apple scab spray schedule", "crop": null},
+    {"q": "mango hopper control", "crop": null},
+    {"q": "how to cook rice biryani", "crop": "paddy"},
+    {"q": "potato late blight", "crop": null}
+  ]
+}

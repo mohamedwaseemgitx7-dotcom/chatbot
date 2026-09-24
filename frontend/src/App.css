@@ -1,0 +1,86 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh; /* follows the mobile browser UI and on-screen keyboard */
+  padding-top: env(safe-area-inset-top, 0px);
+  background: var(--bg);
+}
+
+.app__body { position: relative; display: flex; flex: 1; min-height: 0; }
+.app__main { display: flex; flex: 1; min-width: 0; min-height: 0; }
+
+/* ---------- Header ---------- */
+.app-header {
+  display: flex;
+  align-items: stretch;
+  height: var(--header-height);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.app-header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  padding: 0 var(--space-4);
+  border-right: 1px solid var(--border);
+}
+.app-header__name { font-size: var(--text-lg); font-weight: var(--weight-semibold); letter-spacing: -0.01em; }
+
+.app-header__chat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: 1;
+  min-width: 0;
+  padding: 0 var(--space-4);
+}
+.app-header__titles { flex: 1; min-width: 0; }
+.app-header__title {
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-xs);
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+.status__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
+.status--ok .status__dot { background: var(--success); }
+.status--warn { color: var(--warning); }
+.status--warn .status__dot { background: var(--warning); }
+
+/* ---------- Drawer scrim ---------- */
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: var(--scrim);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration) var(--ease-out);
+}
+.scrim--visible { opacity: 1; pointer-events: auto; }
+
+/* ---------- Responsive ---------- */
+@media (min-width: 1440px) {
+  :root { --sidebar-width: 320px; --chat-max-width: 820px; }
+}
+
+/* Drawer layout: header shows menu + logo + current chat */
+@media (max-width: 899px) {
+  .app-header { padding: 0 var(--space-1); }
+  .app-header__brand { width: auto; padding: 0; border-right: 0; gap: var(--space-1); }
+  .app-header__name { display: none; }
+  .app-header__chat { padding: 0 0 0 var(--space-1); }
+}

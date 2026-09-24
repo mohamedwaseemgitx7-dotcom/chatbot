@@ -1,0 +1,34 @@
+{
+  "pages_in_selection": 482,
+  "records_extracted": 389,
+  "skipped": {
+    "no_substantive_content": 50,
+    "not_downloaded": 43
+  },
+  "by_crop": {
+    "banana": 25,
+    "blackgram": 26,
+    "brinjal": 15,
+    "chilli": 22,
+    "coconut": 20,
+    "cotton": 52,
+    "drumstick": 5,
+    "greengram": 8,
+    "groundnut": 23,
+    "maize": 30,
+    "onion": 20,
+    "paddy": 71,
+    "sugarcane": 40,
+    "tomato": 25,
+    "turmeric": 7
+  },
+  "by_topic": {
+    "disease": 159,
+    "protection": 177,
+    "pest": 53
+  },
+  "by_language": {
+    "english": 176,
+    "tamil": 213
+  }
+}

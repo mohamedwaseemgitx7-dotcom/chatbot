@@ -1,0 +1,224 @@
+{
+  "answerable_queries": 26,
+  "hit_at_1": 0.8461538461538461,
+  "hit_at_3": 0.8461538461538461,
+  "suggested_threshold": 0.56,
+  "at_threshold": {
+    "answerable_answered": 0.8461538461538461,
+    "unanswerable_refused": 1.0
+  },
+  "served_at_configured_threshold": {
+    "threshold": 0.61,
+    "right": 22,
+    "wrong": 0,
+    "no_answer": 4,
+    "unanswerable_refused": "8/8",
+    "wrong_examples": []
+  },
+  "rows": [
+    {
+      "q": "rice blast disease symptoms",
+      "rank": 0,
+      "top": "Blast : Magnaporthe oryzae (Syn: P. grisea, Magnaporthe grisea) (paddy disease)",
+      "top_score": 0.801
+    },
+    {
+      "q": "how to control sheath blight in paddy",
+      "rank": 0,
+      "top": "Sheath Blight (paddy disease)",
+      "top_score": 0.933
+    },
+    {
+      "q": "paddy leaves have brown spots",
+      "rank": 0,
+      "top": "Brown Spot or Sesame leaf spot : Causal organism: Helminthosporium oryzae (paddy disease)",
+      "top_score": 0.966
+    },
+    {
+      "q": "yellow stem borer in rice how to control",
+      "rank": null,
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "brown plant hopper attack in paddy",
+      "rank": 0,
+      "top": "Brown plant hopper: Nilaparvata lugens (paddy pest)",
+      "top_score": 0.908
+    },
+    {
+      "q": "leaf folder damage in rice",
+      "rank": 0,
+      "top": "Leaf folder (or) leaf roller: Cnaphalocrocis medinalis / Marasmia patnalis (paddy pest)",
+      "top_score": 0.685
+    },
+    {
+      "q": "banana panama wilt",
+      "rank": 0,
+      "top": "Panama Wilt: Fusarium oxysporum f.sp cubense (banana disease)",
+      "top_score": 0.757
+    },
+    {
+      "q": "banana bunchy top virus",
+      "rank": 0,
+      "top": "Bunchy Top: Banana bunchy top virus (banana disease)",
+      "top_score": 1.065
+    },
+    {
+      "q": "coconut bud rot treatment",
+      "rank": 0,
+      "top": "BUD ROT: Phytophthora palmivora (coconut disease)",
+      "top_score": 0.946
+    },
+    {
+      "q": "rhinoceros beetle in coconut",
+      "rank": null,
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "chilli thrips control",
+      "rank": 0,
+      "top": "Chilli thrips: Scirtothrips dorsalis (chilli protection)",
+      "top_score": 0.823
+    },
+    {
+      "q": "chilli fruit rot anthracnose",
+      "rank": 0,
+      "top": "Anthracnose: Colletotrichum capsici (chilli disease)",
+      "top_score": 0.8
+    },
+    {
+      "q": "tomato whitefly",
+      "rank": 0,
+      "top": "Whitefly: Bemisia tabaci (tomato protection)",
+      "top_score": 0.773
+    },
+    {
+      "q": "tomato fruit borer worms inside fruit",
+      "rank": 0,
+      "top": "Fruit Borer: Helicoverpa armigera (tomato protection)",
+      "top_score": 0.923
+    },
+    {
+      "q": "cotton pink bollworm",
+      "rank": 0,
+      "top": "Pink bollworm: Pectinophora gossypiella (cotton pest)",
+      "top_score": 0.964
+    },
+    {
+      "q": "sugarcane early shoot borer",
+      "rank": 0,
+      "top": "Early shoot borer: Chilo infuscatellus snellen (sugarcane pest)",
+      "top_score": 0.877
+    },
+    {
+      "q": "sugarcane red rot disease",
+      "rank": 0,
+      "top": "Red rot : Glomerella tucumanensis (sugarcane disease)",
+      "top_score": 1.05
+    },
+    {
+      "q": "groundnut leaf spot tikka",
+      "rank": null,
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "maize fall armyworm",
+      "rank": 0,
+      "top": "Fall armyworm, Spodoptera frugiperda (maize protection)",
+      "top_score": 1.035
+    },
+    {
+      "q": "onion thrips",
+      "rank": 0,
+      "top": "Onion Thrips: Thrips tabaci (onion protection)",
+      "top_score": 0.898
+    },
+    {
+      "q": "நெல் குலை நோய் அறிகுறிகள்",
+      "rank": 0,
+      "top": "குலைநோய்: பைரிகுலேரியா ஒரைசே",
+      "top_score": 0.715
+    },
+    {
+      "q": "வாழை பனாமா வாடல் நோய்",
+      "rank": 0,
+      "top": "பனாமா வாடல் நோய் : ஃபுஸேரியம் ஆக்ஸிஸ்போரம பீசிஸ் கியூபென்ஸ",
+      "top_score": 1.061
+    },
+    {
+      "q": "தென்னை காண்டாமிருக வண்டு கட்டுப்பாடு",
+      "rank": 0,
+      "top": "காண்டாமிருக வண்டு: ஒரைடக்ஸ் ரைனோசெரஸ்",
+      "top_score": 1.037
+    },
+    {
+      "q": "தக்காளி வெள்ளை ஈ",
+      "rank": 0,
+      "top": "Whitefly: Bemisia tabaci (tomato protection)",
+      "top_score": 0.773
+    },
+    {
+      "q": "nel la kulai noi",
+      "rank": 0,
+      "top": "Blast : Magnaporthe oryzae (Syn: P. grisea, Magnaporthe grisea) (paddy disease)",
+      "top_score": 0.867
+    },
+    {
+      "q": "thennai la kandamiruga vandu",
+      "rank": null,
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "how do I repair a car engine",
+      "expected": "no answer",
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "best cricket bat to buy",
+      "expected": "no answer",
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "write python code for sorting",
+      "expected": "no answer",
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "wheat rust in punjab",
+      "expected": "no answer",
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "apple scab spray schedule",
+      "expected": "no answer",
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "mango hopper control",
+      "expected": "no answer",
+      "top": "Brown plant hopper: Nilaparvata lugens (paddy pest)",
+      "top_score": 0.446
+    },
+    {
+      "q": "how to cook rice biryani",
+      "expected": "no answer",
+      "top": null,
+      "top_score": null
+    },
+    {
+      "q": "potato late blight",
+      "expected": "no answer",
+      "top": "Late blight: Phytophthora capsici (chilli disease)",
+      "top_score": 0.555
+    }
+  ]
+}

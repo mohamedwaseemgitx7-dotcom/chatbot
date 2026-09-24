@@ -1,0 +1,8091 @@
+{
+  "_note": "manjal is ambiguous (turmeric vs yellow); resolve with context such as ilai/leaf.",
+  "entry_count": 505,
+  "entries": [
+    {
+      "term": "nel",
+      "tamil": "நெல்",
+      "variations": [
+        "nel",
+        "nella",
+        "nellu",
+        "nelu"
+      ],
+      "english": [
+        "paddy",
+        "rice plant"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "arisi",
+      "tamil": "அரிசி",
+      "variations": [
+        "arisi",
+        "arsi"
+      ],
+      "english": [
+        "rice grain"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "thakkali",
+      "tamil": "தக்காளி",
+      "variations": [
+        "takkali",
+        "thakali",
+        "thakkali",
+        "tomatto"
+      ],
+      "english": [
+        "tomato"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "milagai",
+      "tamil": "மிளகாய்",
+      "variations": [
+        "milaga",
+        "milagaai",
+        "milagai",
+        "molagai"
+      ],
+      "english": [
+        "chilli"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "vaazhai",
+      "tamil": "வாழை",
+      "variations": [
+        "vaalai",
+        "vaazhai",
+        "valai",
+        "vazhai"
+      ],
+      "english": [
+        "banana plant"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "vaazhaipazham",
+      "tamil": "வாழைப்பழம்",
+      "variations": [
+        "vaalaipalam",
+        "vaazhaipazham",
+        "valaipazham",
+        "vazhaipazham"
+      ],
+      "english": [
+        "banana fruit"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "thennai",
+      "tamil": "தென்னை",
+      "variations": [
+        "tennai",
+        "thenna",
+        "thennai"
+      ],
+      "english": [
+        "coconut palm"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "thengai",
+      "tamil": "தேங்காய்",
+      "variations": [
+        "tengai",
+        "thenga",
+        "thengai"
+      ],
+      "english": [
+        "coconut"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "ilaneer",
+      "tamil": "இளநீர்",
+      "variations": [
+        "elaneer",
+        "ilaneer",
+        "ilani",
+        "ilanir"
+      ],
+      "english": [
+        "tender coconut"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "karumbu",
+      "tamil": "கரும்பு",
+      "variations": [
+        "karambu",
+        "karimbu",
+        "karumb",
+        "karumbu"
+      ],
+      "english": [
+        "sugarcane"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "nilakadalai",
+      "tamil": "நிலக்கடலை",
+      "variations": [
+        "nila kadalai",
+        "nilakadala",
+        "nilakadalai"
+      ],
+      "english": [
+        "groundnut"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "kadalai",
+      "tamil": "கடலை",
+      "variations": [
+        "kadala",
+        "kadalai"
+      ],
+      "english": [
+        "groundnut",
+        "gram"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "verkadalai",
+      "tamil": "வேர்க்கடலை",
+      "variations": [
+        "verkadala",
+        "verkadalai"
+      ],
+      "english": [
+        "groundnut"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "paruthi",
+      "tamil": "பருத்தி",
+      "variations": [
+        "paruthi",
+        "paruththi",
+        "paruti"
+      ],
+      "english": [
+        "cotton"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "makkacholam",
+      "tamil": "மக்காச்சோளம்",
+      "variations": [
+        "makacholam",
+        "makka cholam",
+        "makkacholam",
+        "makkasolam"
+      ],
+      "english": [
+        "maize"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "cholam",
+      "tamil": "சோளம்",
+      "variations": [
+        "cholam",
+        "solam"
+      ],
+      "english": [
+        "sorghum",
+        "maize"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "kathirikai",
+      "tamil": "கத்திரிக்காய்",
+      "variations": [
+        "katharikai",
+        "kathiri",
+        "kathirikai",
+        "kathrikai",
+        "katirikai"
+      ],
+      "english": [
+        "brinjal"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "vengayam",
+      "tamil": "வெங்காயம்",
+      "variations": [
+        "vengaayam",
+        "vengayam",
+        "vengyam"
+      ],
+      "english": [
+        "onion"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "chinna vengayam",
+      "tamil": "சின்ன வெங்காயம்",
+      "variations": [
+        "chinna vengayam",
+        "sambar vengayam"
+      ],
+      "english": [
+        "small onion"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "murungai",
+      "tamil": "முருங்கை",
+      "variations": [
+        "murunga",
+        "murungai"
+      ],
+      "english": [
+        "drumstick tree"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "murungakai",
+      "tamil": "முருங்கைக்காய்",
+      "variations": [
+        "murunga kaai",
+        "murungaikai",
+        "murungakai"
+      ],
+      "english": [
+        "drumstick pod"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "manjal",
+      "tamil": "மஞ்சள்",
+      "variations": [
+        "manjal",
+        "manjel"
+      ],
+      "english": [
+        "turmeric",
+        "yellow (ambiguous)"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "ulundhu",
+      "tamil": "உளுந்து",
+      "variations": [
+        "ulundh",
+        "ulundhu",
+        "ulundu",
+        "ulunthu",
+        "uluntu"
+      ],
+      "english": [
+        "black gram"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "paasi payaru",
+      "tamil": "பாசிப்பயறு",
+      "variations": [
+        "paasi payar",
+        "paasi payaru",
+        "paasipayaru",
+        "pasi payaru"
+      ],
+      "english": [
+        "green gram"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "pachai payaru",
+      "tamil": "பச்சைப்பயறு",
+      "variations": [
+        "pachai payar",
+        "pachai payaru",
+        "pachaipayaru"
+      ],
+      "english": [
+        "green gram"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "thuvarai",
+      "tamil": "துவரை",
+      "variations": [
+        "thuvarai",
+        "thuvaram paruppu",
+        "tuvarai"
+      ],
+      "english": [
+        "red gram"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "kambu",
+      "tamil": "கம்பு",
+      "variations": [
+        "cumbu",
+        "kamb",
+        "kambu"
+      ],
+      "english": [
+        "pearl millet"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "kezhvaragu",
+      "tamil": "கேழ்வரகு",
+      "variations": [
+        "kelvaragu",
+        "kezhvarag",
+        "kezhvaragu",
+        "ragi"
+      ],
+      "english": [
+        "finger millet"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "thinai",
+      "tamil": "தினை",
+      "variations": [
+        "thinai",
+        "tinai"
+      ],
+      "english": [
+        "foxtail millet"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "saamai",
+      "tamil": "சாமை",
+      "variations": [
+        "saamai",
+        "samai"
+      ],
+      "english": [
+        "little millet"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "varagu",
+      "tamil": "வரகு",
+      "variations": [
+        "varag",
+        "varaghu",
+        "varagu"
+      ],
+      "english": [
+        "kodo millet"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "ellu",
+      "tamil": "எள்",
+      "variations": [
+        "el",
+        "ell",
+        "ellu",
+        "yellu"
+      ],
+      "english": [
+        "sesame"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "sooriyakanthi",
+      "tamil": "சூரியகாந்தி",
+      "variations": [
+        "sooriyakanthi",
+        "sooriyakanti",
+        "suriyakanthi",
+        "suryakanthi"
+      ],
+      "english": [
+        "sunflower"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "vendaikai",
+      "tamil": "வெண்டைக்காய்",
+      "variations": [
+        "vendai",
+        "vendaikai",
+        "vendakai"
+      ],
+      "english": [
+        "okra"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "avarai",
+      "tamil": "அவரை",
+      "variations": [
+        "avarai",
+        "avaraikai"
+      ],
+      "english": [
+        "field bean"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "poosani",
+      "tamil": "பூசணி",
+      "variations": [
+        "poosani",
+        "poosanikai",
+        "pusani"
+      ],
+      "english": [
+        "pumpkin"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "pudalai",
+      "tamil": "புடலை",
+      "variations": [
+        "pudalai",
+        "pudalangai"
+      ],
+      "english": [
+        "snake gourd"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "paavakkai",
+      "tamil": "பாகற்காய்",
+      "variations": [
+        "paavakai",
+        "paavakkai",
+        "pagarkai",
+        "pavakkai"
+      ],
+      "english": [
+        "bitter gourd"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "suraikai",
+      "tamil": "சுரைக்காய்",
+      "variations": [
+        "suraikai",
+        "surakai"
+      ],
+      "english": [
+        "bottle gourd"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "vellarikai",
+      "tamil": "வெள்ளரிக்காய்",
+      "variations": [
+        "vellari",
+        "vellarikai"
+      ],
+      "english": [
+        "cucumber"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "keerai",
+      "tamil": "கீரை",
+      "variations": [
+        "keerai",
+        "kirai"
+      ],
+      "english": [
+        "leafy greens"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "maa",
+      "tamil": "மா",
+      "variations": [
+        "ma",
+        "maa",
+        "maamaram"
+      ],
+      "english": [
+        "mango tree"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "maampazham",
+      "tamil": "மாம்பழம்",
+      "variations": [
+        "maampalam",
+        "maampazham",
+        "mampazham"
+      ],
+      "english": [
+        "mango fruit"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "koiyya",
+      "tamil": "கொய்யா",
+      "variations": [
+        "koiyya",
+        "koyya"
+      ],
+      "english": [
+        "guava"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "pappali",
+      "tamil": "பப்பாளி",
+      "variations": [
+        "papali",
+        "pappaali",
+        "pappali"
+      ],
+      "english": [
+        "papaya"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "elumichai",
+      "tamil": "எலுமிச்சை",
+      "variations": [
+        "elimichai",
+        "elumichai",
+        "lemon"
+      ],
+      "english": [
+        "lemon"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "maravalli",
+      "tamil": "மரவள்ளி",
+      "variations": [
+        "kuchi kizhangu",
+        "maravalli",
+        "maravalli kizhangu"
+      ],
+      "english": [
+        "tapioca"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "inji",
+      "tamil": "இஞ்சி",
+      "variations": [
+        "injee",
+        "inji"
+      ],
+      "english": [
+        "ginger"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "poondu",
+      "tamil": "பூண்டு",
+      "variations": [
+        "poond",
+        "poondu",
+        "pundu"
+      ],
+      "english": [
+        "garlic"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "kothamalli",
+      "tamil": "கொத்தமல்லி",
+      "variations": [
+        "kotamalli",
+        "kothamali",
+        "kothamalli",
+        "malli"
+      ],
+      "english": [
+        "coriander"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "karuveppilai",
+      "tamil": "கறிவேப்பிலை",
+      "variations": [
+        "kariveppilai",
+        "karuvepilai",
+        "karuveppilai"
+      ],
+      "english": [
+        "curry leaf"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "malligai",
+      "tamil": "மல்லிகை",
+      "variations": [
+        "malli poo",
+        "malligai"
+      ],
+      "english": [
+        "jasmine"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "kaapi",
+      "tamil": "காபி",
+      "variations": [
+        "coffee",
+        "kaapi",
+        "kapi"
+      ],
+      "english": [
+        "coffee"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "theyilai",
+      "tamil": "தேயிலை",
+      "variations": [
+        "tea",
+        "teyilai",
+        "theyilai"
+      ],
+      "english": [
+        "tea"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "mundhiri",
+      "tamil": "முந்திரி",
+      "variations": [
+        "mundhiri",
+        "mundiri",
+        "munthiri"
+      ],
+      "english": [
+        "cashew"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "paakku",
+      "tamil": "பாக்கு",
+      "variations": [
+        "paakk",
+        "paakku",
+        "paaku",
+        "pakku"
+      ],
+      "english": [
+        "arecanut"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "vetrilai",
+      "tamil": "வெற்றிலை",
+      "variations": [
+        "vethalai",
+        "vetrilai"
+      ],
+      "english": [
+        "betel leaf"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "ilai",
+      "tamil": "இலை",
+      "variations": [
+        "ela",
+        "elai",
+        "ilai",
+        "illai"
+      ],
+      "english": [
+        "leaf"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "thandu",
+      "tamil": "தண்டு",
+      "variations": [
+        "tandu",
+        "thand",
+        "thandhu",
+        "thandu"
+      ],
+      "english": [
+        "stem"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "ver",
+      "tamil": "வேர்",
+      "variations": [
+        "ver",
+        "veru"
+      ],
+      "english": [
+        "root"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "poo",
+      "tamil": "பூ",
+      "variations": [
+        "poo",
+        "pooh",
+        "pu"
+      ],
+      "english": [
+        "flower"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "kaai",
+      "tamil": "காய்",
+      "variations": [
+        "kaai",
+        "kaay",
+        "kai"
+      ],
+      "english": [
+        "unripe fruit",
+        "pod"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "pazham",
+      "tamil": "பழம்",
+      "variations": [
+        "palam",
+        "pazam",
+        "pazham"
+      ],
+      "english": [
+        "ripe fruit"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "vidhai",
+      "tamil": "விதை",
+      "variations": [
+        "vedhai",
+        "vidai",
+        "vidhai",
+        "vithai"
+      ],
+      "english": [
+        "seed"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "kizhangu",
+      "tamil": "கிழங்கு",
+      "variations": [
+        "kilangu",
+        "kizhang",
+        "kizhangu"
+      ],
+      "english": [
+        "tuber",
+        "rhizome"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "kilai",
+      "tamil": "கிளை",
+      "variations": [
+        "kelai",
+        "kilai"
+      ],
+      "english": [
+        "branch"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "kuruthu",
+      "tamil": "குருத்து",
+      "variations": [
+        "kuruth",
+        "kuruthu",
+        "kuruttu",
+        "kurutu"
+      ],
+      "english": [
+        "growing shoot",
+        "bud"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "kathir",
+      "tamil": "கதிர்",
+      "variations": [
+        "kadhir",
+        "kathir",
+        "katir"
+      ],
+      "english": [
+        "earhead",
+        "panicle"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "mani",
+      "tamil": "மணி",
+      "variations": [
+        "mani",
+        "mani nel"
+      ],
+      "english": [
+        "grain"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "thaar",
+      "tamil": "தார்",
+      "variations": [
+        "taar",
+        "thaar",
+        "thar"
+      ],
+      "english": [
+        "banana bunch"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "seeppu",
+      "tamil": "சீப்பு",
+      "variations": [
+        "seepp",
+        "seeppu",
+        "seepu",
+        "sippu"
+      ],
+      "english": [
+        "banana hand"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "olai",
+      "tamil": "ஓலை",
+      "variations": [
+        "olai",
+        "oolai"
+      ],
+      "english": [
+        "palm frond"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "mattai",
+      "tamil": "மட்டை",
+      "variations": [
+        "matta",
+        "mattai"
+      ],
+      "english": [
+        "frond stalk"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "pattai",
+      "tamil": "பட்டை",
+      "variations": [
+        "patta",
+        "pattai"
+      ],
+      "english": [
+        "bark"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "sedi",
+      "tamil": "செடி",
+      "variations": [
+        "chedi",
+        "sedi"
+      ],
+      "english": [
+        "plant"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "maram",
+      "tamil": "மரம்",
+      "variations": [
+        "maaram",
+        "maram"
+      ],
+      "english": [
+        "tree"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "naatru",
+      "tamil": "நாற்று",
+      "variations": [
+        "naathu",
+        "naatr",
+        "naatru",
+        "natru"
+      ],
+      "english": [
+        "seedling"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "kandru",
+      "tamil": "கன்று",
+      "variations": [
+        "kandr",
+        "kandru",
+        "kannu"
+      ],
+      "english": [
+        "sapling",
+        "sucker"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "nuni",
+      "tamil": "நுனி",
+      "variations": [
+        "noni",
+        "nuni"
+      ],
+      "english": [
+        "tip"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "narambu",
+      "tamil": "நரம்பு",
+      "variations": [
+        "naramb",
+        "narambu"
+      ],
+      "english": [
+        "leaf vein"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "mottu",
+      "tamil": "மொட்டு",
+      "variations": [
+        "mott",
+        "mottu"
+      ],
+      "english": [
+        "bud"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "pinju",
+      "tamil": "பிஞ்சு",
+      "variations": [
+        "pinchu",
+        "pinj",
+        "pinju"
+      ],
+      "english": [
+        "tender fruit"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "thol",
+      "tamil": "தோல்",
+      "variations": [
+        "thol",
+        "tholu",
+        "tol"
+      ],
+      "english": [
+        "peel",
+        "skin"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "kozhundhu",
+      "tamil": "கொழுந்து",
+      "variations": [
+        "kolundhu",
+        "kolunthu",
+        "kozhundh",
+        "kozhundhu",
+        "kozhundu",
+        "kozhunthu"
+      ],
+      "english": [
+        "tender shoot"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "payir",
+      "tamil": "பயிர்",
+      "variations": [
+        "paiyir",
+        "payir",
+        "payiru"
+      ],
+      "english": [
+        "crop"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "thazhai",
+      "tamil": "தழை",
+      "variations": [
+        "tazhai",
+        "thalai",
+        "thazhai"
+      ],
+      "english": [
+        "foliage"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "adi",
+      "tamil": "அடி",
+      "variations": [
+        "adi",
+        "adi paguthi"
+      ],
+      "english": [
+        "base (of plant)"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "noi",
+      "tamil": "நோய்",
+      "variations": [
+        "noi",
+        "nooi",
+        "noy"
+      ],
+      "english": [
+        "disease"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "poochi",
+      "tamil": "பூச்சி",
+      "variations": [
+        "pooch",
+        "poochchi",
+        "poochi",
+        "puchi"
+      ],
+      "english": [
+        "insect",
+        "pest"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "puzhu",
+      "tamil": "புழு",
+      "variations": [
+        "pulu",
+        "puzh",
+        "puzhu",
+        "puzu"
+      ],
+      "english": [
+        "worm",
+        "larva"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "vandu",
+      "tamil": "வண்டு",
+      "variations": [
+        "vand",
+        "vandhu",
+        "vandu"
+      ],
+      "english": [
+        "beetle"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "ee",
+      "tamil": "ஈ",
+      "variations": [
+        "ee",
+        "i",
+        "ie"
+      ],
+      "english": [
+        "fly"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "pen",
+      "tamil": "பேன்",
+      "variations": [
+        "paen",
+        "pen"
+      ],
+      "english": [
+        "thrips",
+        "lice"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "silandhi",
+      "tamil": "சிலந்தி",
+      "variations": [
+        "silandhi",
+        "silandi",
+        "silanthi"
+      ],
+      "english": [
+        "mite",
+        "spider"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "asuvini",
+      "tamil": "அசுவினி",
+      "variations": [
+        "asuveni",
+        "asuvini"
+      ],
+      "english": [
+        "aphid"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "vellai ee",
+      "tamil": "வெள்ளை ஈ",
+      "variations": [
+        "vella ee",
+        "vellai ee",
+        "vellai i"
+      ],
+      "english": [
+        "whitefly"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "thulaippan",
+      "tamil": "துளைப்பான்",
+      "variations": [
+        "thulaipaan",
+        "thulaipan",
+        "thulaippan",
+        "tulaippan"
+      ],
+      "english": [
+        "borer"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "surutu puzhu",
+      "tamil": "சுருட்டுப்புழு",
+      "variations": [
+        "suruttu puzhu",
+        "surutu pulu",
+        "surutu puzh",
+        "surutu puzhu"
+      ],
+      "english": [
+        "leaf folder",
+        "roller"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "kambali puzhu",
+      "tamil": "கம்பளிப்புழு",
+      "variations": [
+        "kambali pulu",
+        "kambali puzh",
+        "kambali puzhu",
+        "kambilipuzhu"
+      ],
+      "english": [
+        "hairy caterpillar"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "padai puzhu",
+      "tamil": "படைப்புழு",
+      "variations": [
+        "padai pulu",
+        "padai puzh",
+        "padai puzhu",
+        "padaipuzhu"
+      ],
+      "english": [
+        "armyworm"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "vettukili",
+      "tamil": "வெட்டுக்கிளி",
+      "variations": [
+        "vettukili",
+        "vettukkili"
+      ],
+      "english": [
+        "grasshopper",
+        "locust"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "karaiyan",
+      "tamil": "கரையான்",
+      "variations": [
+        "karaiyan",
+        "karayan"
+      ],
+      "english": [
+        "termite"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "eli",
+      "tamil": "எலி",
+      "variations": [
+        "eli",
+        "yeli"
+      ],
+      "english": [
+        "rat"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "maavu poochi",
+      "tamil": "மாவுப்பூச்சி",
+      "variations": [
+        "maavu poochi",
+        "maavu puchi",
+        "mavu poochi",
+        "mavupoochi"
+      ],
+      "english": [
+        "mealybug"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "sedhil poochi",
+      "tamil": "செதில் பூச்சி",
+      "variations": [
+        "sedhil poochi",
+        "sedhil puchi",
+        "sedil poochi",
+        "sethil poochi"
+      ],
+      "english": [
+        "scale insect"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "pugaiyaan",
+      "tamil": "புகையான்",
+      "variations": [
+        "pugaiyaan",
+        "pugaiyan"
+      ],
+      "english": [
+        "brown planthopper"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "thathu poochi",
+      "tamil": "தத்துப்பூச்சி",
+      "variations": [
+        "tatu poochi",
+        "thathu poochi",
+        "thathu puchi",
+        "thathupoochi"
+      ],
+      "english": [
+        "leafhopper"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "koon vandu",
+      "tamil": "கூன்வண்டு",
+      "variations": [
+        "koon vand",
+        "koon vandu",
+        "koonvandu",
+        "kun vandu"
+      ],
+      "english": [
+        "weevil"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "nathai",
+      "tamil": "நத்தை",
+      "variations": [
+        "natai",
+        "nathaai",
+        "nathai"
+      ],
+      "english": [
+        "snail"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "pulli",
+      "tamil": "புள்ளி",
+      "variations": [
+        "puli",
+        "pulli",
+        "pulli pulli"
+      ],
+      "english": [
+        "spot"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "karuppu pulli",
+      "tamil": "கருப்புப் புள்ளி",
+      "variations": [
+        "karuppu pulli",
+        "karupu pulli"
+      ],
+      "english": [
+        "black spot"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "vaadal",
+      "tamil": "வாடல்",
+      "variations": [
+        "vaadal",
+        "vadal"
+      ],
+      "english": [
+        "wilting"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "vaadudhu",
+      "tamil": "வாடுது",
+      "variations": [
+        "vaadudh",
+        "vaadudhu",
+        "vaadudu",
+        "vaaduthu",
+        "vadudhu"
+      ],
+      "english": [
+        "is wilting"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "azhugal",
+      "tamil": "அழுகல்",
+      "variations": [
+        "alugal",
+        "azhugal",
+        "azhugel"
+      ],
+      "english": [
+        "rot"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "azhugudhu",
+      "tamil": "அழுகுது",
+      "variations": [
+        "alugudhu",
+        "azhugudh",
+        "azhugudhu",
+        "azhugudu",
+        "azhuguthu"
+      ],
+      "english": [
+        "is rotting"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "karugal",
+      "tamil": "கருகல்",
+      "variations": [
+        "karugal",
+        "karugel"
+      ],
+      "english": [
+        "blight",
+        "scorching"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "karugudhu",
+      "tamil": "கருகுது",
+      "variations": [
+        "karugudh",
+        "karugudhu",
+        "karugudu",
+        "karuguthu"
+      ],
+      "english": [
+        "is scorching"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "surul",
+      "tamil": "சுருள்",
+      "variations": [
+        "surul",
+        "surulu"
+      ],
+      "english": [
+        "curl"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "themal",
+      "tamil": "தேமல்",
+      "variations": [
+        "temal",
+        "themal",
+        "themel"
+      ],
+      "english": [
+        "mosaic"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "kaayudhu",
+      "tamil": "காயுது",
+      "variations": [
+        "kaayudh",
+        "kaayudhu",
+        "kaayudu",
+        "kaayuthu",
+        "kayudhu"
+      ],
+      "english": [
+        "is drying"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "udhirudhu",
+      "tamil": "உதிருது",
+      "variations": [
+        "udhirudh",
+        "udhirudhu",
+        "udhiruthu",
+        "udirudu",
+        "uthirudhu"
+      ],
+      "english": [
+        "is dropping"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "kuttai",
+      "tamil": "குட்டை",
+      "variations": [
+        "kutta",
+        "kuttai"
+      ],
+      "english": [
+        "stunted"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "saambal noi",
+      "tamil": "சாம்பல் நோய்",
+      "variations": [
+        "saambal noi",
+        "sambal noi"
+      ],
+      "english": [
+        "powdery mildew"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "thuru",
+      "tamil": "துரு",
+      "variations": [
+        "thur",
+        "thuru",
+        "thuru noi",
+        "turu"
+      ],
+      "english": [
+        "rust"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "poonjai",
+      "tamil": "பூஞ்சை",
+      "variations": [
+        "poonjai",
+        "poonjanam",
+        "punjai"
+      ],
+      "english": [
+        "fungus"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "pooshanam",
+      "tamil": "பூசணம்",
+      "variations": [
+        "pooshanam",
+        "pusanam",
+        "pushanam"
+      ],
+      "english": [
+        "mould"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "vedippu",
+      "tamil": "வெடிப்பு",
+      "variations": [
+        "vedipp",
+        "vedippu",
+        "vedipu"
+      ],
+      "english": [
+        "cracking"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "kasivu",
+      "tamil": "கசிவு",
+      "variations": [
+        "kasiv",
+        "kasivu",
+        "kasivu varudhu"
+      ],
+      "english": [
+        "oozing"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "ottai",
+      "tamil": "ஓட்டை",
+      "variations": [
+        "otta",
+        "ottai"
+      ],
+      "english": [
+        "hole"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "sedham",
+      "tamil": "சேதம்",
+      "variations": [
+        "sedam",
+        "sedham",
+        "setham"
+      ],
+      "english": [
+        "damage"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "thaakkudhal",
+      "tamil": "தாக்குதல்",
+      "variations": [
+        "attack",
+        "taakkudhal",
+        "thaakkudal",
+        "thaakkudhal",
+        "thaakudhal",
+        "thakkudhal"
+      ],
+      "english": [
+        "attack"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "thollai",
+      "tamil": "தொல்லை",
+      "variations": [
+        "tholla",
+        "thollai",
+        "tollai"
+      ],
+      "english": [
+        "nuisance",
+        "trouble"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "pirachanai",
+      "tamil": "பிரச்சனை",
+      "variations": [
+        "pirachanai",
+        "prachanai",
+        "problem"
+      ],
+      "english": [
+        "problem"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "kalai",
+      "tamil": "களை",
+      "variations": [
+        "kala",
+        "kalai"
+      ],
+      "english": [
+        "weed"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "sivappu",
+      "tamil": "சிவப்பு",
+      "variations": [
+        "sivapp",
+        "sivappu",
+        "sivapu"
+      ],
+      "english": [
+        "red"
+      ],
+      "category": "colour"
+    },
+    {
+      "term": "karuppu",
+      "tamil": "கருப்பு",
+      "variations": [
+        "karupp",
+        "karuppu",
+        "karupu"
+      ],
+      "english": [
+        "black"
+      ],
+      "category": "colour"
+    },
+    {
+      "term": "vellai",
+      "tamil": "வெள்ளை",
+      "variations": [
+        "vella",
+        "vellai"
+      ],
+      "english": [
+        "white"
+      ],
+      "category": "colour"
+    },
+    {
+      "term": "pachai",
+      "tamil": "பச்சை",
+      "variations": [
+        "pacha",
+        "pachai"
+      ],
+      "english": [
+        "green"
+      ],
+      "category": "colour"
+    },
+    {
+      "term": "pazhuppu",
+      "tamil": "பழுப்பு",
+      "variations": [
+        "brown",
+        "paluppu",
+        "pazhupp",
+        "pazhuppu",
+        "pazhupu"
+      ],
+      "english": [
+        "brown"
+      ],
+      "category": "colour"
+    },
+    {
+      "term": "oodha",
+      "tamil": "ஊதா",
+      "variations": [
+        "ooda",
+        "oodha",
+        "udha"
+      ],
+      "english": [
+        "purple"
+      ],
+      "category": "colour"
+    },
+    {
+      "term": "saambal niram",
+      "tamil": "சாம்பல் நிறம்",
+      "variations": [
+        "saambal niram",
+        "sambal colour",
+        "sambal niram"
+      ],
+      "english": [
+        "grey"
+      ],
+      "category": "colour"
+    },
+    {
+      "term": "manjala",
+      "tamil": "மஞ்சளா",
+      "variations": [
+        "manjal ah",
+        "manjala",
+        "manjalaa"
+      ],
+      "english": [
+        "yellowish"
+      ],
+      "category": "colour"
+    },
+    {
+      "term": "uram",
+      "tamil": "உரம்",
+      "variations": [
+        "oram",
+        "uraam",
+        "uram"
+      ],
+      "english": [
+        "fertilizer",
+        "manure"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "eru",
+      "tamil": "எரு",
+      "variations": [
+        "eru",
+        "yeru"
+      ],
+      "english": [
+        "manure"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "thozhu uram",
+      "tamil": "தொழுவுரம்",
+      "variations": [
+        "tholu uram",
+        "thozhu uram",
+        "thozhuvuram",
+        "tozhu uram"
+      ],
+      "english": [
+        "farmyard manure"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "saanam",
+      "tamil": "சாணம்",
+      "variations": [
+        "chaanam",
+        "maatu saanam",
+        "saanam",
+        "sanam"
+      ],
+      "english": [
+        "cow dung"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "koomiyam",
+      "tamil": "கோமியம்",
+      "variations": [
+        "gomiyam",
+        "koomiyam",
+        "kumiyam"
+      ],
+      "english": [
+        "cow urine"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "manpuzhu uram",
+      "tamil": "மண்புழு உரம்",
+      "variations": [
+        "manpulu uram",
+        "manpuzhu uram"
+      ],
+      "english": [
+        "vermicompost"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "pasundhaal uram",
+      "tamil": "பசுந்தாள் உரம்",
+      "variations": [
+        "pasundaal uram",
+        "pasundhaal uram",
+        "pasundhal uram",
+        "pasunthal uram"
+      ],
+      "english": [
+        "green manure"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "vepam punnaakku",
+      "tamil": "வேப்பம் புண்ணாக்கு",
+      "variations": [
+        "vepam punnaakk",
+        "vepam punnaakku",
+        "vepam punnaaku",
+        "vepam punnakku",
+        "veppam punnakku"
+      ],
+      "english": [
+        "neem cake"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "punnaakku",
+      "tamil": "புண்ணாக்கு",
+      "variations": [
+        "punnaakk",
+        "punnaakku",
+        "punnaaku",
+        "punnakku"
+      ],
+      "english": [
+        "oil cake"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "veppennai",
+      "tamil": "வேப்பெண்ணெய்",
+      "variations": [
+        "neem oil",
+        "vepennai",
+        "veppennai"
+      ],
+      "english": [
+        "neem oil"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "vepilai",
+      "tamil": "வேப்பிலை",
+      "variations": [
+        "vepilai",
+        "veppilai"
+      ],
+      "english": [
+        "neem leaf"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "marundhu",
+      "tamil": "மருந்து",
+      "variations": [
+        "marudhu",
+        "marunda",
+        "marundh",
+        "marundhu",
+        "marundu",
+        "marunthu"
+      ],
+      "english": [
+        "pesticide",
+        "medicine"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "poochi marundhu",
+      "tamil": "பூச்சி மருந்து",
+      "variations": [
+        "poochi marundh",
+        "poochi marundhu",
+        "poochi marundu",
+        "poochimarunthu",
+        "puchi marundhu"
+      ],
+      "english": [
+        "insecticide"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "kalaikolli",
+      "tamil": "களைக்கொல்லி",
+      "variations": [
+        "kalai kolli",
+        "kalaikolli"
+      ],
+      "english": [
+        "herbicide"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "yuriya",
+      "tamil": "யூரியா",
+      "variations": [
+        "urea",
+        "uria",
+        "yuria",
+        "yuriya"
+      ],
+      "english": [
+        "urea"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "dap",
+      "tamil": "டிஏபி",
+      "variations": [
+        "d a p",
+        "dap",
+        "diyepi"
+      ],
+      "english": [
+        "DAP fertilizer"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "potash",
+      "tamil": "பொட்டாஷ்",
+      "variations": [
+        "potash",
+        "potass",
+        "pottash"
+      ],
+      "english": [
+        "potash"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "sunnambu",
+      "tamil": "சுண்ணாம்பு",
+      "variations": [
+        "sunambu",
+        "sunnamb",
+        "sunnambu"
+      ],
+      "english": [
+        "lime"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "jipsam",
+      "tamil": "ஜிப்சம்",
+      "variations": [
+        "gypsum",
+        "jipsam",
+        "jipsum"
+      ],
+      "english": [
+        "gypsum"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "thuthanaagam",
+      "tamil": "துத்தநாகம்",
+      "variations": [
+        "thuthanaagam",
+        "thuthanagam",
+        "tutanaagam",
+        "zinc"
+      ],
+      "english": [
+        "zinc"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "irumbu",
+      "tamil": "இரும்பு",
+      "variations": [
+        "irumb",
+        "irumbu",
+        "irumbu sathu"
+      ],
+      "english": [
+        "iron"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "thazhai sathu",
+      "tamil": "தழைச்சத்து",
+      "variations": [
+        "nitrogen",
+        "tazhai satu",
+        "thalai sathu",
+        "thazhai sath",
+        "thazhai sathu"
+      ],
+      "english": [
+        "nitrogen"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "mani sathu",
+      "tamil": "மணிச்சத்து",
+      "variations": [
+        "mani sath",
+        "mani sathu",
+        "mani satu",
+        "manisathu",
+        "phosphorus"
+      ],
+      "english": [
+        "phosphorus"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "saambal sathu",
+      "tamil": "சாம்பல் சத்து",
+      "variations": [
+        "saambal sath",
+        "saambal sathu",
+        "saambal satu",
+        "sambal sathu"
+      ],
+      "english": [
+        "potassium"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "nunnoottam",
+      "tamil": "நுண்ணூட்டம்",
+      "variations": [
+        "nunnoottam",
+        "nunnuttam",
+        "nunootam"
+      ],
+      "english": [
+        "micronutrient"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "sathu",
+      "tamil": "சத்து",
+      "variations": [
+        "sath",
+        "sathhu",
+        "sathu",
+        "satu"
+      ],
+      "english": [
+        "nutrient"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "uyir uram",
+      "tamil": "உயிர் உரம்",
+      "variations": [
+        "uyir uram",
+        "uyiruram"
+      ],
+      "english": [
+        "biofertilizer"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "panchagavya",
+      "tamil": "பஞ்சகவ்யா",
+      "variations": [
+        "panchagavya",
+        "panchakavya"
+      ],
+      "english": [
+        "panchagavya"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "jeevamirtham",
+      "tamil": "ஜீவாமிர்தம்",
+      "variations": [
+        "jeevamirtam",
+        "jeevamirtham",
+        "jeevamrutham",
+        "jivamirtham"
+      ],
+      "english": [
+        "jeevamirtham"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "meen amilam",
+      "tamil": "மீன் அமிலம்",
+      "variations": [
+        "meen amilam",
+        "min amilam"
+      ],
+      "english": [
+        "fish amino acid"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "thelippu",
+      "tamil": "தெளிப்பு",
+      "variations": [
+        "spray",
+        "telippu",
+        "thelipp",
+        "thelippu",
+        "thelipu"
+      ],
+      "english": [
+        "spraying"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "thelikkanum",
+      "tamil": "தெளிக்கணும்",
+      "variations": [
+        "telikkanum",
+        "thelikanum",
+        "thelikkanum"
+      ],
+      "english": [
+        "need to spray"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "adikkanum",
+      "tamil": "அடிக்கணும்",
+      "variations": [
+        "adikalaama",
+        "adikanum",
+        "adikkanum"
+      ],
+      "english": [
+        "need to spray (colloquial)"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "thelippan",
+      "tamil": "தெளிப்பான்",
+      "variations": [
+        "sprayer",
+        "telippan",
+        "thelipan",
+        "thelippan"
+      ],
+      "english": [
+        "sprayer"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "pori",
+      "tamil": "பொறி",
+      "variations": [
+        "poori trap",
+        "pori"
+      ],
+      "english": [
+        "trap"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "manjal ottu pori",
+      "tamil": "மஞ்சள் ஒட்டுப் பொறி",
+      "variations": [
+        "manjal ottu pori",
+        "yellow trap"
+      ],
+      "english": [
+        "yellow sticky trap"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "inakavarchi pori",
+      "tamil": "இனக்கவர்ச்சிப் பொறி",
+      "variations": [
+        "inakavarchi pori",
+        "pheromone trap"
+      ],
+      "english": [
+        "pheromone trap"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "vilakku pori",
+      "tamil": "விளக்குப் பொறி",
+      "variations": [
+        "light trap",
+        "vilakku pori",
+        "vilaku pori"
+      ],
+      "english": [
+        "light trap"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "thanni",
+      "tamil": "தண்ணி",
+      "variations": [
+        "tanni",
+        "thani",
+        "thannee",
+        "thanni"
+      ],
+      "english": [
+        "water"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "thanneer",
+      "tamil": "தண்ணீர்",
+      "variations": [
+        "tanneer",
+        "thaneer",
+        "thanneer",
+        "thannir"
+      ],
+      "english": [
+        "water"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "paasanam",
+      "tamil": "பாசனம்",
+      "variations": [
+        "paasanam",
+        "pasanam"
+      ],
+      "english": [
+        "irrigation"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "paaichal",
+      "tamil": "பாய்ச்சல்",
+      "variations": [
+        "paaichal",
+        "paichal"
+      ],
+      "english": [
+        "watering"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "sottu neer",
+      "tamil": "சொட்டு நீர்",
+      "variations": [
+        "drip",
+        "sottu neer",
+        "sottu nir",
+        "sottuneer"
+      ],
+      "english": [
+        "drip irrigation"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "thelippu neer",
+      "tamil": "தெளிப்பு நீர்",
+      "variations": [
+        "sprinkler",
+        "telippu neer",
+        "thelippu neer",
+        "thelippu nir",
+        "thelipu neer"
+      ],
+      "english": [
+        "sprinkler irrigation"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "kinaru",
+      "tamil": "கிணறு",
+      "variations": [
+        "kenaru",
+        "kinar",
+        "kinaru",
+        "kinathu"
+      ],
+      "english": [
+        "well"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "aazhthulai kinaru",
+      "tamil": "ஆழ்துளைக் கிணறு",
+      "variations": [
+        "aalthulai kinaru",
+        "aazhthulai kinar",
+        "aazhthulai kinaru",
+        "aazhtulai kinaru",
+        "azhthulai kinaru",
+        "bore",
+        "borewell"
+      ],
+      "english": [
+        "borewell"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "motor",
+      "tamil": "மோட்டார்",
+      "variations": [
+        "motor",
+        "mottar"
+      ],
+      "english": [
+        "pump motor"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "vaaikkaal",
+      "tamil": "வாய்க்கால்",
+      "variations": [
+        "vaaikaal",
+        "vaaikal",
+        "vaaikkaal",
+        "vaikkal"
+      ],
+      "english": [
+        "canal",
+        "channel"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "eri",
+      "tamil": "ஏரி",
+      "variations": [
+        "eri",
+        "yeri"
+      ],
+      "english": [
+        "tank",
+        "lake"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "kulam",
+      "tamil": "குளம்",
+      "variations": [
+        "kolam",
+        "kulam"
+      ],
+      "english": [
+        "pond"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "aaru",
+      "tamil": "ஆறு",
+      "variations": [
+        "aar",
+        "aaru",
+        "aru"
+      ],
+      "english": [
+        "river"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "anai",
+      "tamil": "அணை",
+      "variations": [
+        "anai",
+        "anaikattu"
+      ],
+      "english": [
+        "dam"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "varappu",
+      "tamil": "வரப்பு",
+      "variations": [
+        "varapp",
+        "varappu",
+        "varapu"
+      ],
+      "english": [
+        "field bund"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "paathi",
+      "tamil": "பாத்தி",
+      "variations": [
+        "paathi",
+        "paati",
+        "pathi"
+      ],
+      "english": [
+        "bed",
+        "plot"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "thanni thekkam",
+      "tamil": "தண்ணீர் தேக்கம்",
+      "variations": [
+        "tanni tekkam",
+        "thanni thekam",
+        "thanni thekkam",
+        "thanni thengudhu"
+      ],
+      "english": [
+        "waterlogging"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "varatchi",
+      "tamil": "வறட்சி",
+      "variations": [
+        "varachi",
+        "varatchi"
+      ],
+      "english": [
+        "drought"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "thanni pathala",
+      "tamil": "தண்ணி பத்தல",
+      "variations": [
+        "tanni patala",
+        "thanni pathadhu",
+        "thanni pathala"
+      ],
+      "english": [
+        "water shortage"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "eeram",
+      "tamil": "ஈரம்",
+      "variations": [
+        "eeram",
+        "iram",
+        "yeeram"
+      ],
+      "english": [
+        "moisture"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "moodaakku",
+      "tamil": "மூடாக்கு",
+      "variations": [
+        "moodaakk",
+        "moodaakku",
+        "moodaaku",
+        "moodakku",
+        "mudaakku",
+        "mudakku",
+        "mulching"
+      ],
+      "english": [
+        "mulch"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "current",
+      "tamil": "கரண்ட்",
+      "variations": [
+        "current",
+        "karant",
+        "power"
+      ],
+      "english": [
+        "electricity"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "mummunai",
+      "tamil": "மும்முனை",
+      "variations": [
+        "mummunai",
+        "three phase"
+      ],
+      "english": [
+        "three-phase power"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "mann",
+      "tamil": "மண்",
+      "variations": [
+        "man",
+        "mann",
+        "mannu"
+      ],
+      "english": [
+        "soil"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "sem mann",
+      "tamil": "செம்மண்",
+      "variations": [
+        "sem mann",
+        "semmann"
+      ],
+      "english": [
+        "red soil"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "karisal mann",
+      "tamil": "கரிசல் மண்",
+      "variations": [
+        "karisal",
+        "karisal mann"
+      ],
+      "english": [
+        "black soil"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "vandal mann",
+      "tamil": "வண்டல் மண்",
+      "variations": [
+        "vandal",
+        "vandal mann"
+      ],
+      "english": [
+        "alluvial soil"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "manal",
+      "tamil": "மணல்",
+      "variations": [
+        "manal",
+        "manalu"
+      ],
+      "english": [
+        "sand"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "kalimann",
+      "tamil": "களிமண்",
+      "variations": [
+        "kali mannu",
+        "kalimann"
+      ],
+      "english": [
+        "clay"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "uvar mann",
+      "tamil": "உவர் மண்",
+      "variations": [
+        "uvar",
+        "uvar mann"
+      ],
+      "english": [
+        "saline soil"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "kalar mann",
+      "tamil": "களர் மண்",
+      "variations": [
+        "kalar",
+        "kalar mann"
+      ],
+      "english": [
+        "sodic soil"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "kaaram",
+      "tamil": "காரம்",
+      "variations": [
+        "kaaram",
+        "karam"
+      ],
+      "english": [
+        "alkalinity"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "amilam",
+      "tamil": "அமிலம்",
+      "variations": [
+        "amila",
+        "amilam"
+      ],
+      "english": [
+        "acidity"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "mann parisodhanai",
+      "tamil": "மண் பரிசோதனை",
+      "variations": [
+        "mann parisodanai",
+        "mann parisodhanai",
+        "mann test",
+        "soil test"
+      ],
+      "english": [
+        "soil test"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "mann vala attai",
+      "tamil": "மண் வள அட்டை",
+      "variations": [
+        "mann vala attai",
+        "soil health card"
+      ],
+      "english": [
+        "soil health card"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "nilam",
+      "tamil": "நிலம்",
+      "variations": [
+        "nelam",
+        "nilam"
+      ],
+      "english": [
+        "land"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "vayal",
+      "tamil": "வயல்",
+      "variations": [
+        "vayal",
+        "vayalu"
+      ],
+      "english": [
+        "field (wetland)"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "thottam",
+      "tamil": "தோட்டம்",
+      "variations": [
+        "thotam",
+        "thottam",
+        "tottam"
+      ],
+      "english": [
+        "garden",
+        "plantation"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "kollai",
+      "tamil": "கொல்லை",
+      "variations": [
+        "kolla",
+        "kollai"
+      ],
+      "english": [
+        "dry field"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "nanjai",
+      "tamil": "நஞ்சை",
+      "variations": [
+        "nanjai",
+        "nansai"
+      ],
+      "english": [
+        "wetland"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "punjai",
+      "tamil": "புஞ்சை",
+      "variations": [
+        "punjai",
+        "punsai"
+      ],
+      "english": [
+        "dryland"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "maanaavaari",
+      "tamil": "மானாவாரி",
+      "variations": [
+        "maanaavaari",
+        "manavari"
+      ],
+      "english": [
+        "rainfed"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "iravai",
+      "tamil": "இறவை",
+      "variations": [
+        "eravai",
+        "iravai"
+      ],
+      "english": [
+        "irrigated"
+      ],
+      "category": "soil"
+    },
+    {
+      "term": "uzhavu",
+      "tamil": "உழவு",
+      "variations": [
+        "ulavu",
+        "uzhav",
+        "uzhavu"
+      ],
+      "english": [
+        "ploughing"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kalappai",
+      "tamil": "கலப்பை",
+      "variations": [
+        "kalapai",
+        "kalappai"
+      ],
+      "english": [
+        "plough"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "sethu",
+      "tamil": "சேறு",
+      "variations": [
+        "seru",
+        "seth",
+        "sethu",
+        "setu"
+      ],
+      "english": [
+        "puddled mud"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kuzhi",
+      "tamil": "குழி",
+      "variations": [
+        "kuli",
+        "kuzhi"
+      ],
+      "english": [
+        "pit",
+        "land unit"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "saal",
+      "tamil": "சால்",
+      "variations": [
+        "saal",
+        "saalu",
+        "sal"
+      ],
+      "english": [
+        "furrow",
+        "row"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "vidhaippu",
+      "tamil": "விதைப்பு",
+      "variations": [
+        "vidaippu",
+        "vidhaipp",
+        "vidhaippu",
+        "vidhaipu",
+        "vithaippu"
+      ],
+      "english": [
+        "sowing"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "vidhaikanum",
+      "tamil": "விதைக்கணும்",
+      "variations": [
+        "vidaikanum",
+        "vidhaikanum",
+        "vidhaikkanum"
+      ],
+      "english": [
+        "need to sow"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "nadavu",
+      "tamil": "நடவு",
+      "variations": [
+        "nadav",
+        "nadavu",
+        "nadhavu"
+      ],
+      "english": [
+        "transplanting"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "naatrangaal",
+      "tamil": "நாற்றங்கால்",
+      "variations": [
+        "naatrangaal",
+        "natrangal"
+      ],
+      "english": [
+        "nursery"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kalai edukkanum",
+      "tamil": "களை எடுக்கணும்",
+      "variations": [
+        "kala edukanum",
+        "kalai edukanum",
+        "kalai edukkanum"
+      ],
+      "english": [
+        "need to weed"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "aruvadai",
+      "tamil": "அறுவடை",
+      "variations": [
+        "aruvada",
+        "aruvadai",
+        "aruvadhai"
+      ],
+      "english": [
+        "harvest"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "aruppu",
+      "tamil": "அறுப்பு",
+      "variations": [
+        "arupp",
+        "aruppu",
+        "arupu"
+      ],
+      "english": [
+        "harvesting"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kaaya vaikanum",
+      "tamil": "காய வைக்கணும்",
+      "variations": [
+        "kaaya vaikanum",
+        "kaya vaikanum"
+      ],
+      "english": [
+        "need to dry"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "semippu",
+      "tamil": "சேமிப்பு",
+      "variations": [
+        "semipp",
+        "semippu",
+        "semipu",
+        "store"
+      ],
+      "english": [
+        "storage"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kudhir",
+      "tamil": "குதிர்",
+      "variations": [
+        "kudhir",
+        "kudir",
+        "kuthir"
+      ],
+      "english": [
+        "grain bin"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kidangu",
+      "tamil": "கிடங்கு",
+      "variations": [
+        "godown",
+        "kidang",
+        "kidangu"
+      ],
+      "english": [
+        "warehouse"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "mootai",
+      "tamil": "மூட்டை",
+      "variations": [
+        "moota",
+        "mootai",
+        "mutai",
+        "mutta"
+      ],
+      "english": [
+        "sack"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "poo pookudhu",
+      "tamil": "பூ பூக்குது",
+      "variations": [
+        "poo pookudh",
+        "poo pookudhu",
+        "poo pookudu",
+        "poo pookuthu",
+        "pu pukudhu"
+      ],
+      "english": [
+        "flowering"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kathir varudhu",
+      "tamil": "கதிர் வருது",
+      "variations": [
+        "kadhir varuthu",
+        "kathir varudh",
+        "kathir varudhu",
+        "kathir varudu",
+        "katir varudhu"
+      ],
+      "english": [
+        "heading"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "pinju pidikka",
+      "tamil": "பிஞ்சு பிடிக்க",
+      "variations": [
+        "pinju pidika",
+        "pinju pidikka",
+        "pinju pidikkala"
+      ],
+      "english": [
+        "fruit set"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "mulaippu",
+      "tamil": "முளைப்பு",
+      "variations": [
+        "mulaipp",
+        "mulaippu",
+        "mulaipu"
+      ],
+      "english": [
+        "germination"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "mulaikkala",
+      "tamil": "முளைக்கல",
+      "variations": [
+        "mulaikala",
+        "mulaikkala"
+      ],
+      "english": [
+        "not germinating"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kathiradi",
+      "tamil": "கதிரடி",
+      "variations": [
+        "kadhiradi",
+        "kathiradi",
+        "katiradi"
+      ],
+      "english": [
+        "threshing"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "thootrudhal",
+      "tamil": "தூற்றுதல்",
+      "variations": [
+        "thootradhu",
+        "thootrudal",
+        "thootrudhal",
+        "thutrudhal",
+        "tootrudhal"
+      ],
+      "english": [
+        "winnowing"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "paruvam",
+      "tamil": "பருவம்",
+      "variations": [
+        "paruvam",
+        "paruvem"
+      ],
+      "english": [
+        "season"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "kuruvai",
+      "tamil": "குறுவை",
+      "variations": [
+        "kuruva",
+        "kuruvai"
+      ],
+      "english": [
+        "Kuruvai season"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "samba",
+      "tamil": "சம்பா",
+      "variations": [
+        "samba",
+        "sambaa"
+      ],
+      "english": [
+        "Samba season"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "thaaladi",
+      "tamil": "தாளடி",
+      "variations": [
+        "taaladi",
+        "thaaladi",
+        "thaladi"
+      ],
+      "english": [
+        "Thaladi season"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "navarai",
+      "tamil": "நவரை",
+      "variations": [
+        "navara",
+        "navarai"
+      ],
+      "english": [
+        "Navarai season"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "pattam",
+      "tamil": "பட்டம்",
+      "variations": [
+        "patam",
+        "pattam"
+      ],
+      "english": [
+        "sowing window"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "aadi pattam",
+      "tamil": "ஆடிப்பட்டம்",
+      "variations": [
+        "aadi pattam",
+        "adi pattam"
+      ],
+      "english": [
+        "Aadi sowing window"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "thai pattam",
+      "tamil": "தைப்பட்டம்",
+      "variations": [
+        "tai pattam",
+        "thai pattam",
+        "thaipattam"
+      ],
+      "english": [
+        "Thai sowing window"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "vayasu",
+      "tamil": "வயசு",
+      "variations": [
+        "vayadhu",
+        "vayas",
+        "vayasu"
+      ],
+      "english": [
+        "crop age"
+      ],
+      "category": "season"
+    },
+    {
+      "term": "naal",
+      "tamil": "நாள்",
+      "variations": [
+        "naal",
+        "naalu",
+        "nal"
+      ],
+      "english": [
+        "day"
+      ],
+      "category": "time"
+    },
+    {
+      "term": "vaaram",
+      "tamil": "வாரம்",
+      "variations": [
+        "vaaram",
+        "varam"
+      ],
+      "english": [
+        "week"
+      ],
+      "category": "time"
+    },
+    {
+      "term": "maasam",
+      "tamil": "மாசம்",
+      "variations": [
+        "maasam",
+        "masam"
+      ],
+      "english": [
+        "month"
+      ],
+      "category": "time"
+    },
+    {
+      "term": "varusham",
+      "tamil": "வருஷம்",
+      "variations": [
+        "varudam",
+        "varusham"
+      ],
+      "english": [
+        "year"
+      ],
+      "category": "time"
+    },
+    {
+      "term": "naalaiku",
+      "tamil": "நாளைக்கு",
+      "variations": [
+        "naalaik",
+        "naalaikku",
+        "naalaiku",
+        "nalaiku"
+      ],
+      "english": [
+        "tomorrow"
+      ],
+      "category": "time"
+    },
+    {
+      "term": "inniku",
+      "tamil": "இன்னைக்கு",
+      "variations": [
+        "inaiku",
+        "innaiku",
+        "innik",
+        "inniku"
+      ],
+      "english": [
+        "today"
+      ],
+      "category": "time"
+    },
+    {
+      "term": "ippo",
+      "tamil": "இப்போ",
+      "variations": [
+        "ipo",
+        "ippo"
+      ],
+      "english": [
+        "now"
+      ],
+      "category": "time"
+    },
+    {
+      "term": "chithirai",
+      "tamil": "சித்திரை",
+      "variations": [
+        "chithirai",
+        "chitirai"
+      ],
+      "english": [
+        "Chithirai (Apr–May)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "vaigasi",
+      "tamil": "வைகாசி",
+      "variations": [
+        "vaigasi",
+        "vaikasi"
+      ],
+      "english": [
+        "Vaigasi (May–Jun)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "aani",
+      "tamil": "ஆனி",
+      "variations": [
+        "aani",
+        "ani"
+      ],
+      "english": [
+        "Aani (Jun–Jul)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "aadi",
+      "tamil": "ஆடி",
+      "variations": [
+        "aadi",
+        "adi",
+        "adi maasam"
+      ],
+      "english": [
+        "Aadi (Jul–Aug)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "aavani",
+      "tamil": "ஆவணி",
+      "variations": [
+        "aavani",
+        "avani"
+      ],
+      "english": [
+        "Aavani (Aug–Sep)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "purattasi",
+      "tamil": "புரட்டாசி",
+      "variations": [
+        "puratasi",
+        "purattasi"
+      ],
+      "english": [
+        "Purattasi (Sep–Oct)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "aippasi",
+      "tamil": "ஐப்பசி",
+      "variations": [
+        "aipasi",
+        "aippasi",
+        "ipasi"
+      ],
+      "english": [
+        "Aippasi (Oct–Nov)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "karthigai",
+      "tamil": "கார்த்திகை",
+      "variations": [
+        "karthigai",
+        "karthikai",
+        "kartigai"
+      ],
+      "english": [
+        "Karthigai (Nov–Dec)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "margazhi",
+      "tamil": "மார்கழி",
+      "variations": [
+        "margali",
+        "margazhi"
+      ],
+      "english": [
+        "Margazhi (Dec–Jan)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "thai",
+      "tamil": "தை",
+      "variations": [
+        "tai",
+        "thai",
+        "thai maasam"
+      ],
+      "english": [
+        "Thai (Jan–Feb)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "maasi",
+      "tamil": "மாசி",
+      "variations": [
+        "maasi",
+        "masi"
+      ],
+      "english": [
+        "Maasi (Feb–Mar)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "panguni",
+      "tamil": "பங்குனி",
+      "variations": [
+        "panguni"
+      ],
+      "english": [
+        "Panguni (Mar–Apr)"
+      ],
+      "category": "month"
+    },
+    {
+      "term": "mazhai",
+      "tamil": "மழை",
+      "variations": [
+        "mala",
+        "malai",
+        "mazha",
+        "mazhai"
+      ],
+      "english": [
+        "rain"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "pani",
+      "tamil": "பனி",
+      "variations": [
+        "panee",
+        "pani"
+      ],
+      "english": [
+        "dew",
+        "mist"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "veyil",
+      "tamil": "வெயில்",
+      "variations": [
+        "veyil",
+        "veyyil"
+      ],
+      "english": [
+        "sunshine",
+        "heat"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "vekkai",
+      "tamil": "வெக்கை",
+      "variations": [
+        "vekai",
+        "vekkai"
+      ],
+      "english": [
+        "heat (colloquial)"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "kaatru",
+      "tamil": "காற்று",
+      "variations": [
+        "kaathu",
+        "kaatr",
+        "kaatru",
+        "katru"
+      ],
+      "english": [
+        "wind"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "puyal",
+      "tamil": "புயல்",
+      "variations": [
+        "puyal",
+        "puyalu"
+      ],
+      "english": [
+        "cyclone"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "vellam",
+      "tamil": "வெள்ளம்",
+      "variations": [
+        "vellam",
+        "vellem"
+      ],
+      "english": [
+        "flood"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "idi",
+      "tamil": "இடி",
+      "variations": [
+        "idi",
+        "idi minnal"
+      ],
+      "english": [
+        "thunder"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "minnal",
+      "tamil": "மின்னல்",
+      "variations": [
+        "minal",
+        "minnal"
+      ],
+      "english": [
+        "lightning"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "aalankatti",
+      "tamil": "ஆலங்கட்டி",
+      "variations": [
+        "aalankatti",
+        "alangatti",
+        "alankatti"
+      ],
+      "english": [
+        "hail"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "kulir",
+      "tamil": "குளிர்",
+      "variations": [
+        "kulir",
+        "kulur"
+      ],
+      "english": [
+        "cold"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "vaanilai",
+      "tamil": "வானிலை",
+      "variations": [
+        "vaanilai",
+        "vanilai",
+        "weather"
+      ],
+      "english": [
+        "weather"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "paruvamazhai",
+      "tamil": "பருவமழை",
+      "variations": [
+        "monsoon",
+        "paruvamalai",
+        "paruvamazhai"
+      ],
+      "english": [
+        "monsoon"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "megam",
+      "tamil": "மேகம்",
+      "variations": [
+        "megam",
+        "megham"
+      ],
+      "english": [
+        "cloud"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "saaral",
+      "tamil": "சாரல்",
+      "variations": [
+        "saaral",
+        "saral",
+        "thooral"
+      ],
+      "english": [
+        "drizzle"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "vilai",
+      "tamil": "விலை",
+      "variations": [
+        "rate",
+        "velai",
+        "vilai"
+      ],
+      "english": [
+        "price"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "sandhai",
+      "tamil": "சந்தை",
+      "variations": [
+        "market",
+        "sandai",
+        "sandhai",
+        "santhai"
+      ],
+      "english": [
+        "market"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "uzhavar sandhai",
+      "tamil": "உழவர் சந்தை",
+      "variations": [
+        "ulavar sandhai",
+        "ulavar santhai",
+        "uzhavar sandai",
+        "uzhavar sandhai"
+      ],
+      "english": [
+        "farmers' market"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "mandi",
+      "tamil": "மண்டி",
+      "variations": [
+        "mandee",
+        "mandi"
+      ],
+      "english": [
+        "commission shop"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "viyaabaari",
+      "tamil": "வியாபாரி",
+      "variations": [
+        "viyaabaari",
+        "viyabari",
+        "vyabari"
+      ],
+      "english": [
+        "trader"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "tharagar",
+      "tamil": "தரகர்",
+      "variations": [
+        "broker",
+        "taragar",
+        "tharagar",
+        "tharager"
+      ],
+      "english": [
+        "broker"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "kolmudhal",
+      "tamil": "கொள்முதல்",
+      "variations": [
+        "kolmudal",
+        "kolmudhal",
+        "kolmuthal"
+      ],
+      "english": [
+        "procurement"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "kolmudhal nilaiyam",
+      "tamil": "கொள்முதல் நிலையம்",
+      "variations": [
+        "DPC",
+        "kolmudal nilaiyam",
+        "kolmudhal nilaiyam"
+      ],
+      "english": [
+        "procurement centre"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "labam",
+      "tamil": "லாபம்",
+      "variations": [
+        "laabam",
+        "labam"
+      ],
+      "english": [
+        "profit"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "nashtam",
+      "tamil": "நஷ்டம்",
+      "variations": [
+        "loss",
+        "nashtam",
+        "nastam"
+      ],
+      "english": [
+        "loss"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "selavu",
+      "tamil": "செலவு",
+      "variations": [
+        "selav",
+        "selavu",
+        "selavu kanakku"
+      ],
+      "english": [
+        "expense"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "kooli",
+      "tamil": "கூலி",
+      "variations": [
+        "kooli",
+        "kuli"
+      ],
+      "english": [
+        "wage"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "velai aal",
+      "tamil": "வேலையாள்",
+      "variations": [
+        "velai aal",
+        "velai al",
+        "velaiaal"
+      ],
+      "english": [
+        "labourer"
+      ],
+      "category": "market"
+    },
+    {
+      "term": "kadan",
+      "tamil": "கடன்",
+      "variations": [
+        "kadan",
+        "kadanu",
+        "loan"
+      ],
+      "english": [
+        "loan"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "vatti",
+      "tamil": "வட்டி",
+      "variations": [
+        "vaddi",
+        "vatti"
+      ],
+      "english": [
+        "interest"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "maaniyam",
+      "tamil": "மானியம்",
+      "variations": [
+        "maaniyam",
+        "maniyam",
+        "subsidy"
+      ],
+      "english": [
+        "subsidy"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "thittam",
+      "tamil": "திட்டம்",
+      "variations": [
+        "scheme",
+        "thitam",
+        "thittam",
+        "tittam"
+      ],
+      "english": [
+        "scheme"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "arasu",
+      "tamil": "அரசு",
+      "variations": [
+        "aras",
+        "arasu",
+        "government",
+        "govt"
+      ],
+      "english": [
+        "government"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "kaappeedu",
+      "tamil": "காப்பீடு",
+      "variations": [
+        "insurance",
+        "kaapeedu",
+        "kaappeed",
+        "kaappeedu",
+        "kaappidu",
+        "kapeedu",
+        "kappeedu"
+      ],
+      "english": [
+        "insurance"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "izhappeedu",
+      "tamil": "இழப்பீடு",
+      "variations": [
+        "ilapeedu",
+        "ilappeedu",
+        "izhapeedu",
+        "izhappeed",
+        "izhappeedu",
+        "izhappidu"
+      ],
+      "english": [
+        "compensation"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "nivaaranam",
+      "tamil": "நிவாரணம்",
+      "variations": [
+        "nivaaranam",
+        "nivaranam"
+      ],
+      "english": [
+        "relief"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "panam",
+      "tamil": "பணம்",
+      "variations": [
+        "panam",
+        "panamu"
+      ],
+      "english": [
+        "money"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "kaasu",
+      "tamil": "காசு",
+      "variations": [
+        "kaas",
+        "kaasu",
+        "kasu"
+      ],
+      "english": [
+        "money"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "thavanai",
+      "tamil": "தவணை",
+      "variations": [
+        "installment",
+        "tavanai",
+        "thavanai",
+        "thavani"
+      ],
+      "english": [
+        "instalment"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "patta",
+      "tamil": "பட்டா",
+      "variations": [
+        "patta",
+        "pattaa"
+      ],
+      "english": [
+        "land title"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "chitta",
+      "tamil": "சிட்டா",
+      "variations": [
+        "chitta",
+        "sitta"
+      ],
+      "english": [
+        "land record"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "adangal",
+      "tamil": "அடங்கல்",
+      "variations": [
+        "adangal",
+        "adangal copy"
+      ],
+      "english": [
+        "crop record"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "vivasaya adhigari",
+      "tamil": "விவசாய அதிகாரி",
+      "variations": [
+        "agri officer",
+        "vivasaya adhigari",
+        "vivasaya adigari"
+      ],
+      "english": [
+        "agriculture officer"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "velaan thurai",
+      "tamil": "வேளாண் துறை",
+      "variations": [
+        "agri department",
+        "velaan thurai",
+        "velaan turai",
+        "velan thurai"
+      ],
+      "english": [
+        "agriculture department"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "kootturavu sangam",
+      "tamil": "கூட்டுறவு சங்கம்",
+      "variations": [
+        "kootturavu sangam",
+        "kutturavu sangam",
+        "society"
+      ],
+      "english": [
+        "cooperative society"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "vangi",
+      "tamil": "வங்கி",
+      "variations": [
+        "bank",
+        "vangi"
+      ],
+      "english": [
+        "bank"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "aadhaar",
+      "tamil": "ஆதார்",
+      "variations": [
+        "aadaar",
+        "aadhaar",
+        "aadhar",
+        "adhar"
+      ],
+      "english": [
+        "Aadhaar"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "vinnappam",
+      "tamil": "விண்ணப்பம்",
+      "variations": [
+        "apply",
+        "vinapam",
+        "vinnapam",
+        "vinnappam"
+      ],
+      "english": [
+        "application"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "padhivu",
+      "tamil": "பதிவு",
+      "variations": [
+        "padhiv",
+        "padhivu",
+        "padivu",
+        "pathivu",
+        "register"
+      ],
+      "english": [
+        "registration"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "saandru",
+      "tamil": "சான்று",
+      "variations": [
+        "certificate",
+        "saandr",
+        "saandru",
+        "sandru"
+      ],
+      "english": [
+        "certificate"
+      ],
+      "category": "scheme"
+    },
+    {
+      "term": "tractor",
+      "tamil": "டிராக்டர்",
+      "variations": [
+        "tractar",
+        "tractor",
+        "traktor"
+      ],
+      "english": [
+        "tractor"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "power tiller",
+      "tamil": "பவர் டில்லர்",
+      "variations": [
+        "power tiller",
+        "tiller"
+      ],
+      "english": [
+        "power tiller"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "rotavator",
+      "tamil": "ரோட்டவேட்டர்",
+      "variations": [
+        "rotavator",
+        "rotovator"
+      ],
+      "english": [
+        "rotavator"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "aruvadai iyandhiram",
+      "tamil": "அறுவடை இயந்திரம்",
+      "variations": [
+        "aruvadai iyandhiram",
+        "aruvadai iyandiram",
+        "harvester"
+      ],
+      "english": [
+        "harvester"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "nadavu iyandhiram",
+      "tamil": "நடவு இயந்திரம்",
+      "variations": [
+        "nadavu iyandhiram",
+        "nadavu iyandiram",
+        "transplanter"
+      ],
+      "english": [
+        "transplanter"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "mannvetti",
+      "tamil": "மண்வெட்டி",
+      "variations": [
+        "mannvetti",
+        "manvetti"
+      ],
+      "english": [
+        "spade"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "kadappaarai",
+      "tamil": "கடப்பாரை",
+      "variations": [
+        "kadapaarai",
+        "kadappaarai",
+        "kadapparai"
+      ],
+      "english": [
+        "crowbar"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "aruval",
+      "tamil": "அருவாள்",
+      "variations": [
+        "aruvaal",
+        "aruval"
+      ],
+      "english": [
+        "sickle"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "koodai",
+      "tamil": "கூடை",
+      "variations": [
+        "koodai",
+        "kudai"
+      ],
+      "english": [
+        "basket"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "vaadagai",
+      "tamil": "வாடகை",
+      "variations": [
+        "rent",
+        "vaadagai",
+        "vadagai"
+      ],
+      "english": [
+        "rent"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "iyandhiram",
+      "tamil": "இயந்திரம்",
+      "variations": [
+        "iyandhiram",
+        "iyandiram",
+        "iyanthiram",
+        "machine"
+      ],
+      "english": [
+        "machine"
+      ],
+      "category": "machinery"
+    },
+    {
+      "term": "enna",
+      "tamil": "என்ன",
+      "variations": [
+        "ena",
+        "enna",
+        "yenna"
+      ],
+      "english": [
+        "what"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "epdi",
+      "tamil": "எப்படி",
+      "variations": [
+        "epadi",
+        "epdi",
+        "eppadi",
+        "yepdi"
+      ],
+      "english": [
+        "how"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "eppo",
+      "tamil": "எப்போ",
+      "variations": [
+        "epo",
+        "eppa",
+        "eppo",
+        "yeppo"
+      ],
+      "english": [
+        "when"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "enga",
+      "tamil": "எங்க",
+      "variations": [
+        "enga",
+        "engae",
+        "yenga"
+      ],
+      "english": [
+        "where"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "evlo",
+      "tamil": "எவ்ளோ",
+      "variations": [
+        "evalo",
+        "evlo",
+        "evlov",
+        "evvalavu"
+      ],
+      "english": [
+        "how much"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "yen",
+      "tamil": "ஏன்",
+      "variations": [
+        "en",
+        "yen",
+        "yenn"
+      ],
+      "english": [
+        "why"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "edhu",
+      "tamil": "எது",
+      "variations": [
+        "edh",
+        "edhu",
+        "edu",
+        "ethu"
+      ],
+      "english": [
+        "which"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "entha",
+      "tamil": "எந்த",
+      "variations": [
+        "endha",
+        "enta",
+        "entha",
+        "yentha"
+      ],
+      "english": [
+        "which"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "yaaru",
+      "tamil": "யாரு",
+      "variations": [
+        "yaar",
+        "yaaru",
+        "yaru"
+      ],
+      "english": [
+        "who"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "iruku",
+      "tamil": "இருக்கு",
+      "variations": [
+        "iruk",
+        "irukku",
+        "iruku",
+        "irukudhu"
+      ],
+      "english": [
+        "there is"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "illa",
+      "tamil": "இல்ல",
+      "variations": [
+        "ila",
+        "illa",
+        "illai"
+      ],
+      "english": [
+        "no",
+        "not"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "venum",
+      "tamil": "வேணும்",
+      "variations": [
+        "venum",
+        "venuma",
+        "vēnum"
+      ],
+      "english": [
+        "need"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "vendaam",
+      "tamil": "வேண்டாம்",
+      "variations": [
+        "vendaam",
+        "vendam"
+      ],
+      "english": [
+        "don't want"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "pannanum",
+      "tamil": "பண்ணணும்",
+      "variations": [
+        "pananum",
+        "pannanum",
+        "pannanuma"
+      ],
+      "english": [
+        "need to do"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "pannalaam",
+      "tamil": "பண்ணலாம்",
+      "variations": [
+        "panalam",
+        "pannalaam",
+        "pannalam"
+      ],
+      "english": [
+        "can do"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "podanum",
+      "tamil": "போடணும்",
+      "variations": [
+        "podanum",
+        "podanuma"
+      ],
+      "english": [
+        "need to apply"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "podalaam",
+      "tamil": "போடலாம்",
+      "variations": [
+        "podalaam",
+        "podalam",
+        "podalama"
+      ],
+      "english": [
+        "can apply"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "vidanum",
+      "tamil": "விடணும்",
+      "variations": [
+        "vidanum",
+        "vidanuma"
+      ],
+      "english": [
+        "need to let (water)"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "romba",
+      "tamil": "ரொம்ப",
+      "variations": [
+        "rmba",
+        "romba",
+        "roomba"
+      ],
+      "english": [
+        "very"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "konjam",
+      "tamil": "கொஞ்சம்",
+      "variations": [
+        "konjam",
+        "konjum"
+      ],
+      "english": [
+        "little"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "adhigam",
+      "tamil": "அதிகம்",
+      "variations": [
+        "adhigam",
+        "adigam",
+        "athigam"
+      ],
+      "english": [
+        "more",
+        "excess"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "kammi",
+      "tamil": "கம்மி",
+      "variations": [
+        "kami",
+        "kammi"
+      ],
+      "english": [
+        "less"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "nalla",
+      "tamil": "நல்ல",
+      "variations": [
+        "nala",
+        "nalla"
+      ],
+      "english": [
+        "good"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "kettu pochu",
+      "tamil": "கெட்டுப் போச்சு",
+      "variations": [
+        "kettu poch",
+        "kettu pochu",
+        "kettupochu"
+      ],
+      "english": [
+        "got spoiled"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "sollunga",
+      "tamil": "சொல்லுங்க",
+      "variations": [
+        "sollu",
+        "sollunga",
+        "solunga"
+      ],
+      "english": [
+        "please tell"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "udhavi",
+      "tamil": "உதவி",
+      "variations": [
+        "help",
+        "udavi",
+        "udhavi",
+        "uthavi"
+      ],
+      "english": [
+        "help"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "kaaranam",
+      "tamil": "காரணம்",
+      "variations": [
+        "kaaranam",
+        "karanam",
+        "reason"
+      ],
+      "english": [
+        "reason"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "theervu",
+      "tamil": "தீர்வு",
+      "variations": [
+        "teervu",
+        "theerv",
+        "theervu",
+        "thirvu"
+      ],
+      "english": [
+        "solution"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "vazhi",
+      "tamil": "வழி",
+      "variations": [
+        "vali",
+        "vazhi"
+      ],
+      "english": [
+        "way"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "aagudhu",
+      "tamil": "ஆகுது",
+      "variations": [
+        "aagudh",
+        "aagudhu",
+        "aagudu",
+        "aaguthu",
+        "agudhu",
+        "aguthu"
+      ],
+      "english": [
+        "is becoming"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "varudhu",
+      "tamil": "வருது",
+      "variations": [
+        "varudh",
+        "varudhu",
+        "varudu",
+        "varuthu"
+      ],
+      "english": [
+        "is coming"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "pochu",
+      "tamil": "போச்சு",
+      "variations": [
+        "poch",
+        "pochi",
+        "pochu"
+      ],
+      "english": [
+        "went",
+        "is gone"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "vandhuruchu",
+      "tamil": "வந்துருச்சு",
+      "variations": [
+        "vandhuruch",
+        "vandhuruchu",
+        "vanduruchu",
+        "vanthuruchu"
+      ],
+      "english": [
+        "has come"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "mudiyuma",
+      "tamil": "முடியுமா",
+      "variations": [
+        "mudiuma",
+        "mudiyuma"
+      ],
+      "english": [
+        "is it possible"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "sari",
+      "tamil": "சரி",
+      "variations": [
+        "sari",
+        "seri"
+      ],
+      "english": [
+        "okay"
+      ],
+      "category": "function"
+    },
+    {
+      "term": "anna",
+      "tamil": "அண்ணா",
+      "variations": [
+        "anna",
+        "annaa"
+      ],
+      "english": [
+        "brother (polite address)"
+      ],
+      "category": "address"
+    },
+    {
+      "term": "sir",
+      "tamil": "சார்",
+      "variations": [
+        "saar",
+        "sir"
+      ],
+      "english": [
+        "sir"
+      ],
+      "category": "address"
+    },
+    {
+      "term": "ayya",
+      "tamil": "ஐயா",
+      "variations": [
+        "aiya",
+        "ayya"
+      ],
+      "english": [
+        "sir (respectful)"
+      ],
+      "category": "address"
+    },
+    {
+      "term": "vanakkam",
+      "tamil": "வணக்கம்",
+      "variations": [
+        "vanakam",
+        "vanakkam"
+      ],
+      "english": [
+        "hello"
+      ],
+      "category": "address"
+    },
+    {
+      "term": "nandri",
+      "tamil": "நன்றி",
+      "variations": [
+        "nandri",
+        "nanri"
+      ],
+      "english": [
+        "thanks"
+      ],
+      "category": "address"
+    },
+    {
+      "term": "maadu",
+      "tamil": "மாடு",
+      "variations": [
+        "maad",
+        "maadu",
+        "madu"
+      ],
+      "english": [
+        "cow"
+      ],
+      "category": "livestock"
+    },
+    {
+      "term": "aadu",
+      "tamil": "ஆடு",
+      "variations": [
+        "aad",
+        "aadu",
+        "adu"
+      ],
+      "english": [
+        "goat"
+      ],
+      "category": "livestock"
+    },
+    {
+      "term": "kozhi",
+      "tamil": "கோழி",
+      "variations": [
+        "koli",
+        "kozhi"
+      ],
+      "english": [
+        "chicken"
+      ],
+      "category": "livestock"
+    },
+    {
+      "term": "theevanam",
+      "tamil": "தீவனம்",
+      "variations": [
+        "teevanam",
+        "theevanam",
+        "thivanam"
+      ],
+      "english": [
+        "fodder"
+      ],
+      "category": "livestock"
+    },
+    {
+      "term": "paal",
+      "tamil": "பால்",
+      "variations": [
+        "paal",
+        "pal"
+      ],
+      "english": [
+        "milk"
+      ],
+      "category": "livestock"
+    },
+    {
+      "term": "meen",
+      "tamil": "மீன்",
+      "variations": [
+        "mean",
+        "meen",
+        "min"
+      ],
+      "english": [
+        "fish"
+      ],
+      "category": "livestock"
+    },
+    {
+      "term": "thenee",
+      "tamil": "தேனீ",
+      "variations": [
+        "tenee",
+        "thenee",
+        "theni"
+      ],
+      "english": [
+        "honey bee"
+      ],
+      "category": "livestock"
+    },
+    {
+      "term": "onnu",
+      "tamil": "ஒன்னு",
+      "variations": [
+        "onn",
+        "onnu",
+        "onu"
+      ],
+      "english": [
+        "one"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "rendu",
+      "tamil": "ரெண்டு",
+      "variations": [
+        "rend",
+        "rendhu",
+        "rendu"
+      ],
+      "english": [
+        "two"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "moonu",
+      "tamil": "மூணு",
+      "variations": [
+        "moon",
+        "moonu",
+        "munu"
+      ],
+      "english": [
+        "three"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "naalu",
+      "tamil": "நாலு",
+      "variations": [
+        "naal",
+        "naalu",
+        "nalu"
+      ],
+      "english": [
+        "four"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "anju",
+      "tamil": "அஞ்சு",
+      "variations": [
+        "anchu",
+        "anj",
+        "anju"
+      ],
+      "english": [
+        "five"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "aaru",
+      "tamil": "ஆறு",
+      "variations": [
+        "aar",
+        "aaru",
+        "aru"
+      ],
+      "english": [
+        "six"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "ezhu",
+      "tamil": "ஏழு",
+      "variations": [
+        "elu",
+        "ezh",
+        "ezhu"
+      ],
+      "english": [
+        "seven"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "ettu",
+      "tamil": "எட்டு",
+      "variations": [
+        "ett",
+        "ettu"
+      ],
+      "english": [
+        "eight"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "ombodhu",
+      "tamil": "ஒம்போது",
+      "variations": [
+        "ombodh",
+        "ombodhu",
+        "ombodu",
+        "onbadhu"
+      ],
+      "english": [
+        "nine"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "pathu",
+      "tamil": "பத்து",
+      "variations": [
+        "path",
+        "paththu",
+        "pathu",
+        "patu"
+      ],
+      "english": [
+        "ten"
+      ],
+      "category": "number"
+    },
+    {
+      "term": "kilo",
+      "tamil": "கிலோ",
+      "variations": [
+        "kg",
+        "kilo"
+      ],
+      "english": [
+        "kilogram"
+      ],
+      "category": "unit"
+    },
+    {
+      "term": "litre",
+      "tamil": "லிட்டர்",
+      "variations": [
+        "liter",
+        "litre"
+      ],
+      "english": [
+        "litre"
+      ],
+      "category": "unit"
+    },
+    {
+      "term": "acre",
+      "tamil": "ஏக்கர்",
+      "variations": [
+        "acer",
+        "acre",
+        "ekkar"
+      ],
+      "english": [
+        "acre"
+      ],
+      "category": "unit"
+    },
+    {
+      "term": "hectare",
+      "tamil": "ஹெக்டேர்",
+      "variations": [
+        "hectare",
+        "hector"
+      ],
+      "english": [
+        "hectare"
+      ],
+      "category": "unit"
+    },
+    {
+      "term": "cent",
+      "tamil": "சென்ட்",
+      "variations": [
+        "cent",
+        "sent"
+      ],
+      "english": [
+        "cent (land)"
+      ],
+      "category": "unit"
+    },
+    {
+      "term": "manjala aagudhu",
+      "tamil": "மஞ்சளா ஆகுது",
+      "variations": [
+        "manjal aguthu",
+        "manjala aagudh",
+        "manjala aagudhu",
+        "manjala aagudu",
+        "manjala agudhu",
+        "manjalaaguthu"
+      ],
+      "english": [
+        "is turning yellow"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "karuppa aagudhu",
+      "tamil": "கருப்பா ஆகுது",
+      "variations": [
+        "karupa aagudhu",
+        "karupa aguthu",
+        "karuppa aagudh",
+        "karuppa aagudhu",
+        "karuppa aagudu",
+        "karuppa agudhu"
+      ],
+      "english": [
+        "is turning black"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "saayudhu",
+      "tamil": "சாயுது",
+      "variations": [
+        "saanjiruchu",
+        "saayudh",
+        "saayudhu",
+        "saayudu",
+        "saayuthu",
+        "sayudhu"
+      ],
+      "english": [
+        "is lodging",
+        "falling"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "kaai pidikkala",
+      "tamil": "காய் பிடிக்கல",
+      "variations": [
+        "kaai pidikala",
+        "kaai pidikkala",
+        "kai pidikala",
+        "kai pidikkala"
+      ],
+      "english": [
+        "no fruit set"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "poo pookala",
+      "tamil": "பூ பூக்கல",
+      "variations": [
+        "poo pookala",
+        "poo pukala",
+        "pu pukala"
+      ],
+      "english": [
+        "not flowering"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "valarala",
+      "tamil": "வளரல",
+      "variations": [
+        "valarala",
+        "valarale",
+        "valarchi illa"
+      ],
+      "english": [
+        "not growing"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "vilaichal",
+      "tamil": "விளைச்சல்",
+      "variations": [
+        "vilachal",
+        "vilaichal",
+        "yield"
+      ],
+      "english": [
+        "yield"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "magasool",
+      "tamil": "மகசூல்",
+      "variations": [
+        "magasool",
+        "magasul"
+      ],
+      "english": [
+        "yield"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "ragam",
+      "tamil": "ரகம்",
+      "variations": [
+        "ragam",
+        "ragham",
+        "variety"
+      ],
+      "english": [
+        "variety"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "veeriya ragam",
+      "tamil": "வீரிய ரகம்",
+      "variations": [
+        "hybrid",
+        "veeriya ragam",
+        "viriya ragam"
+      ],
+      "english": [
+        "hybrid variety"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "naattu ragam",
+      "tamil": "நாட்டு ரகம்",
+      "variations": [
+        "naattu ragam",
+        "nattu ragam"
+      ],
+      "english": [
+        "native variety"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "vidhai nerthi",
+      "tamil": "விதை நேர்த்தி",
+      "variations": [
+        "vidai nerthi",
+        "vidhai nerthi",
+        "vidhai nerti",
+        "vithai nerthi"
+      ],
+      "english": [
+        "seed treatment"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "mulaippu thiran",
+      "tamil": "முளைப்புத் திறன்",
+      "variations": [
+        "mulaippu thiran",
+        "mulaippu tiran",
+        "mulaipu thiran"
+      ],
+      "english": [
+        "germination rate"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "iyarkai vivasayam",
+      "tamil": "இயற்கை விவசாயம்",
+      "variations": [
+        "iyarkai vivasaayam",
+        "iyarkai vivasayam",
+        "organic"
+      ],
+      "english": [
+        "organic farming"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "vivasayam",
+      "tamil": "விவசாயம்",
+      "variations": [
+        "vivasaayam",
+        "vivasayam"
+      ],
+      "english": [
+        "agriculture"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "vivasayi",
+      "tamil": "விவசாயி",
+      "variations": [
+        "farmer",
+        "vivasaayi",
+        "vivasayi"
+      ],
+      "english": [
+        "farmer"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "uzhavar",
+      "tamil": "உழவர்",
+      "variations": [
+        "ulavar",
+        "uzhavar"
+      ],
+      "english": [
+        "farmer"
+      ],
+      "category": "phrase"
+    },
+    {
+      "term": "spray",
+      "tamil": "ஸ்ப்ரே",
+      "variations": [
+        "spray",
+        "sprey",
+        "spry"
+      ],
+      "english": [
+        "spray"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "medicine",
+      "tamil": "மெடிசின்",
+      "variations": [
+        "medicine",
+        "medisin"
+      ],
+      "english": [
+        "pesticide (colloquial)"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "fertilizer",
+      "tamil": "ஃபெர்டிலைசர்",
+      "variations": [
+        "fertiliser",
+        "fertilizar",
+        "fertilizer"
+      ],
+      "english": [
+        "fertilizer"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "yield",
+      "tamil": "ஈல்டு",
+      "variations": [
+        "yeild",
+        "yield"
+      ],
+      "english": [
+        "yield"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "hybrid",
+      "tamil": "ஹைபிரிட்",
+      "variations": [
+        "hibrid",
+        "hybrid"
+      ],
+      "english": [
+        "hybrid"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "loan",
+      "tamil": "லோன்",
+      "variations": [
+        "loan",
+        "lone"
+      ],
+      "english": [
+        "loan"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "insurance",
+      "tamil": "இன்சூரன்ஸ்",
+      "variations": [
+        "insurance",
+        "insurence"
+      ],
+      "english": [
+        "insurance"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "subsidy",
+      "tamil": "சப்சிடி",
+      "variations": [
+        "sabsidi",
+        "subsidi",
+        "subsidy"
+      ],
+      "english": [
+        "subsidy"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "drip",
+      "tamil": "டிரிப்",
+      "variations": [
+        "drip",
+        "dripp"
+      ],
+      "english": [
+        "drip irrigation"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "seed",
+      "tamil": "சீடு",
+      "variations": [
+        "seed",
+        "seeds",
+        "sid"
+      ],
+      "english": [
+        "seed"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "variety",
+      "tamil": "வெரைட்டி",
+      "variations": [
+        "variety",
+        "verity"
+      ],
+      "english": [
+        "variety"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "problem",
+      "tamil": "ப்ராப்ளம்",
+      "variations": [
+        "prablam",
+        "problem",
+        "problm"
+      ],
+      "english": [
+        "problem"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "attack",
+      "tamil": "அட்டாக்",
+      "variations": [
+        "atack",
+        "attack"
+      ],
+      "english": [
+        "attack"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "rate",
+      "tamil": "ரேட்",
+      "variations": [
+        "rate",
+        "reat"
+      ],
+      "english": [
+        "price"
+      ],
+      "category": "loanword"
+    },
+    {
+      "term": "kulai noi",
+      "tamil": "குலை நோய்",
+      "variations": [
+        "kulai noi",
+        "kulainoi"
+      ],
+      "english": [
+        "rice blast"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "ilai karugal",
+      "tamil": "இலைக் கருகல்",
+      "variations": [
+        "ilai karugal",
+        "ilaikarugal"
+      ],
+      "english": [
+        "leaf blight"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "ilai pulli noi",
+      "tamil": "இலைப்புள்ளி நோய்",
+      "variations": [
+        "ilai pulli noi",
+        "ilaipulli"
+      ],
+      "english": [
+        "leaf spot"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "ilai surul noi",
+      "tamil": "இலைச்சுருள் நோய்",
+      "variations": [
+        "ilai surul noi",
+        "ilaisurul"
+      ],
+      "english": [
+        "leaf curl"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "manjal themal",
+      "tamil": "மஞ்சள் தேமல்",
+      "variations": [
+        "manjal temal",
+        "manjal themal",
+        "manjal themal noi"
+      ],
+      "english": [
+        "yellow mosaic"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "sevvazhugal",
+      "tamil": "செவ்வழுகல்",
+      "variations": [
+        "sevvalugal",
+        "sevvazhugal"
+      ],
+      "english": [
+        "red rot"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "kariputtai",
+      "tamil": "கரிப்பூட்டை",
+      "variations": [
+        "karipootai",
+        "kariputtai"
+      ],
+      "english": [
+        "smut"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "kurutthazhugal",
+      "tamil": "குருத்தழுகல்",
+      "variations": [
+        "kuruthalugal",
+        "kuruttazhugal",
+        "kurutthalugal",
+        "kurutthazhugal"
+      ],
+      "english": [
+        "bud rot"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "mudi kothu",
+      "tamil": "முடிக்கொத்து",
+      "variations": [
+        "mudi koth",
+        "mudi kothu",
+        "mudi kotu",
+        "mudikothu"
+      ],
+      "english": [
+        "bunchy top"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "panama vaadal",
+      "tamil": "பனாமா வாடல்",
+      "variations": [
+        "panama vaadal",
+        "panama vadal",
+        "panama wilt"
+      ],
+      "english": [
+        "panama wilt"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "thanjavur vaadal",
+      "tamil": "தஞ்சாவூர் வாடல்",
+      "variations": [
+        "tanjavur vaadal",
+        "thanjavur vaadal",
+        "thanjavur vadal",
+        "thanjavur wilt"
+      ],
+      "english": [
+        "thanjavur wilt"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "sitrilai",
+      "tamil": "சிற்றிலை",
+      "variations": [
+        "chitrilai",
+        "sitrilai"
+      ],
+      "english": [
+        "little leaf"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "naatrazhugal",
+      "tamil": "நாற்றழுகல்",
+      "variations": [
+        "naatralugal",
+        "naatrazhugal",
+        "natralugal",
+        "natrazhugal"
+      ],
+      "english": [
+        "damping off"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "kizhangu azhugal",
+      "tamil": "கிழங்கு அழுகல்",
+      "variations": [
+        "kilangu alugal",
+        "kizhangu azhugal"
+      ],
+      "english": [
+        "rhizome rot"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "ver azhugal",
+      "tamil": "வேர் அழுகல்",
+      "variations": [
+        "ver alugal",
+        "ver azhugal"
+      ],
+      "english": [
+        "root rot"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "pazha azhugal",
+      "tamil": "பழ அழுகல்",
+      "variations": [
+        "pala alugal",
+        "pazha azhugal",
+        "pazham azhugal"
+      ],
+      "english": [
+        "fruit rot"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "thandu azhugal",
+      "tamil": "தண்டழுகல்",
+      "variations": [
+        "tandu azhugal",
+        "thandalugal",
+        "thandu alugal",
+        "thandu azhugal"
+      ],
+      "english": [
+        "stem rot"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "adi saambal",
+      "tamil": "அடிச்சாம்பல்",
+      "variations": [
+        "adi saambal",
+        "adi sambal",
+        "adisambal"
+      ],
+      "english": [
+        "downy mildew"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "oodha karugal",
+      "tamil": "ஊதா கருகல்",
+      "variations": [
+        "ooda karugal",
+        "oodha karugal",
+        "udha karugal"
+      ],
+      "english": [
+        "purple blotch"
+      ],
+      "category": "disease_name"
+    },
+    {
+      "term": "kaai puzhu",
+      "tamil": "காய்ப்புழு",
+      "variations": [
+        "kaai pulu",
+        "kaai puzh",
+        "kaai puzhu",
+        "kaaipuzhu",
+        "kai puzhu"
+      ],
+      "english": [
+        "fruit borer"
+      ],
+      "category": "pest_name"
+    },
+    {
+      "term": "aanaikomban",
+      "tamil": "ஆனைக்கொம்பன்",
+      "variations": [
+        "aanaikomban",
+        "anaikomban"
+      ],
+      "english": [
+        "gall midge"
+      ],
+      "category": "pest_name"
+    },
+    {
+      "term": "ilai pen",
+      "tamil": "இலைப்பேன்",
+      "variations": [
+        "ilai pen",
+        "ilaipen"
+      ],
+      "english": [
+        "thrips"
+      ],
+      "category": "pest_name"
+    },
+    {
+      "term": "kaandamiruga vandu",
+      "tamil": "காண்டாமிருக வண்டு",
+      "variations": [
+        "kaandamiruga vand",
+        "kaandamiruga vandu",
+        "kandamiruga vandu"
+      ],
+      "english": [
+        "rhinoceros beetle"
+      ],
+      "category": "pest_name"
+    },
+    {
+      "term": "sivappu koon vandu",
+      "tamil": "சிவப்பு கூன்வண்டு",
+      "variations": [
+        "sivappu koon vand",
+        "sivappu koon vandu",
+        "sivappu kun vandu",
+        "sivapu koon vandu",
+        "sivapu koonvandu"
+      ],
+      "english": [
+        "red palm weevil"
+      ],
+      "category": "pest_name"
+    },
+    {
+      "term": "karunthalai puzhu",
+      "tamil": "கருந்தலைப் புழு",
+      "variations": [
+        "karuntalai puzhu",
+        "karunthalai",
+        "karunthalai pulu",
+        "karunthalai puzh",
+        "karunthalai puzhu"
+      ],
+      "english": [
+        "black-headed caterpillar"
+      ],
+      "category": "pest_name"
+    },
+    {
+      "term": "vellai puzhu",
+      "tamil": "வெள்ளைப் புழு",
+      "variations": [
+        "vella puzhu",
+        "vellai pulu",
+        "vellai puzh",
+        "vellai puzhu"
+      ],
+      "english": [
+        "white grub"
+      ],
+      "category": "pest_name"
+    },
+    {
+      "term": "pala",
+      "tamil": "பலா",
+      "variations": [
+        "pala",
+        "palaa"
+      ],
+      "english": [
+        "jackfruit"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "sappota",
+      "tamil": "சப்போட்டா",
+      "variations": [
+        "chikku",
+        "sapota",
+        "sappota"
+      ],
+      "english": [
+        "sapota"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "nellikai",
+      "tamil": "நெல்லிக்காய்",
+      "variations": [
+        "nelikai",
+        "nellikai"
+      ],
+      "english": [
+        "amla"
+      ],
+      "category": "crop"
+    },
+    {
+      "term": "seemai karuvelam",
+      "tamil": "சீமைக் கருவேலம்",
+      "variations": [
+        "karuvelam",
+        "seemai karuvelam",
+        "simai karuvelam"
+      ],
+      "english": [
+        "prosopis (weed tree)"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "arugampul",
+      "tamil": "அருகம்புல்",
+      "variations": [
+        "arugampul"
+      ],
+      "english": [
+        "bermuda grass (weed)"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "korai",
+      "tamil": "கோரை",
+      "variations": [
+        "korai",
+        "korai pul"
+      ],
+      "english": [
+        "nut sedge (weed)"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "parthenium",
+      "tamil": "பார்த்தீனியம்",
+      "variations": [
+        "carrot weed",
+        "partenium",
+        "parthenium"
+      ],
+      "english": [
+        "parthenium weed"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "thazhai",
+      "tamil": "தழை",
+      "variations": [
+        "tazhai",
+        "thalai",
+        "thalai uram",
+        "thazhai"
+      ],
+      "english": [
+        "green leaves (manure)"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "kuppai",
+      "tamil": "குப்பை",
+      "variations": [
+        "kupai",
+        "kuppai"
+      ],
+      "english": [
+        "farm waste"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "saambal",
+      "tamil": "சாம்பல்",
+      "variations": [
+        "saambal",
+        "sambal"
+      ],
+      "english": [
+        "ash"
+      ],
+      "category": "input"
+    },
+    {
+      "term": "kaalan",
+      "tamil": "காளான்",
+      "variations": [
+        "kaalan",
+        "kalan"
+      ],
+      "english": [
+        "mushroom",
+        "fungus"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "paasi",
+      "tamil": "பாசி",
+      "variations": [
+        "paasi",
+        "pasi"
+      ],
+      "english": [
+        "algae",
+        "moss"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "ottunni",
+      "tamil": "ஒட்டுண்ணி",
+      "variations": [
+        "ottunni",
+        "otunni"
+      ],
+      "english": [
+        "parasite",
+        "parasitoid"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "iraivizhungi",
+      "tamil": "இரைவிழுங்கி",
+      "variations": [
+        "iraivilungi",
+        "iraivizhungi"
+      ],
+      "english": [
+        "predator"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "nanmai seiyum poochi",
+      "tamil": "நன்மை செய்யும் பூச்சி",
+      "variations": [
+        "nanmai poochi",
+        "nanmai seiyum poochi",
+        "nanmai seiyum puchi"
+      ],
+      "english": [
+        "beneficial insect"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "pachaiyam",
+      "tamil": "பச்சையம்",
+      "variations": [
+        "pachaiyam",
+        "pachayam"
+      ],
+      "english": [
+        "chlorophyll"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "mulai",
+      "tamil": "முளை",
+      "variations": [
+        "mula",
+        "mulai"
+      ],
+      "english": [
+        "sprout"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "kodi",
+      "tamil": "கொடி",
+      "variations": [
+        "kodee",
+        "kodi"
+      ],
+      "english": [
+        "vine",
+        "creeper"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "mullu",
+      "tamil": "முள்ளு",
+      "variations": [
+        "mul",
+        "mull",
+        "mullu"
+      ],
+      "english": [
+        "thorn"
+      ],
+      "category": "plant_part"
+    },
+    {
+      "term": "paal vadiyudhu",
+      "tamil": "பால் வடியுது",
+      "variations": [
+        "paal vadiyudh",
+        "paal vadiyudhu",
+        "paal vadiyudu",
+        "pal vadiyudhu"
+      ],
+      "english": [
+        "sap oozing"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "sorsorappu",
+      "tamil": "சொரசொரப்பு",
+      "variations": [
+        "sorasorappu",
+        "sorsorapp",
+        "sorsorappu",
+        "sorsorapu"
+      ],
+      "english": [
+        "roughness"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "thulai",
+      "tamil": "துளை",
+      "variations": [
+        "thula",
+        "thulai",
+        "tulai"
+      ],
+      "english": [
+        "bore hole"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "kuzhi vizhundhu",
+      "tamil": "குழி விழுந்து",
+      "variations": [
+        "kuli vilundhu",
+        "kuzhi vizhundh",
+        "kuzhi vizhundhu",
+        "kuzhi vizhundu"
+      ],
+      "english": [
+        "sunken"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "vellai podi",
+      "tamil": "வெள்ளைப் பொடி",
+      "variations": [
+        "vella podi",
+        "vellai podi"
+      ],
+      "english": [
+        "white powder"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "ottudhu",
+      "tamil": "ஒட்டுது",
+      "variations": [
+        "ottudh",
+        "ottudhu",
+        "ottudu",
+        "ottuthu"
+      ],
+      "english": [
+        "is sticky"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "surungudhu",
+      "tamil": "சுருங்குது",
+      "variations": [
+        "surungudh",
+        "surungudhu",
+        "surungudu",
+        "surunguthu"
+      ],
+      "english": [
+        "is shrinking"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "madangudhu",
+      "tamil": "மடங்குது",
+      "variations": [
+        "madangudh",
+        "madangudhu",
+        "madangudu",
+        "madanguthu"
+      ],
+      "english": [
+        "is folding"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "thongudhu",
+      "tamil": "தொங்குது",
+      "variations": [
+        "thongudh",
+        "thongudhu",
+        "thongudu",
+        "thonguthu",
+        "tongudhu"
+      ],
+      "english": [
+        "is drooping"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "vedikudhu",
+      "tamil": "வெடிக்குது",
+      "variations": [
+        "vedikkudhu",
+        "vedikudh",
+        "vedikudhu",
+        "vedikudu"
+      ],
+      "english": [
+        "is cracking"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "uthirndhu",
+      "tamil": "உதிர்ந்து",
+      "variations": [
+        "udhirndhu",
+        "uthirndh",
+        "uthirndhu",
+        "uthirndu",
+        "utirndhu"
+      ],
+      "english": [
+        "fallen"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "saaguradhu",
+      "tamil": "சாகுது",
+      "variations": [
+        "saagudhu",
+        "saaguradh",
+        "saaguradhu",
+        "saaguradu",
+        "saguradhu"
+      ],
+      "english": [
+        "is dying"
+      ],
+      "category": "symptom"
+    },
+    {
+      "term": "moozhgiruchu",
+      "tamil": "மூழ்கிருச்சு",
+      "variations": [
+        "moolgiruchu",
+        "moozhgiruch",
+        "moozhgiruchu",
+        "muzhgiruchu"
+      ],
+      "english": [
+        "got submerged"
+      ],
+      "category": "weather"
+    },
+    {
+      "term": "thengi nikkudhu",
+      "tamil": "தேங்கி நிக்குது",
+      "variations": [
+        "tengi nikkudhu",
+        "thengi nikkudh",
+        "thengi nikkudhu",
+        "thengi nikkudu",
+        "thengi nikudhu"
+      ],
+      "english": [
+        "is stagnating"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "vadigal",
+      "tamil": "வடிகால்",
+      "variations": [
+        "vadigal",
+        "vadikal"
+      ],
+      "english": [
+        "drainage"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "kuzhaai",
+      "tamil": "குழாய்",
+      "variations": [
+        "kulaai",
+        "kulai",
+        "kuzhaai",
+        "kuzhai",
+        "pipe"
+      ],
+      "english": [
+        "pipe"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "thotti",
+      "tamil": "தொட்டி",
+      "variations": [
+        "thoti",
+        "thotti",
+        "totti"
+      ],
+      "english": [
+        "tank",
+        "trough"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "malai thanni",
+      "tamil": "மழைத் தண்ணி",
+      "variations": [
+        "malai tanni",
+        "malai thanni",
+        "mazhai thanni"
+      ],
+      "english": [
+        "rain water"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "uppu thanni",
+      "tamil": "உப்புத் தண்ணி",
+      "variations": [
+        "uppu tanni",
+        "uppu thani",
+        "uppu thanni",
+        "upu thanni"
+      ],
+      "english": [
+        "saline water"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "nalla thanni",
+      "tamil": "நல்ல தண்ணி",
+      "variations": [
+        "nala thanni",
+        "nalla tanni",
+        "nalla thanni"
+      ],
+      "english": [
+        "good-quality water"
+      ],
+      "category": "water"
+    },
+    {
+      "term": "kaatu panni",
+      "tamil": "காட்டுப் பன்றி",
+      "variations": [
+        "kaatu panni",
+        "kattu panni",
+        "katu panni"
+      ],
+      "english": [
+        "wild boar"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "kurangu",
+      "tamil": "குரங்கு",
+      "variations": [
+        "korangu",
+        "kurang",
+        "kurangu"
+      ],
+      "english": [
+        "monkey"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "mayil",
+      "tamil": "மயில்",
+      "variations": [
+        "mayil",
+        "mayilu"
+      ],
+      "english": [
+        "peacock (crop damage)"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "kili",
+      "tamil": "கிளி",
+      "variations": [
+        "kilee",
+        "kili"
+      ],
+      "english": [
+        "parrot (crop damage)"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "yaanai",
+      "tamil": "யானை",
+      "variations": [
+        "yaanai",
+        "yanai"
+      ],
+      "english": [
+        "elephant (crop damage)"
+      ],
+      "category": "problem"
+    },
+    {
+      "term": "veli",
+      "tamil": "வேலி",
+      "variations": [
+        "veli",
+        "vely"
+      ],
+      "english": [
+        "fence"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kuzhi edukkanum",
+      "tamil": "குழி எடுக்கணும்",
+      "variations": [
+        "kuli edukanum",
+        "kuli edukkanum",
+        "kuzhi edukanum",
+        "kuzhi edukkanum"
+      ],
+      "english": [
+        "need to dig pits"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "kavaathu",
+      "tamil": "கவாத்து",
+      "variations": [
+        "kavaath",
+        "kavaathu",
+        "kavaatu",
+        "kavathu"
+      ],
+      "english": [
+        "pruning"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "otti kattudhal",
+      "tamil": "ஒட்டுக் கட்டுதல்",
+      "variations": [
+        "otti kattu",
+        "otti kattudal",
+        "otti kattudhal"
+      ],
+      "english": [
+        "grafting"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "mann anaithal",
+      "tamil": "மண் அணைத்தல்",
+      "variations": [
+        "man anaithal",
+        "mann anaital",
+        "mann anaithal"
+      ],
+      "english": [
+        "earthing up"
+      ],
+      "category": "activity"
+    },
+    {
+      "term": "pinju kottudhu",
+      "tamil": "பிஞ்சு கொட்டுது",
+      "variations": [
+        "pinju kottudh",
+        "pinju kottudhu",
+        "pinju kottudu",
+        "pinju kotudhu"
+      ],
+      "english": [
+        "young fruit dropping"
+      ],
+      "category": "symptom"
+    }
+  ],
+  "lookup": {
+    "aad": "goat",
+    "aadaar": "Aadhaar",
+    "aadhaar": "Aadhaar",
+    "aadhar": "Aadhaar",
+    "aadi": "Aadi",
+    "aadi pattam": "Aadi sowing window",
+    "aadu": "goat",
+    "aagudh": "is becoming",
+    "aagudhu": "is becoming",
+    "aagudu": "is becoming",
+    "aaguthu": "is becoming",
+    "aalankatti": "hail",
+    "aalthulai kinaru": "borewell",
+    "aanaikomban": "gall midge",
+    "aani": "Aani",
+    "aar": "river",
+    "aaru": "river",
+    "aavani": "Aavani",
+    "aazhthulai kinar": "borewell",
+    "aazhthulai kinaru": "borewell",
+    "aazhtulai kinaru": "borewell",
+    "acer": "acre",
+    "acre": "acre",
+    "adangal": "crop record",
+    "adangal copy": "crop record",
+    "adhar": "Aadhaar",
+    "adhigam": "more",
+    "adi": "base",
+    "adi maasam": "Aadi",
+    "adi paguthi": "base",
+    "adi pattam": "Aadi sowing window",
+    "adi saambal": "downy mildew",
+    "adi sambal": "downy mildew",
+    "adigam": "more",
+    "adikalaama": "need to spray",
+    "adikanum": "need to spray",
+    "adikkanum": "need to spray",
+    "adisambal": "downy mildew",
+    "adu": "goat",
+    "agri department": "agriculture department",
+    "agri officer": "agriculture officer",
+    "agudhu": "is becoming",
+    "aguthu": "is becoming",
+    "aipasi": "Aippasi",
+    "aippasi": "Aippasi",
+    "aiya": "sir",
+    "alangatti": "hail",
+    "alankatti": "hail",
+    "alugal": "rot",
+    "alugudhu": "is rotting",
+    "amila": "acidity",
+    "amilam": "acidity",
+    "anai": "dam",
+    "anaikattu": "dam",
+    "anaikomban": "gall midge",
+    "anchu": "five",
+    "ani": "Aani",
+    "anj": "five",
+    "anju": "five",
+    "anna": "brother",
+    "annaa": "brother",
+    "apply": "application",
+    "aras": "government",
+    "arasu": "government",
+    "arisi": "rice grain",
+    "arsi": "rice grain",
+    "aru": "river",
+    "arugampul": "bermuda grass",
+    "arupp": "harvesting",
+    "aruppu": "harvesting",
+    "arupu": "harvesting",
+    "aruvaal": "sickle",
+    "aruvada": "harvest",
+    "aruvadai": "harvest",
+    "aruvadai iyandhiram": "harvester",
+    "aruvadai iyandiram": "harvester",
+    "aruvadhai": "harvest",
+    "aruval": "sickle",
+    "asuveni": "aphid",
+    "asuvini": "aphid",
+    "atack": "attack",
+    "athigam": "more",
+    "attack": "attack",
+    "avani": "Aavani",
+    "avarai": "field bean",
+    "avaraikai": "field bean",
+    "ayya": "sir",
+    "azhthulai kinaru": "borewell",
+    "azhugal": "rot",
+    "azhugel": "rot",
+    "azhugudh": "is rotting",
+    "azhugudhu": "is rotting",
+    "azhugudu": "is rotting",
+    "azhuguthu": "is rotting",
+    "bank": "bank",
+    "bore": "borewell",
+    "borewell": "borewell",
+    "broker": "broker",
+    "brown": "brown",
+    "carrot weed": "parthenium weed",
+    "cent": "cent",
+    "certificate": "certificate",
+    "chaanam": "cow dung",
+    "chedi": "plant",
+    "chikku": "sapota",
+    "chinna vengayam": "small onion",
+    "chithirai": "Chithirai",
+    "chitirai": "Chithirai",
+    "chitrilai": "little leaf",
+    "chitta": "land record",
+    "cholam": "sorghum",
+    "coffee": "coffee",
+    "cumbu": "pearl millet",
+    "current": "electricity",
+    "d a p": "DAP fertilizer",
+    "dap": "DAP fertilizer",
+    "diyepi": "DAP fertilizer",
+    "dpc": "procurement centre",
+    "drip": "drip irrigation",
+    "dripp": "drip irrigation",
+    "edh": "which",
+    "edhu": "which",
+    "edu": "which",
+    "ee": "fly",
+    "eeram": "moisture",
+    "ekkar": "acre",
+    "el": "sesame",
+    "ela": "leaf",
+    "elai": "leaf",
+    "elaneer": "tender coconut",
+    "eli": "rat",
+    "elimichai": "lemon",
+    "ell": "sesame",
+    "ellu": "sesame",
+    "elu": "seven",
+    "elumichai": "lemon",
+    "en": "why",
+    "ena": "what",
+    "endha": "which",
+    "enga": "where",
+    "engae": "where",
+    "enna": "what",
+    "enta": "which",
+    "entha": "which",
+    "epadi": "how",
+    "epdi": "how",
+    "epo": "when",
+    "eppa": "when",
+    "eppadi": "how",
+    "eppo": "when",
+    "eravai": "irrigated",
+    "eri": "tank",
+    "eru": "manure",
+    "ethu": "which",
+    "ett": "eight",
+    "ettu": "eight",
+    "evalo": "how much",
+    "evlo": "how much",
+    "evlov": "how much",
+    "evvalavu": "how much",
+    "ezh": "seven",
+    "ezhu": "seven",
+    "farmer": "farmer",
+    "fertiliser": "fertilizer",
+    "fertilizar": "fertilizer",
+    "fertilizer": "fertilizer",
+    "godown": "warehouse",
+    "gomiyam": "cow urine",
+    "government": "government",
+    "govt": "government",
+    "gypsum": "gypsum",
+    "harvester": "harvester",
+    "hectare": "hectare",
+    "hector": "hectare",
+    "help": "help",
+    "hibrid": "hybrid",
+    "hybrid": "hybrid variety",
+    "i": "fly",
+    "idi": "thunder",
+    "idi minnal": "thunder",
+    "ie": "fly",
+    "ila": "no",
+    "ilai": "leaf",
+    "ilai karugal": "leaf blight",
+    "ilai pen": "thrips",
+    "ilai pulli noi": "leaf spot",
+    "ilai surul noi": "leaf curl",
+    "ilaikarugal": "leaf blight",
+    "ilaipen": "thrips",
+    "ilaipulli": "leaf spot",
+    "ilaisurul": "leaf curl",
+    "ilaneer": "tender coconut",
+    "ilani": "tender coconut",
+    "ilanir": "tender coconut",
+    "ilapeedu": "compensation",
+    "ilappeedu": "compensation",
+    "illa": "no",
+    "illai": "leaf",
+    "inaiku": "today",
+    "inakavarchi pori": "pheromone trap",
+    "injee": "ginger",
+    "inji": "ginger",
+    "innaiku": "today",
+    "innik": "today",
+    "inniku": "today",
+    "installment": "instalment",
+    "insurance": "insurance",
+    "insurence": "insurance",
+    "ipasi": "Aippasi",
+    "ipo": "now",
+    "ippo": "now",
+    "iraivilungi": "predator",
+    "iraivizhungi": "predator",
+    "iram": "moisture",
+    "iravai": "irrigated",
+    "iruk": "there is",
+    "irukku": "there is",
+    "iruku": "there is",
+    "irukudhu": "there is",
+    "irumb": "iron",
+    "irumbu": "iron",
+    "irumbu sathu": "iron",
+    "iyandhiram": "machine",
+    "iyandiram": "machine",
+    "iyanthiram": "machine",
+    "iyarkai vivasaayam": "organic farming",
+    "iyarkai vivasayam": "organic farming",
+    "izhapeedu": "compensation",
+    "izhappeed": "compensation",
+    "izhappeedu": "compensation",
+    "izhappidu": "compensation",
+    "jeevamirtam": "jeevamirtham",
+    "jeevamirtham": "jeevamirtham",
+    "jeevamrutham": "jeevamirtham",
+    "jipsam": "gypsum",
+    "jipsum": "gypsum",
+    "jivamirtham": "jeevamirtham",
+    "kaai": "unripe fruit",
+    "kaai pidikala": "no fruit set",
+    "kaai pidikkala": "no fruit set",
+    "kaai pulu": "fruit borer",
+    "kaai puzh": "fruit borer",
+    "kaai puzhu": "fruit borer",
+    "kaaipuzhu": "fruit borer",
+    "kaalan": "mushroom",
+    "kaandamiruga vand": "rhinoceros beetle",
+    "kaandamiruga vandu": "rhinoceros beetle",
+    "kaapeedu": "insurance",
+    "kaapi": "coffee",
+    "kaappeed": "insurance",
+    "kaappeedu": "insurance",
+    "kaappidu": "insurance",
+    "kaaram": "alkalinity",
+    "kaaranam": "reason",
+    "kaas": "money",
+    "kaasu": "money",
+    "kaathu": "wind",
+    "kaatr": "wind",
+    "kaatru": "wind",
+    "kaatu panni": "wild boar",
+    "kaay": "unripe fruit",
+    "kaaya vaikanum": "need to dry",
+    "kaayudh": "is drying",
+    "kaayudhu": "is drying",
+    "kaayudu": "is drying",
+    "kaayuthu": "is drying",
+    "kadala": "groundnut",
+    "kadalai": "groundnut",
+    "kadan": "loan",
+    "kadanu": "loan",
+    "kadapaarai": "crowbar",
+    "kadappaarai": "crowbar",
+    "kadapparai": "crowbar",
+    "kadhir": "earhead",
+    "kadhir varuthu": "heading",
+    "kadhiradi": "threshing",
+    "kai": "unripe fruit",
+    "kai pidikala": "no fruit set",
+    "kai pidikkala": "no fruit set",
+    "kai puzhu": "fruit borer",
+    "kala": "weed",
+    "kala edukanum": "need to weed",
+    "kalai": "weed",
+    "kalai edukanum": "need to weed",
+    "kalai edukkanum": "need to weed",
+    "kalai kolli": "herbicide",
+    "kalaikolli": "herbicide",
+    "kalan": "mushroom",
+    "kalapai": "plough",
+    "kalappai": "plough",
+    "kalar": "sodic soil",
+    "kalar mann": "sodic soil",
+    "kali mannu": "clay",
+    "kalimann": "clay",
+    "kamb": "pearl millet",
+    "kambali pulu": "hairy caterpillar",
+    "kambali puzh": "hairy caterpillar",
+    "kambali puzhu": "hairy caterpillar",
+    "kambilipuzhu": "hairy caterpillar",
+    "kambu": "pearl millet",
+    "kami": "less",
+    "kammi": "less",
+    "kandamiruga vandu": "rhinoceros beetle",
+    "kandr": "sapling",
+    "kandru": "sapling",
+    "kannu": "sapling",
+    "kapeedu": "insurance",
+    "kapi": "coffee",
+    "kappeedu": "insurance",
+    "karaiyan": "termite",
+    "karam": "alkalinity",
+    "karambu": "sugarcane",
+    "karanam": "reason",
+    "karant": "electricity",
+    "karayan": "termite",
+    "karimbu": "sugarcane",
+    "karipootai": "smut",
+    "kariputtai": "smut",
+    "karisal": "black soil",
+    "karisal mann": "black soil",
+    "kariveppilai": "curry leaf",
+    "karthigai": "Karthigai",
+    "karthikai": "Karthigai",
+    "kartigai": "Karthigai",
+    "karugal": "blight",
+    "karugel": "blight",
+    "karugudh": "is scorching",
+    "karugudhu": "is scorching",
+    "karugudu": "is scorching",
+    "karuguthu": "is scorching",
+    "karumb": "sugarcane",
+    "karumbu": "sugarcane",
+    "karuntalai puzhu": "black-headed caterpillar",
+    "karunthalai": "black-headed caterpillar",
+    "karunthalai pulu": "black-headed caterpillar",
+    "karunthalai puzh": "black-headed caterpillar",
+    "karunthalai puzhu": "black-headed caterpillar",
+    "karupa aagudhu": "is turning black",
+    "karupa aguthu": "is turning black",
+    "karupp": "black",
+    "karuppa aagudh": "is turning black",
+    "karuppa aagudhu": "is turning black",
+    "karuppa aagudu": "is turning black",
+    "karuppa agudhu": "is turning black",
+    "karuppu": "black",
+    "karuppu pulli": "black spot",
+    "karupu": "black",
+    "karupu pulli": "black spot",
+    "karuvelam": "prosopis",
+    "karuvepilai": "curry leaf",
+    "karuveppilai": "curry leaf",
+    "kasiv": "oozing",
+    "kasivu": "oozing",
+    "kasivu varudhu": "oozing",
+    "kasu": "money",
+    "katharikai": "brinjal",
+    "kathir": "earhead",
+    "kathir varudh": "heading",
+    "kathir varudhu": "heading",
+    "kathir varudu": "heading",
+    "kathiradi": "threshing",
+    "kathiri": "brinjal",
+    "kathirikai": "brinjal",
+    "kathrikai": "brinjal",
+    "katir": "earhead",
+    "katir varudhu": "heading",
+    "katiradi": "threshing",
+    "katirikai": "brinjal",
+    "katru": "wind",
+    "kattu panni": "wild boar",
+    "katu panni": "wild boar",
+    "kavaath": "pruning",
+    "kavaathu": "pruning",
+    "kavaatu": "pruning",
+    "kavathu": "pruning",
+    "kaya vaikanum": "need to dry",
+    "kayudhu": "is drying",
+    "keerai": "leafy greens",
+    "kelai": "branch",
+    "kelvaragu": "finger millet",
+    "kenaru": "well",
+    "kettu poch": "got spoiled",
+    "kettu pochu": "got spoiled",
+    "kettupochu": "got spoiled",
+    "kezhvarag": "finger millet",
+    "kezhvaragu": "finger millet",
+    "kg": "kilogram",
+    "kidang": "warehouse",
+    "kidangu": "warehouse",
+    "kilai": "branch",
+    "kilangu": "tuber",
+    "kilangu alugal": "rhizome rot",
+    "kilee": "parrot",
+    "kili": "parrot",
+    "kilo": "kilogram",
+    "kinar": "well",
+    "kinaru": "well",
+    "kinathu": "well",
+    "kirai": "leafy greens",
+    "kizhang": "tuber",
+    "kizhangu": "tuber",
+    "kizhangu azhugal": "rhizome rot",
+    "kodee": "vine",
+    "kodi": "vine",
+    "koiyya": "guava",
+    "kolam": "pond",
+    "koli": "chicken",
+    "kolla": "dry field",
+    "kollai": "dry field",
+    "kolmudal": "procurement",
+    "kolmudal nilaiyam": "procurement centre",
+    "kolmudhal": "procurement",
+    "kolmudhal nilaiyam": "procurement centre",
+    "kolmuthal": "procurement",
+    "kolundhu": "tender shoot",
+    "kolunthu": "tender shoot",
+    "konjam": "little",
+    "konjum": "little",
+    "koodai": "basket",
+    "kooli": "wage",
+    "koomiyam": "cow urine",
+    "koon vand": "weevil",
+    "koon vandu": "weevil",
+    "koonvandu": "weevil",
+    "kootturavu sangam": "cooperative society",
+    "korai": "nut sedge",
+    "korai pul": "nut sedge",
+    "korangu": "monkey",
+    "kotamalli": "coriander",
+    "kothamali": "coriander",
+    "kothamalli": "coriander",
+    "koyya": "guava",
+    "kozhi": "chicken",
+    "kozhundh": "tender shoot",
+    "kozhundhu": "tender shoot",
+    "kozhundu": "tender shoot",
+    "kozhunthu": "tender shoot",
+    "kuchi kizhangu": "tapioca",
+    "kudai": "basket",
+    "kudhir": "grain bin",
+    "kudir": "grain bin",
+    "kulaai": "pipe",
+    "kulai": "pipe",
+    "kulai noi": "rice blast",
+    "kulainoi": "rice blast",
+    "kulam": "pond",
+    "kuli": "pit",
+    "kuli edukanum": "need to dig pits",
+    "kuli edukkanum": "need to dig pits",
+    "kuli vilundhu": "sunken",
+    "kulir": "cold",
+    "kulur": "cold",
+    "kumiyam": "cow urine",
+    "kun vandu": "weevil",
+    "kupai": "farm waste",
+    "kuppai": "farm waste",
+    "kurang": "monkey",
+    "kurangu": "monkey",
+    "kuruth": "growing shoot",
+    "kuruthalugal": "bud rot",
+    "kuruthu": "growing shoot",
+    "kuruttazhugal": "bud rot",
+    "kurutthalugal": "bud rot",
+    "kurutthazhugal": "bud rot",
+    "kuruttu": "growing shoot",
+    "kurutu": "growing shoot",
+    "kuruva": "Kuruvai season",
+    "kuruvai": "Kuruvai season",
+    "kuthir": "grain bin",
+    "kutta": "stunted",
+    "kuttai": "stunted",
+    "kutturavu sangam": "cooperative society",
+    "kuzhaai": "pipe",
+    "kuzhai": "pipe",
+    "kuzhi": "pit",
+    "kuzhi edukanum": "need to dig pits",
+    "kuzhi edukkanum": "need to dig pits",
+    "kuzhi vizhundh": "sunken",
+    "kuzhi vizhundhu": "sunken",
+    "kuzhi vizhundu": "sunken",
+    "laabam": "profit",
+    "labam": "profit",
+    "lemon": "lemon",
+    "light trap": "light trap",
+    "liter": "litre",
+    "litre": "litre",
+    "loan": "loan",
+    "lone": "loan",
+    "loss": "loss",
+    "ma": "mango tree",
+    "maa": "mango tree",
+    "maad": "cow",
+    "maadu": "cow",
+    "maamaram": "mango tree",
+    "maampalam": "mango fruit",
+    "maampazham": "mango fruit",
+    "maanaavaari": "rainfed",
+    "maaniyam": "subsidy",
+    "maaram": "tree",
+    "maasam": "month",
+    "maasi": "Maasi",
+    "maatu saanam": "cow dung",
+    "maavu poochi": "mealybug",
+    "maavu puchi": "mealybug",
+    "machine": "machine",
+    "madangudh": "is folding",
+    "madangudhu": "is folding",
+    "madangudu": "is folding",
+    "madanguthu": "is folding",
+    "madu": "cow",
+    "magasool": "yield",
+    "magasul": "yield",
+    "makacholam": "maize",
+    "makka cholam": "maize",
+    "makkacholam": "maize",
+    "makkasolam": "maize",
+    "mala": "rain",
+    "malai": "rain",
+    "malai tanni": "rain water",
+    "malai thanni": "rain water",
+    "malli": "coriander",
+    "malli poo": "jasmine",
+    "malligai": "jasmine",
+    "mampazham": "mango fruit",
+    "man": "soil",
+    "man anaithal": "earthing up",
+    "manal": "sand",
+    "manalu": "sand",
+    "manavari": "rainfed",
+    "mandee": "commission shop",
+    "mandi": "commission shop",
+    "mani": "grain",
+    "mani nel": "grain",
+    "mani sath": "phosphorus",
+    "mani sathu": "phosphorus",
+    "mani satu": "phosphorus",
+    "manisathu": "phosphorus",
+    "maniyam": "subsidy",
+    "manjal": "turmeric",
+    "manjal aguthu": "is turning yellow",
+    "manjal ah": "yellowish",
+    "manjal ottu pori": "yellow sticky trap",
+    "manjal temal": "yellow mosaic",
+    "manjal themal": "yellow mosaic",
+    "manjal themal noi": "yellow mosaic",
+    "manjala": "yellowish",
+    "manjala aagudh": "is turning yellow",
+    "manjala aagudhu": "is turning yellow",
+    "manjala aagudu": "is turning yellow",
+    "manjala agudhu": "is turning yellow",
+    "manjalaa": "yellowish",
+    "manjalaaguthu": "is turning yellow",
+    "manjel": "turmeric",
+    "mann": "soil",
+    "mann anaital": "earthing up",
+    "mann anaithal": "earthing up",
+    "mann parisodanai": "soil test",
+    "mann parisodhanai": "soil test",
+    "mann test": "soil test",
+    "mann vala attai": "soil health card",
+    "mannu": "soil",
+    "mannvetti": "spade",
+    "manpulu uram": "vermicompost",
+    "manpuzhu uram": "vermicompost",
+    "manvetti": "spade",
+    "maram": "tree",
+    "maravalli": "tapioca",
+    "maravalli kizhangu": "tapioca",
+    "margali": "Margazhi",
+    "margazhi": "Margazhi",
+    "market": "market",
+    "marudhu": "pesticide",
+    "marunda": "pesticide",
+    "marundh": "pesticide",
+    "marundhu": "pesticide",
+    "marundu": "pesticide",
+    "marunthu": "pesticide",
+    "masam": "month",
+    "masi": "Maasi",
+    "matta": "frond stalk",
+    "mattai": "frond stalk",
+    "mavu poochi": "mealybug",
+    "mavupoochi": "mealybug",
+    "mayil": "peacock",
+    "mayilu": "peacock",
+    "mazha": "rain",
+    "mazhai": "rain",
+    "mazhai thanni": "rain water",
+    "mean": "fish",
+    "medicine": "pesticide",
+    "medisin": "pesticide",
+    "meen": "fish",
+    "meen amilam": "fish amino acid",
+    "megam": "cloud",
+    "megham": "cloud",
+    "milaga": "chilli",
+    "milagaai": "chilli",
+    "milagai": "chilli",
+    "min": "fish",
+    "min amilam": "fish amino acid",
+    "minal": "lightning",
+    "minnal": "lightning",
+    "molagai": "chilli",
+    "monsoon": "monsoon",
+    "moodaakk": "mulch",
+    "moodaakku": "mulch",
+    "moodaaku": "mulch",
+    "moodakku": "mulch",
+    "moolgiruchu": "got submerged",
+    "moon": "three",
+    "moonu": "three",
+    "moota": "sack",
+    "mootai": "sack",
+    "moozhgiruch": "got submerged",
+    "moozhgiruchu": "got submerged",
+    "motor": "pump motor",
+    "mott": "bud",
+    "mottar": "pump motor",
+    "mottu": "bud",
+    "mudaakku": "mulch",
+    "mudakku": "mulch",
+    "mudi koth": "bunchy top",
+    "mudi kothu": "bunchy top",
+    "mudi kotu": "bunchy top",
+    "mudikothu": "bunchy top",
+    "mudiuma": "is it possible",
+    "mudiyuma": "is it possible",
+    "mul": "thorn",
+    "mula": "sprout",
+    "mulai": "sprout",
+    "mulaikala": "not germinating",
+    "mulaikkala": "not germinating",
+    "mulaipp": "germination",
+    "mulaippu": "germination",
+    "mulaippu thiran": "germination rate",
+    "mulaippu tiran": "germination rate",
+    "mulaipu": "germination",
+    "mulaipu thiran": "germination rate",
+    "mulching": "mulch",
+    "mull": "thorn",
+    "mullu": "thorn",
+    "mummunai": "three-phase power",
+    "mundhiri": "cashew",
+    "mundiri": "cashew",
+    "munthiri": "cashew",
+    "munu": "three",
+    "murunga": "drumstick tree",
+    "murunga kaai": "drumstick pod",
+    "murungai": "drumstick tree",
+    "murungaikai": "drumstick pod",
+    "murungakai": "drumstick pod",
+    "mutai": "sack",
+    "mutta": "sack",
+    "muzhgiruchu": "got submerged",
+    "naal": "day",
+    "naalaik": "tomorrow",
+    "naalaikku": "tomorrow",
+    "naalaiku": "tomorrow",
+    "naalu": "day",
+    "naathu": "seedling",
+    "naatr": "seedling",
+    "naatralugal": "damping off",
+    "naatrangaal": "nursery",
+    "naatrazhugal": "damping off",
+    "naatru": "seedling",
+    "naattu ragam": "native variety",
+    "nadav": "transplanting",
+    "nadavu": "transplanting",
+    "nadavu iyandhiram": "transplanter",
+    "nadavu iyandiram": "transplanter",
+    "nadhavu": "transplanting",
+    "nal": "day",
+    "nala": "good",
+    "nala thanni": "good-quality water",
+    "nalaiku": "tomorrow",
+    "nalla": "good",
+    "nalla tanni": "good-quality water",
+    "nalla thanni": "good-quality water",
+    "nalu": "four",
+    "nandri": "thanks",
+    "nanjai": "wetland",
+    "nanmai poochi": "beneficial insect",
+    "nanmai seiyum poochi": "beneficial insect",
+    "nanmai seiyum puchi": "beneficial insect",
+    "nanri": "thanks",
+    "nansai": "wetland",
+    "naramb": "leaf vein",
+    "narambu": "leaf vein",
+    "nashtam": "loss",
+    "nastam": "loss",
+    "natai": "snail",
+    "nathaai": "snail",
+    "nathai": "snail",
+    "natralugal": "damping off",
+    "natrangal": "nursery",
+    "natrazhugal": "damping off",
+    "natru": "seedling",
+    "nattu ragam": "native variety",
+    "navara": "Navarai season",
+    "navarai": "Navarai season",
+    "neem oil": "neem oil",
+    "nel": "paddy",
+    "nelam": "land",
+    "nelikai": "amla",
+    "nella": "paddy",
+    "nellikai": "amla",
+    "nellu": "paddy",
+    "nelu": "paddy",
+    "nila kadalai": "groundnut",
+    "nilakadala": "groundnut",
+    "nilakadalai": "groundnut",
+    "nilam": "land",
+    "nitrogen": "nitrogen",
+    "nivaaranam": "relief",
+    "nivaranam": "relief",
+    "noi": "disease",
+    "noni": "tip",
+    "nooi": "disease",
+    "noy": "disease",
+    "nuni": "tip",
+    "nunnoottam": "micronutrient",
+    "nunnuttam": "micronutrient",
+    "nunootam": "micronutrient",
+    "olai": "palm frond",
+    "ombodh": "nine",
+    "ombodhu": "nine",
+    "ombodu": "nine",
+    "onbadhu": "nine",
+    "onn": "one",
+    "onnu": "one",
+    "onu": "one",
+    "ooda": "purple",
+    "ooda karugal": "purple blotch",
+    "oodha": "purple",
+    "oodha karugal": "purple blotch",
+    "oolai": "palm frond",
+    "oram": "fertilizer",
+    "organic": "organic farming",
+    "otta": "hole",
+    "ottai": "hole",
+    "otti kattu": "grafting",
+    "otti kattudal": "grafting",
+    "otti kattudhal": "grafting",
+    "ottudh": "is sticky",
+    "ottudhu": "is sticky",
+    "ottudu": "is sticky",
+    "ottunni": "parasite",
+    "ottuthu": "is sticky",
+    "otunni": "parasite",
+    "paaichal": "watering",
+    "paakk": "arecanut",
+    "paakku": "arecanut",
+    "paaku": "arecanut",
+    "paal": "milk",
+    "paal vadiyudh": "sap oozing",
+    "paal vadiyudhu": "sap oozing",
+    "paal vadiyudu": "sap oozing",
+    "paasanam": "irrigation",
+    "paasi": "algae",
+    "paasi payar": "green gram",
+    "paasi payaru": "green gram",
+    "paasipayaru": "green gram",
+    "paathi": "bed",
+    "paati": "bed",
+    "paavakai": "bitter gourd",
+    "paavakkai": "bitter gourd",
+    "pacha": "green",
+    "pachai": "green",
+    "pachai payar": "green gram",
+    "pachai payaru": "green gram",
+    "pachaipayaru": "green gram",
+    "pachaiyam": "chlorophyll",
+    "pachayam": "chlorophyll",
+    "padai pulu": "armyworm",
+    "padai puzh": "armyworm",
+    "padai puzhu": "armyworm",
+    "padaipuzhu": "armyworm",
+    "padhiv": "registration",
+    "padhivu": "registration",
+    "padivu": "registration",
+    "paen": "thrips",
+    "pagarkai": "bitter gourd",
+    "paichal": "watering",
+    "paiyir": "crop",
+    "pakku": "arecanut",
+    "pal": "milk",
+    "pal vadiyudhu": "sap oozing",
+    "pala": "jackfruit",
+    "pala alugal": "fruit rot",
+    "palaa": "jackfruit",
+    "palam": "ripe fruit",
+    "paluppu": "brown",
+    "panalam": "can do",
+    "panam": "money",
+    "panama vaadal": "panama wilt",
+    "panama vadal": "panama wilt",
+    "panama wilt": "panama wilt",
+    "panamu": "money",
+    "pananum": "need to do",
+    "panchagavya": "panchagavya",
+    "panchakavya": "panchagavya",
+    "panee": "dew",
+    "panguni": "Panguni",
+    "pani": "dew",
+    "pannalaam": "can do",
+    "pannalam": "can do",
+    "pannanum": "need to do",
+    "pannanuma": "need to do",
+    "papali": "papaya",
+    "pappaali": "papaya",
+    "pappali": "papaya",
+    "partenium": "parthenium weed",
+    "parthenium": "parthenium weed",
+    "paruthi": "cotton",
+    "paruththi": "cotton",
+    "paruti": "cotton",
+    "paruvam": "season",
+    "paruvamalai": "monsoon",
+    "paruvamazhai": "monsoon",
+    "paruvem": "season",
+    "pasanam": "irrigation",
+    "pasi": "algae",
+    "pasi payaru": "green gram",
+    "pasundaal uram": "green manure",
+    "pasundhaal uram": "green manure",
+    "pasundhal uram": "green manure",
+    "pasunthal uram": "green manure",
+    "patam": "sowing window",
+    "path": "ten",
+    "pathi": "bed",
+    "pathivu": "registration",
+    "paththu": "ten",
+    "pathu": "ten",
+    "patta": "bark",
+    "pattaa": "land title",
+    "pattai": "bark",
+    "pattam": "sowing window",
+    "patu": "ten",
+    "pavakkai": "bitter gourd",
+    "payir": "crop",
+    "payiru": "crop",
+    "pazam": "ripe fruit",
+    "pazha azhugal": "fruit rot",
+    "pazham": "ripe fruit",
+    "pazham azhugal": "fruit rot",
+    "pazhupp": "brown",
+    "pazhuppu": "brown",
+    "pazhupu": "brown",
+    "pen": "thrips",
+    "pheromone trap": "pheromone trap",
+    "phosphorus": "phosphorus",
+    "pinchu": "tender fruit",
+    "pinj": "tender fruit",
+    "pinju": "tender fruit",
+    "pinju kottudh": "young fruit dropping",
+    "pinju kottudhu": "young fruit dropping",
+    "pinju kottudu": "young fruit dropping",
+    "pinju kotudhu": "young fruit dropping",
+    "pinju pidika": "fruit set",
+    "pinju pidikka": "fruit set",
+    "pinju pidikkala": "fruit set",
+    "pipe": "pipe",
+    "pirachanai": "problem",
+    "poch": "went",
+    "pochi": "went",
+    "pochu": "went",
+    "podalaam": "can apply",
+    "podalam": "can apply",
+    "podalama": "can apply",
+    "podanum": "need to apply",
+    "podanuma": "need to apply",
+    "poo": "flower",
+    "poo pookala": "not flowering",
+    "poo pookudh": "flowering",
+    "poo pookudhu": "flowering",
+    "poo pookudu": "flowering",
+    "poo pookuthu": "flowering",
+    "poo pukala": "not flowering",
+    "pooch": "insect",
+    "poochchi": "insect",
+    "poochi": "insect",
+    "poochi marundh": "insecticide",
+    "poochi marundhu": "insecticide",
+    "poochi marundu": "insecticide",
+    "poochimarunthu": "insecticide",
+    "pooh": "flower",
+    "poond": "garlic",
+    "poondu": "garlic",
+    "poonjai": "fungus",
+    "poonjanam": "fungus",
+    "poori trap": "trap",
+    "poosani": "pumpkin",
+    "poosanikai": "pumpkin",
+    "pooshanam": "mould",
+    "pori": "trap",
+    "potash": "potash",
+    "potass": "potash",
+    "pottash": "potash",
+    "power": "electricity",
+    "power tiller": "power tiller",
+    "prablam": "problem",
+    "prachanai": "problem",
+    "problem": "problem",
+    "problm": "problem",
+    "pu": "flower",
+    "pu pukala": "not flowering",
+    "pu pukudhu": "flowering",
+    "puchi": "insect",
+    "puchi marundhu": "insecticide",
+    "pudalai": "snake gourd",
+    "pudalangai": "snake gourd",
+    "pugaiyaan": "brown planthopper",
+    "pugaiyan": "brown planthopper",
+    "puli": "spot",
+    "pulli": "spot",
+    "pulli pulli": "spot",
+    "pulu": "worm",
+    "pundu": "garlic",
+    "punjai": "fungus",
+    "punnaakk": "oil cake",
+    "punnaakku": "oil cake",
+    "punnaaku": "oil cake",
+    "punnakku": "oil cake",
+    "punsai": "dryland",
+    "puratasi": "Purattasi",
+    "purattasi": "Purattasi",
+    "pusanam": "mould",
+    "pusani": "pumpkin",
+    "pushanam": "mould",
+    "puyal": "cyclone",
+    "puyalu": "cyclone",
+    "puzh": "worm",
+    "puzhu": "worm",
+    "puzu": "worm",
+    "ragam": "variety",
+    "ragham": "variety",
+    "ragi": "finger millet",
+    "rate": "price",
+    "reason": "reason",
+    "reat": "price",
+    "register": "registration",
+    "rend": "two",
+    "rendhu": "two",
+    "rendu": "two",
+    "rent": "rent",
+    "rmba": "very",
+    "romba": "very",
+    "roomba": "very",
+    "rotavator": "rotavator",
+    "rotovator": "rotavator",
+    "saagudhu": "is dying",
+    "saaguradh": "is dying",
+    "saaguradhu": "is dying",
+    "saaguradu": "is dying",
+    "saal": "furrow",
+    "saalu": "furrow",
+    "saamai": "little millet",
+    "saambal": "ash",
+    "saambal niram": "grey",
+    "saambal noi": "powdery mildew",
+    "saambal sath": "potassium",
+    "saambal sathu": "potassium",
+    "saambal satu": "potassium",
+    "saanam": "cow dung",
+    "saandr": "certificate",
+    "saandru": "certificate",
+    "saanjiruchu": "is lodging",
+    "saar": "sir",
+    "saaral": "drizzle",
+    "saayudh": "is lodging",
+    "saayudhu": "is lodging",
+    "saayudu": "is lodging",
+    "saayuthu": "is lodging",
+    "sabsidi": "subsidy",
+    "saguradhu": "is dying",
+    "sal": "furrow",
+    "samai": "little millet",
+    "samba": "Samba season",
+    "sambaa": "Samba season",
+    "sambal": "ash",
+    "sambal colour": "grey",
+    "sambal niram": "grey",
+    "sambal noi": "powdery mildew",
+    "sambal sathu": "potassium",
+    "sambar vengayam": "small onion",
+    "sanam": "cow dung",
+    "sandai": "market",
+    "sandhai": "market",
+    "sandru": "certificate",
+    "santhai": "market",
+    "sapota": "sapota",
+    "sappota": "sapota",
+    "saral": "drizzle",
+    "sari": "okay",
+    "sath": "nutrient",
+    "sathhu": "nutrient",
+    "sathu": "nutrient",
+    "satu": "nutrient",
+    "sayudhu": "is lodging",
+    "scheme": "scheme",
+    "sedam": "damage",
+    "sedham": "damage",
+    "sedhil poochi": "scale insect",
+    "sedhil puchi": "scale insect",
+    "sedi": "plant",
+    "sedil poochi": "scale insect",
+    "seed": "seed",
+    "seeds": "seed",
+    "seemai karuvelam": "prosopis",
+    "seepp": "banana hand",
+    "seeppu": "banana hand",
+    "seepu": "banana hand",
+    "selav": "expense",
+    "selavu": "expense",
+    "selavu kanakku": "expense",
+    "sem mann": "red soil",
+    "semipp": "storage",
+    "semippu": "storage",
+    "semipu": "storage",
+    "semmann": "red soil",
+    "sent": "cent",
+    "seri": "okay",
+    "seru": "puddled mud",
+    "seth": "puddled mud",
+    "setham": "damage",
+    "sethil poochi": "scale insect",
+    "sethu": "puddled mud",
+    "setu": "puddled mud",
+    "sevvalugal": "red rot",
+    "sevvazhugal": "red rot",
+    "sid": "seed",
+    "silandhi": "mite",
+    "silandi": "mite",
+    "silanthi": "mite",
+    "simai karuvelam": "prosopis",
+    "sippu": "banana hand",
+    "sir": "sir",
+    "sitrilai": "little leaf",
+    "sitta": "land record",
+    "sivapp": "red",
+    "sivappu": "red",
+    "sivappu koon vand": "red palm weevil",
+    "sivappu koon vandu": "red palm weevil",
+    "sivappu kun vandu": "red palm weevil",
+    "sivapu": "red",
+    "sivapu koon vandu": "red palm weevil",
+    "sivapu koonvandu": "red palm weevil",
+    "society": "cooperative society",
+    "soil health card": "soil health card",
+    "soil test": "soil test",
+    "solam": "sorghum",
+    "sollu": "please tell",
+    "sollunga": "please tell",
+    "solunga": "please tell",
+    "sooriyakanthi": "sunflower",
+    "sooriyakanti": "sunflower",
+    "sorasorappu": "roughness",
+    "sorsorapp": "roughness",
+    "sorsorappu": "roughness",
+    "sorsorapu": "roughness",
+    "sottu neer": "drip irrigation",
+    "sottu nir": "drip irrigation",
+    "sottuneer": "drip irrigation",
+    "spray": "spraying",
+    "sprayer": "sprayer",
+    "sprey": "spray",
+    "sprinkler": "sprinkler irrigation",
+    "spry": "spray",
+    "store": "storage",
+    "subsidi": "subsidy",
+    "subsidy": "subsidy",
+    "sunambu": "lime",
+    "sunnamb": "lime",
+    "sunnambu": "lime",
+    "suraikai": "bottle gourd",
+    "surakai": "bottle gourd",
+    "suriyakanthi": "sunflower",
+    "surul": "curl",
+    "surulu": "curl",
+    "surungudh": "is shrinking",
+    "surungudhu": "is shrinking",
+    "surungudu": "is shrinking",
+    "surunguthu": "is shrinking",
+    "suruttu puzhu": "leaf folder",
+    "surutu pulu": "leaf folder",
+    "surutu puzh": "leaf folder",
+    "surutu puzhu": "leaf folder",
+    "suryakanthi": "sunflower",
+    "taakkudhal": "attack",
+    "taaladi": "Thaladi season",
+    "taar": "banana bunch",
+    "tai": "Thai",
+    "tai pattam": "Thai sowing window",
+    "takkali": "tomato",
+    "tandu": "stem",
+    "tandu azhugal": "stem rot",
+    "tanjavur vaadal": "thanjavur wilt",
+    "tanneer": "water",
+    "tanni": "water",
+    "tanni patala": "water shortage",
+    "tanni tekkam": "waterlogging",
+    "taragar": "broker",
+    "tatu poochi": "leafhopper",
+    "tavanai": "instalment",
+    "tazhai": "foliage",
+    "tazhai satu": "nitrogen",
+    "tea": "tea",
+    "teervu": "solution",
+    "teevanam": "fodder",
+    "telikkanum": "need to spray",
+    "telippan": "sprayer",
+    "telippu": "spraying",
+    "telippu neer": "sprinkler irrigation",
+    "temal": "mosaic",
+    "tenee": "honey bee",
+    "tengai": "coconut",
+    "tengi nikkudhu": "is stagnating",
+    "tennai": "coconut palm",
+    "teyilai": "tea",
+    "thaakkudal": "attack",
+    "thaakkudhal": "attack",
+    "thaakudhal": "attack",
+    "thaaladi": "Thaladi season",
+    "thaar": "banana bunch",
+    "thai": "Thai",
+    "thai maasam": "Thai",
+    "thai pattam": "Thai sowing window",
+    "thaipattam": "Thai sowing window",
+    "thakali": "tomato",
+    "thakkali": "tomato",
+    "thakkudhal": "attack",
+    "thaladi": "Thaladi season",
+    "thalai": "foliage",
+    "thalai sathu": "nitrogen",
+    "thalai uram": "green leaves",
+    "thand": "stem",
+    "thandalugal": "stem rot",
+    "thandhu": "stem",
+    "thandu": "stem",
+    "thandu alugal": "stem rot",
+    "thandu azhugal": "stem rot",
+    "thaneer": "water",
+    "thani": "water",
+    "thanjavur vaadal": "thanjavur wilt",
+    "thanjavur vadal": "thanjavur wilt",
+    "thanjavur wilt": "thanjavur wilt",
+    "thannee": "water",
+    "thanneer": "water",
+    "thanni": "water",
+    "thanni pathadhu": "water shortage",
+    "thanni pathala": "water shortage",
+    "thanni thekam": "waterlogging",
+    "thanni thekkam": "waterlogging",
+    "thanni thengudhu": "waterlogging",
+    "thannir": "water",
+    "thar": "banana bunch",
+    "tharagar": "broker",
+    "tharager": "broker",
+    "thathu poochi": "leafhopper",
+    "thathu puchi": "leafhopper",
+    "thathupoochi": "leafhopper",
+    "thavanai": "instalment",
+    "thavani": "instalment",
+    "thazhai": "foliage",
+    "thazhai sath": "nitrogen",
+    "thazhai sathu": "nitrogen",
+    "theerv": "solution",
+    "theervu": "solution",
+    "theevanam": "fodder",
+    "thelikanum": "need to spray",
+    "thelikkanum": "need to spray",
+    "thelipan": "sprayer",
+    "thelipp": "spraying",
+    "thelippan": "sprayer",
+    "thelippu": "spraying",
+    "thelippu neer": "sprinkler irrigation",
+    "thelippu nir": "sprinkler irrigation",
+    "thelipu": "spraying",
+    "thelipu neer": "sprinkler irrigation",
+    "themal": "mosaic",
+    "themel": "mosaic",
+    "thenee": "honey bee",
+    "thenga": "coconut",
+    "thengai": "coconut",
+    "thengi nikkudh": "is stagnating",
+    "thengi nikkudhu": "is stagnating",
+    "thengi nikkudu": "is stagnating",
+    "thengi nikudhu": "is stagnating",
+    "theni": "honey bee",
+    "thenna": "coconut palm",
+    "thennai": "coconut palm",
+    "theyilai": "tea",
+    "thinai": "foxtail millet",
+    "thirvu": "solution",
+    "thitam": "scheme",
+    "thittam": "scheme",
+    "thivanam": "fodder",
+    "thol": "peel",
+    "tholla": "nuisance",
+    "thollai": "nuisance",
+    "tholu": "peel",
+    "tholu uram": "farmyard manure",
+    "thongudh": "is drooping",
+    "thongudhu": "is drooping",
+    "thongudu": "is drooping",
+    "thonguthu": "is drooping",
+    "thooral": "drizzle",
+    "thootradhu": "winnowing",
+    "thootrudal": "winnowing",
+    "thootrudhal": "winnowing",
+    "thotam": "garden",
+    "thoti": "tank",
+    "thottam": "garden",
+    "thotti": "tank",
+    "thozhu uram": "farmyard manure",
+    "thozhuvuram": "farmyard manure",
+    "three phase": "three-phase power",
+    "thula": "bore hole",
+    "thulai": "bore hole",
+    "thulaipaan": "borer",
+    "thulaipan": "borer",
+    "thulaippan": "borer",
+    "thur": "rust",
+    "thuru": "rust",
+    "thuru noi": "rust",
+    "thuthanaagam": "zinc",
+    "thuthanagam": "zinc",
+    "thutrudhal": "winnowing",
+    "thuvarai": "red gram",
+    "thuvaram paruppu": "red gram",
+    "tiller": "power tiller",
+    "tinai": "foxtail millet",
+    "tittam": "scheme",
+    "tol": "peel",
+    "tollai": "nuisance",
+    "tomatto": "tomato",
+    "tongudhu": "is drooping",
+    "tootrudhal": "winnowing",
+    "tottam": "garden",
+    "totti": "tank",
+    "tozhu uram": "farmyard manure",
+    "tractar": "tractor",
+    "tractor": "tractor",
+    "traktor": "tractor",
+    "transplanter": "transplanter",
+    "tulai": "bore hole",
+    "tulaippan": "borer",
+    "turu": "rust",
+    "tutanaagam": "zinc",
+    "tuvarai": "red gram",
+    "udavi": "help",
+    "udha": "purple",
+    "udha karugal": "purple blotch",
+    "udhavi": "help",
+    "udhirndhu": "fallen",
+    "udhirudh": "is dropping",
+    "udhirudhu": "is dropping",
+    "udhiruthu": "is dropping",
+    "udirudu": "is dropping",
+    "ulavar": "farmer",
+    "ulavar sandhai": "farmers' market",
+    "ulavar santhai": "farmers' market",
+    "ulavu": "ploughing",
+    "ulundh": "black gram",
+    "ulundhu": "black gram",
+    "ulundu": "black gram",
+    "ulunthu": "black gram",
+    "uluntu": "black gram",
+    "uppu tanni": "saline water",
+    "uppu thani": "saline water",
+    "uppu thanni": "saline water",
+    "upu thanni": "saline water",
+    "uraam": "fertilizer",
+    "uram": "fertilizer",
+    "urea": "urea",
+    "uria": "urea",
+    "uthavi": "help",
+    "uthirndh": "fallen",
+    "uthirndhu": "fallen",
+    "uthirndu": "fallen",
+    "uthirudhu": "is dropping",
+    "utirndhu": "fallen",
+    "uvar": "saline soil",
+    "uvar mann": "saline soil",
+    "uyir uram": "biofertilizer",
+    "uyiruram": "biofertilizer",
+    "uzhav": "ploughing",
+    "uzhavar": "farmer",
+    "uzhavar sandai": "farmers' market",
+    "uzhavar sandhai": "farmers' market",
+    "uzhavu": "ploughing",
+    "vaadagai": "rent",
+    "vaadal": "wilting",
+    "vaadudh": "is wilting",
+    "vaadudhu": "is wilting",
+    "vaadudu": "is wilting",
+    "vaaduthu": "is wilting",
+    "vaaikaal": "canal",
+    "vaaikal": "canal",
+    "vaaikkaal": "canal",
+    "vaalai": "banana plant",
+    "vaalaipalam": "banana fruit",
+    "vaanilai": "weather",
+    "vaaram": "week",
+    "vaazhai": "banana plant",
+    "vaazhaipazham": "banana fruit",
+    "vadagai": "rent",
+    "vadal": "wilting",
+    "vaddi": "interest",
+    "vadigal": "drainage",
+    "vadikal": "drainage",
+    "vadudhu": "is wilting",
+    "vaigasi": "Vaigasi",
+    "vaikasi": "Vaigasi",
+    "vaikkal": "canal",
+    "valai": "banana plant",
+    "valaipazham": "banana fruit",
+    "valarala": "not growing",
+    "valarale": "not growing",
+    "valarchi illa": "not growing",
+    "vali": "way",
+    "vanakam": "hello",
+    "vanakkam": "hello",
+    "vand": "beetle",
+    "vandal": "alluvial soil",
+    "vandal mann": "alluvial soil",
+    "vandhu": "beetle",
+    "vandhuruch": "has come",
+    "vandhuruchu": "has come",
+    "vandu": "beetle",
+    "vanduruchu": "has come",
+    "vangi": "bank",
+    "vanilai": "weather",
+    "vanthuruchu": "has come",
+    "varachi": "drought",
+    "varag": "kodo millet",
+    "varaghu": "kodo millet",
+    "varagu": "kodo millet",
+    "varam": "week",
+    "varapp": "field bund",
+    "varappu": "field bund",
+    "varapu": "field bund",
+    "varatchi": "drought",
+    "variety": "variety",
+    "varudam": "year",
+    "varudh": "is coming",
+    "varudhu": "is coming",
+    "varudu": "is coming",
+    "varusham": "year",
+    "varuthu": "is coming",
+    "vatti": "interest",
+    "vayadhu": "crop age",
+    "vayal": "field",
+    "vayalu": "field",
+    "vayas": "crop age",
+    "vayasu": "crop age",
+    "vazhai": "banana plant",
+    "vazhaipazham": "banana fruit",
+    "vazhi": "way",
+    "vedhai": "seed",
+    "vedikkudhu": "is cracking",
+    "vedikudh": "is cracking",
+    "vedikudhu": "is cracking",
+    "vedikudu": "is cracking",
+    "vedipp": "cracking",
+    "vedippu": "cracking",
+    "vedipu": "cracking",
+    "veeriya ragam": "hybrid variety",
+    "vekai": "heat",
+    "vekkai": "heat",
+    "velaan thurai": "agriculture department",
+    "velaan turai": "agriculture department",
+    "velai": "price",
+    "velai aal": "labourer",
+    "velai al": "labourer",
+    "velaiaal": "labourer",
+    "velan thurai": "agriculture department",
+    "veli": "fence",
+    "vella": "white",
+    "vella ee": "whitefly",
+    "vella podi": "white powder",
+    "vella puzhu": "white grub",
+    "vellai": "white",
+    "vellai ee": "whitefly",
+    "vellai i": "whitefly",
+    "vellai podi": "white powder",
+    "vellai pulu": "white grub",
+    "vellai puzh": "white grub",
+    "vellai puzhu": "white grub",
+    "vellam": "flood",
+    "vellari": "cucumber",
+    "vellarikai": "cucumber",
+    "vellem": "flood",
+    "vely": "fence",
+    "vendaam": "don't want",
+    "vendai": "okra",
+    "vendaikai": "okra",
+    "vendakai": "okra",
+    "vendam": "don't want",
+    "vengaayam": "onion",
+    "vengayam": "onion",
+    "vengyam": "onion",
+    "venum": "need",
+    "venuma": "need",
+    "vepam punnaakk": "neem cake",
+    "vepam punnaakku": "neem cake",
+    "vepam punnaaku": "neem cake",
+    "vepam punnakku": "neem cake",
+    "vepennai": "neem oil",
+    "vepilai": "neem leaf",
+    "veppam punnakku": "neem cake",
+    "veppennai": "neem oil",
+    "veppilai": "neem leaf",
+    "ver": "root",
+    "ver alugal": "root rot",
+    "ver azhugal": "root rot",
+    "verity": "variety",
+    "verkadala": "groundnut",
+    "verkadalai": "groundnut",
+    "veru": "root",
+    "vethalai": "betel leaf",
+    "vetrilai": "betel leaf",
+    "vettukili": "grasshopper",
+    "vettukkili": "grasshopper",
+    "veyil": "sunshine",
+    "veyyil": "sunshine",
+    "vidai": "seed",
+    "vidai nerthi": "seed treatment",
+    "vidaikanum": "need to sow",
+    "vidaippu": "sowing",
+    "vidanum": "need to let",
+    "vidanuma": "need to let",
+    "vidhai": "seed",
+    "vidhai nerthi": "seed treatment",
+    "vidhai nerti": "seed treatment",
+    "vidhaikanum": "need to sow",
+    "vidhaikkanum": "need to sow",
+    "vidhaipp": "sowing",
+    "vidhaippu": "sowing",
+    "vidhaipu": "sowing",
+    "vilachal": "yield",
+    "vilai": "price",
+    "vilaichal": "yield",
+    "vilakku pori": "light trap",
+    "vilaku pori": "light trap",
+    "vinapam": "application",
+    "vinnapam": "application",
+    "vinnappam": "application",
+    "viriya ragam": "hybrid variety",
+    "vithai": "seed",
+    "vithai nerthi": "seed treatment",
+    "vithaippu": "sowing",
+    "vivasaayam": "agriculture",
+    "vivasaayi": "farmer",
+    "vivasaya adhigari": "agriculture officer",
+    "vivasaya adigari": "agriculture officer",
+    "vivasayam": "agriculture",
+    "vivasayi": "farmer",
+    "viyaabaari": "trader",
+    "viyabari": "trader",
+    "vyabari": "trader",
+    "vēnum": "need",
+    "weather": "weather",
+    "yaanai": "elephant",
+    "yaar": "who",
+    "yaaru": "who",
+    "yanai": "elephant",
+    "yaru": "who",
+    "yeeram": "moisture",
+    "yeild": "yield",
+    "yeli": "rat",
+    "yellow trap": "yellow sticky trap",
+    "yellu": "sesame",
+    "yen": "why",
+    "yenga": "where",
+    "yenn": "why",
+    "yenna": "what",
+    "yentha": "which",
+    "yepdi": "how",
+    "yeppo": "when",
+    "yeri": "tank",
+    "yeru": "manure",
+    "yield": "yield",
+    "yuria": "urea",
+    "yuriya": "urea",
+    "zinc": "zinc"
+  }
+}

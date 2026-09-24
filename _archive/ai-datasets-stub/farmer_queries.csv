@@ -1,0 +1,4 @@
+id,text,language,intent,crop,response_id
+1,"Why are my rice leaves yellow?","english","yellow_leaf","rice","resp_001"
+2,"நெல் இலை மஞ்சளாகிறது என்ன செய்யலாம்?","tamil","yellow_leaf","rice","resp_001"
+3,"nel ilai yellow ah iruku enna panrathu","tanglish","yellow_leaf","rice","resp_001"

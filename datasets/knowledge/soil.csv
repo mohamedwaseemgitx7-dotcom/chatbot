@@ -1,0 +1,13 @@
+﻿record_id,name_en,name_ta,description,suitable_crops,management,verification_required
+red_soil,Red soil,செம்மண்,"Light, well-drained, low in nitrogen and organic matter; widespread in Tamil Nadu.","Groundnut, millets, pulses, vegetables, coconut",Add organic manure; conserve moisture.,true
+black_soil,Black (cotton) soil,கரிசல் மண்,"Clayey, high water holding, cracks when dry.","Cotton, maize, pulses, chilli",Avoid working when wet; ensure drainage.,true
+alluvial_soil,Alluvial (delta) soil,வண்டல் மண்,Fertile river-deposited soil of the Cauvery delta.,"Paddy, pulses (rice fallow), banana, sugarcane",Maintain drainage; zinc deficiency is common.,true
+laterite_soil,Laterite soil,சரளை மண்,"Acidic, leached soil in high-rainfall hilly areas.","Plantation crops, tapioca",Liming and organic matter help.,true
+coastal_sandy,Coastal sandy soil,கடற்கரை மணல் மண்,"Very light, low water holding.","Coconut, cashew, casuarina",Frequent light irrigation and organic matter.,true
+saline_soil,Saline soil,உவர் மண்,High soluble salts; white crust on surface.,Salt-tolerant crops and varieties,Leach salts with good-quality water and improve drainage.,true
+sodic_soil,Sodic (alkaline) soil,களர் மண்,"High sodium, pH above about 8.5, poor structure.",Tolerant varieties after reclamation,"Gypsum application based on soil test, with drainage and organic matter.",true
+acidic_soil,Acidic soil,அமில மண்,pH below about 6.5.,Many crops after correction,Liming based on soil test.,true
+ph_ranges,Soil pH ranges,மண் கார அமில நிலை,"Below 6.5 is acidic, 6.5–7.5 neutral (ideal for most crops), above 7.5 alkaline.",—,Test soil before correcting pH.,true
+sampling,Soil sampling method,மண் மாதிரி எடுக்கும் முறை,"Take V-shaped slices about 15 cm deep from 8–10 spots, mix, and send about half a kilo to a soil testing laboratory.",—,"Avoid bunds, manure heaps and recently fertilized spots.",true
+organic_matter,Soil organic matter,மண் கரிமச்சத்து,"Organic matter improves structure, water holding and nutrient supply.",—,"Add FYM, compost, green manure and crop residues; reduce burning.",true
+soil_testing_labs,Soil testing laboratories,மண் பரிசோதனை நிலையங்கள்,Government soil testing laboratories and mobile labs test samples and issue Soil Health Cards.,—,Contact the block agriculture office.,true

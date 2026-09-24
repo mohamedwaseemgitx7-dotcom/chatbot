@@ -1,0 +1,141 @@
+/* FarmerAssist design tokens — every colour, size and timing used by the app lives here. */
+:root {
+  color-scheme: light;
+
+  /* Brand: deep field green, used sparingly for primary actions and identity */
+  --brand-900: #1d3a28;
+  --brand-700: #2b5a3c;
+  --brand-600: #336a47;
+  --brand-500: #4a8a5c;
+  --brand-100: #e2eee0;
+  --brand-50: #f0f6ee;
+  /* Accent: soil / harvest amber, for highlights only */
+  --earth-600: #8a5a2b;
+  --earth-100: #f6ecdf;
+
+  /* Surfaces: warm, paper-like neutrals rather than pure grey */
+  --bg: #f5f4ef;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --surface-muted: #eeece5;
+  --surface-hover: #e7e4db;
+  --border: #e2ded4;
+  --border-strong: #cbc6b9;
+
+  /* Text (all pass WCAG AA on --surface and --bg) */
+  --text: #1b231e;
+  --text-secondary: #46514a;
+  --text-muted: #5f6a63;
+  --text-on-brand: #ffffff;
+
+  /* Messages */
+  --bubble-user: #dfeddb;
+  --bubble-user-text: #16261b;
+  --bubble-assistant: var(--surface);
+
+  /* Status */
+  --success: #2e7d4f;
+  --success-bg: #e6f3ea;
+  --warning: #7a5200;
+  --warning-bg: #fdf3dc;
+  --danger: #b3261e;
+  --danger-bg: #fcebe9;
+  --info: #25557a;
+  --info-bg: #e7f0f7;
+  --recording: #c62828;
+
+  --focus-ring: #2f6fb0;
+  --scrim: rgba(18, 24, 20, 0.45);
+
+  /* Typography — system UI for Latin, Noto Sans Tamil (with Windows/Android Tamil fallbacks) for Tamil */
+  --font-sans: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Tamil", "Nirmala UI", "Latha", sans-serif;
+  --text-xs: 12px;
+  --text-sm: 13.5px;
+  --text-md: 15px;
+  --text-lg: 17px;
+  --text-xl: 22px;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --leading-tight: 1.3;
+  --leading: 1.55;
+  --leading-tamil: 1.75; /* Tamil glyphs have tall vowel signs; give them room */
+
+  /* Spacing (4px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Shape — three radii only */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-full: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(27, 35, 30, 0.07);
+  --shadow-md: 0 4px 14px rgba(27, 35, 30, 0.09);
+  --shadow-lg: 0 16px 40px rgba(27, 35, 30, 0.18);
+
+  /* Layout */
+  --header-height: 56px;
+  --sidebar-width: 300px;
+  --chat-max-width: 780px;
+  --tap-size: 44px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration: 200ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --brand-900: #cfe6d3;
+    --brand-700: #8fcb9f;
+    --brand-600: #7dbf8f;
+    --brand-500: #5ea572;
+    --brand-100: #1f3326;
+    --brand-50: #18261d;
+    --earth-600: #d9ad7c;
+    --earth-100: #2e241a;
+
+    --bg: #121613;
+    --surface: #1a1f1b;
+    --surface-raised: #212722;
+    --surface-muted: #1f2520;
+    --surface-hover: #29302a;
+    --border: #2d352f;
+    --border-strong: #3e4841;
+
+    --text: #e6ebe7;
+    --text-secondary: #bcc6bf;
+    --text-muted: #9aa59d;
+    --text-on-brand: #0f1a13;
+
+    --bubble-user: #25402e;
+    --bubble-user-text: #e6f1e8;
+    --bubble-assistant: var(--surface-raised);
+
+    --success: #7fcf98;
+    --success-bg: #1c3024;
+    --warning: #f0c56b;
+    --warning-bg: #332812;
+    --danger: #f28b82;
+    --danger-bg: #3a1d1b;
+    --info: #9cc7ea;
+    --info-bg: #1b2a36;
+    --recording: #ff6b6b;
+
+    --focus-ring: #8ab8e6;
+    --scrim: rgba(0, 0, 0, 0.6);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+  }
+}

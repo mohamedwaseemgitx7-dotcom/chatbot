@@ -1,0 +1,8 @@
+{
+  "input": 389,
+  "exact_duplicates": 1,
+  "near_duplicates": 2,
+  "tamil_unpaired": 203,
+  "tamil_paired": 8,
+  "output": 386
+}

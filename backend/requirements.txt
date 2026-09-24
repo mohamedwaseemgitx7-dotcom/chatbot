@@ -1,0 +1,25 @@
+# FarmerAssist API — runtime dependencies (what Render installs).
+# Lean on purpose: no PyTorch / sentence-transformers. Models run on onnxruntime + scikit-learn,
+# so the API fits a 512 MB instance. scikit-learn is pinned because the intent model is a pickle
+# created with this exact version (retrain with ai/training/train_intent.py after upgrading).
+
+# Web
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+python-multipart==0.0.32
+slowapi==0.1.10
+python-dotenv==1.2.3
+
+# NLP / retrieval / vision inference
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+onnxruntime==1.30.0
+tokenizers==0.23.2
+opencv-python-headless==5.0.0.93
+
+# Database & storage
+supabase==2.31.0

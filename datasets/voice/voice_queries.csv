@@ -1,0 +1,361 @@
+﻿id,transcript,language,script,crop,intent,audio_path,speaker_id,noise_level,expected_text,speaking_style,length,recording_status,source_query_id
+VQ0001,signs of tomato maturity,english,latin,tomato,harvesting,audio/test/VQ0001.wav,SPK_TBD,low,signs of tomato maturity,fast,short,not_recorded,FQ03544
+VQ0002,whole moong plant dried and died,english,latin,greengram,wilting,audio/train/VQ0002.wav,SPK_TBD,medium,whole moong plant dried and died,slow,short,not_recorded,FQ01507
+VQ0003,iron deficiency in cotton,english,latin,cotton,micronutrient_deficiency,audio/test/VQ0003.wav,SPK_TBD,high,iron deficiency in cotton,rural_accent,short,not_recorded,FQ03372
+VQ0004,chilli shoots wilting and fruits bored,english,latin,chilli,fruit_borer,audio/train/VQ0004.wav,SPK_TBD,clean,chilli shoots wilting and fruits bored,normal,short,not_recorded,FQ02072
+VQ0005,caterpillar eating brinjal fruits,english,latin,brinjal,fruit_borer,audio/train/VQ0005.wav,SPK_TBD,low,caterpillar eating brinjal fruits,fast,short,not_recorded,FQ02573
+VQ0006,which cotton variety is best,english,latin,cotton,seed_selection,audio/train/VQ0006.wav,SPK_TBD,medium,which cotton variety is best,slow,short,not_recorded,FQ00610
+VQ0007,can I apply fertilizer before rain,english,latin,,fertilizer_timing,audio/train/VQ0007.wav,SPK_TBD,high,can i apply fertilizer before rain,rural_accent,short,not_recorded,FQ01486
+VQ0008,irrigation schedule for green gram,english,latin,greengram,irrigation,audio/train/VQ0008.wav,SPK_TBD,clean,irrigation schedule for green gram,normal,short,not_recorded,FQ01248
+VQ0009,tomato leaves have burnt looking patches,english,latin,tomato,leaf_blight,audio/train/VQ0009.wav,SPK_TBD,low,tomato leaves have burnt looking patches,fast,short,not_recorded,FQ01825
+VQ0010,what fertilizer should I use for paddy,english,latin,paddy,fertilizer,audio/train/VQ0010.wav,SPK_TBD,medium,what fertilizer should i use for paddy,slow,short,not_recorded,FQ00794
+VQ0011,how to insure my cotton crop,english,latin,cotton,crop_insurance,audio/train/VQ0011.wav,SPK_TBD,high,how to insure my cotton crop,rural_accent,short,not_recorded,FQ01572
+VQ0012,pest attack in my moringa,english,latin,drumstick,pest_attack,audio/test/VQ0012.wav,SPK_TBD,clean,pest attack in my moringa,normal,short,not_recorded,FQ03289
+VQ0013,best fertilizer for urad,english,latin,blackgram,fertilizer,audio/train/VQ0013.wav,SPK_TBD,low,best fertilizer for urad,fast,short,not_recorded,FQ01347
+VQ0014,government help for small farmers,english,latin,,government_scheme,audio/train/VQ0014.wav,SPK_TBD,medium,government help for small farmers,slow,short,not_recorded,FQ00849
+VQ0015,older leaves scorched at margins in rice,english,latin,paddy,potassium_deficiency,audio/test/VQ0015.wav,SPK_TBD,high,older leaves scorched at margins in rice,rural_accent,short,not_recorded,FQ03423
+VQ0016,sudden wilt in tomato,english,latin,tomato,wilting,audio/train/VQ0016.wav,SPK_TBD,clean,sudden wilt in tomato,normal,short,not_recorded,FQ01146
+VQ0017,whitefly problem in brinjal,english,latin,brinjal,whitefly,audio/train/VQ0017.wav,SPK_TBD,low,whitefly problem in brinjal,fast,short,not_recorded,FQ00950
+VQ0018,how to improve soil fertility,english,latin,,soil_health,audio/train/VQ0018.wav,SPK_TBD,medium,how to improve soil fertility,slow,short,not_recorded,FQ02066
+VQ0019,is vermicompost good for chilli,english,latin,chilli,organic_fertilizer,audio/train/VQ0019.wav,SPK_TBD,high,is vermicompost good for chilli,rural_accent,short,not_recorded,FQ00317
+VQ0020,is drip irrigation good for onion,english,latin,onion,drip_irrigation,audio/train/VQ0020.wav,SPK_TBD,clean,is drip irrigation good for onion,normal,short,not_recorded,FQ00279
+VQ0021,lower leaves of cotton becoming yellow,english,latin,cotton,yellow_leaf,audio/train/VQ0021.wav,SPK_TBD,low,lower leaves of cotton becoming yellow,fast,short,not_recorded,FQ00604
+VQ0022,how to insure my groundnut crop,english,latin,groundnut,crop_insurance,audio/train/VQ0022.wav,SPK_TBD,medium,how to insure my groundnut crop,slow,short,not_recorded,FQ01204
+VQ0023,rain damaged my moringa what to do now,english,latin,drumstick,rain_damage,audio/train/VQ0023.wav,SPK_TBD,high,rain damaged my moringa what to do now,rural_accent,short,not_recorded,FQ02517
+VQ0024,can I send a photo of my crop,english,latin,,image_upload_help,audio/validation/VQ0024.wav,SPK_TBD,clean,can i send a photo of my crop,normal,short,not_recorded,FQ02945
+VQ0025,brinjal leaves curling upwards,english,latin,brinjal,leaf_curl,audio/train/VQ0025.wav,SPK_TBD,low,brinjal leaves curling upwards,fast,short,not_recorded,FQ02565
+VQ0026,whole brinjal plant dried and died,english,latin,brinjal,wilting,audio/train/VQ0026.wav,SPK_TBD,medium,whole brinjal plant dried and died,slow,short,not_recorded,FQ01440
+VQ0027,chilli leaves curling with silvery patches,english,latin,chilli,thrips_mites,audio/train/VQ0027.wav,SPK_TBD,high,chilli leaves curling with silvery patches,rural_accent,short,not_recorded,FQ00079
+VQ0028,paddy leaves have burnt looking patches,english,latin,paddy,leaf_blight,audio/train/VQ0028.wav,SPK_TBD,clean,paddy leaves have burnt looking patches,normal,short,not_recorded,FQ01453
+VQ0029,sugarcane crop fell down after rain,english,latin,sugarcane,rain_damage,audio/validation/VQ0029.wav,SPK_TBD,low,sugarcane crop fell down after rain,fast,short,not_recorded,FQ03042
+VQ0030,poor root growth in tomato,english,latin,tomato,phosphorus_deficiency,audio/train/VQ0030.wav,SPK_TBD,medium,poor root growth in tomato,slow,short,not_recorded,FQ00333
+VQ0031,turmeric crop fell down after rain,english,latin,turmeric,rain_damage,audio/validation/VQ0031.wav,SPK_TBD,high,turmeric crop fell down after rain,rural_accent,short,not_recorded,FQ02899
+VQ0032,why is seed treatment needed,english,latin,,seed_treatment,audio/train/VQ0032.wav,SPK_TBD,clean,why is seed treatment needed,normal,short,not_recorded,FQ00149
+VQ0033,how to save water in coconut field,english,latin,coconut,water_shortage,audio/validation/VQ0033.wav,SPK_TBD,low,how to save water in coconut field,fast,short,not_recorded,FQ02942
+VQ0034,black sunken patches on chilli fruits,english,latin,chilli,fruit_rot,audio/validation/VQ0034.wav,SPK_TBD,medium,black sunken patches on chilli fruits,slow,short,not_recorded,FQ02870
+VQ0035,irrigation schedule for chilli,english,latin,chilli,irrigation,audio/train/VQ0035.wav,SPK_TBD,high,irrigation schedule for chilli,rural_accent,short,not_recorded,FQ01813
+VQ0036,why is my turmeric leaf turning yellow,english,latin,turmeric,yellow_leaf,audio/train/VQ0036.wav,SPK_TBD,clean,why is my turmeric leaf turning yellow,normal,short,not_recorded,FQ00957
+VQ0037,brown spots on moringa leaves,english,latin,drumstick,leaf_spot,audio/train/VQ0037.wav,SPK_TBD,low,brown spots on moringa leaves,fast,short,not_recorded,FQ00963
+VQ0038,how to treat onion seeds before sowing,english,latin,onion,seed_treatment,audio/train/VQ0038.wav,SPK_TBD,medium,how to treat onion seeds before sowing,slow,short,not_recorded,FQ00618
+VQ0039,where to get seed subsidy,english,latin,,subsidy,audio/train/VQ0039.wav,SPK_TBD,high,where to get seed subsidy,rural_accent,short,not_recorded,FQ02289
+VQ0040,which month to plant turmeric,english,latin,turmeric,sowing_time,audio/train/VQ0040.wav,SPK_TBD,clean,which month to plant turmeric,normal,short,not_recorded,FQ02482
+VQ0041,today coconut price,english,latin,coconut,market_price,audio/train/VQ0041.wav,SPK_TBD,low,today coconut price,fast,short,not_recorded,FQ01873
+VQ0042,tomato fruits rotting on the plant,english,latin,tomato,fruit_rot,audio/train/VQ0042.wav,SPK_TBD,medium,tomato fruits rotting on the plant,slow,short,not_recorded,FQ02504
+VQ0043,onion leaf edges burning brown,english,latin,onion,potassium_deficiency,audio/validation/VQ0043.wav,SPK_TBD,high,onion leaf edges burning brown,rural_accent,short,not_recorded,FQ02860
+VQ0044,plants dying and roots black in urad,english,latin,blackgram,root_rot,audio/train/VQ0044.wav,SPK_TBD,clean,plants dying and roots black in urad,normal,short,not_recorded,FQ01666
+VQ0045,poor root growth in groundnut,english,latin,groundnut,phosphorus_deficiency,audio/train/VQ0045.wav,SPK_TBD,low,poor root growth in groundnut,fast,short,not_recorded,FQ00360
+VQ0046,how to correct acidic soil,english,latin,,soil_ph,audio/train/VQ0046.wav,SPK_TBD,medium,how to correct acidic soil,slow,short,not_recorded,FQ01485
+VQ0047,when to irrigate my coconut field,english,latin,coconut,irrigation,audio/train/VQ0047.wav,SPK_TBD,high,when to irrigate my coconut field,rural_accent,short,not_recorded,FQ01541
+VQ0048,irrigation schedule for coconut,english,latin,coconut,irrigation,audio/train/VQ0048.wav,SPK_TBD,clean,irrigation schedule for coconut,normal,short,not_recorded,FQ02362
+VQ0049,sugarcane growth slow and light green colour,english,latin,sugarcane,nitrogen_deficiency,audio/train/VQ0049.wav,SPK_TBD,low,sugarcane growth slow and light green colour,fast,short,not_recorded,FQ02199
+VQ0050,pink bollworm in cotton,english,latin,,bollworm,audio/train/VQ0050.wav,SPK_TBD,medium,pink bollworm in cotton,slow,short,not_recorded,FQ00417
+VQ0051,black spots coming on turmeric leaf,english,latin,turmeric,leaf_spot,audio/train/VQ0051.wav,SPK_TBD,high,black spots coming on turmeric leaf,rural_accent,short,not_recorded,FQ01419
+VQ0052,older leaves scorched at margins in chilli,english,latin,chilli,potassium_deficiency,audio/test/VQ0052.wav,SPK_TBD,clean,older leaves scorched at margins in chilli,normal,short,not_recorded,FQ03417
+VQ0053,organic pest control for moringa,english,latin,drumstick,organic_farming,audio/test/VQ0053.wav,SPK_TBD,low,organic pest control for moringa,fast,short,not_recorded,FQ03167
+VQ0054,my soil is hard and does not hold water,english,latin,,soil_health,audio/train/VQ0054.wav,SPK_TBD,medium,my soil is hard and does not hold water,slow,short,not_recorded,FQ00427
+VQ0055,tiny white insects fly when I shake urad plant,english,latin,blackgram,whitefly,audio/test/VQ0055.wav,SPK_TBD,high,tiny white insects fly when i shake urad plant,rural_accent,short,not_recorded,FQ03057
+VQ0056,where to buy quality sugarcane seeds,english,latin,sugarcane,seed_selection,audio/train/VQ0056.wav,SPK_TBD,clean,where to buy quality sugarcane seeds,normal,short,not_recorded,FQ01601
+VQ0057,how often should I water turmeric,english,latin,turmeric,irrigation,audio/train/VQ0057.wav,SPK_TBD,low,how often should i water turmeric,fast,short,not_recorded,FQ01934
+VQ0058,base of tomato plant is rotting,english,latin,tomato,root_rot,audio/train/VQ0058.wav,SPK_TBD,medium,base of tomato plant is rotting,slow,short,not_recorded,FQ01748
+VQ0059,older leaves scorched at margins in groundnut,english,latin,groundnut,potassium_deficiency,audio/test/VQ0059.wav,SPK_TBD,high,older leaves scorched at margins in groundnut,rural_accent,short,not_recorded,FQ03095
+VQ0060,groundnut leaf edges burning brown,english,latin,groundnut,potassium_deficiency,audio/validation/VQ0060.wav,SPK_TBD,clean,groundnut leaf edges burning brown,normal,short,not_recorded,FQ02841
+VQ0061,too many insects in black gram field,english,latin,blackgram,pest_attack,audio/train/VQ0061.wav,SPK_TBD,low,too many insects in black gram field,fast,short,not_recorded,FQ01125
+VQ0062,how to dry tomato before storage,english,latin,tomato,post_harvest_storage,audio/train/VQ0062.wav,SPK_TBD,medium,how to dry tomato before storage,slow,short,not_recorded,FQ02531
+VQ0063,black sooty mould on chilli leaves,english,latin,chilli,whitefly,audio/validation/VQ0063.wav,SPK_TBD,high,black sooty mould on chilli leaves,rural_accent,short,not_recorded,FQ02931
+VQ0064,thrips in groundnut,english,latin,groundnut,thrips_mites,audio/test/VQ0064.wav,SPK_TBD,clean,thrips in groundnut,normal,short,not_recorded,FQ03325
+VQ0065,turmeric stems weak and falling,english,latin,turmeric,potassium_deficiency,audio/train/VQ0065.wav,SPK_TBD,low,turmeric stems weak and falling,fast,short,not_recorded,FQ02431
+VQ0066,how to get a soil health card,english,latin,,soil_testing,audio/test/VQ0066.wav,SPK_TBD,medium,how to get a soil health card,slow,short,not_recorded,FQ03151
+VQ0067,which crops tolerate drought,english,latin,,drought,audio/train/VQ0067.wav,SPK_TBD,high,which crops tolerate drought,rural_accent,short,not_recorded,FQ01080
+VQ0068,whole field looks yellow after rain,english,latin,,yellow_leaf,audio/train/VQ0068.wav,SPK_TBD,clean,whole field looks yellow after rain,normal,short,not_recorded,FQ01421
+VQ0069,how long can I store urad,english,latin,blackgram,post_harvest_storage,audio/train/VQ0069.wav,SPK_TBD,low,how long can i store urad,fast,short,not_recorded,FQ00505
+VQ0070,iron deficiency in chilli,english,latin,chilli,micronutrient_deficiency,audio/test/VQ0070.wav,SPK_TBD,medium,iron deficiency in chilli,slow,short,not_recorded,FQ03201
+VQ0071,bio fertilizer seed treatment for black gram,english,latin,blackgram,seed_treatment,audio/train/VQ0071.wav,SPK_TBD,high,bio fertilizer seed treatment for black gram,rural_accent,short,not_recorded,FQ01468
+VQ0072,best time for top dressing in moringa,english,latin,drumstick,fertilizer_timing,audio/train/VQ0072.wav,SPK_TBD,clean,best time for top dressing in moringa,normal,short,not_recorded,FQ00464
+VQ0073,how to get organic certification,english,latin,,organic_farming,audio/train/VQ0073.wav,SPK_TBD,low,how to get organic certification,fast,short,not_recorded,FQ00147
+VQ0074,borer inside maize stem,english,latin,maize,stem_borer,audio/train/VQ0074.wav,SPK_TBD,medium,borer inside maize stem,slow,short,not_recorded,FQ00224
+VQ0075,pm kisan ekyc,english,latin,,pm_kisan,audio/train/VQ0075.wav,SPK_TBD,high,pm kisan ekyc,rural_accent,short,not_recorded,FQ00262
+VQ0076,borer inside rice stem,english,latin,paddy,stem_borer,audio/train/VQ0076.wav,SPK_TBD,clean,borer inside rice stem,normal,short,not_recorded,FQ01362
+VQ0077,why is banana price low,english,latin,banana,market_price,audio/train/VQ0077.wav,SPK_TBD,low,why is banana price low,fast,short,not_recorded,FQ01744
+VQ0078,what fertilizer should I use for coconut,english,latin,coconut,fertilizer,audio/train/VQ0078.wav,SPK_TBD,medium,what fertilizer should i use for coconut,slow,short,not_recorded,FQ02410
+VQ0079,fruit rot in chilli,english,latin,chilli,fruit_rot,audio/train/VQ0079.wav,SPK_TBD,high,fruit rot in chilli,rural_accent,short,not_recorded,FQ00102
+VQ0080,today black gram price,english,latin,blackgram,market_price,audio/train/VQ0080.wav,SPK_TBD,clean,today black gram price,normal,short,not_recorded,FQ01939
+VQ0081,holes in chilli fruits with worms,english,latin,chilli,fruit_borer,audio/train/VQ0081.wav,SPK_TBD,low,holes in chilli fruits with worms,fast,short,not_recorded,FQ02187
+VQ0082,insects in stored drumstick,english,latin,drumstick,post_harvest_storage,audio/train/VQ0082.wav,SPK_TBD,medium,insects in stored drumstick,slow,short,not_recorded,FQ01511
+VQ0083,how to use cow dung manure for groundnut,english,latin,groundnut,organic_fertilizer,audio/train/VQ0083.wav,SPK_TBD,high,how to use cow dung manure for groundnut,rural_accent,short,not_recorded,FQ01848
+VQ0084,how to increase organic matter in soil,english,latin,,soil_health,audio/test/VQ0084.wav,SPK_TBD,clean,how to increase organic matter in soil,normal,short,not_recorded,FQ03338
+VQ0085,turmeric roots are rotting,english,latin,turmeric,root_rot,audio/test/VQ0085.wav,SPK_TBD,low,turmeric roots are rotting,fast,short,not_recorded,FQ03060
+VQ0086,why are my brinjal leaves folding,english,latin,brinjal,leaf_curl,audio/train/VQ0086.wav,SPK_TBD,medium,why are my brinjal leaves folding,slow,short,not_recorded,FQ00525
+VQ0087,dark purplish leaves in tomato,english,latin,tomato,phosphorus_deficiency,audio/train/VQ0087.wav,SPK_TBD,high,dark purplish leaves in tomato,rural_accent,short,not_recorded,FQ02057
+VQ0088,how to protect groundnut from heat,english,latin,groundnut,heat_stress,audio/train/VQ0088.wav,SPK_TBD,clean,how to protect groundnut from heat,normal,short,not_recorded,FQ01680
+VQ0089,potassium deficiency in moringa,english,latin,drumstick,potassium_deficiency,audio/train/VQ0089.wav,SPK_TBD,low,potassium deficiency in moringa,fast,short,not_recorded,FQ00381
+VQ0090,brown spots on rice leaves,english,latin,paddy,leaf_spot,audio/train/VQ0090.wav,SPK_TBD,medium,brown spots on rice leaves,slow,short,not_recorded,FQ01102
+VQ0091,pest attack in my tomato,english,latin,tomato,pest_attack,audio/test/VQ0091.wav,SPK_TBD,high,pest attack in my tomato,rural_accent,short,not_recorded,FQ03368
+VQ0092,caterpillar eating tomato fruits,english,latin,tomato,fruit_borer,audio/train/VQ0092.wav,SPK_TBD,clean,caterpillar eating tomato fruits,normal,short,not_recorded,FQ01547
+VQ0093,fruit rot in coconut,english,latin,coconut,fruit_rot,audio/train/VQ0093.wav,SPK_TBD,low,fruit rot in coconut,fast,short,not_recorded,FQ02521
+VQ0094,thanks very helpful,english,latin,,thanks,audio/test/VQ0094.wav,SPK_TBD,medium,thanks very helpful,slow,short,not_recorded,FQ03460
+VQ0095,paddy leaves folded with white streaks,english,latin,,leaf_folder,audio/train/VQ0095.wav,SPK_TBD,high,paddy leaves folded with white streaks,rural_accent,short,not_recorded,FQ01849
+VQ0096,nitrogen deficiency in rice,english,latin,paddy,nitrogen_deficiency,audio/validation/VQ0096.wav,SPK_TBD,clean,nitrogen deficiency in rice,normal,short,not_recorded,FQ02830
+VQ0097,sudden wilt in sugarcane,english,latin,sugarcane,wilting,audio/train/VQ0097.wav,SPK_TBD,low,sudden wilt in sugarcane,fast,short,not_recorded,FQ01061
+VQ0098,base of black gram plant is rotting,english,latin,blackgram,root_rot,audio/train/VQ0098.wav,SPK_TBD,medium,base of black gram plant is rotting,slow,short,not_recorded,FQ01449
+VQ0099,is my onion lacking nitrogen,english,latin,onion,nitrogen_deficiency,audio/train/VQ0099.wav,SPK_TBD,high,is my onion lacking nitrogen,rural_accent,short,not_recorded,FQ01110
+VQ0100,worm inside folded paddy leaf,english,latin,,leaf_folder,audio/validation/VQ0100.wav,SPK_TBD,clean,worm inside folded paddy leaf,normal,short,not_recorded,FQ02784
+VQ0101,செடி குட்டையா இலை கருநீலமா இருக்கு,tamil,tamil,,phosphorus_deficiency,audio/test/VQ0101.wav,SPK_TBD,low,செடி குட்டையா இலை கருநீலமா இருக்கு,fast,short,not_recorded,FQ03463
+VQ0102,மஞ்சள் இலை மஞ்சளாகுது ஏன்?,tamil,tamil,turmeric,yellow_leaf,audio/train/VQ0102.wav,SPK_TBD,medium,மஞ்சள் இலை மஞ்சளாகுது ஏன்,slow,short,not_recorded,FQ00092
+VQ0103,சின்ன வெங்காயம் பயிர் வெளிர் பச்சையா இருக்கு,tamil,tamil,onion,nitrogen_deficiency,audio/test/VQ0103.wav,SPK_TBD,high,சின்ன வெங்காயம் பயிர் வெளிர் பச்சையா இருக்கு,rural_accent,short,not_recorded,FQ03122
+VQ0104,வாழை எவ்வளவு நாள் சேமிக்கலாம்,tamil,tamil,banana,post_harvest_storage,audio/train/VQ0104.wav,SPK_TBD,clean,வாழை எவ்வளவு நாள் சேமிக்கலாம்,normal,short,not_recorded,FQ00283
+VQ0105,கத்தரி இலையில பழுப்பு புள்ளி வருது,tamil,tamil,brinjal,leaf_spot,audio/train/VQ0105.wav,SPK_TBD,low,கத்தரி இலையில பழுப்பு புள்ளி வருது,fast,short,not_recorded,FQ00693
+VQ0106,நிலக்கடலை இலை ஊதா நிறமா இருக்கு,tamil,tamil,groundnut,phosphorus_deficiency,audio/train/VQ0106.wav,SPK_TBD,medium,நிலக்கடலை இலை ஊதா நிறமா இருக்கு,slow,short,not_recorded,FQ00540
+VQ0107,எந்த மிளகாய் ரகம் நல்லது,tamil,tamil,chilli,seed_selection,audio/train/VQ0107.wav,SPK_TBD,high,எந்த மிளகாய் ரகம் நல்லது,rural_accent,short,not_recorded,FQ00416
+VQ0108,மண் மேல வெள்ளை படிவு இருக்கு,tamil,tamil,,soil_ph,audio/test/VQ0108.wav,SPK_TBD,clean,மண் மேல வெள்ளை படிவு இருக்கு,normal,short,not_recorded,FQ03336
+VQ0109,கத்தரி நடவுக்கு ஏத்த பருவம்,tamil,tamil,brinjal,sowing_time,audio/train/VQ0109.wav,SPK_TBD,low,கத்தரி நடவுக்கு ஏத்த பருவம்,fast,short,not_recorded,FQ00607
+VQ0110,நிலக்கடலை இலை சுரண்டுன மாதிரி இருக்கு,tamil,tamil,groundnut,thrips_mites,audio/train/VQ0110.wav,SPK_TBD,medium,நிலக்கடலை இலை சுரண்டுன மாதிரி இருக்கு,slow,short,not_recorded,FQ01972
+VQ0111,உளுந்து செடியில என்ன நோய்னு தெரியல,tamil,tamil,blackgram,crop_disease,audio/train/VQ0111.wav,SPK_TBD,high,உளுந்து செடியில என்ன நோய்னு தெரியல,rural_accent,short,not_recorded,FQ00159
+VQ0112,மஞ்சள் பயிருக்கு தழைச்சத்து பத்தலையா,tamil,tamil,turmeric,nitrogen_deficiency,audio/train/VQ0112.wav,SPK_TBD,clean,மஞ்சள் பயிருக்கு தழைச்சத்து பத்தலையா,normal,short,not_recorded,FQ01294
+VQ0113,தண்டுக்குள்ள புழு இருக்கு,tamil,tamil,,stem_borer,audio/validation/VQ0113.wav,SPK_TBD,low,தண்டுக்குள்ள புழு இருக்கு,fast,short,not_recorded,FQ02987
+VQ0114,வாழை அசுவினி தாக்குதல்,tamil,tamil,banana,aphids,audio/test/VQ0114.wav,SPK_TBD,medium,வாழை அசுவினி தாக்குதல்,slow,short,not_recorded,FQ03128
+VQ0115,கத்தரி செடி முழுசா காய்ஞ்சு செத்துப் போச்சு,tamil,tamil,brinjal,wilting,audio/train/VQ0115.wav,SPK_TBD,high,கத்தரி செடி முழுசா காய்ஞ்சு செத்துப் போச்சு,rural_accent,short,not_recorded,FQ00093
+VQ0116,கரும்பு விலை ஏன் குறைஞ்சிருக்கு,tamil,tamil,sugarcane,market_price,audio/train/VQ0116.wav,SPK_TBD,clean,கரும்பு விலை ஏன் குறைஞ்சிருக்கு,normal,short,not_recorded,FQ02522
+VQ0117,கரும்பு அறுவடைக்கு தயாரானத எப்படி தெரியும்,tamil,tamil,sugarcane,harvesting,audio/train/VQ0117.wav,SPK_TBD,low,கரும்பு அறுவடைக்கு தயாரானத எப்படி தெரியும்,fast,short,not_recorded,FQ01498
+VQ0118,நல்ல மஞ்சள் விதை எங்க கிடைக்கும்,tamil,tamil,turmeric,seed_selection,audio/train/VQ0118.wav,SPK_TBD,medium,நல்ல மஞ்சள் விதை எங்க கிடைக்கும்,slow,short,not_recorded,FQ00150
+VQ0119,பருத்தி செடி வேர் கருப்பா இருக்கு,tamil,tamil,cotton,root_rot,audio/train/VQ0119.wav,SPK_TBD,high,பருத்தி செடி வேர் கருப்பா இருக்கு,rural_accent,short,not_recorded,FQ00576
+VQ0120,கத்தரி நோய்க்கு என்ன தீர்வு,tamil,tamil,brinjal,crop_disease,audio/validation/VQ0120.wav,SPK_TBD,clean,கத்தரி நோய்க்கு என்ன தீர்வு,normal,short,not_recorded,FQ02681
+VQ0121,பருத்தி எப்போ அறுவடை பண்ணலாம்,tamil,tamil,cotton,harvesting,audio/train/VQ0121.wav,SPK_TBD,low,பருத்தி எப்போ அறுவடை பண்ணலாம்,fast,short,not_recorded,FQ01116
+VQ0122,மிளகாய் வேர் அழுகுது,tamil,tamil,chilli,root_rot,audio/train/VQ0122.wav,SPK_TBD,medium,மிளகாய் வேர் அழுகுது,slow,short,not_recorded,FQ00325
+VQ0123,உளுந்து பயிருக்கு எந்த உரம் போடலாம்?,tamil,tamil,blackgram,fertilizer,audio/train/VQ0123.wav,SPK_TBD,high,உளுந்து பயிருக்கு எந்த உரம் போடலாம்,rural_accent,short,not_recorded,FQ00485
+VQ0124,கத்தரி அசுவினி தாக்குதல்,tamil,tamil,brinjal,aphids,audio/test/VQ0124.wav,SPK_TBD,clean,கத்தரி அசுவினி தாக்குதல்,normal,short,not_recorded,FQ03493
+VQ0125,முருங்கை பயிர் வெளிர் பச்சையா இருக்கு,tamil,tamil,drumstick,nitrogen_deficiency,audio/test/VQ0125.wav,SPK_TBD,low,முருங்கை பயிர் வெளிர் பச்சையா இருக்கு,fast,short,not_recorded,FQ03233
+VQ0126,மஞ்சள் பயிருக்கு எவ்வளவு தண்ணீர் தேவை,tamil,tamil,turmeric,irrigation,audio/train/VQ0126.wav,SPK_TBD,medium,மஞ்சள் பயிருக்கு எவ்வளவு தண்ணீர் தேவை,slow,short,not_recorded,FQ01699
+VQ0127,இன்னைக்கு கரும்பு விலை என்ன,tamil,tamil,sugarcane,market_price,audio/train/VQ0127.wav,SPK_TBD,high,இன்னைக்கு கரும்பு விலை என்ன,rural_accent,short,not_recorded,FQ01074
+VQ0128,கோடையில முருங்கை இலை கருகுது,tamil,tamil,drumstick,heat_stress,audio/train/VQ0128.wav,SPK_TBD,clean,கோடையில முருங்கை இலை கருகுது,normal,short,not_recorded,FQ01914
+VQ0129,நெல் இலைச்சுருட்டுப் புழு,tamil,tamil,,leaf_folder,audio/train/VQ0129.wav,SPK_TBD,low,நெல் இலைச்சுருட்டுப் புழு,fast,short,not_recorded,FQ00103
+VQ0130,வாழை உர அட்டவணை சொல்லுங்க,tamil,tamil,banana,fertilizer,audio/test/VQ0130.wav,SPK_TBD,medium,வாழை உர அட்டவணை சொல்லுங்க,slow,short,not_recorded,FQ03418
+VQ0131,மஞ்சள் நடு குருத்து காயுது,tamil,tamil,turmeric,stem_borer,audio/test/VQ0131.wav,SPK_TBD,high,மஞ்சள் நடு குருத்து காயுது,rural_accent,short,not_recorded,FQ03073
+VQ0132,பிஎம் கிசான் e-KYC,tamil,mixed,,pm_kisan,audio/train/VQ0132.wav,SPK_TBD,clean,பிஎம் கிசான் e-kyc,normal,short,not_recorded,FQ01773
+VQ0133,உளுந்து காய் துளைச்சு இருக்கு,tamil,tamil,blackgram,fruit_borer,audio/train/VQ0133.wav,SPK_TBD,low,உளுந்து காய் துளைச்சு இருக்கு,fast,short,not_recorded,FQ00594
+VQ0134,இலை மேல சின்ன சின்ன புள்ளி வருது,tamil,tamil,,leaf_spot,audio/train/VQ0134.wav,SPK_TBD,medium,இலை மேல சின்ன சின்ன புள்ளி வருது,slow,short,not_recorded,FQ00640
+VQ0135,இன்னைக்கு நிலக்கடலை விலை என்ன,tamil,tamil,groundnut,market_price,audio/train/VQ0135.wav,SPK_TBD,high,இன்னைக்கு நிலக்கடலை விலை என்ன,rural_accent,short,not_recorded,FQ00209
+VQ0136,தென்னை தண்டு பலவீனமா சாயுது,tamil,tamil,coconut,potassium_deficiency,audio/train/VQ0136.wav,SPK_TBD,clean,தென்னை தண்டு பலவீனமா சாயுது,normal,short,not_recorded,FQ02301
+VQ0137,"கரும்பு பழைய இலை வெளிர் மஞ்சள், வளர்ச்சி இல்ல",tamil,tamil,sugarcane,nitrogen_deficiency,audio/train/VQ0137.wav,SPK_TBD,low,கரும்பு பழைய இலை வெளிர் மஞ்சள் வளர்ச்சி இல்ல,fast,short,not_recorded,FQ00821
+VQ0138,பயிர் காப்பீடு கடைசி தேதி,tamil,tamil,,crop_insurance,audio/train/VQ0138.wav,SPK_TBD,medium,பயிர் காப்பீடு கடைசி தேதி,slow,short,not_recorded,FQ01137
+VQ0139,விவசாயம் என்றால் என்ன,tamil,tamil,,agri_general_info,audio/validation/VQ0139.wav,SPK_TBD,high,விவசாயம் என்றால் என்ன,rural_accent,short,not_recorded,FQ02908
+VQ0140,என் நிலம் உவர் மண்,tamil,tamil,,soil_ph,audio/train/VQ0140.wav,SPK_TBD,clean,என் நிலம் உவர் மண்,normal,short,not_recorded,FQ01502
+VQ0141,மண் பரிசோதனை நிலையம் எங்க இருக்கு,tamil,tamil,,soil_testing,audio/validation/VQ0141.wav,SPK_TBD,low,மண் பரிசோதனை நிலையம் எங்க இருக்கு,fast,short,not_recorded,FQ02881
+VQ0142,பருத்தி எவ்வளவு நாள் சேமிக்கலாம்,tamil,tamil,cotton,post_harvest_storage,audio/train/VQ0142.wav,SPK_TBD,medium,பருத்தி எவ்வளவு நாள் சேமிக்கலாம்,slow,short,not_recorded,FQ00270
+VQ0143,பருத்தி காய் உதிருது புழுவால,tamil,tamil,,bollworm,audio/train/VQ0143.wav,SPK_TBD,high,பருத்தி காய் உதிருது புழுவால,rural_accent,short,not_recorded,FQ01803
+VQ0144,வாழை பயிருக்கு எவ்வளவு தண்ணீர் தேவை,tamil,tamil,banana,irrigation,audio/train/VQ0144.wav,SPK_TBD,clean,வாழை பயிருக்கு எவ்வளவு தண்ணீர் தேவை,normal,short,not_recorded,FQ01039
+VQ0145,கத்தரி பயிருக்கு இயற்கை பூச்சி விரட்டி,tamil,tamil,brinjal,organic_farming,audio/test/VQ0145.wav,SPK_TBD,low,கத்தரி பயிருக்கு இயற்கை பூச்சி விரட்டி,fast,short,not_recorded,FQ03147
+VQ0146,கரும்பு பயிர் காப்பீடு எப்படி பண்றது,tamil,tamil,sugarcane,crop_insurance,audio/train/VQ0146.wav,SPK_TBD,medium,கரும்பு பயிர் காப்பீடு எப்படி பண்றது,slow,short,not_recorded,FQ01252
+VQ0147,மக்காச்சோளம் செடிய பூச்சி தின்னுது,tamil,tamil,maize,pest_attack,audio/train/VQ0147.wav,SPK_TBD,high,மக்காச்சோளம் செடிய பூச்சி தின்னுது,rural_accent,short,not_recorded,FQ00412
+VQ0148,சின்ன வெங்காயம் பயிர் காப்பீடு எப்படி பண்றது,tamil,tamil,onion,crop_insurance,audio/train/VQ0148.wav,SPK_TBD,clean,சின்ன வெங்காயம் பயிர் காப்பீடு எப்படி பண்றது,normal,short,not_recorded,FQ00937
+VQ0149,முருங்கை இலை ஓரம் பழுப்பா கருகுது,tamil,tamil,drumstick,potassium_deficiency,audio/train/VQ0149.wav,SPK_TBD,low,முருங்கை இலை ஓரம் பழுப்பா கருகுது,fast,short,not_recorded,FQ00055
+VQ0150,அறுவடைக்கு முன்னாடியே காய் அழுகுது,tamil,tamil,,fruit_rot,audio/train/VQ0150.wav,SPK_TBD,medium,அறுவடைக்கு முன்னாடியே காய் அழுகுது,slow,short,not_recorded,FQ01969
+VQ0151,இன்னைக்கு முருங்கை விலை என்ன,tamil,tamil,drumstick,market_price,audio/train/VQ0151.wav,SPK_TBD,high,இன்னைக்கு முருங்கை விலை என்ன,rural_accent,short,not_recorded,FQ01360
+VQ0152,கத்தரி விதை நேர்த்தி எப்படி செய்றது,tamil,tamil,brinjal,seed_treatment,audio/train/VQ0152.wav,SPK_TBD,clean,கத்தரி விதை நேர்த்தி எப்படி செய்றது,normal,short,not_recorded,FQ00014
+VQ0153,நெல் இலை மடிஞ்சு வெள்ளை கோடு இருக்கு,tamil,tamil,,leaf_folder,audio/train/VQ0153.wav,SPK_TBD,low,நெல் இலை மடிஞ்சு வெள்ளை கோடு இருக்கு,fast,short,not_recorded,FQ02392
+VQ0154,மிளகாய் இலையில சிலந்திப்பூச்சி,tamil,tamil,chilli,thrips_mites,audio/train/VQ0154.wav,SPK_TBD,medium,மிளகாய் இலையில சிலந்திப்பூச்சி,slow,short,not_recorded,FQ00290
+VQ0155,மிளகாய் இலைப்பேன் தாக்குதல்,tamil,tamil,chilli,thrips_mites,audio/train/VQ0155.wav,SPK_TBD,high,மிளகாய் இலைப்பேன் தாக்குதல்,rural_accent,short,not_recorded,FQ02404
+VQ0156,பருத்தி பயிருக்கு ஏதோ நோய் வந்துருக்கு,tamil,tamil,cotton,crop_disease,audio/test/VQ0156.wav,SPK_TBD,clean,பருத்தி பயிருக்கு ஏதோ நோய் வந்துருக்கு,normal,short,not_recorded,FQ03171
+VQ0157,மக்காச்சோளம் இலைக்கருகல் நோய்,tamil,tamil,maize,leaf_blight,audio/validation/VQ0157.wav,SPK_TBD,low,மக்காச்சோளம் இலைக்கருகல் நோய்,fast,short,not_recorded,FQ02983
+VQ0158,தென்னை சேமிச்சு வைக்கிறது எப்படி,tamil,tamil,coconut,post_harvest_storage,audio/train/VQ0158.wav,SPK_TBD,medium,தென்னை சேமிச்சு வைக்கிறது எப்படி,slow,short,not_recorded,FQ02541
+VQ0159,"முருங்கை புது இலை மஞ்சள், நரம்பு பச்சை",tamil,tamil,drumstick,micronutrient_deficiency,audio/train/VQ0159.wav,SPK_TBD,high,முருங்கை புது இலை மஞ்சள் நரம்பு பச்சை,rural_accent,short,not_recorded,FQ01947
+VQ0160,மிளகாய் இலை சுரண்டுன மாதிரி இருக்கு,tamil,tamil,chilli,thrips_mites,audio/train/VQ0160.wav,SPK_TBD,clean,மிளகாய் இலை சுரண்டுன மாதிரி இருக்கு,normal,short,not_recorded,FQ00246
+VQ0161,நெல் இலை நுனியில இருந்து காயுது,tamil,tamil,paddy,leaf_blight,audio/train/VQ0161.wav,SPK_TBD,low,நெல் இலை நுனியில இருந்து காயுது,fast,short,not_recorded,FQ01580
+VQ0162,தென்னை வயல்ல தண்ணி மிச்சப்படுத்த வழி,tamil,tamil,coconut,water_shortage,audio/train/VQ0162.wav,SPK_TBD,medium,தென்னை வயல்ல தண்ணி மிச்சப்படுத்த வழி,slow,short,not_recorded,FQ01189
+VQ0163,பருத்தி பயிர் வெளிர் பச்சையா இருக்கு,tamil,tamil,cotton,nitrogen_deficiency,audio/test/VQ0163.wav,SPK_TBD,high,பருத்தி பயிர் வெளிர் பச்சையா இருக்கு,rural_accent,short,not_recorded,FQ03369
+VQ0164,கிணத்துல தண்ணி பத்தல,tamil,tamil,,water_shortage,audio/train/VQ0164.wav,SPK_TBD,clean,கிணத்துல தண்ணி பத்தல,normal,short,not_recorded,FQ00010
+VQ0165,குறுகிய கால நிலக்கடலை ரகம்,tamil,tamil,groundnut,seed_selection,audio/train/VQ0165.wav,SPK_TBD,low,குறுகிய கால நிலக்கடலை ரகம்,fast,short,not_recorded,FQ00136
+VQ0166,முருங்கை தண்டு பலவீனமா சாயுது,tamil,tamil,drumstick,potassium_deficiency,audio/train/VQ0166.wav,SPK_TBD,medium,முருங்கை தண்டு பலவீனமா சாயுது,slow,short,not_recorded,FQ00069
+VQ0167,மிளகாய் பயிருக்கு இயற்கை பூச்சி விரட்டி,tamil,tamil,chilli,organic_farming,audio/test/VQ0167.wav,SPK_TBD,high,மிளகாய் பயிருக்கு இயற்கை பூச்சி விரட்டி,rural_accent,short,not_recorded,FQ03449
+VQ0168,மிளகாய் செடி வேர் கருப்பா இருக்கு,tamil,tamil,chilli,root_rot,audio/train/VQ0168.wav,SPK_TBD,clean,மிளகாய் செடி வேர் கருப்பா இருக்கு,normal,short,not_recorded,FQ00625
+VQ0169,தழைச்சத்து குறைபாடு அறிகுறி,tamil,tamil,,nitrogen_deficiency,audio/test/VQ0169.wav,SPK_TBD,low,தழைச்சத்து குறைபாடு அறிகுறி,fast,short,not_recorded,FQ03188
+VQ0170,மிளகாய் காயில ஓட்டை புழு இருக்கு,tamil,tamil,chilli,fruit_borer,audio/test/VQ0170.wav,SPK_TBD,medium,மிளகாய் காயில ஓட்டை புழு இருக்கு,slow,short,not_recorded,FQ03197
+VQ0171,வீரிய ரக தென்னை விதை,tamil,tamil,coconut,seed_selection,audio/test/VQ0171.wav,SPK_TBD,high,வீரிய ரக தென்னை விதை,rural_accent,short,not_recorded,FQ03091
+VQ0172,இப்போ சின்ன வெங்காயம் நடலாமா,tamil,tamil,onion,sowing_time,audio/test/VQ0172.wav,SPK_TBD,clean,இப்போ சின்ன வெங்காயம் நடலாமா,normal,short,not_recorded,FQ03074
+VQ0173,பருத்தி பயிருக்கு எந்த உரம் போடலாம்?,tamil,tamil,cotton,fertilizer,audio/train/VQ0173.wav,SPK_TBD,low,பருத்தி பயிருக்கு எந்த உரம் போடலாம்,fast,short,not_recorded,FQ00207
+VQ0174,மக்காச்சோளம் செடி திடீர்னு வாடுது,tamil,tamil,maize,wilting,audio/train/VQ0174.wav,SPK_TBD,medium,மக்காச்சோளம் செடி திடீர்னு வாடுது,slow,short,not_recorded,FQ00145
+VQ0175,செடிய ஆட்டுனா வெள்ளை பூச்சி பறக்குது,tamil,tamil,,whitefly,audio/test/VQ0175.wav,SPK_TBD,high,செடிய ஆட்டுனா வெள்ளை பூச்சி பறக்குது,rural_accent,short,not_recorded,FQ03146
+VQ0176,மிளகாய் இலையில வெள்ளி நிற கோடு,tamil,tamil,chilli,thrips_mites,audio/validation/VQ0176.wav,SPK_TBD,clean,மிளகாய் இலையில வெள்ளி நிற கோடு,normal,short,not_recorded,FQ02935
+VQ0177,நிலக்கடலை வேர் அழுகுது,tamil,tamil,groundnut,root_rot,audio/train/VQ0177.wav,SPK_TBD,low,நிலக்கடலை வேர் அழுகுது,fast,short,not_recorded,FQ02543
+VQ0178,கத்தரி பழ அழுகல் நோய்,tamil,tamil,brinjal,fruit_rot,audio/train/VQ0178.wav,SPK_TBD,medium,கத்தரி பழ அழுகல் நோய்,slow,short,not_recorded,FQ01178
+VQ0179,சாம்பல் சத்து குறைபாடு,tamil,tamil,,potassium_deficiency,audio/test/VQ0179.wav,SPK_TBD,high,சாம்பல் சத்து குறைபாடு,rural_accent,short,not_recorded,FQ03133
+VQ0180,நெல் நடவு இயந்திரம்,tamil,tamil,,farm_machinery,audio/train/VQ0180.wav,SPK_TBD,clean,நெல் நடவு இயந்திரம்,normal,short,not_recorded,FQ01533
+VQ0181,காய்க்குள்ள புழு,tamil,tamil,,fruit_borer,audio/train/VQ0181.wav,SPK_TBD,low,காய்க்குள்ள புழு,fast,short,not_recorded,FQ02054
+VQ0182,நன்றி,tamil,tamil,,thanks,audio/train/VQ0182.wav,SPK_TBD,medium,நன்றி,slow,short,not_recorded,FQ00234
+VQ0183,கத்தரி காய்ப்புழு தாக்குதல்,tamil,tamil,brinjal,fruit_borer,audio/validation/VQ0183.wav,SPK_TBD,high,கத்தரி காய்ப்புழு தாக்குதல்,rural_accent,short,not_recorded,FQ02863
+VQ0184,சின்ன வெங்காயம் பயிருக்கு எந்த உரம் போடலாம்?,tamil,tamil,onion,fertilizer,audio/train/VQ0184.wav,SPK_TBD,clean,சின்ன வெங்காயம் பயிருக்கு எந்த உரம் போடலாம்,normal,short,not_recorded,FQ01155
+VQ0185,தண்ணி விட்டும் உளுந்து வாடுது,tamil,tamil,blackgram,wilting,audio/train/VQ0185.wav,SPK_TBD,low,தண்ணி விட்டும் உளுந்து வாடுது,fast,short,not_recorded,FQ02545
+VQ0186,டிராக்டர் வாங்க மானியம்,tamil,tamil,,subsidy,audio/train/VQ0186.wav,SPK_TBD,medium,டிராக்டர் வாங்க மானியம்,slow,short,not_recorded,FQ00828
+VQ0187,நெல் பயிருக்கு தொழுவுரம் எப்படி போடணும்,tamil,tamil,paddy,organic_fertilizer,audio/train/VQ0187.wav,SPK_TBD,high,நெல் பயிருக்கு தொழுவுரம் எப்படி போடணும்,rural_accent,short,not_recorded,FQ01430
+VQ0188,மக்காச்சோளம் பயிருக்கு தொழுவுரம் எப்படி போடணும்,tamil,tamil,maize,organic_fertilizer,audio/train/VQ0188.wav,SPK_TBD,clean,மக்காச்சோளம் பயிருக்கு தொழுவுரம் எப்படி போடணும்,normal,short,not_recorded,FQ01806
+VQ0189,தக்காளி காய்ப்புழு தாக்குதல்,tamil,tamil,tomato,fruit_borer,audio/validation/VQ0189.wav,SPK_TBD,low,தக்காளி காய்ப்புழு தாக்குதல்,fast,short,not_recorded,FQ02611
+VQ0190,பாசிப்பயறு காயில ஓட்டை புழு இருக்கு,tamil,tamil,greengram,fruit_borer,audio/test/VQ0190.wav,SPK_TBD,medium,பாசிப்பயறு காயில ஓட்டை புழு இருக்கு,slow,short,not_recorded,FQ03291
+VQ0191,மஞ்சள் வயலுக்கு எப்போ தண்ணி விடணும்,tamil,tamil,turmeric,irrigation,audio/validation/VQ0191.wav,SPK_TBD,high,மஞ்சள் வயலுக்கு எப்போ தண்ணி விடணும்,rural_accent,short,not_recorded,FQ02791
+VQ0192,எந்த நெல் ரகம் நல்லது,tamil,tamil,paddy,seed_selection,audio/train/VQ0192.wav,SPK_TBD,clean,எந்த நெல் ரகம் நல்லது,normal,short,not_recorded,FQ00236
+VQ0193,பெருமழையில நெல் வயல் மூழ்கிடுச்சு,tamil,tamil,paddy,rain_damage,audio/train/VQ0193.wav,SPK_TBD,low,பெருமழையில நெல் வயல் மூழ்கிடுச்சு,fast,short,not_recorded,FQ00855
+VQ0194,ரொம்ப நன்றி,tamil,tamil,,thanks,audio/train/VQ0194.wav,SPK_TBD,medium,ரொம்ப நன்றி,slow,short,not_recorded,FQ00024
+VQ0195,நெல் இலைக்கருகல் நோய்,tamil,tamil,paddy,leaf_blight,audio/validation/VQ0195.wav,SPK_TBD,high,நெல் இலைக்கருகல் நோய்,rural_accent,short,not_recorded,FQ02839
+VQ0196,விதைக்கு முன்னாடி என்ன பண்ணணும்,tamil,tamil,,seed_treatment,audio/validation/VQ0196.wav,SPK_TBD,clean,விதைக்கு முன்னாடி என்ன பண்ணணும்,normal,short,not_recorded,FQ02692
+VQ0197,குறுகிய கால சின்ன வெங்காயம் ரகம்,tamil,tamil,onion,seed_selection,audio/train/VQ0197.wav,SPK_TBD,low,குறுகிய கால சின்ன வெங்காயம் ரகம்,fast,short,not_recorded,FQ01273
+VQ0198,அதிக வெயில்ல கரும்பு பூ உதிருது,tamil,tamil,sugarcane,heat_stress,audio/validation/VQ0198.wav,SPK_TBD,medium,அதிக வெயில்ல கரும்பு பூ உதிருது,slow,short,not_recorded,FQ02827
+VQ0199,நெல் விவசாயிகளுக்கு ஏதாவது திட்டம்,tamil,tamil,,government_scheme,audio/test/VQ0199.wav,SPK_TBD,high,நெல் விவசாயிகளுக்கு ஏதாவது திட்டம்,rural_accent,short,not_recorded,FQ03295
+VQ0200,இலையில கருப்பு புள்ளிகள் இருக்கு,tamil,tamil,,leaf_spot,audio/validation/VQ0200.wav,SPK_TBD,clean,இலையில கருப்பு புள்ளிகள் இருக்கு,normal,short,not_recorded,FQ02615
+VQ0201,nel nadavu machine,tanglish,latin,,farm_machinery,audio/train/VQ0201.wav,SPK_TBD,low,nel nadavu machine,fast,short,not_recorded,FQ00861
+VQ0202,silandhi poochi chinna vengayam la,tanglish,latin,onion,thrips_mites,audio/validation/VQ0202.wav,SPK_TBD,medium,silandhi poochi chinna vengayam la,slow,short,not_recorded,FQ02723
+VQ0203,nel ilai vellaiya aagudhu kodu kodaa,tanglish,latin,,leaf_folder,audio/test/VQ0203.wav,SPK_TBD,high,nel ilai vellaiya aagudhu kodu kodaa,rural_accent,short,not_recorded,FQ03053
+VQ0204,soil test enga pannalaam,tanglish,latin,,soil_testing,audio/train/VQ0204.wav,SPK_TBD,clean,soil test enga pannalaam,normal,short,not_recorded,FQ01339
+VQ0205,pachai payaru ilai surul noi,tanglish,latin,greengram,leaf_curl,audio/train/VQ0205.wav,SPK_TBD,low,pachai payaru ilai surul noi,fast,short,not_recorded,FQ01605
+VQ0206,uluntu vellai ee thollai,tanglish,latin,blackgram,whitefly,audio/train/VQ0206.wav,SPK_TBD,medium,uluntu vellai ee thollai,slow,short,not_recorded,FQ02019
+VQ0207,kinathula thanni pathala,tanglish,latin,,water_shortage,audio/train/VQ0207.wav,SPK_TBD,high,kinathula thanni pathala,rural_accent,short,not_recorded,FQ01361
+VQ0208,solar pump subsidy,tanglish,latin,,subsidy,audio/train/VQ0208.wav,SPK_TBD,clean,solar pump subsidy,normal,short,not_recorded,FQ02424
+VQ0209,paddy ku evlo naal ku oru thadava thanni,tanglish,latin,paddy,irrigation,audio/train/VQ0209.wav,SPK_TBD,low,paddy ku evlo naal ku oru thadava thanni,fast,short,not_recorded,FQ00634
+VQ0210,naalaiku mazha iruka,tanglish,latin,,weather,audio/train/VQ0210.wav,SPK_TBD,medium,naalaiku mazha iruka,slow,short,not_recorded,FQ00992
+VQ0211,moong ku evlo naal ku oru thadava thanni,tanglish,latin,greengram,irrigation,audio/train/VQ0211.wav,SPK_TBD,high,moong ku evlo naal ku oru thadava thanni,rural_accent,short,not_recorded,FQ00389
+VQ0212,karumbu ku thozhu uram epdi podanum,tanglish,latin,sugarcane,organic_fertilizer,audio/train/VQ0212.wav,SPK_TBD,clean,karumbu ku thozhu uram epdi podanum,normal,short,not_recorded,FQ01978
+VQ0213,nelu sedi la enna noi nu theriyala,tanglish,latin,paddy,crop_disease,audio/train/VQ0213.wav,SPK_TBD,low,nelu sedi la enna noi nu theriyala,fast,short,not_recorded,FQ02478
+VQ0214,sugarcane ilai la brown pulli iruku,tanglish,latin,sugarcane,leaf_spot,audio/train/VQ0214.wav,SPK_TBD,medium,sugarcane ilai la brown pulli iruku,slow,short,not_recorded,FQ01983
+VQ0215,chinna vivasayi ku govt help,tanglish,latin,,government_scheme,audio/train/VQ0215.wav,SPK_TBD,high,chinna vivasayi ku govt help,rural_accent,short,not_recorded,FQ02390
+VQ0216,turmeric thandu thulaippan,tanglish,latin,turmeric,stem_borer,audio/train/VQ0216.wav,SPK_TBD,clean,turmeric thandu thulaippan,normal,short,not_recorded,FQ00558
+VQ0217,romba veyil chinna vengayam poo udhirudhu,tanglish,latin,onion,heat_stress,audio/test/VQ0217.wav,SPK_TBD,low,romba veyil chinna vengayam poo udhirudhu,fast,short,not_recorded,FQ03123
+VQ0218,vanakkam bot,tanglish,latin,,greeting,audio/train/VQ0218.wav,SPK_TBD,medium,vanakkam bot,slow,short,not_recorded,FQ02582
+VQ0219,paruththi ku best uram,tanglish,latin,cotton,fertilizer,audio/train/VQ0219.wav,SPK_TBD,high,paruththi ku best uram,rural_accent,short,not_recorded,FQ00501
+VQ0220,paruththi ku poochi attack,tanglish,latin,cotton,pest_attack,audio/train/VQ0220.wav,SPK_TBD,clean,paruththi ku poochi attack,normal,short,not_recorded,FQ00717
+VQ0221,brinjal evlo naal vachukalaam,tanglish,latin,brinjal,post_harvest_storage,audio/validation/VQ0221.wav,SPK_TBD,low,brinjal evlo naal vachukalaam,fast,short,not_recorded,FQ02934
+VQ0222,mann valam epdi adhigarikiradhu,tanglish,latin,,soil_health,audio/test/VQ0222.wav,SPK_TBD,medium,mann valam epdi adhigarikiradhu,slow,short,not_recorded,FQ03510
+VQ0223,acre ku evlo uram,tanglish,latin,,fertilizer,audio/train/VQ0223.wav,SPK_TBD,high,acre ku evlo uram,rural_accent,short,not_recorded,FQ01160
+VQ0224,poochi control epdi,tanglish,latin,,pest_attack,audio/validation/VQ0224.wav,SPK_TBD,clean,poochi control epdi,normal,short,not_recorded,FQ02948
+VQ0225,paruthi keezh ilai ellam manjal,tanglish,latin,cotton,yellow_leaf,audio/train/VQ0225.wav,SPK_TBD,low,paruthi keezh ilai ellam manjal,fast,short,not_recorded,FQ02244
+VQ0226,nilakadalai root rot problem,tanglish,latin,groundnut,root_rot,audio/train/VQ0226.wav,SPK_TBD,medium,nilakadalai root rot problem,slow,short,not_recorded,FQ02110
+VQ0227,kuruvai season na enna,tanglish,latin,,agri_general_info,audio/train/VQ0227.wav,SPK_TBD,high,kuruvai season na enna,rural_accent,short,not_recorded,FQ00907
+VQ0228,paruththi ilai adila vellai ee,tanglish,latin,cotton,whitefly,audio/train/VQ0228.wav,SPK_TBD,clean,paruththi ilai adila vellai ee,normal,short,not_recorded,FQ02243
+VQ0229,chilli pazhaya ilai oram brown,tanglish,latin,chilli,potassium_deficiency,audio/train/VQ0229.wav,SPK_TBD,low,chilli pazhaya ilai oram brown,fast,short,not_recorded,FQ01750
+VQ0230,sugarcane thandu thulaippan,tanglish,latin,sugarcane,stem_borer,audio/train/VQ0230.wav,SPK_TBD,medium,sugarcane thandu thulaippan,slow,short,not_recorded,FQ01591
+VQ0231,thanni kammi ah iruku enna payir podalaam,tanglish,latin,,water_shortage,audio/train/VQ0231.wav,SPK_TBD,high,thanni kammi ah iruku enna payir podalaam,rural_accent,short,not_recorded,FQ01432
+VQ0232,groundnut sedi ver karuppa iruku,tanglish,latin,groundnut,root_rot,audio/train/VQ0232.wav,SPK_TBD,clean,groundnut sedi ver karuppa iruku,normal,short,not_recorded,FQ01882
+VQ0233,chilli ilai surundu pogudhu,tanglish,latin,chilli,leaf_curl,audio/train/VQ0233.wav,SPK_TBD,low,chilli ilai surundu pogudhu,fast,short,not_recorded,FQ01285
+VQ0234,inniku moong rate enna,tanglish,latin,greengram,market_price,audio/validation/VQ0234.wav,SPK_TBD,medium,inniku moong rate enna,slow,short,not_recorded,FQ03039
+VQ0235,groundnut thandu weak ah saayudhu,tanglish,latin,groundnut,potassium_deficiency,audio/train/VQ0235.wav,SPK_TBD,high,groundnut thandu weak ah saayudhu,rural_accent,short,not_recorded,FQ02287
+VQ0236,tamil nadu vivasaya thittam,tanglish,latin,,government_scheme,audio/test/VQ0236.wav,SPK_TBD,clean,tamil nadu vivasaya thittam,normal,short,not_recorded,FQ03313
+VQ0237,vengayam ilai karugal noi,tanglish,latin,onion,leaf_blight,audio/train/VQ0237.wav,SPK_TBD,low,vengayam ilai karugal noi,fast,short,not_recorded,FQ01583
+VQ0238,tomato light green ah iruku valarchi illa,tanglish,latin,tomato,nitrogen_deficiency,audio/train/VQ0238.wav,SPK_TBD,medium,tomato light green ah iruku valarchi illa,slow,short,not_recorded,FQ02078
+VQ0239,whitefly takkali la romba,tanglish,latin,tomato,whitefly,audio/train/VQ0239.wav,SPK_TBD,high,whitefly takkali la romba,rural_accent,short,not_recorded,FQ00179
+VQ0240,chinna vengayam keezh ilai ellam manjal,tanglish,latin,onion,yellow_leaf,audio/train/VQ0240.wav,SPK_TBD,clean,chinna vengayam keezh ilai ellam manjal,normal,short,not_recorded,FQ02249
+VQ0241,neluku entha uram podanum,tanglish,latin,,fertilizer,audio/train/VQ0241.wav,SPK_TBD,low,neluku entha uram podanum,fast,short,not_recorded,FQ01704
+VQ0242,paruththi thanni paaichal schedule,tanglish,latin,cotton,irrigation,audio/train/VQ0242.wav,SPK_TBD,medium,paruththi thanni paaichal schedule,slow,short,not_recorded,FQ01118
+VQ0243,kadalai evlo naal vachukalaam,tanglish,latin,groundnut,post_harvest_storage,audio/validation/VQ0243.wav,SPK_TBD,high,kadalai evlo naal vachukalaam,rural_accent,short,not_recorded,FQ02744
+VQ0244,manjal vidhai nerthi epdi,tanglish,latin,turmeric,seed_treatment,audio/train/VQ0244.wav,SPK_TBD,clean,manjal vidhai nerthi epdi,normal,short,not_recorded,FQ00699
+VQ0245,store panna murungakai la poochi,tanglish,latin,drumstick,post_harvest_storage,audio/validation/VQ0245.wav,SPK_TBD,low,store panna murungakai la poochi,fast,short,not_recorded,FQ02851
+VQ0246,phosphorus pathala thakkali,tanglish,latin,tomato,phosphorus_deficiency,audio/train/VQ0246.wav,SPK_TBD,medium,phosphorus pathala thakkali,slow,short,not_recorded,FQ02109
+VQ0247,vidhaikka munnadi enna pannanum,tanglish,latin,,seed_treatment,audio/train/VQ0247.wav,SPK_TBD,high,vidhaikka munnadi enna pannanum,rural_accent,short,not_recorded,FQ00529
+VQ0248,chinna nilathuku entha power tiller,tanglish,latin,,farm_machinery,audio/train/VQ0248.wav,SPK_TBD,clean,chinna nilathuku entha power tiller,normal,short,not_recorded,FQ00522
+VQ0249,takkali ilai adila vellai ee,tanglish,latin,tomato,whitefly,audio/train/VQ0249.wav,SPK_TBD,low,takkali ilai adila vellai ee,fast,short,not_recorded,FQ01145
+VQ0250,iyarkai vivasayam epdi start panradhu,tanglish,latin,,organic_farming,audio/train/VQ0250.wav,SPK_TBD,medium,iyarkai vivasayam epdi start panradhu,slow,short,not_recorded,FQ00301
+VQ0251,whitefly moong la romba,tanglish,latin,greengram,whitefly,audio/train/VQ0251.wav,SPK_TBD,high,whitefly moong la romba,rural_accent,short,not_recorded,FQ00018
+VQ0252,aruvadai ku munnadiye kaai azhugudhu,tanglish,latin,,fruit_rot,audio/train/VQ0252.wav,SPK_TBD,clean,aruvadai ku munnadiye kaai azhugudhu,normal,short,not_recorded,FQ02302
+VQ0253,uram na enna,tanglish,latin,,agri_general_info,audio/train/VQ0253.wav,SPK_TBD,low,uram na enna,fast,short,not_recorded,FQ02188
+VQ0254,moong ku drip nalladha,tanglish,latin,greengram,drip_irrigation,audio/train/VQ0254.wav,SPK_TBD,medium,moong ku drip nalladha,slow,short,not_recorded,FQ00749
+VQ0255,brinjal ku thanni evlo venum,tanglish,latin,brinjal,irrigation,audio/validation/VQ0255.wav,SPK_TBD,high,brinjal ku thanni evlo venum,rural_accent,short,not_recorded,FQ02583
+VQ0256,murungai ilai manjala aguthu enna reason,tanglish,latin,drumstick,yellow_leaf,audio/test/VQ0256.wav,SPK_TBD,clean,murungai ilai manjala aguthu enna reason,normal,short,not_recorded,FQ03081
+VQ0257,thenna aruppu eppo,tanglish,latin,coconut,harvesting,audio/train/VQ0257.wav,SPK_TBD,low,thenna aruppu eppo,fast,short,not_recorded,FQ00052
+VQ0258,chilli kaai la ottai puzhu iruku,tanglish,latin,chilli,fruit_borer,audio/validation/VQ0258.wav,SPK_TBD,medium,chilli kaai la ottai puzhu iruku,slow,short,not_recorded,FQ02857
+VQ0259,vazhai aphid problem,tanglish,latin,banana,aphids,audio/train/VQ0259.wav,SPK_TBD,high,vazhai aphid problem,rural_accent,short,not_recorded,FQ01348
+VQ0260,chinna vengayam payir insurance epdi,tanglish,latin,onion,crop_insurance,audio/validation/VQ0260.wav,SPK_TBD,clean,chinna vengayam payir insurance epdi,normal,short,not_recorded,FQ02705
+VQ0261,mann parisodhanai epdi,tanglish,latin,,soil_testing,audio/train/VQ0261.wav,SPK_TBD,low,mann parisodhanai epdi,fast,short,not_recorded,FQ01797
+VQ0262,paruthi kaai udhirudhu puzhu naala,tanglish,latin,,bollworm,audio/train/VQ0262.wav,SPK_TBD,medium,paruthi kaai udhirudhu puzhu naala,slow,short,not_recorded,FQ01598
+VQ0263,ilai photo epdi anupradhu,tanglish,latin,,image_upload_help,audio/test/VQ0263.wav,SPK_TBD,high,ilai photo epdi anupradhu,rural_accent,short,not_recorded,FQ03452
+VQ0264,pachai payaru store panradhu epdi,tanglish,latin,greengram,post_harvest_storage,audio/train/VQ0264.wav,SPK_TBD,clean,pachai payaru store panradhu epdi,normal,short,not_recorded,FQ00871
+VQ0265,weather eppadi iruku,tanglish,latin,,weather,audio/train/VQ0265.wav,SPK_TBD,low,weather eppadi iruku,fast,short,not_recorded,FQ01754
+VQ0266,cotton vidhai nerthi epdi,tanglish,latin,cotton,seed_treatment,audio/train/VQ0266.wav,SPK_TBD,medium,cotton vidhai nerthi epdi,slow,short,not_recorded,FQ00550
+VQ0267,mani sathu kuraivu,tanglish,latin,,phosphorus_deficiency,audio/train/VQ0267.wav,SPK_TBD,high,mani sathu kuraivu,rural_accent,short,not_recorded,FQ00826
+VQ0268,murungai ku urea eppo podanum,tanglish,latin,drumstick,fertilizer_timing,audio/train/VQ0268.wav,SPK_TBD,clean,murungai ku urea eppo podanum,normal,short,not_recorded,FQ00788
+VQ0269,karumbu ku thanni evlo venum,tanglish,latin,sugarcane,irrigation,audio/validation/VQ0269.wav,SPK_TBD,low,karumbu ku thanni evlo venum,fast,short,not_recorded,FQ02641
+VQ0270,ilai ellam surungi chinnadha aagudhu,tanglish,latin,,leaf_curl,audio/train/VQ0270.wav,SPK_TBD,medium,ilai ellam surungi chinnadha aagudhu,slow,short,not_recorded,FQ00376
+VQ0271,tomato ku noi pudichiruchu sir,tanglish,latin,tomato,crop_disease,audio/train/VQ0271.wav,SPK_TBD,high,tomato ku noi pudichiruchu sir,rural_accent,short,not_recorded,FQ01526
+VQ0272,turmeric sedi ver karuppa iruku,tanglish,latin,turmeric,root_rot,audio/train/VQ0272.wav,SPK_TBD,clean,turmeric sedi ver karuppa iruku,normal,short,not_recorded,FQ01068
+VQ0273,mazhai illama coconut kaayudhu,tanglish,latin,coconut,drought,audio/train/VQ0273.wav,SPK_TBD,low,mazhai illama coconut kaayudhu,fast,short,not_recorded,FQ02235
+VQ0274,paruthi la poochi romba iruku enna panrathu,tanglish,latin,cotton,pest_attack,audio/validation/VQ0274.wav,SPK_TBD,medium,paruthi la poochi romba iruku enna panrathu,slow,short,not_recorded,FQ02699
+VQ0275,nelu eppo aruvadai,tanglish,latin,paddy,harvesting,audio/train/VQ0275.wav,SPK_TBD,high,nelu eppo aruvadai,rural_accent,short,not_recorded,FQ02383
+VQ0276,nunnoottam kuraivu,tanglish,latin,,micronutrient_deficiency,audio/validation/VQ0276.wav,SPK_TBD,clean,nunnoottam kuraivu,normal,short,not_recorded,FQ03017
+VQ0277,coconut ku urea venuma,tanglish,latin,coconut,nitrogen_deficiency,audio/train/VQ0277.wav,SPK_TBD,low,coconut ku urea venuma,fast,short,not_recorded,FQ00790
+VQ0278,manjal vidhai enga vaanganum,tanglish,latin,turmeric,seed_selection,audio/train/VQ0278.wav,SPK_TBD,medium,manjal vidhai enga vaanganum,slow,short,not_recorded,FQ00019
+VQ0279,chilli seed treatment,tanglish,latin,chilli,seed_treatment,audio/train/VQ0279.wav,SPK_TBD,high,chilli seed treatment,rural_accent,short,not_recorded,FQ00029
+VQ0280,cotton eppo vidhaikanum,tanglish,latin,cotton,sowing_time,audio/train/VQ0280.wav,SPK_TBD,clean,cotton eppo vidhaikanum,normal,short,not_recorded,FQ00158
+VQ0281,banana store panradhu epdi,tanglish,latin,banana,post_harvest_storage,audio/train/VQ0281.wav,SPK_TBD,low,banana store panradhu epdi,fast,short,not_recorded,FQ01108
+VQ0282,varatchi la thennai epdi kaapathuradhu,tanglish,latin,coconut,drought,audio/train/VQ0282.wav,SPK_TBD,medium,varatchi la thennai epdi kaapathuradhu,slow,short,not_recorded,FQ02326
+VQ0283,mazhai illama katharikai kaayudhu,tanglish,latin,brinjal,drought,audio/train/VQ0283.wav,SPK_TBD,high,mazhai illama katharikai kaayudhu,rural_accent,short,not_recorded,FQ02218
+VQ0284,ilai la karuppu pulli varuthu,tanglish,latin,,leaf_spot,audio/train/VQ0284.wav,SPK_TBD,clean,ilai la karuppu pulli varuthu,normal,short,not_recorded,FQ01852
+VQ0285,thakkali kaai puzhu,tanglish,latin,tomato,fruit_borer,audio/train/VQ0285.wav,SPK_TBD,low,thakkali kaai puzhu,fast,short,not_recorded,FQ00720
+VQ0286,manjal leaf la spots varudhu,tanglish,latin,turmeric,leaf_spot,audio/test/VQ0286.wav,SPK_TBD,medium,manjal leaf la spots varudhu,slow,short,not_recorded,FQ03112
+VQ0287,tractor vaadagai ku enga,tanglish,latin,,farm_machinery,audio/train/VQ0287.wav,SPK_TBD,high,tractor vaadagai ku enga,rural_accent,short,not_recorded,FQ01091
+VQ0288,nellu ku thanni evlo venum,tanglish,latin,paddy,irrigation,audio/validation/VQ0288.wav,SPK_TBD,clean,nellu ku thanni evlo venum,normal,short,not_recorded,FQ02786
+VQ0289,takkali pazhathula karuppu kuzhi,tanglish,latin,tomato,fruit_rot,audio/train/VQ0289.wav,SPK_TBD,low,takkali pazhathula karuppu kuzhi,fast,short,not_recorded,FQ02005
+VQ0290,cotton ku thanni save panna vazhi,tanglish,latin,cotton,water_shortage,audio/train/VQ0290.wav,SPK_TBD,medium,cotton ku thanni save panna vazhi,slow,short,not_recorded,FQ01458
+VQ0291,nalla makkacholam vidhai enga kidaikum,tanglish,latin,maize,seed_selection,audio/train/VQ0291.wav,SPK_TBD,high,nalla makkacholam vidhai enga kidaikum,rural_accent,short,not_recorded,FQ00727
+VQ0292,murungai ready ah nu epdi therinjukradhu,tanglish,latin,drumstick,harvesting,audio/train/VQ0292.wav,SPK_TBD,clean,murungai ready ah nu epdi therinjukradhu,normal,short,not_recorded,FQ02538
+VQ0293,romba nandri,tanglish,latin,,thanks,audio/train/VQ0293.wav,SPK_TBD,low,romba nandri,fast,short,not_recorded,FQ01087
+VQ0294,cotton ilai surul noi,tanglish,latin,cotton,leaf_curl,audio/train/VQ0294.wav,SPK_TBD,medium,cotton ilai surul noi,slow,short,not_recorded,FQ01574
+VQ0295,kathirikai sedi ya poochi thinnudhu,tanglish,latin,brinjal,pest_attack,audio/train/VQ0295.wav,SPK_TBD,high,kathirikai sedi ya poochi thinnudhu,rural_accent,short,not_recorded,FQ00922
+VQ0296,maatu saanam uram uluntu ku,tanglish,latin,blackgram,organic_fertilizer,audio/test/VQ0296.wav,SPK_TBD,clean,maatu saanam uram uluntu ku,normal,short,not_recorded,FQ03520
+VQ0297,vengayam ilai nuni la irundhu kaayudhu,tanglish,latin,onion,leaf_blight,audio/test/VQ0297.wav,SPK_TBD,low,vengayam ilai nuni la irundhu kaayudhu,fast,short,not_recorded,FQ03430
+VQ0298,paasi payaru ilai madangudhu enna reason,tanglish,latin,greengram,leaf_curl,audio/test/VQ0298.wav,SPK_TBD,medium,paasi payaru ilai madangudhu enna reason,slow,short,not_recorded,FQ03243
+VQ0299,paruththi thrips problem,tanglish,latin,cotton,thrips_mites,audio/train/VQ0299.wav,SPK_TBD,high,paruththi thrips problem,rural_accent,short,not_recorded,FQ01075
+VQ0300,cotton ilai la silver kodu,tanglish,latin,cotton,thrips_mites,audio/train/VQ0300.wav,SPK_TBD,clean,cotton ilai la silver kodu,normal,short,not_recorded,FQ01195
+VQ0301,"I am a farmer from Thanjavur, I have two acres, government help for small farmers",english,latin,,government_scheme,audio/train/VQ0301.wav,SPK_TBD,low,i am a farmer from thanjavur i have two acres government help for small farmers,fast,long,not_recorded,FQ00849
+VQ0302,"I am a farmer from Thanjavur, I have two acres, how to protect groundnut from heat",english,latin,groundnut,heat_stress,audio/train/VQ0302.wav,SPK_TBD,medium,i am a farmer from thanjavur i have two acres how to protect groundnut from heat,slow,long,not_recorded,FQ01680
+VQ0303,"I am a farmer from Thanjavur, I have two acres, older leaves scorched at margins in groundnut",english,latin,groundnut,potassium_deficiency,audio/test/VQ0303.wav,SPK_TBD,high,i am a farmer from thanjavur i have two acres older leaves scorched at margins in groundnut,rural_accent,long,not_recorded,FQ03095
+VQ0304,"I am a farmer from Thanjavur, I have two acres, rent a tractor near me",english,latin,,farm_machinery,audio/train/VQ0304.wav,SPK_TBD,clean,i am a farmer from thanjavur i have two acres rent a tractor near me,normal,long,not_recorded,FQ00768
+VQ0305,"I am a farmer from Thanjavur, I have two acres, blight in maize field",english,latin,maize,leaf_blight,audio/test/VQ0305.wav,SPK_TBD,low,i am a farmer from thanjavur i have two acres blight in maize field,fast,long,not_recorded,FQ03189
+VQ0306,"I am a farmer from Thanjavur, I have two acres, white flies under tomato leaves",english,latin,tomato,whitefly,audio/validation/VQ0306.wav,SPK_TBD,medium,i am a farmer from thanjavur i have two acres white flies under tomato leaves,slow,long,not_recorded,FQ02721
+VQ0307,"I am a farmer from Thanjavur, I have two acres, older leaves scorched at margins in rice",english,latin,paddy,potassium_deficiency,audio/test/VQ0307.wav,SPK_TBD,high,i am a farmer from thanjavur i have two acres older leaves scorched at margins in rice,rural_accent,long,not_recorded,FQ03423
+VQ0308,"I am a farmer from Thanjavur, I have two acres, organic pest control for turmeric",english,latin,turmeric,organic_farming,audio/test/VQ0308.wav,SPK_TBD,clean,i am a farmer from thanjavur i have two acres organic pest control for turmeric,normal,long,not_recorded,FQ03331
+VQ0309,"I am a farmer from Thanjavur, I have two acres, when to apply urea for chilli",english,latin,chilli,fertilizer_timing,audio/train/VQ0309.wav,SPK_TBD,low,i am a farmer from thanjavur i have two acres when to apply urea for chilli,fast,long,not_recorded,FQ00062
+VQ0310,"I am a farmer from Thanjavur, I have two acres, why is chilli price low",english,latin,chilli,market_price,audio/train/VQ0310.wav,SPK_TBD,medium,i am a farmer from thanjavur i have two acres why is chilli price low,slow,long,not_recorded,FQ02225
+VQ0311,"I am a farmer from Thanjavur, I have two acres, fruit borer in black gram",english,latin,blackgram,fruit_borer,audio/train/VQ0311.wav,SPK_TBD,high,i am a farmer from thanjavur i have two acres fruit borer in black gram,rural_accent,long,not_recorded,FQ01629
+VQ0312,"I am a farmer from Thanjavur, I have two acres, why is banana price low",english,latin,banana,market_price,audio/train/VQ0312.wav,SPK_TBD,clean,i am a farmer from thanjavur i have two acres why is banana price low,normal,long,not_recorded,FQ01744
+VQ0313,"I am a farmer from Thanjavur, I have two acres, turmeric drooping even after watering",english,latin,turmeric,wilting,audio/train/VQ0313.wav,SPK_TBD,low,i am a farmer from thanjavur i have two acres turmeric drooping even after watering,fast,long,not_recorded,FQ00909
+VQ0314,"I am a farmer from Thanjavur, I have two acres, why is my coconut leaf turning yellow",english,latin,coconut,yellow_leaf,audio/train/VQ0314.wav,SPK_TBD,medium,i am a farmer from thanjavur i have two acres why is my coconut leaf turning yellow,slow,long,not_recorded,FQ01958
+VQ0315,"I am a farmer from Thanjavur, I have two acres, pest attack in my moringa",english,latin,drumstick,pest_attack,audio/test/VQ0315.wav,SPK_TBD,high,i am a farmer from thanjavur i have two acres pest attack in my moringa,rural_accent,long,not_recorded,FQ03289
+VQ0316,"I am a farmer from Thanjavur, I have two acres, paddy leaves drying from the tip",english,latin,paddy,leaf_blight,audio/train/VQ0316.wav,SPK_TBD,clean,i am a farmer from thanjavur i have two acres paddy leaves drying from the tip,normal,long,not_recorded,FQ00672
+VQ0317,"I am a farmer from Thanjavur, I have two acres, disease spreading fast in my chilli field",english,latin,chilli,crop_disease,audio/train/VQ0317.wav,SPK_TBD,low,i am a farmer from thanjavur i have two acres disease spreading fast in my chilli field,fast,long,not_recorded,FQ00853
+VQ0318,"I am a farmer from Thanjavur, I have two acres, why is small onion price low",english,latin,onion,market_price,audio/train/VQ0318.wav,SPK_TBD,medium,i am a farmer from thanjavur i have two acres why is small onion price low,slow,long,not_recorded,FQ00917
+VQ0319,"I am a farmer from Thanjavur, I have two acres, white flies under coconut leaves",english,latin,coconut,whitefly,audio/validation/VQ0319.wav,SPK_TBD,high,i am a farmer from thanjavur i have two acres white flies under coconut leaves,rural_accent,long,not_recorded,FQ02758
+VQ0320,"I am a farmer from Thanjavur, I have two acres, leaf curl problem in tomato",english,latin,tomato,leaf_curl,audio/train/VQ0320.wav,SPK_TBD,clean,i am a farmer from thanjavur i have two acres leaf curl problem in tomato,normal,long,not_recorded,FQ01389
+VQ0321,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, தக்காளி காயில ஓட்டை புழு இருக்கு",tamil,tamil,tomato,fruit_borer,audio/test/VQ0321.wav,SPK_TBD,low,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு தக்காளி காயில ஓட்டை புழு இருக்கு,fast,long,not_recorded,FQ03220
+VQ0322,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, பாசிப்பயறு பயிருக்கு தொழுவுரம் எப்படி போடணும்",tamil,tamil,greengram,organic_fertilizer,audio/train/VQ0322.wav,SPK_TBD,medium,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு பாசிப்பயறு பயிருக்கு தொழுவுரம் எப்படி போடணும்,slow,long,not_recorded,FQ01298
+VQ0323,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, நிலக்கடலை பயிருக்கு யூரியா எப்போ போடணும்",tamil,tamil,groundnut,fertilizer_timing,audio/validation/VQ0323.wav,SPK_TBD,high,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு நிலக்கடலை பயிருக்கு யூரியா எப்போ போடணும்,rural_accent,long,not_recorded,FQ02663
+VQ0324,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, உதவிக்கு நன்றி",tamil,tamil,,thanks,audio/train/VQ0324.wav,SPK_TBD,clean,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு உதவிக்கு நன்றி,normal,long,not_recorded,FQ01240
+VQ0325,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, தக்காளி தண்டு பலவீனமா சாயுது",tamil,tamil,tomato,potassium_deficiency,audio/train/VQ0325.wav,SPK_TBD,low,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு தக்காளி தண்டு பலவீனமா சாயுது,fast,long,not_recorded,FQ01048
+VQ0326,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, எந்த முருங்கை ரகம் நல்லது",tamil,tamil,drumstick,seed_selection,audio/train/VQ0326.wav,SPK_TBD,medium,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு எந்த முருங்கை ரகம் நல்லது,slow,long,not_recorded,FQ02444
+VQ0327,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, வாழை எவ்வளவு நாள் சேமிக்கலாம்",tamil,tamil,banana,post_harvest_storage,audio/train/VQ0327.wav,SPK_TBD,high,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு வாழை எவ்வளவு நாள் சேமிக்கலாம்,rural_accent,long,not_recorded,FQ00283
+VQ0328,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, இன்னைக்கு முருங்கை விலை என்ன",tamil,tamil,drumstick,market_price,audio/train/VQ0328.wav,SPK_TBD,clean,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு இன்னைக்கு முருங்கை விலை என்ன,normal,long,not_recorded,FQ01360
+VQ0329,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, மஞ்சள் நல்ல விலைக்கு எங்க விக்கலாம்",tamil,tamil,turmeric,market_price,audio/train/VQ0329.wav,SPK_TBD,low,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு மஞ்சள் நல்ல விலைக்கு எங்க விக்கலாம்,fast,long,not_recorded,FQ01800
+VQ0330,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, தக்காளி பழ அழுகல் நோய்",tamil,tamil,tomato,fruit_rot,audio/train/VQ0330.wav,SPK_TBD,medium,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு தக்காளி பழ அழுகல் நோய்,slow,long,not_recorded,FQ00059
+VQ0331,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, அதிக வெயில்ல நெல் பூ உதிருது",tamil,tamil,paddy,heat_stress,audio/validation/VQ0331.wav,SPK_TBD,high,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு அதிக வெயில்ல நெல் பூ உதிருது,rural_accent,long,not_recorded,FQ02620
+VQ0332,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, பாசிப்பயறு வேர் வளர்ச்சி இல்ல",tamil,tamil,greengram,phosphorus_deficiency,audio/train/VQ0332.wav,SPK_TBD,clean,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு பாசிப்பயறு வேர் வளர்ச்சி இல்ல,normal,long,not_recorded,FQ00867
+VQ0333,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, மக்காச்சோளம் இலைக்கருகல் நோய்",tamil,tamil,maize,leaf_blight,audio/validation/VQ0333.wav,SPK_TBD,low,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு மக்காச்சோளம் இலைக்கருகல் நோய்,fast,long,not_recorded,FQ02983
+VQ0334,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, இயற்கை விவசாய சான்றிதழ் எப்படி வாங்குறது",tamil,tamil,,organic_farming,audio/train/VQ0334.wav,SPK_TBD,medium,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு இயற்கை விவசாய சான்றிதழ் எப்படி வாங்குறது,slow,long,not_recorded,FQ01167
+VQ0335,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, மிளகாய் இலை சுரண்டுன மாதிரி இருக்கு",tamil,tamil,chilli,thrips_mites,audio/train/VQ0335.wav,SPK_TBD,high,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு மிளகாய் இலை சுரண்டுன மாதிரி இருக்கு,rural_accent,long,not_recorded,FQ00246
+VQ0336,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, தழைச்சத்து குறைபாடு அறிகுறி",tamil,tamil,,nitrogen_deficiency,audio/test/VQ0336.wav,SPK_TBD,clean,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு தழைச்சத்து குறைபாடு அறிகுறி,normal,long,not_recorded,FQ03188
+VQ0337,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, எந்த மாசத்துல சின்ன வெங்காயம் போடலாம்",tamil,tamil,onion,sowing_time,audio/validation/VQ0337.wav,SPK_TBD,low,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு எந்த மாசத்துல சின்ன வெங்காயம் போடலாம்,fast,long,not_recorded,FQ02980
+VQ0338,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, எந்த மாசத்துல முருங்கை போடலாம்",tamil,tamil,drumstick,sowing_time,audio/validation/VQ0338.wav,SPK_TBD,medium,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு எந்த மாசத்துல முருங்கை போடலாம்,slow,long,not_recorded,FQ02667
+VQ0339,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, தக்காளி காய் செடியிலேயே அழுகுது",tamil,tamil,tomato,fruit_rot,audio/train/VQ0339.wav,SPK_TBD,high,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு தக்காளி காய் செடியிலேயே அழுகுது,rural_accent,long,not_recorded,FQ01764
+VQ0340,"நான் தஞ்சாவூர் விவசாயி, எனக்கு ரெண்டு ஏக்கர் இருக்கு, வாழை பழ அழுகல் நோய்",tamil,tamil,banana,fruit_rot,audio/train/VQ0340.wav,SPK_TBD,clean,நான் தஞ்சாவூர் விவசாயி எனக்கு ரெண்டு ஏக்கர் இருக்கு வாழை பழ அழுகல் நோய்,normal,long,not_recorded,FQ02439
+VQ0341,"naan thanjavur la irundhu pesuren, rendu acre iruku, kinathula thanni pathala",tanglish,latin,,water_shortage,audio/train/VQ0341.wav,SPK_TBD,low,naan thanjavur la irundhu pesuren rendu acre iruku kinathula thanni pathala,fast,long,not_recorded,FQ01361
+VQ0342,"naan thanjavur la irundhu pesuren, rendu acre iruku, mann mela vellai padivu",tanglish,latin,,soil_ph,audio/train/VQ0342.wav,SPK_TBD,medium,naan thanjavur la irundhu pesuren rendu acre iruku mann mela vellai padivu,slow,long,not_recorded,FQ01038
+VQ0343,"naan thanjavur la irundhu pesuren, rendu acre iruku, mazhai ku apram ulundhu saanjiruchu",tanglish,latin,blackgram,rain_damage,audio/test/VQ0343.wav,SPK_TBD,high,naan thanjavur la irundhu pesuren rendu acre iruku mazhai ku apram ulundhu saanjiruchu,rural_accent,long,not_recorded,FQ03282
+VQ0344,"naan thanjavur la irundhu pesuren, rendu acre iruku, coconut vellai ee thollai",tanglish,latin,coconut,whitefly,audio/train/VQ0344.wav,SPK_TBD,clean,naan thanjavur la irundhu pesuren rendu acre iruku coconut vellai ee thollai,normal,long,not_recorded,FQ00469
+VQ0345,"naan thanjavur la irundhu pesuren, rendu acre iruku, nalla manjal vidhai enga kidaikum",tanglish,latin,turmeric,seed_selection,audio/train/VQ0345.wav,SPK_TBD,low,naan thanjavur la irundhu pesuren rendu acre iruku nalla manjal vidhai enga kidaikum,fast,long,not_recorded,FQ02506
+VQ0346,"naan thanjavur la irundhu pesuren, rendu acre iruku, moong sedi thideernu vaadudhu",tanglish,latin,greengram,wilting,audio/train/VQ0346.wav,SPK_TBD,medium,naan thanjavur la irundhu pesuren rendu acre iruku moong sedi thideernu vaadudhu,slow,long,not_recorded,FQ01624
+VQ0347,"naan thanjavur la irundhu pesuren, rendu acre iruku, acre ku evlo uram",tanglish,latin,,fertilizer,audio/train/VQ0347.wav,SPK_TBD,high,naan thanjavur la irundhu pesuren rendu acre iruku acre ku evlo uram,rural_accent,long,not_recorded,FQ01160
+VQ0348,"naan thanjavur la irundhu pesuren, rendu acre iruku, pm kisan apply epdi",tanglish,latin,,pm_kisan,audio/train/VQ0348.wav,SPK_TBD,clean,naan thanjavur la irundhu pesuren rendu acre iruku pm kisan apply epdi,normal,long,not_recorded,FQ02304
+VQ0349,"naan thanjavur la irundhu pesuren, rendu acre iruku, en payir photo anupalaama",tanglish,latin,,image_upload_help,audio/train/VQ0349.wav,SPK_TBD,low,naan thanjavur la irundhu pesuren rendu acre iruku en payir photo anupalaama,fast,long,not_recorded,FQ00785
+VQ0350,"naan thanjavur la irundhu pesuren, rendu acre iruku, tomato la leaf curl romba iruku",tanglish,latin,tomato,leaf_curl,audio/train/VQ0350.wav,SPK_TBD,medium,naan thanjavur la irundhu pesuren rendu acre iruku tomato la leaf curl romba iruku,slow,long,not_recorded,FQ00383
+VQ0351,"naan thanjavur la irundhu pesuren, rendu acre iruku, mazhai illama katharikai kaayudhu",tanglish,latin,brinjal,drought,audio/train/VQ0351.wav,SPK_TBD,high,naan thanjavur la irundhu pesuren rendu acre iruku mazhai illama katharikai kaayudhu,rural_accent,long,not_recorded,FQ02218
+VQ0352,"naan thanjavur la irundhu pesuren, rendu acre iruku, innaiku marundhu adikalaama mazhai varuma",tanglish,latin,,weather,audio/test/VQ0352.wav,SPK_TBD,clean,naan thanjavur la irundhu pesuren rendu acre iruku innaiku marundhu adikalaama mazhai varuma,normal,long,not_recorded,FQ03252
+VQ0353,"naan thanjavur la irundhu pesuren, rendu acre iruku, mannu test panna evlo selavu",tanglish,latin,,soil_testing,audio/train/VQ0353.wav,SPK_TBD,low,naan thanjavur la irundhu pesuren rendu acre iruku mannu test panna evlo selavu,fast,long,not_recorded,FQ01464
+VQ0354,"naan thanjavur la irundhu pesuren, rendu acre iruku, sugarcane la poochi romba iruku enna panrathu",tanglish,latin,sugarcane,pest_attack,audio/validation/VQ0354.wav,SPK_TBD,medium,naan thanjavur la irundhu pesuren rendu acre iruku sugarcane la poochi romba iruku enna panrathu,slow,long,not_recorded,FQ02726
+VQ0355,"naan thanjavur la irundhu pesuren, rendu acre iruku, vaazhai ku drip nalladha",tanglish,latin,banana,drip_irrigation,audio/train/VQ0355.wav,SPK_TBD,high,naan thanjavur la irundhu pesuren rendu acre iruku vaazhai ku drip nalladha,rural_accent,long,not_recorded,FQ01312
+VQ0356,"naan thanjavur la irundhu pesuren, rendu acre iruku, vazhai ku poochi attack",tanglish,latin,banana,pest_attack,audio/train/VQ0356.wav,SPK_TBD,clean,naan thanjavur la irundhu pesuren rendu acre iruku vazhai ku poochi attack,normal,long,not_recorded,FQ00314
+VQ0357,"naan thanjavur la irundhu pesuren, rendu acre iruku, paasi payaru eppo vidhaikanum",tanglish,latin,greengram,sowing_time,audio/train/VQ0357.wav,SPK_TBD,low,naan thanjavur la irundhu pesuren rendu acre iruku paasi payaru eppo vidhaikanum,fast,long,not_recorded,FQ01970
+VQ0358,"naan thanjavur la irundhu pesuren, rendu acre iruku, thennai leaf la spots varudhu",tanglish,latin,coconut,leaf_spot,audio/test/VQ0358.wav,SPK_TBD,medium,naan thanjavur la irundhu pesuren rendu acre iruku thennai leaf la spots varudhu,slow,long,not_recorded,FQ03195
+VQ0359,"naan thanjavur la irundhu pesuren, rendu acre iruku, cotton ku thanni save panna vazhi",tanglish,latin,cotton,water_shortage,audio/train/VQ0359.wav,SPK_TBD,high,naan thanjavur la irundhu pesuren rendu acre iruku cotton ku thanni save panna vazhi,rural_accent,long,not_recorded,FQ01458
+VQ0360,"naan thanjavur la irundhu pesuren, rendu acre iruku, chemical illama katharikai podalaama",tanglish,latin,brinjal,organic_farming,audio/train/VQ0360.wav,SPK_TBD,clean,naan thanjavur la irundhu pesuren rendu acre iruku chemical illama katharikai podalaama,normal,long,not_recorded,FQ01571

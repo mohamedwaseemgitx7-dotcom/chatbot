@@ -1,0 +1,1 @@
+sentence-transformers/all-MiniLM-L6-v2 (main) — Apache-2.0 — onnx/model_quint8_avx2.onnx

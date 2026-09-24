@@ -1,0 +1,3 @@
+"""
+FarmerAssist Backend Application Package
+"""

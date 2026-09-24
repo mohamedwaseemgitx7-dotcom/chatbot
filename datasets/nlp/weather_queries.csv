@@ -1,0 +1,276 @@
+﻿id,text,language,intent,crop,advisory_response_id,split
+FQ00003,வரட்சியில மக்காச்சோளம் எப்படி காப்பாத்துறது,tamil,drought,maize,TPL_weather,train
+FQ00041,பெருமளையில தென்னை வயல் மூழ்கிடுச்சு,tamil,rain_damage,coconut,TPL_weather,train
+FQ00042,high temperature affecting brinjal,english,heat_stress,brinjal,TPL_weather,train
+FQ00045,periya mazhai la chinna vengayam vayal moozhgiruchu,tanglish,rain_damage,onion,TPL_weather,train
+FQ00068,விவசாய வானிலை அறிக்கை solution சொல்லுங்க,mixed,weather,,TPL_weather,train
+FQ00075,veyil la payira epdi kaapathuradhu,tanglish,heat_stress,,TPL_weather,train
+FQ00089,வறட்சியில சின்ன வெங்காயம்,tamil,drought,onion,TPL_weather,train
+FQ00111,is it safe to spray today,english,weather,,TPL_weather,train
+FQ00127,மழைக்கு அப்புறம் கரும்பு சாஞசிடுச்சு,tamil,rain_damage,sugarcane,TPL_weather,train
+FQ00141,வறட்சியை தாங்குற பயிர் எது,tamil,drought,,TPL_weather,train
+FQ00152,மிளகாய் இலை கருகுது,tamil,heat_stress,chilli,TPL_weather,train
+FQ00169,மழையாள கத்தரி சேதம்,tamil,rain_damage,brinjal,TPL_weather,train
+FQ00178,weather update farming,english,weather,,TPL_weather,train
+FQ00185,which crops tolerate drought what to do sir,english,drought,,TPL_weather,train
+FQ00196,மழையால கத்தரி சேதம்,tamil,rain_damage,brinjal,TPL_weather,train
+FQ00205,சார் வெப்பத்தால கத்தரி பாதிப்பு,tamil,heat_stress,brinjal,TPL_weather,train
+FQ00210,periya malai la chinna vengayam vayalmoolgiruchu,tanglish,rain_damage,onion,TPL_weather,train
+FQ00223,how protect rice in a dry spell,english,drought,paddy,TPL_weather,train
+FQ00231,varatchi katharikai epdi kaapathuradhu,tanglish,drought,brinjal,TPL_weather,train
+FQ00268,periya mazhai la cotton vayal moozhgiruchu,tanglish,rain_damage,cotton,TPL_weather,train
+FQ00277,வெப்பத்தால black gram பாதிப்பு,mixed,heat_stress,blackgram,TPL_weather,train
+FQ00296,water stagnating in cotton vayal after rain,mixed,rain_damage,cotton,TPL_weather,train
+FQ00297,மழை இல்லாம நெல் காயுது,tamil,drought,paddy,TPL_weather,train
+FQ00300,பெருமழையில மஞ்சள் வயல் மூழ்கிடுச்சு,tamil,rain_damage,turmeric,TPL_weather,train
+FQ00320,heat naala ulundhu affect,tanglish,heat_stress,blackgram,TPL_weather,train
+FQ00322,green gram,english,heat_stress,greengram,TPL_weather,train
+FQ00329,is it safe to spray tday,english,weather,,TPL_weather,train
+FQ00352,பெருமழையிள மஞ்சள் வயல் மூழ்கிடுச்சு,tamil,rain_damage,turmeric,TPL_weather,train
+FQ00379,தென்னை வயல் மூழ்கிடுச்சு,tamil,rain_damage,coconut,TPL_weather,train
+FQ00401,வெபபத்தால கத்தரி பாதிப்பு,tamil,heat_stress,brinjal,TPL_weather,train
+FQ00403,கோடையில மிளகாய் இலை கருகுது,tamil,heat_stress,chilli,TPL_weather,train
+FQ00405,heat naala kathiri affect,tanglish,heat_stress,brinjal,TPL_weather,train
+FQ00408,how to protect moringa from heat,english,heat_stress,drumstick,TPL_weather,train
+FQ00414,rain damaged my turmeric what to do now,english,rain_damage,turmeric,TPL_weather,train
+FQ00433,மழை இல்லாம onion காயுது,mixed,drought,onion,TPL_weather,train
+FQ00447,veyyil la irundhu payira epdi kaapathuradhu,tanglish,heat_stress,,TPL_weather,train
+FQ00449,மழைக்கு அப்புறம் மக்காச்சோளம்,tamil,rain_damage,maize,TPL_weather,train
+FQ00459,சார் மழைக்கு அப்புறம் மக்காச்சோளம் சாஞ்சிடுச்சு,tamil,rain_damage,maize,TPL_weather,train
+FQ00477,drought brinjal,english,drought,brinjal,TPL_weather,train
+FQ00527,varatchithaangura payir edu,tanglish,drought,,TPL_weather,train
+FQ00531,varatchi la tennai epdi kaapathuradhu,tanglish,drought,coconut,TPL_weather,train
+FQ00585,high temperature black gram,english,heat_stress,blackgram,TPL_weather,train
+FQ00587,பெருமழையில நெல் வயல மூழ்கிடுச்சு,tamil,rain_damage,paddy,TPL_weather,train
+FQ00589,வறட்சியில சின்ன வெங்காயம் எப்படி காப்பாத்துறது,tamil,drought,onion,TPL_weather,train
+FQ00622,high temperature affecting brinjal help,english,heat_stress,brinjal,TPL_weather,train
+FQ00639,மழையால brinjal சேதம்,mixed,rain_damage,brinjal,TPL_weather,train
+FQ00663,too much heat cotton flowers dropping help,english,heat_stress,cotton,TPL_weather,train
+FQ00676,anna mazhai naala thakkali damage,tanglish,rain_damage,tomato,TPL_weather,train
+FQ00709,rain damaged my tomato what to do now,english,rain_damage,tomato,TPL_weather,train
+FQ00729,how to prottect tomato in a dry spell,english,drought,tomato,TPL_weather,train
+FQ00732,விவசாய வானிலை அறிககை,tamil,weather,,TPL_weather,train
+FQ00745,heat naalakarimbu affect,tanglish,heat_stress,sugarcane,TPL_weather,train
+FQ00747,water stagnating in onion fiield after rain,english,rain_damage,onion,TPL_weather,train
+FQ00750,கோடையில முருஙகை இலை கருகுது,tamil,heat_stress,drumstick,TPL_weather,train
+FQ00761,நாளைக்கு மழை இருக்குமா,tamil,weather,,TPL_weather,train
+FQ00764,கோடையில drumstick இலை கருகுது,mixed,heat_stress,drumstick,TPL_weather,train
+FQ00777,இன்னைக்கு மருன்து தெளிக்கலாமா மழை வருமா,tamil,weather,,TPL_weather,train
+FQ00779,bro mazhai illama sugarcane kaayudhu,tanglish,drought,sugarcane,TPL_weather,train
+FQ00782,how protect maize in a dry spell,english,drought,maize,TPL_weather,train
+FQ00789,drought tomato,english,drought,tomato,TPL_weather,train
+FQ00806,water stagnating in onion field after rain,english,rain_damage,onion,TPL_weather,train
+FQ00811,chilli ilai scorching in summer,mixed,heat_stress,chilli,TPL_weather,train
+FQ00833,இன்னைக்கு மருந்து தெளிக்கலாமா மழை வருமா என்ன பண்றது,tamil,weather,,TPL_weather,train
+FQ00855,பெருமழையில நெல் வயல் மூழ்கிடுச்சு,tamil,rain_damage,paddy,TPL_weather,train
+FQ00866,varatchi la pachai payaru edi kaapathuradhu,tanglish,drought,greengram,TPL_weather,train
+FQ00875,water stagnating sugarcane field after rain,english,rain_damage,sugarcane,TPL_weather,train
+FQ00881,water stagnating in sugarcane field after rain,english,rain_damage,sugarcane,TPL_weather,train
+FQ00902,ஐயா விவசாய வானிலை அறிக்கை,tamil,weather,,TPL_weather,train
+FQ00903,heat naala ulundu affect,tanglish,heat_stress,blackgram,TPL_weather,train
+FQ00905,வறட்சியில மக்காச்சோளம் எப்படி காப்பாத்துறது,tamil,drought,maize,TPL_weather,train
+FQ00908,rain banana,english,rain_damage,banana,TPL_weather,train
+FQ00919,மஞ்சள் வயல்,tamil,rain_damage,turmeric,TPL_weather,train
+FQ00930,how to protect maize in a dry spell,english,drought,maize,TPL_weather,train
+FQ00943,மழைக்கு அப்புறம் கரும்பு சாஞ்சிடுச்சு,tamil,rain_damage,sugarcane,TPL_weather,train
+FQ00966,weather eppadi iruku sollunga pls,tanglish,weather,,TPL_weather,train
+FQ00975,அண்ணா கோடையில மிளகாய் இலை கருகுது,tamil,heat_stress,chilli,TPL_weather,train
+FQ00976,மழைக்கு அப்புறம் வாழை சாஞ்சிடுச்சு சொல்லுங்க,tamil,rain_damage,banana,TPL_weather,train
+FQ00992,naalaiku mazha iruka,tanglish,weather,,TPL_weather,train
+FQ00996,rain dammaged my tomato what to do now,english,rain_damage,tomato,TPL_weather,train
+FQ01002,வெப்பத்தால உளுந்து பாதிப்பு,tamil,heat_stress,blackgram,TPL_weather,train
+FQ01013,rain turmeric,english,rain_damage,turmeric,TPL_weather,train
+FQ01030,நாளைக்கு மழை இருக்குமா solution சொல்லுங்க,mixed,weather,,TPL_weather,train
+FQ01036,high temperature affecting green gram,english,heat_stress,greengram,TPL_weather,train
+FQ01044,வறட்சியில நிலக்கடலை காப்பாத்துறது,tamil,drought,groundnut,TPL_weather,train
+FQ01080,which crops tolerate drought,english,drought,,TPL_weather,train
+FQ01086,vellam vandhu payir,tanglish,rain_damage,,TPL_weather,train
+FQ01117,மளையால வாழை சேதம்,tamil,rain_damage,banana,TPL_weather,train
+FQ01122,வெப்பத்தாள மிளகாய் பாதிப்பு,tamil,heat_stress,chilli,TPL_weather,train
+FQ01131,too much heat coconut flowers dropping,english,heat_stress,coconut,TPL_weather,train
+FQ01158,heavy rain flooded my banana field,english,rain_damage,banana,TPL_weather,train
+FQ01172,weather update for farming,english,weather,,TPL_weather,train
+FQ01173,மழை இல்லாம turmeric காயுது,mixed,drought,turmeric,TPL_weather,train
+FQ01177,summer la cholam ilai karugudhu,tanglish,heat_stress,maize,TPL_weather,train
+FQ01179,மழை இல்லாம மஞ்சள் காயுது,tamil,drought,turmeric,TPL_weather,train
+FQ01187,சார் இந்த வாரம் மழை வருமா,tamil,weather,,TPL_weather,train
+FQ01193,மருந்து மழை,tamil,weather,,TPL_weather,train
+FQ01196,banana ilai scorching in summer,mixed,heat_stress,banana,TPL_weather,train
+FQ01254,moringa heat,english,heat_stress,drumstick,TPL_weather,train
+FQ01262,mazhai illama katharikai kaayudu,tanglish,drought,brinjal,TPL_weather,train
+FQ01276,mazhai naala ulundhu damage,tanglish,rain_damage,blackgram,TPL_weather,train
+FQ01296,drought affecting tomato,english,drought,tomato,TPL_weather,train
+FQ01306,banana leaves scorching in summer,english,heat_stress,banana,TPL_weather,train
+FQ01324,periya mazhai la turmeric vayal moozhgiruch,tanglish,rain_damage,turmeric,TPL_weather,train
+FQ01326,ஐயா வறட்சியை தாங்குற பயிர் எது,tamil,drought,,TPL_weather,train
+FQ01327,naalaiku malairuka,tanglish,weather,,TPL_weather,train
+FQ01331,மழை இலலாம நெல் காயுது,tamil,drought,paddy,TPL_weather,train
+FQ01343,drumstick leaves scorching in summer,english,heat_stress,drumstick,TPL_weather,train
+FQ01368,crops tolerate drought,english,drought,,TPL_weather,train
+FQ01391,how to protect tomato in a dry spell,english,drought,tomato,TPL_weather,train
+FQ01397,drought affecting chilli,english,drought,chilli,TPL_weather,train
+FQ01416,மழை இல்லாம சின்ன வெங்காயம் காயுது,tamil,drought,onion,TPL_weather,train
+FQ01424,வெப்பத்தால மிளகாய் பாதிப்பு,tamil,heat_stress,chilli,TPL_weather,train
+FQ01443,பெருமளையில நெல் வயல் மூழ்கிடுச்சு,tamil,rain_damage,paddy,TPL_weather,train
+FQ01473,water stagnating in cotton field after rain,english,rain_damage,cotton,TPL_weather,train
+FQ01482,மழை இல்லாம paddy காயுது,mixed,drought,paddy,TPL_weather,train
+FQ01493,to protect groundnut from heat,english,heat_stress,groundnut,TPL_weather,train
+FQ01500,பெருமழையில தென்னை வயல் மூழ்கிடுச்சு,tamil,rain_damage,coconut,TPL_weather,train
+FQ01505,summer la cotton ilai karugudhu enna pannanum,tanglish,heat_stress,cotton,TPL_weather,train
+FQ01514,ஐயா வெப்பத்தால உளுந்து பாதிப்பு,tamil,heat_stress,blackgram,TPL_weather,train
+FQ01539,sir weather update for farming,english,weather,,TPL_weather,train
+FQ01545,is it safe to spray,english,weather,,TPL_weather,train
+FQ01561,வாரம் மழை வருமா,tamil,weather,,TPL_weather,train
+FQ01590,மழையால green gram சேதம்,mixed,rain_damage,greengram,TPL_weather,train
+FQ01592,mala naala groundnut damage,tanglish,rain_damage,groundnut,TPL_weather,train
+FQ01597,sir summer la cholam ilai karugudhu,tanglish,heat_stress,maize,TPL_weather,train
+FQ01622,summer la cotton ilai karugudhu,tanglish,heat_stress,cotton,TPL_weather,train
+FQ01627,periya mazhai la cotton vayal moozhgiruchu sollunga pls,tanglish,rain_damage,cotton,TPL_weather,train
+FQ01628,haevy rain flooded my drumstick field,english,rain_damage,drumstick,TPL_weather,train
+FQ01630,கோடையிள தென்னை இலை கருகுது,tamil,heat_stress,coconut,TPL_weather,train
+FQ01633,how to protect rice in a dry spell,english,drought,paddy,TPL_weather,train
+FQ01654,mazhai naala groundnut damage,tanglish,rain_damage,groundnut,TPL_weather,train
+FQ01656,chilli leaves scorching in summer,english,heat_stress,chilli,TPL_weather,train
+FQ01676,விவசாய வானிலை அறிக்கை,tamil,weather,,TPL_weather,train
+FQ01680,how to protect groundnut from heat,english,heat_stress,groundnut,TPL_weather,train
+FQ01707,too much heat rice flowers dropping,english,heat_stress,paddy,TPL_weather,train
+FQ01718,varatchi thaangura payir edhu sollunga pls,tanglish,drought,,TPL_weather,train
+FQ01722,will it rain this weeek,english,weather,,TPL_weather,train
+FQ01731,மழையால banana சேதம்,mixed,rain_damage,banana,TPL_weather,train
+FQ01735,வரட்சியிள மக்காச்சோளம் எப்படிகாப்பாத்துறது,tamil,drought,maize,TPL_weather,train
+FQ01754,weather eppadi iruku,tanglish,weather,,TPL_weather,train
+FQ01756,rain damaged my turmerac what to do now,english,rain_damage,turmeric,TPL_weather,train
+FQ01762,வறட்சியில சினன வெங்காயம் எப்படி காப்பாத்துறது,tamil,drought,onion,TPL_weather,train
+FQ01782,naalaik mazha iruka,tanglish,weather,,TPL_weather,train
+FQ01786,மழைக்கு அப்புறம் sugarcane சாஞ்சிடுச்சு,mixed,rain_damage,sugarcane,TPL_weather,train
+FQ01820,heavy rain flooded my turmeric field,english,rain_damage,turmeric,TPL_weather,train
+FQ01824,மழைக்கு அப்புரம் வாழை சாஞ்சிடுச்சு,tamil,rain_damage,banana,TPL_weather,train
+FQ01862,vellam vandhu payir pochu,tanglish,rain_damage,,TPL_weather,train
+FQ01885,veyil la irundhu payira epdi kaapathuradhu,tanglish,heat_stress,,TPL_weather,train
+FQ01894,மழையால வாழை சேதம்,tamil,rain_damage,banana,TPL_weather,train
+FQ01914,கோடையில முருங்கை இலை கருகுது,tamil,heat_stress,drumstick,TPL_weather,train
+FQ01931,மழைக்கு அப்புறம் மக்காச்சோளம் சாஞ்சிடுச்சு,tamil,rain_damage,maize,TPL_weather,train
+FQ01967,weather eppadiiruku,tanglish,weather,,TPL_weather,train
+FQ01985,cotton heat,english,heat_stress,cotton,TPL_weather,train
+FQ01998,வறட்சியில நிலக்கடலை எப்படி காப்பாத்துறது,tamil,drought,groundnut,TPL_weather,train
+FQ02022,mazhai naala thakkali damage,tanglish,rain_damage,tomato,TPL_weather,train
+FQ02029,too much heat rice flowers dropping help,english,heat_stress,paddy,TPL_weather,train
+FQ02032,தென்னை இலை கருகுது,tamil,heat_stress,coconut,TPL_weather,train
+FQ02048,will it rain week,english,weather,,TPL_weather,train
+FQ02060,mazhai damaged my moringa what to do now,mixed,rain_damage,drumstick,TPL_weather,train
+FQ02065,வறட்சியை பயிர்,tamil,drought,,TPL_weather,train
+FQ02068,னாளைக்கு மழை இருக்குமா,tamil,weather,,TPL_weather,train
+FQ02075,will it rain this week,english,weather,,TPL_weather,train
+FQ02081,how to protect cotton from heat,english,heat_stress,cotton,TPL_weather,train
+FQ02094,மழை மஞ்சள் காயுது,tamil,drought,turmeric,TPL_weather,train
+FQ02105,இந்த வாரம் மழை வருமா,tamil,weather,,TPL_weather,train
+FQ02118,நாளைக்கு மளை இருக்குமா,tamil,weather,,TPL_weather,train
+FQ02153,வறட்சியை தாங்குற பயிர்,tamil,drought,,TPL_weather,train
+FQ02162,varatchi la katharikai epdi kaapathuradhu,tanglish,drought,brinjal,TPL_weather,train
+FQ02166,heat naala kathiriaffect,tanglish,heat_stress,brinjal,TPL_weather,train
+FQ02197,anna vellam vandhu payir pochu,tanglish,rain_damage,,TPL_weather,train
+FQ02215,மழைக்கு அப்புறம் வாழை சாஞ்சிடுச்சு,tamil,rain_damage,banana,TPL_weather,train
+FQ02218,mazhai illama katharikai kaayudhu,tanglish,drought,brinjal,TPL_weather,train
+FQ02223,கோடையில தென்னை இலை கருகுது,tamil,heat_stress,coconut,TPL_weather,train
+FQ02235,mazhai illama coconut kaayudhu,tanglish,drought,coconut,TPL_weather,train
+FQ02239,heavy rain flooded my drumstick field,english,rain_damage,drumstick,TPL_weather,train
+FQ02252,too heat coconut flowers dropping,english,heat_stress,coconut,TPL_weather,train
+FQ02260,drought affecting brinjal,english,drought,brinjal,TPL_weather,train
+FQ02265,heat naala karimbu affect,tanglish,heat_stress,sugarcane,TPL_weather,train
+FQ02271,summer la karumbu ilai karugudhu,tanglish,heat_stress,sugarcane,TPL_weather,train
+FQ02272,இந்த வாரம மழை வருமா,tamil,weather,,TPL_weather,train
+FQ02274,summer la karumbu ilai karugudhu enna pannanum,tanglish,heat_stress,sugarcane,TPL_weather,train
+FQ02305,varatchi thaangura payir edhu,tanglish,drought,,TPL_weather,train
+FQ02306,மழையால பாசிப்பயறு சேதம்,tamil,rain_damage,greengram,TPL_weather,train
+FQ02307,மழை இல்லாம சின்ன வெங்காயம் காயுது என்ன பண்றது,tamil,drought,onion,TPL_weather,train
+FQ02326,varatchi la thennai epdi kaapathuradhu,tanglish,drought,coconut,TPL_weather,train
+FQ02353,மழையால பாசிப்பயரு சேதம்,tamil,rain_damage,greengram,TPL_weather,train
+FQ02360,வறட்சியில groundnut எப்படி காப்பாத்துறது,mixed,drought,groundnut,TPL_weather,train
+FQ02365,mazha naala ulundhu damage,tanglish,rain_damage,blackgram,TPL_weather,train
+FQ02376,drumstick ilai scorching in summer,mixed,heat_stress,drumstick,TPL_weather,train
+FQ02407,too much heat cotton flowers dropping,english,heat_stress,cotton,TPL_weather,train
+FQ02420,இன்னைக்கு மருந்து தெளிக்கலாமா மழை வருமா,tamil,weather,,TPL_weather,train
+FQ02435,mazhai illama coconut kaayuthu,tanglish,drought,coconut,TPL_weather,train
+FQ02457,வெப்பத்தால chilli பாதிப்பு,mixed,heat_stress,chilli,TPL_weather,train
+FQ02459,high temperature affecting black gram,english,heat_stress,blackgram,TPL_weather,train
+FQ02463,varatchi la pachai payaru epdi kaapathuradhu,tanglish,drought,greengram,TPL_weather,train
+FQ02476,வெப்பத்தால கத்தரி பாதிப்பு,tamil,heat_stress,brinjal,TPL_weather,train
+FQ02499,drought affecting chillli,english,drought,chilli,TPL_weather,train
+FQ02505,mazhai illama sugarcane kaayudhu,tanglish,drought,sugarcane,TPL_weather,train
+FQ02517,rain damaged my moringa what to do now,english,rain_damage,drumstick,TPL_weather,train
+FQ02540,periya mazhai la turmeric vayal moozhgiruchu,tanglish,rain_damage,turmeric,TPL_weather,train
+FQ02584,no rain for weeks my cotton is drying,english,drought,cotton,TPL_weather,validation
+FQ02594,அதிக வெயில்ல மஞ்சள் பூ உதிருது,tamil,heat_stress,turmeric,TPL_weather,validation
+FQ02617,indha vaaram rain varuma,mixed,weather,,TPL_weather,validation
+FQ02620,அதிக வெயில்ல நெல் பூ உதிருது,tamil,heat_stress,paddy,TPL_weather,validation
+FQ02626,indha vaaram mazhai varuma,tanglish,weather,,TPL_weather,validation
+FQ02635,அதிக வெயில்ல கரும்பு பூ உதிருது என்ன பண்றது,tamil,heat_stress,sugarcane,TPL_weather,validation
+FQ02642,turmeric crop fell down after mazhai,mixed,rain_damage,turmeric,TPL_weather,validation
+FQ02648,drumstick rain,english,rain_damage,drumstick,TPL_weather,validation
+FQ02657,drumstick crop fell down after rain,english,rain_damage,drumstick,TPL_weather,validation
+FQ02668,vekkai adhigam takkali vaadudhu,tanglish,heat_stress,tomato,TPL_weather,validation
+FQ02673,அதிக வெயில்ல sugarcane பூ உதிருது,mixed,heat_stress,sugarcane,TPL_weather,validation
+FQ02683,vayal la mazhai thanni thengi nikkudhu,tanglish,rain_damage,,TPL_weather,validation
+FQ02686,அதிக வெயில்ல paddy பூ உதிருது,mixed,heat_stress,paddy,TPL_weather,validation
+FQ02687,sugarcane rain,english,rain_damage,sugarcane,TPL_weather,validation
+FQ02693,no mazhai for weeks my banana is drying,mixed,drought,banana,TPL_weather,validation
+FQ02697,no rain for weeks my cotton is drying sir urgent,english,drought,cotton,TPL_weather,validation
+FQ02713,no rain for weeks my tomato is drying,english,drought,tomato,TPL_weather,validation
+FQ02762,dry spell murunga kaai,tanglish,drought,drumstick,TPL_weather,validation
+FQ02765,vekkai adigam cholam vaadudhu,tanglish,heat_stress,maize,TPL_weather,validation
+FQ02787,bro vayal la mazhai thanni thengi nikkudhu,tanglish,rain_damage,,TPL_weather,validation
+FQ02826,mazhai forecast for my village,mixed,weather,,TPL_weather,validation
+FQ02827,அதிக வெயில்ல கரும்பு பூ உதிருது,tamil,heat_stress,sugarcane,TPL_weather,validation
+FQ02836,dry spell murungakai,tanglish,drought,drumstick,TPL_weather,validation
+FQ02874,அதிக வெயிள்ல நெல் பூ உதிருது,tamil,heat_stress,paddy,TPL_weather,validation
+FQ02877,vayal la mahzai thanni thengi nikkudhu,tanglish,rain_damage,,TPL_weather,validation
+FQ02880,dry spell katharikai,tanglish,drought,brinjal,TPL_weather,validation
+FQ02887,dryspell katharikai,tanglish,drought,brinjal,TPL_weather,validation
+FQ02890,rain forecast,english,weather,,TPL_weather,validation
+FQ02893,rain forecast for my village,english,weather,,TPL_weather,validation
+FQ02894,indha varam mazhai varuma,tanglish,weather,,TPL_weather,validation
+FQ02899,turmeric crop fell down after rain,english,rain_damage,turmeric,TPL_weather,validation
+FQ02915,வெயில்ல மஞ்சள் பூ,tamil,heat_stress,turmeric,TPL_weather,validation
+FQ02923,vekkai adhigam cholam vaadudhu,tanglish,heat_stress,maize,TPL_weather,validation
+FQ02930,vekkai takkali vaadudhu,tanglish,heat_stress,tomato,TPL_weather,validation
+FQ02932,வெயில்ல மஞ்சள் பூ உதிருது,tamil,heat_stress,turmeric,TPL_weather,validation
+FQ02939,no rain for weeks my banana is drying,english,drought,banana,TPL_weather,validation
+FQ02975,vekkai adhigam murungakai vaadudh,tanglish,heat_stress,drumstick,TPL_weather,validation
+FQ03003,dry spell thennai,tanglish,drought,coconut,TPL_weather,validation
+FQ03015,vekkai adhigam murungakai vaadudhu,tanglish,heat_stress,drumstick,TPL_weather,validation
+FQ03018,no rain weeks my tomato is drying,english,drought,tomato,TPL_weather,validation
+FQ03023,dry spell thenna,tanglish,drought,coconut,TPL_weather,validation
+FQ03042,sugarcane crop fell down after rain,english,rain_damage,sugarcane,TPL_weather,validation
+FQ03078,வெயில்ல இருந்து பயிர எப்படி காப்பாத்துறது,tamil,heat_stress,,TPL_weather,test
+FQ03093,romba veyil cottonpoo udirudu,tanglish,heat_stress,cotton,TPL_weather,test
+FQ03098,வயல்ல மழைத்தண்ணி தேங்கி னிக்குது,tamil,rain_damage,,TPL_weather,test
+FQ03119,sir maanaavaari nilathuku enna payir,tanglish,drought,,TPL_weather,test
+FQ03120,innaiku marunda adikalaama mazhai varuma,tanglish,weather,,TPL_weather,test
+FQ03123,romba veyil chinna vengayam poo udhirudhu,tanglish,heat_stress,onion,TPL_weather,test
+FQ03131,bro mazhai ku apram cholam saanjiruchu,tanglish,rain_damage,maize,TPL_weather,test
+FQ03141,maanaavaari nilathuku yenna payir,tanglish,drought,,TPL_weather,test
+FQ03152,mazhai eppo varum,tanglish,weather,,TPL_weather,test
+FQ03154,mazhai brinjal saanjiruchu,tanglish,rain_damage,brinjal,TPL_weather,test
+FQ03164,mazhai yeppo varum,tanglish,weather,,TPL_weather,test
+FQ03202,mazhai ku apram uluundhu saanjiruchu,tanglish,rain_damage,blackgram,TPL_weather,test
+FQ03217,mazhai eppo vrum,tanglish,weather,,TPL_weather,test
+FQ03225,வெயில்ல இருந்து பயிர எப்படி காப்பாத்துறது problem,mixed,heat_stress,,TPL_weather,test
+FQ03232,வெயில்ல இருந்து பயிர எப்படி காப்பாத்துரது,tamil,heat_stress,,TPL_weather,test
+FQ03252,innaiku marundhu adikalaama mazhai varuma,tanglish,weather,,TPL_weather,test
+FQ03274,ஐயா மானாவாரி நிலத்துக்கு என்ன பயிர்,tamil,drought,,TPL_weather,test
+FQ03282,mazhai ku apram ulundhu saanjiruchu,tanglish,rain_damage,blackgram,TPL_weather,test
+FQ03297,romba veyil thakkali poo udhirudhu,tanglish,heat_stress,tomato,TPL_weather,test
+FQ03337,mazhai ku apram brinjal saanjiruchu,tanglish,rain_damage,brinjal,TPL_weather,test
+FQ03349,வெயில்ல இருந்து பயிர எப்படி காப்பாத்துறது சொல்லுங்க,tamil,heat_stress,,TPL_weather,test
+FQ03361,மானாவாரி நிலத்துக்கு என்ன பயிர்,tamil,drought,,TPL_weather,test
+FQ03367,romba veyil cotton poo udhirudhu,tanglish,heat_stress,cotton,TPL_weather,test
+FQ03399,innaiku marundu adikalaama mazhai varuma,tanglish,weather,,TPL_weather,test
+FQ03451,மானாவாரி நிலத்துக்கு பயிர்,tamil,drought,,TPL_weather,test
+FQ03458,வயல்ல மழைத்தண்ணி தேங்கி நிக்குது problem,mixed,rain_damage,,TPL_weather,test
+FQ03481,வயல்ல மழைத்தண்ணி தேங்கி நிக்குது,tamil,rain_damage,,TPL_weather,test
+FQ03497,mazhai ku apram cholam saanjiruchu,tanglish,rain_damage,maize,TPL_weather,test
+FQ03505,veyil chinna vengayam poo udhirudhu,tanglish,heat_stress,onion,TPL_weather,test
+FQ03515,maanaavaari nilathuku enna payir,tanglish,drought,,TPL_weather,test
+FQ03526,romba veyil thakkali pooh udhirudhu,tanglish,heat_stress,tomato,TPL_weather,test
+FQ03535,வயல்ல மழைத்தண்ணி தேங்கி நிக்குது என்ன பண்றது,tamil,rain_damage,,TPL_weather,test
+FQ03537,மானாவாரி நிளத்துக்கு என்ன பயிர்,tamil,drought,,TPL_weather,test
