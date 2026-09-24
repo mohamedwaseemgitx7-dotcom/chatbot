@@ -62,7 +62,7 @@ function normalizeImage(data) {
   }
   if (status !== "ok") {
     const message = str(body?.message) || "I could not confidently identify a supported crop or condition from this image.";
-    const hint = "Supported crops: paddy, tomato, chilli and banana. Try a clear, close photo of one affected leaf in daylight.";
+    const hint = "Supported crops: paddy, tomato, chilli, banana and maize. Try a clear, close photo of one affected leaf in daylight.";
     return { kind: "text", text: `${message}\n\n${hint}` };
   }
   const crop = firstStr(body?.crop, body?.crop_name);
