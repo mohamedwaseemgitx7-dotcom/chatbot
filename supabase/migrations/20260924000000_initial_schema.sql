@@ -1,7 +1,8 @@
 -- =====================================================================
 -- FarmerAssist — initial Supabase schema
 --   Tables, foreign keys, indexes, Row Level Security, Storage buckets + policies.
---   Safe to run on an empty project (Supabase SQL Editor or `supabase db push`).
+--   Run ONCE, on an empty project (Supabase SQL Editor or `supabase db push`).
+--   Already applied? Don't re-run it (error 42P07 "relation already exists") — run only the later migrations.
 --
 -- Identity: every browser gets a Supabase Auth user (anonymous sign-in today,
 -- email/phone login later). public.users is that user's profile row.
