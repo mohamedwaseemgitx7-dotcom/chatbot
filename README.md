@@ -433,7 +433,7 @@ Go through these in order:
 ## 15. Production checklist
 
 - [ ] `git ls-files | grep -i "\.env$"` prints nothing, and `git check-ignore backend/.env frontend/.env` prints both
-- [ ] No secret in the frontend bundle: `grep -r "sb_secret" frontend/dist` finds nothing
+- [ ] No secret in the frontend bundle: `grep -rE "sb_secret_[A-Za-z0-9]" frontend/dist` finds nothing (bare `sb_secret_` is only the key-prefix guard)
 - [ ] Render: `ENVIRONMENT=production`, `TRUST_PROXY_HEADERS=true`, `CORS_ORIGINS` = the exact Vercel URL
 - [ ] Render: `DEMO_USERNAME`, `DEMO_PASSWORD_HASH` and `SESSION_SECRET` set; login works; a wrong password gets 401
 - [ ] `/docs` returns 404 in production
