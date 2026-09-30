@@ -47,7 +47,7 @@ There is **no paid LLM API**: every model runs on our own server.
 | **Login** | One demo account, checked **server-side**. The password is stored only as a PBKDF2 hash. The server returns a signed session token that lasts 12 hours. |
 | **Chat** | Language detection, then Tamil/Tanglish → English normalisation, crop detection, intent classifier and a domain guard. Answers come from retrieval over verified knowledge, using fixed templates, **verbatim** excerpts and sources. |
 | **Photo** | JPEG/PNG/WEBP up to 5 MB, then quality checks, then MobileNetV3-Small (ONNX), then a confidence gate. The result includes knowledge for the predicted condition and the model and dataset version. |
-| **Voice** | faster-whisper (Tamil/English) transcribes speech into the chat pipeline. It is disabled on Render free, which has too little RAM. |
+| **Voice** | faster-whisper (Tamil/English) transcribes speech into the chat pipeline. On Render free (too little RAM for Whisper) the microphone uses the browser's speech recognition instead (Chrome/Edge/Android, Tamil or English). |
 | **History** | Supabase (Postgres + private Storage). RLS gives each browser its own anonymous Supabase user. |
 | **Limits** | Enforced server-side: chat 20/min, image 5/min, voice 5/min, login 5/min. The UI shows a countdown and keeps the typed text. |
 
@@ -375,7 +375,7 @@ Full step-by-step guide: **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)**. Short ver
    - Put the Vercel URL into Render's `CORS_ORIGINS`.
 4. Open the Vercel URL, then `/login`. Log in, ask in all three languages, send a photo, and reload to see history.
 
-Render free sleeps after 15 minutes idle, so the first request then takes 30–60 s. Voice is off there because Whisper needs about 1 GB RAM.
+Render free sleeps after 15 minutes idle, so the first request then takes 30–60 s. Whisper is off there (it needs about 1 GB RAM), so the microphone uses the browser's speech recognition.
 
 ## 13. Troubleshooting
 
@@ -389,7 +389,7 @@ Render free sleeps after 15 minutes idle, so the first request then takes 30–6
 | First request takes about 60 s on Render | The free instance was asleep | Normal. Open `/api/health` first to wake it. |
 | Photo always "uncertain" | Blurry, dark or close-up photo; a crop the model doesn't support; or confidence below 0.60 | Retake the photo in daylight showing one whole leaf. See the supported classes in `backend/models/vision/labels.json`. |
 | Photo returns `model_unavailable` | `backend/models/vision/crop_disease.onnx` or `labels.json` is missing | Restore them from git (`git checkout -- backend/models/vision`) or re-run `export_model.py` |
-| Voice says it isn't available | `VOICE_ENABLED=false`, or faster-whisper isn't installed | Install `requirements-voice.txt` and set `VOICE_ENABLED=true` (needs about 1 GB RAM) |
+| Voice says it isn't available | The server has no Whisper (`VOICE_ENABLED=false`) and the browser has no speech recognition (e.g. Firefox) | Use Chrome or Edge; or install `requirements-voice.txt` and set `VOICE_ENABLED=true` (needs about 1 GB RAM) |
 | `InconsistentVersionWarning` / intent model fails to load | scikit-learn version differs from 1.9.1 | `pip install -r backend/requirements.txt`, or retrain with `train_intent.py` |
 | History not saved, and "Supabase" appears in the console | Wrong or missing `VITE_SUPABASE_*`, anonymous sign-ins off, or migrations not run | Follow SETUP_CREDENTIALS.md |
 | `PGRST204` on image_predictions | The prediction-versioning migration hasn't run | Run `supabase/migrations/20260924020000_prediction_versioning.sql` (the app falls back meanwhile) |
@@ -450,7 +450,7 @@ Go through these in order:
 - **Single demo account.** Everyone shares one login, and logout revocation is in memory, so it is forgotten on restart. Tokens still expire after 12 h. Real per-farmer login should move to Supabase Auth (phone OTP).
 - **Knowledge.** The records are TNAU Agritech Portal pages, marked *pending expert review*. Some crops, and some tomato diseases, have no official record, so no advice is shown for them.
 - **Image model.** It supports only the classes in `labels.json`. PlantVillage lab accuracy is much higher than field accuracy, and both are reported separately. Some unseen plants are still misclassified.
-- **Voice.** Off on Render free. Tamil speech recognition quality depends on audio quality.
+- **Voice.** On Render free it uses the browser's speech recognition (Chrome sends the audio to Google; Firefox has none). Tamil speech recognition quality depends on audio quality.
 - **WhatsApp.** The Cloud API integration is paused (Meta demo credits ended). This web app is the demo.
 
 ## 17. Data sources and licences

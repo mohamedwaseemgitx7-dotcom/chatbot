@@ -1,9 +1,10 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import AttachmentPreview from "./AttachmentPreview";
 import { CloseIcon, ImageIcon, MicIcon, SendIcon } from "./Icons";
 import VoiceBar from "./VoiceBar";
+import { speechRecognitionSupported, useSpeechRecognition } from "../hooks/useSpeechRecognition";
 import { useVoiceRecorder } from "../hooks/useVoiceRecorder";
-import { transcribeVoice } from "../services/botService";
+import { serverVoiceAvailable, transcribeVoice } from "../services/botService";
 import { toFriendlyError } from "../services/errors";
 import { ACCEPTED_IMAGE_TYPES } from "../utils/validateImage";
 import "./Composer.css";
@@ -11,12 +12,63 @@ import "./Composer.css";
 const MAX_LENGTH = 1000; // matches the backend ChatRequest limit
 const MAX_HEIGHT = 168;
 
+// Browser speech recognition understands one language at a time; Tamil first for Tamil Nadu farmers.
+export const SPEECH_LANGS = [
+  { code: "ta-IN", label: "தமிழ்" },
+  { code: "en-IN", label: "English" },
+];
+const SPEECH_LANG_KEY = "farmerassist.speechLang";
+
+function readSpeechLang() {
+  try {
+    const saved = localStorage.getItem(SPEECH_LANG_KEY);
+    if (SPEECH_LANGS.some((l) => l.code === saved)) return saved;
+  } catch { /* storage blocked */ }
+  return SPEECH_LANGS[0].code;
+}
+
 export default function Composer({ busy, attachment, onAttach, onRemoveAttachment, onAnalyze, onSendText, feedback, onFeedback, cooldown }) {
   const [text, setText] = useState("");
   const [transcribing, setTranscribing] = useState(null); // { audioUrl } while speech is being converted
   const textareaRef = useRef(null);
   const fileRef = useRef(null);
   const abortRef = useRef(null);
+
+  // "server" = record audio and transcribe with Whisper on the API; "browser" = the browser's own speech recognition,
+  // used when the server has no voice model (e.g. Render free plan).
+  const [voiceMode, setVoiceMode] = useState("server");
+  const [speechLang, setSpeechLang] = useState(readSpeechLang);
+
+  useEffect(() => {
+    if (!speechRecognitionSupported) return;
+    let active = true;
+    serverVoiceAvailable().then((available) => { if (active && !available) setVoiceMode("browser"); });
+    return () => { active = false; };
+  }, []);
+
+  function changeSpeechLang(lang) {
+    setSpeechLang(lang);
+    try { localStorage.setItem(SPEECH_LANG_KEY, lang); } catch { /* storage blocked: choice lasts this visit */ }
+  }
+
+  /** A transcript becomes a normal chat message. If it can't be sent right now, keep it in the input. */
+  function deliverTranscript(transcript) {
+    const sent = onSendText(transcript.slice(0, MAX_LENGTH));
+    if (!sent?.ok) {
+      setText((current) => (current.trim() ? `${current.trim()} ${transcript}` : transcript).slice(0, MAX_LENGTH));
+      onFeedback({ type: "info", text: `${sent?.error ? `${sent.error} ` : ""}Your voice question is in the box — press send when ready.` });
+      requestAnimationFrame(() => textareaRef.current?.focus());
+    }
+  }
+
+  const speech = useSpeechRecognition({
+    lang: speechLang,
+    onError: (message) => onFeedback({ type: "error", text: message }),
+    onResult: (transcript) => {
+      onFeedback(null);
+      deliverTranscript(transcript);
+    },
+  });
 
   const recorder = useVoiceRecorder({
     onError: (message) => onFeedback({ type: "error", text: message }),
@@ -31,17 +83,16 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
         if (!result.text) {
           onFeedback({ type: "error", text: "We couldn't make out any words. Please try again closer to the microphone, or type your question." });
         } else {
-          // The transcript becomes a normal chat message. If it can't be sent right now, keep it in the input.
-          const sent = onSendText(result.text.slice(0, MAX_LENGTH));
-          if (!sent?.ok) {
-            setText((current) => (current.trim() ? `${current.trim()} ${result.text}` : result.text).slice(0, MAX_LENGTH));
-            onFeedback({ type: "info", text: `${sent?.error ? `${sent.error} ` : ""}Your voice question is in the box — press send when ready.` });
-            requestAnimationFrame(() => textareaRef.current?.focus());
-          }
+          deliverTranscript(result.text);
         }
       } catch (error) {
         if (error?.status === 429) cooldown?.start("voice", error.retryAfter);
-        if (error?.kind !== "aborted") onFeedback({ type: "error", text: toFriendlyError(error, "voice").message });
+        if (error?.status === 503 && speechRecognitionSupported) {
+          setVoiceMode("browser");
+          onFeedback({ type: "info", text: "Voice now uses your browser's speech recognition. Press the microphone and speak again." });
+        } else if (error?.kind !== "aborted") {
+          onFeedback({ type: "error", text: toFriendlyError(error, "voice").message });
+        }
       } finally {
         URL.revokeObjectURL(audioUrl);
         abortRef.current = null;
@@ -50,7 +101,19 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
     },
   });
 
-  const voiceActive = recorder.status !== "idle" || transcribing !== null;
+  // Switching language while listening restarts listening in the new language (once the old session has ended).
+  const restartSpeechRef = useRef(false);
+  const startSpeech = speech.start;
+  useEffect(() => {
+    if (restartSpeechRef.current && speech.status === "idle") {
+      restartSpeechRef.current = false;
+      startSpeech();
+    }
+  }, [speech.status, speechLang, startSpeech]);
+
+  const useBrowserSpeech = voiceMode === "browser";
+  const voice = useBrowserSpeech ? speech : recorder;
+  const voiceActive = voice.status !== "idle" || transcribing !== null;
   const hasText = text.trim().length > 0;
   const chatWait = cooldown?.remaining("chat") || 0;
   const imageWait = cooldown?.remaining("image") || 0;
@@ -102,7 +165,7 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
 
   function startVoice() {
     onFeedback(null); // an old error shouldn't sit above a new recording
-    recorder.start();
+    voice.start();
   }
 
   function cancelTranscription() {
@@ -133,12 +196,16 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
 
         {voiceActive ? (
           <VoiceBar
-            status={transcribing ? "transcribing" : recorder.status}
-            seconds={recorder.seconds}
-            maxSeconds={recorder.maxSeconds}
+            status={transcribing ? "transcribing" : voice.status}
+            seconds={voice.seconds}
+            maxSeconds={voice.maxSeconds}
             audioUrl={transcribing?.audioUrl}
-            onStop={recorder.stop}
-            onCancel={transcribing ? cancelTranscription : recorder.cancel}
+            liveText={useBrowserSpeech ? speech.transcript : undefined}
+            languages={useBrowserSpeech ? SPEECH_LANGS : undefined}
+            language={speechLang}
+            onLanguageChange={(lang) => { restartSpeechRef.current = true; speech.cancel(); changeSpeechLang(lang); }}
+            onStop={voice.stop}
+            onCancel={transcribing ? cancelTranscription : voice.cancel}
           />
         ) : (
           <form className="composer__bar" onSubmit={submit}>
@@ -174,9 +241,9 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
               type="button"
               className="icon-btn composer__tool"
               onClick={startVoice}
-              disabled={!recorder.supported || voiceWait > 0}
-              aria-label={!recorder.supported ? "Voice input isn't supported in this browser" : voiceWait > 0 ? `Voice available again in ${voiceWait} seconds` : "Ask by voice"}
-              title={!recorder.supported ? "Voice input isn't supported in this browser" : voiceWait > 0 ? `Voice available again in ${voiceWait} s` : "Ask by voice"}
+              disabled={!voice.supported || voiceWait > 0}
+              aria-label={!voice.supported ? "Voice input isn't supported in this browser" : voiceWait > 0 ? `Voice available again in ${voiceWait} seconds` : "Ask by voice"}
+              title={!voice.supported ? "Voice input isn't supported in this browser" : voiceWait > 0 ? `Voice available again in ${voiceWait} s` : "Ask by voice"}
             >
               <MicIcon />
             </button>

@@ -48,8 +48,8 @@ New → **Blueprint** → select the GitHub repo (uses `render.yaml`). Fill the 
 Already set by the Blueprint: `ENVIRONMENT=production`, `TRUST_PROXY_HEADERS=true`, `VOICE_ENABLED=false`, `PYTHON_VERSION=3.13.1`.
 
 Free-plan facts: 512 MB RAM, sleeps after 15 min idle (first request then takes ~30–60 s).
-Voice stays off on the free plan (Whisper needs ~1 GB); the API answers `/api/voice/transcribe` with 503 and the app shows
-"Voice input isn't available on this server yet". Upgrade to a 2 GB instance and set `VOICE_ENABLED=true` (and add
+Whisper stays off on the free plan (it needs ~1 GB): `/api/health/ready` reports `"voice": "disabled"`, so the app switches the
+microphone to the browser's speech recognition (Chrome/Edge/Android; Tamil or English toggle; Chrome sends the audio to Google). Upgrade to a 2 GB instance and set `VOICE_ENABLED=true` (and add
 `faster-whisper` to requirements.txt) to enable it.
 
 ## 3b. Railway (alternative to Render)
@@ -100,4 +100,4 @@ Then put the final Vercel URL into Render's `CORS_ORIGINS` and redeploy the back
 ## 7. End-to-end check (production)
 
 Open the Vercel URL → you land on `/login` → log in → ask in English, Tamil and Tanglish; send a leaf photo; reload (history comes back from Supabase);
-confirm Supabase → Table Editor → `messages` has the rows. Voice shows the "not available on this server" message on the free plan.
+confirm Supabase → Table Editor → `messages` has the rows. On the free plan, voice uses the browser's speech recognition: press the microphone, speak, press Stop.

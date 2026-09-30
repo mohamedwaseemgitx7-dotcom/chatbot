@@ -176,6 +176,17 @@ export async function transcribeVoice(blob, { signal } = {}) {
   return normalizeTranscript(data);
 }
 
+/** Whether the server can transcribe voice. False on hosts without the Whisper model (VOICE_ENABLED=false). */
+export async function serverVoiceAvailable() {
+  if (!USE_BACKEND) return false;
+  try {
+    const data = await requestJson("/health/ready", { method: "GET", timeoutMs: 15000 });
+    return data?.voice === "ready";
+  } catch {
+    return true; // unknown: keep server voice; a 503 on first use still switches to the browser
+  }
+}
+
 /** Lightweight reachability check for the header status. */
 export async function checkHealth() {
   if (!USE_BACKEND) return "demo";

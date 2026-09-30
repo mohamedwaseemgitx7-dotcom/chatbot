@@ -147,6 +147,25 @@
 .voice-bar__time { font-variant-numeric: tabular-nums; color: var(--text); font-weight: 400; }
 .voice-bar__max { color: var(--text-muted); }
 .voice-bar__audio { height: 36px; max-width: 100%; flex: 1 1 200px; }
+.voice-bar__langs { display: inline-flex; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); overflow: hidden; }
+.voice-bar__lang {
+  min-height: 36px;
+  padding: 0 var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  background: transparent;
+}
+.voice-bar__lang[aria-pressed="true"] { background: var(--recording); color: #fff; font-weight: var(--weight-medium); }
+.voice-bar__live {
+  flex: 1 1 100%;
+  order: 10;
+  margin: 0;
+  padding: 0 var(--space-2) var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.voice-bar__hint { color: var(--text-muted); }
 .voice-bar__stop {
   display: inline-flex;
   align-items: center;
@@ -159,7 +178,7 @@
   font-weight: var(--weight-medium);
 }
 .voice-bar__stop svg { width: 18px; height: 18px; }
-@media (prefers-color-scheme: dark) { .voice-bar__stop { color: #1a0f0e; } }
+@media (prefers-color-scheme: dark) { .voice-bar__stop, .voice-bar__lang[aria-pressed="true"] { color: #1a0f0e; } }
 
 @keyframes pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
