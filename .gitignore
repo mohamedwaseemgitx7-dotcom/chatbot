@@ -60,3 +60,6 @@ datasets/vision/metadata/candidates.csv
 datasets/vision/metadata/duplicates.csv
 datasets/vision/field_test/
 demo_photos/
+
+.vercel
+.env*.local
