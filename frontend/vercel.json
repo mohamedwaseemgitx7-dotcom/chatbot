@@ -3,7 +3,9 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/((?!assets/|favicon\\.svg).*)", "destination": "/index.html" }],
+  "rewrites": [{ "source": "/((?!assets/|api/|favicon\\.svg).*)", "destination": "/index.html" }],
+  "functions": { "api/keepalive.js": { "maxDuration": 60 } },
+  "crons": [{ "path": "/api/keepalive", "schedule": "0 6 * * *" }],
   "headers": [
     {
       "source": "/(.*)",
