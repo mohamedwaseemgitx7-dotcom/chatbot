@@ -32,8 +32,9 @@ function authHeaders(useAuth) {
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
-function httpError(status, retryAfterHeader, usedAuth) {
-  if (status === 401 && usedAuth) reportUnauthorized();
+function httpError(status, retryAfterHeader, needsAuth) {
+  // A 401 on a request that needs login means the session is gone (expired, revoked, or never stored) → log in again.
+  if (status === 401 && needsAuth) reportUnauthorized();
   return new ApiError("http", status, status === 429 ? parseRetryAfter(retryAfterHeader) : null);
 }
 
@@ -70,7 +71,7 @@ export async function requestJson(path, { method = "POST", json, form, timeoutMs
     clearTimeout(timer);
   }
 
-  if (!response.ok) throw httpError(response.status, response.headers.get("Retry-After"), Boolean(headers.Authorization));
+  if (!response.ok) throw httpError(response.status, response.headers.get("Retry-After"), auth);
   try {
     return await response.json();
   } catch {
@@ -96,7 +97,7 @@ export function uploadForm(path, form, { timeoutMs = 60000, onUploaded, signal }
     xhr.upload.onload = () => onUploaded?.();
     xhr.onload = () => {
       if (xhr.status < 200 || xhr.status >= 300) {
-        return reject(httpError(xhr.status, xhr.getResponseHeader("Retry-After"), Boolean(headers.Authorization)));
+        return reject(httpError(xhr.status, xhr.getResponseHeader("Retry-After"), true));
       }
       try {
         resolve(JSON.parse(xhr.responseText));

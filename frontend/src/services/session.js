@@ -5,25 +5,33 @@
 const KEY = "farmerassist.session.v1";
 export const UNAUTHORIZED_EVENT = "farmerassist:unauthorized";
 
+// Safari with "Block All Cookies" (and some in-app browsers) throws on localStorage. The session is then
+// kept in memory, so it lasts until the tab is closed instead of being lost right after login.
+let memorySession = null;
+
+const isValid = (session) => Boolean(session?.token && session.expiresAt * 1000 > Date.now());
+
 export function getSession() {
   try {
     const session = JSON.parse(localStorage.getItem(KEY) || "null");
-    if (session?.token && session.expiresAt * 1000 > Date.now()) return session;
+    if (isValid(session)) return session;
   } catch {
-    // unreadable storage → treated as logged out
+    // storage blocked or unreadable → fall back to the in-memory copy
   }
-  return null;
+  return isValid(memorySession) ? memorySession : null;
 }
 
 export function saveSession(session) {
+  memorySession = session;
   try {
     localStorage.setItem(KEY, JSON.stringify(session));
   } catch {
-    // storage blocked: the session lasts for this page only
+    // storage blocked: the in-memory copy keeps the session for this tab
   }
 }
 
 export function clearSession() {
+  memorySession = null;
   try {
     localStorage.removeItem(KEY);
   } catch {
