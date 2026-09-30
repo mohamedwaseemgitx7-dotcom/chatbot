@@ -101,15 +101,12 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
     },
   });
 
-  // Switching language while listening restarts listening in the new language (once the old session has ended).
-  const restartSpeechRef = useRef(false);
-  const startSpeech = speech.start;
-  useEffect(() => {
-    if (restartSpeechRef.current && speech.status === "idle") {
-      restartSpeechRef.current = false;
-      startSpeech();
-    }
-  }, [speech.status, speechLang, startSpeech]);
+  // Switching language while listening restarts listening in the new language — within the same tap, as iOS requires.
+  function switchSpeechLang(lang) {
+    speech.cancel();
+    changeSpeechLang(lang);
+    speech.start(lang);
+  }
 
   const useBrowserSpeech = voiceMode === "browser";
   const voice = useBrowserSpeech ? speech : recorder;
@@ -203,7 +200,7 @@ export default function Composer({ busy, attachment, onAttach, onRemoveAttachmen
             liveText={useBrowserSpeech ? speech.transcript : undefined}
             languages={useBrowserSpeech ? SPEECH_LANGS : undefined}
             language={speechLang}
-            onLanguageChange={(lang) => { restartSpeechRef.current = true; speech.cancel(); changeSpeechLang(lang); }}
+            onLanguageChange={switchSpeechLang}
             onStop={voice.stop}
             onCancel={transcribing ? cancelTranscription : voice.cancel}
           />
